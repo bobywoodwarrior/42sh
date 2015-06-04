@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_88aafd85f93f518a0b9c13001f488cc0" kind="dir">
+    <compoundname>prompt_read_termcaps</compoundname>
+    <innerfile refid="clean__screen_8c">clean_screen.c</innerfile>
+    <innerfile refid="clear__line_8c">clear_line.c</innerfile>
+    <innerfile refid="gere__key_8c">gere_key.c</innerfile>
+    <innerfile refid="init_8c">init.c</innerfile>
+    <innerfile refid="insert__list__double_8c">insert_list_double.c</innerfile>
+    <innerfile refid="last__word_8c">last_word.c</innerfile>
+    <innerfile refid="loop__read_8c">loop_read.c</innerfile>
+    <innerfile refid="modif__cmd_8c">modif_cmd.c</innerfile>
+    <innerfile refid="move_8c">move.c</innerfile>
+    <innerfile refid="print__cursor_8c">print_cursor.c</innerfile>
+    <innerfile refid="prompt__dyn_8c">prompt_dyn.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/"/>
+  </compounddef>
+</doxygen>

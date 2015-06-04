@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structs__bref" kind="struct" prot="public">
+    <compoundname>s_bref</compoundname>
+    <includes refid="builtin_8h" local="no">builtin.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structs__bref_1a409d98460fccb0c31bf8887117e68f36" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* ref</definition>
+        <argsstring></argsstring>
+        <name>ref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="24" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structs__bref_1a3cffecc657840bcfdbd40bfaf96be9d5" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* builtin)(char **, t_data *)</definition>
+        <argsstring>)(char **, t_data *)</argsstring>
+        <name>builtin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="25" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="23" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" bodystart="22" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structs__bref_1a3cffecc657840bcfdbd40bfaf96be9d5" prot="public" virt="non-virtual"><scope>s_bref</scope><name>builtin</name></member>
+      <member refid="structs__bref_1a409d98460fccb0c31bf8887117e68f36" prot="public" virt="non-virtual"><scope>s_bref</scope><name>ref</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

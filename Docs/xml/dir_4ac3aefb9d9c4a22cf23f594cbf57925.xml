@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_4ac3aefb9d9c4a22cf23f594cbf57925" kind="dir">
+    <compoundname>alias</compoundname>
+    <innerfile refid="alias_8c">alias.c</innerfile>
+    <innerfile refid="alias__etc_8c">alias_etc.c</innerfile>
+    <innerfile refid="gnl_8c">gnl.c</innerfile>
+    <innerfile refid="pars__alias_8c">pars_alias.c</innerfile>
+    <innerfile refid="str__cat_8c">str_cat.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/alias/"/>
+  </compounddef>
+</doxygen>

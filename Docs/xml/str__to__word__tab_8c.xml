@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="str__to__word__tab_8c" kind="file">
+    <compoundname>str_to_word_tab.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <incdepgraph>
+      <node id="696">
+        <label>lib/my/str_to_word_tab.c</label>
+        <link refid="str_to_word_tab.c"/>
+        <childnode refid="697" relation="include">
+        </childnode>
+        <childnode refid="698" relation="include">
+        </childnode>
+        <childnode refid="699" relation="include">
+        </childnode>
+      </node>
+      <node id="697">
+        <label>stdlib.h</label>
+      </node>
+      <node id="699">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+      <node id="698">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="str__to__word__tab_8c_1a8425589aca191f509539e8e61dcd6076" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int is_sep</definition>
+        <argsstring>(char *seps, char c)</argsstring>
+        <name>is_sep</name>
+        <param>
+          <type>char *</type>
+          <declname>seps</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/str_to_word_tab.c" line="15" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/str_to_word_tab.c" bodystart="15" bodyend="24"/>
+        <referencedby refid="str__to__word__tab_8c_1a57bdb7b6d479b3e82fb9f2279d76a2be" compoundref="str__to__word__tab_8c" startline="26" endline="44">how_many_words</referencedby>
+        <referencedby refid="shell_8h_1aa93a7396e54be09774dcefe2cb664afb" compoundref="str__to__word__tab_8c" startline="46" endline="71">str_to_word_tab</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="str__to__word__tab_8c_1a57bdb7b6d479b3e82fb9f2279d76a2be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int how_many_words</definition>
+        <argsstring>(char *str, char *seps)</argsstring>
+        <name>how_many_words</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>seps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/str_to_word_tab.c" line="26" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/str_to_word_tab.c" bodystart="26" bodyend="44"/>
+        <references refid="str__to__word__tab_8c_1a8425589aca191f509539e8e61dcd6076" compoundref="str__to__word__tab_8c" startline="15" endline="24">is_sep</references>
+        <referencedby refid="shell_8h_1aa93a7396e54be09774dcefe2cb664afb" compoundref="str__to__word__tab_8c" startline="46" endline="71">str_to_word_tab</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="str__to__word__tab_8c_1ab03f9e95db8c82fe8ac4c95f5844b0bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** str_to_word_tab</definition>
+        <argsstring>(char *str, char *seps)</argsstring>
+        <name>str_to_word_tab</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>seps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/str_to_word_tab.c" line="46" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/str_to_word_tab.c" bodystart="46" bodyend="71"/>
+        <references refid="str__to__word__tab_8c_1a57bdb7b6d479b3e82fb9f2279d76a2be" compoundref="str__to__word__tab_8c" startline="26" endline="44">how_many_words</references>
+        <references refid="str__to__word__tab_8c_1a8425589aca191f509539e8e61dcd6076" compoundref="str__to__word__tab_8c" startline="15" endline="24">is_sep</references>
+        <references refid="malloc__str_8c_1af4240b9ebd1f790c96c4c8e181827fba" compoundref="malloc__str_8c" startline="13" endline="27">malloc_str</references>
+        <references refid="my__strncat_8c_1a3b24f5275c408c2de1bf77b90f87e35f" compoundref="my__strncat_8c" startline="13" endline="28">my_strncat</references>
+        <referencedby refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" compoundref="exe__cmd_8c" startline="74" endline="101">exe_path</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>str_to_word_tab.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/bauer_a/rendu/PSU_2014_42sh</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;bauer_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Sat<sp/>Mar<sp/>28<sp/>14:23:18<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>15:08:33<sp/>2015<sp/>anthony<sp/>geiger</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="str__to__word__tab_8c_1a8425589aca191f509539e8e61dcd6076" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="str__to__word__tab_8c_1a8425589aca191f509539e8e61dcd6076" kindref="member">is_sep</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*seps,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*seps)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>==<sp/>*seps)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>seps++;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="str__to__word__tab_8c_1a57bdb7b6d479b3e82fb9f2279d76a2be" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="str__to__word__tab_8c_1a57bdb7b6d479b3e82fb9f2279d76a2be" kindref="member">how_many_words</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*seps)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>c<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="str__to__word__tab_8c_1a8425589aca191f509539e8e61dcd6076" kindref="member">is_sep</ref>(seps,<sp/>str[i])<sp/>&amp;&amp;<sp/>str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>c++;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="str__to__word__tab_8c_1a8425589aca191f509539e8e61dcd6076" kindref="member">is_sep</ref>(seps,<sp/>str[i])<sp/>&amp;&amp;<sp/>str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="str__to__word__tab_8c_1a8425589aca191f509539e8e61dcd6076" kindref="member">is_sep</ref>(seps,<sp/>str[i])<sp/>&amp;&amp;<sp/>str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(c);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="shell_8h_1aa93a7396e54be09774dcefe2cb664afb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="str__to__word__tab_8c_1ab03f9e95db8c82fe8ac4c95f5844b0bb" kindref="member">str_to_word_tab</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*seps)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>**tab;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i_min;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((tab<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)<sp/>*<sp/>(<ref refid="str__to__word__tab_8c_1a57bdb7b6d479b3e82fb9f2279d76a2be" kindref="member">how_many_words</ref>(str,<sp/>seps)<sp/>+<sp/>1)))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>tab[<ref refid="str__to__word__tab_8c_1a57bdb7b6d479b3e82fb9f2279d76a2be" kindref="member">how_many_words</ref>(str,<sp/>seps)]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>c<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(c<sp/>&lt;<sp/><ref refid="str__to__word__tab_8c_1a57bdb7b6d479b3e82fb9f2279d76a2be" kindref="member">how_many_words</ref>(str,<sp/>seps)<sp/>&amp;&amp;<sp/>str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(<ref refid="str__to__word__tab_8c_1a8425589aca191f509539e8e61dcd6076" kindref="member">is_sep</ref>(seps,<sp/>str[i])<sp/>&amp;&amp;<sp/>str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i_min<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!<ref refid="str__to__word__tab_8c_1a8425589aca191f509539e8e61dcd6076" kindref="member">is_sep</ref>(seps,<sp/>str[i])<sp/>&amp;&amp;<sp/>str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((tab[c]<sp/>=<sp/><ref refid="malloc__str_8c_1af4240b9ebd1f790c96c4c8e181827fba" kindref="member">malloc_str</ref>(i<sp/>-<sp/>i_min<sp/>+<sp/>1))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strncat_8c_1a3b24f5275c408c2de1bf77b90f87e35f" kindref="member">my_strncat</ref>(tab[c],<sp/>str<sp/>+<sp/>i_min,<sp/>(i<sp/>-<sp/>i_min));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>c++;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(tab);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/str_to_word_tab.c"/>
+  </compounddef>
+</doxygen>

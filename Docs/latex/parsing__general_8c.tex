@@ -1,0 +1,181 @@
+\section{parsing/parsing\-\_\-general.c File Reference}
+\label{parsing__general_8c}\index{parsing/parsing\-\_\-general.\-c@{parsing/parsing\-\_\-general.\-c}}
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}shell.\-h\char`\"{}}\\*
+Include dependency graph for parsing\-\_\-general.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{parsing__general_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf is\-\_\-sep\-\_\-cmd} (char $\ast$str, int i)
+\item 
+{\bf t\-\_\-cmds} $\ast$ {\bf new\-\_\-cmds} (char $\ast${\bf new\-\_\-str}, char sep)
+\item 
+{\bf t\-\_\-cmds} $\ast$ {\bf add\-\_\-cmds} (char $\ast${\bf new\-\_\-str}, {\bf t\-\_\-cmds} $\ast$$\ast$cmds, {\bf t\-\_\-cmds} $\ast$$\ast$tmp, char sep)
+\item 
+void {\bf go\-\_\-next\-\_\-cmds} (char $\ast$str, int $\ast$i, int $\ast$i\-\_\-save)
+\item 
+{\bf t\-\_\-cmds} $\ast$ {\bf parsing\-\_\-general} (char $\ast$str)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{parsing\-\_\-general.\-c@{parsing\-\_\-general.\-c}!add\-\_\-cmds@{add\-\_\-cmds}}
+\index{add\-\_\-cmds@{add\-\_\-cmds}!parsing_general.c@{parsing\-\_\-general.\-c}}
+\subsubsection[{add\-\_\-cmds}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-cmds}$\ast$ add\-\_\-cmds (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{new\-\_\-str, }
+\item[{{\bf t\-\_\-cmds} $\ast$$\ast$}]{cmds, }
+\item[{{\bf t\-\_\-cmds} $\ast$$\ast$}]{tmp, }
+\item[{char}]{sep}
+\end{DoxyParamCaption}
+)}\label{parsing__general_8c_a2d75753bac50088aa4b9be29314f98fc}
+
+
+Definition at line 43 of file parsing\-\_\-general.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parsing__general_8c_a2d75753bac50088aa4b9be29314f98fc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{parsing__general_8c_a2d75753bac50088aa4b9be29314f98fc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{parsing\-\_\-general.\-c@{parsing\-\_\-general.\-c}!go\-\_\-next\-\_\-cmds@{go\-\_\-next\-\_\-cmds}}
+\index{go\-\_\-next\-\_\-cmds@{go\-\_\-next\-\_\-cmds}!parsing_general.c@{parsing\-\_\-general.\-c}}
+\subsubsection[{go\-\_\-next\-\_\-cmds}]{\setlength{\rightskip}{0pt plus 5cm}void go\-\_\-next\-\_\-cmds (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{int $\ast$}]{i, }
+\item[{int $\ast$}]{i\-\_\-save}
+\end{DoxyParamCaption}
+)}\label{parsing__general_8c_a8ce5b1616824e4b8ae78ddd79d8cfc5b}
+
+
+Definition at line 61 of file parsing\-\_\-general.\-c.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{parsing__general_8c_a8ce5b1616824e4b8ae78ddd79d8cfc5b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{parsing\-\_\-general.\-c@{parsing\-\_\-general.\-c}!is\-\_\-sep\-\_\-cmd@{is\-\_\-sep\-\_\-cmd}}
+\index{is\-\_\-sep\-\_\-cmd@{is\-\_\-sep\-\_\-cmd}!parsing_general.c@{parsing\-\_\-general.\-c}}
+\subsubsection[{is\-\_\-sep\-\_\-cmd}]{\setlength{\rightskip}{0pt plus 5cm}int is\-\_\-sep\-\_\-cmd (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{parsing__general_8c_a4d215aeab88defa9d98461ae58615688}
+
+
+Definition at line 15 of file parsing\-\_\-general.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=286pt]{parsing__general_8c_a4d215aeab88defa9d98461ae58615688_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{parsing__general_8c_a4d215aeab88defa9d98461ae58615688_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{parsing\-\_\-general.\-c@{parsing\-\_\-general.\-c}!new\-\_\-cmds@{new\-\_\-cmds}}
+\index{new\-\_\-cmds@{new\-\_\-cmds}!parsing_general.c@{parsing\-\_\-general.\-c}}
+\subsubsection[{new\-\_\-cmds}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-cmds}$\ast$ new\-\_\-cmds (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{new\-\_\-str, }
+\item[{char}]{sep}
+\end{DoxyParamCaption}
+)}\label{parsing__general_8c_a8a47bb6cfcb5378a27b639793a995814}
+
+
+Definition at line 28 of file parsing\-\_\-general.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parsing__general_8c_a8a47bb6cfcb5378a27b639793a995814_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parsing__general_8c_a8a47bb6cfcb5378a27b639793a995814_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{parsing\-\_\-general.\-c@{parsing\-\_\-general.\-c}!parsing\-\_\-general@{parsing\-\_\-general}}
+\index{parsing\-\_\-general@{parsing\-\_\-general}!parsing_general.c@{parsing\-\_\-general.\-c}}
+\subsubsection[{parsing\-\_\-general}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-cmds}$\ast$ parsing\-\_\-general (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\label{parsing__general_8c_abcadffa198fad47ab7758691c6ad4883}
+
+
+Definition at line 68 of file parsing\-\_\-general.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parsing__general_8c_abcadffa198fad47ab7758691c6ad4883_cgraph}
+\end{center}
+\end{figure}
+
+

@@ -1,0 +1,317 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="pipe_8c" kind="file">
+    <compoundname>pipe.c</compoundname>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">sys/wait.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <incdepgraph>
+      <node id="516">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="515">
+        <label>stdlib.h</label>
+      </node>
+      <node id="517">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+      <node id="513">
+        <label>sys/types.h</label>
+      </node>
+      <node id="512">
+        <label>unistd.h</label>
+      </node>
+      <node id="514">
+        <label>sys/wait.h</label>
+      </node>
+      <node id="511">
+        <label>exe/pipe.c</label>
+        <link refid="pipe.c"/>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int check_cmd</definition>
+        <argsstring>(t_data *data, t_cmds *cmds)</argsstring>
+        <name>check_cmd</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1afb1327cff317f4de2efd5a873ff849d7" kindref="member">t_cmds</ref> *</type>
+          <declname>cmds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/pipe.c" line="18" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/pipe.c" bodystart="18" bodyend="29"/>
+        <references refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" compoundref="shell_8h" startline="47">s_cmds::cmd</references>
+        <references refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" compoundref="shell_8h" startline="39">s_cmd::tab</references>
+        <references refid="shell_8h_1a0fae88d1db84fef35d175daa3f9c6b30">get_bin_path</references>
+        <references refid="is__builtin_8c_1ae140477ff5ef84d0d57e8c35dbc877c2" compoundref="is__builtin_8c" startline="13" endline="20">is_builtin</references>
+        <references refid="shell_8h_1a7c8b1bb310843604574d3699e2c3465c">error_cmd_not_found</references>
+        <referencedby refid="pipe_8c_1a6c5a209f770a66dc5c2f73e10ff86db3" compoundref="pipe_8c" startline="31" endline="41">last_pipe</referencedby>
+        <referencedby refid="pipe_8c_1a6267c0f1ac0750c77dc4e676bf140b80" compoundref="pipe_8c" startline="43" endline="68">loop_pipe</referencedby>
+        <referencedby refid="pipe_8c_1ac7254c9ab0581563f740b715d805c301" compoundref="pipe_8c" startline="70" endline="88">first_pipe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pipe_8c_1a6c5a209f770a66dc5c2f73e10ff86db3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int last_pipe</definition>
+        <argsstring>(t_data *data, int pipefd[2], t_cmds *cmds)</argsstring>
+        <name>last_pipe</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pipefd</declname>
+          <array>[2]</array>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1afb1327cff317f4de2efd5a873ff849d7" kindref="member">t_cmds</ref> *</type>
+          <declname>cmds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/pipe.c" line="31" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/pipe.c" bodystart="31" bodyend="41"/>
+        <references refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" compoundref="pipe_8c" startline="18" endline="29">check_cmd</references>
+        <references refid="exe__cmd_8c_1a77721335c9203a6b8979c81c001d77e1" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</references>
+        <references refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" compoundref="shell_8h" startline="47">s_cmds::cmd</references>
+        <referencedby refid="shell_8h_1a0b773212abd3f5ea05fa3ef3945efd1d" compoundref="pipe_8c" startline="90" endline="111">exe_pipe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pipe_8c_1a6267c0f1ac0750c77dc4e676bf140b80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int loop_pipe</definition>
+        <argsstring>(t_data *data, int pipefd[2], t_cmds *cmds)</argsstring>
+        <name>loop_pipe</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pipefd</declname>
+          <array>[2]</array>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1afb1327cff317f4de2efd5a873ff849d7" kindref="member">t_cmds</ref> *</type>
+          <declname>cmds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/pipe.c" line="43" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/pipe.c" bodystart="43" bodyend="68"/>
+        <references refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" compoundref="shell_8h" startline="47">s_cmds::cmd</references>
+        <references refid="structs__cmd_1aadb06044d2e679ed4395a2680dc6962a" compoundref="shell_8h" startline="42">s_cmd::next</references>
+        <references refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" compoundref="pipe_8c" startline="18" endline="29">check_cmd</references>
+        <references refid="exe__cmd_8c_1a77721335c9203a6b8979c81c001d77e1" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</references>
+        <referencedby refid="shell_8h_1a0b773212abd3f5ea05fa3ef3945efd1d" compoundref="pipe_8c" startline="90" endline="111">exe_pipe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pipe_8c_1ac7254c9ab0581563f740b715d805c301" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int first_pipe</definition>
+        <argsstring>(t_data *data, int pipefd[2], t_cmds *cmds)</argsstring>
+        <name>first_pipe</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pipefd</declname>
+          <array>[2]</array>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1afb1327cff317f4de2efd5a873ff849d7" kindref="member">t_cmds</ref> *</type>
+          <declname>cmds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/pipe.c" line="70" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/pipe.c" bodystart="70" bodyend="88"/>
+        <references refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" compoundref="pipe_8c" startline="18" endline="29">check_cmd</references>
+        <references refid="exe__cmd_8c_1a77721335c9203a6b8979c81c001d77e1" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</references>
+        <references refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" compoundref="shell_8h" startline="47">s_cmds::cmd</references>
+        <references refid="structs__cmd_1aadb06044d2e679ed4395a2680dc6962a" compoundref="shell_8h" startline="42">s_cmd::next</references>
+        <referencedby refid="shell_8h_1a0b773212abd3f5ea05fa3ef3945efd1d" compoundref="pipe_8c" startline="90" endline="111">exe_pipe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pipe_8c_1a2fbfcf1b08d99f573f1102a669d1b728" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int exe_pipe</definition>
+        <argsstring>(t_data *data, t_cmds *cmds)</argsstring>
+        <name>exe_pipe</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1afb1327cff317f4de2efd5a873ff849d7" kindref="member">t_cmds</ref> *</type>
+          <declname>cmds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/pipe.c" line="90" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/pipe.c" bodystart="90" bodyend="111"/>
+        <references refid="pipe_8c_1ac7254c9ab0581563f740b715d805c301" compoundref="pipe_8c" startline="70" endline="88">first_pipe</references>
+        <references refid="pipe_8c_1a6267c0f1ac0750c77dc4e676bf140b80" compoundref="pipe_8c" startline="43" endline="68">loop_pipe</references>
+        <references refid="pipe_8c_1a6c5a209f770a66dc5c2f73e10ff86db3" compoundref="pipe_8c" startline="31" endline="41">last_pipe</references>
+        <references refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" compoundref="shell_8h" startline="73">s_data::return_exe</references>
+        <references refid="shell_8h_1a7c48c503a505583c6693462bdda06b45">segfault</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>pipe.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/bauer_a/rendu/PSU_2014_42sh</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;bauer_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Mon<sp/>Apr<sp/>20<sp/>18:46:01<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>14:03:07<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/wait.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" kindref="member">check_cmd</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/><ref refid="structs__cmds" kindref="compound">t_cmds</ref><sp/>*cmds)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cmds<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref><sp/>!=<sp/>NULL<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref>-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref><sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref>-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[0]<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(access(<ref refid="shell_8h_1a0fae88d1db84fef35d175daa3f9c6b30" kindref="member">get_bin_path</ref>(data,<sp/>cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref>-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[0]),<sp/>F_OK<sp/>|<sp/>X_OK)<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>!<ref refid="is__builtin_8c_1ae140477ff5ef84d0d57e8c35dbc877c2" kindref="member">is_builtin</ref>(cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref>-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[0]))</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="shell_8h_1a7c8b1bb310843604574d3699e2c3465c" kindref="member">error_cmd_not_found</ref>(cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref>-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[0],<sp/>1));</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="pipe_8c_1a6c5a209f770a66dc5c2f73e10ff86db3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="pipe_8c_1a6c5a209f770a66dc5c2f73e10ff86db3" kindref="member">last_pipe</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pipefd[2],<sp/><ref refid="structs__cmds" kindref="compound">t_cmds</ref><sp/>*cmds)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" kindref="member">check_cmd</ref>(data,<sp/>cmds))</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>close(pipefd[1]);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dup2(pipefd[0],<sp/>0)<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="exe__cmd_8c_1a77721335c9203a6b8979c81c001d77e1" kindref="member">exe_cmd</ref>(data,<sp/>cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref>,<sp/>1))</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="pipe_8c_1a6267c0f1ac0750c77dc4e676bf140b80" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="pipe_8c_1a6267c0f1ac0750c77dc4e676bf140b80" kindref="member">loop_pipe</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pipefd[2],<sp/><ref refid="structs__cmds" kindref="compound">t_cmds</ref><sp/>*cmds)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>pid_t<sp/><sp/><sp/><sp/><sp/>pid;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref>-&gt;<ref refid="structs__cmd_1aadb06044d2e679ed4395a2680dc6962a" kindref="member">next</ref><sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" kindref="member">check_cmd</ref>(data,<sp/>cmds))</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>close(pipefd[1]);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dup2(pipefd[0],<sp/>0);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pipe(pipefd)<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pid<sp/>=<sp/>fork())<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pid<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>close(pipefd[0]);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dup2(pipefd[1],<sp/>1)<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="exe__cmd_8c_1a77721335c9203a6b8979c81c001d77e1" kindref="member">exe_cmd</ref>(data,<sp/>cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref>,<sp/>1))</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref><sp/>=<sp/>cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref>-&gt;<ref refid="structs__cmd_1aadb06044d2e679ed4395a2680dc6962a" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="pipe_8c_1ac7254c9ab0581563f740b715d805c301" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="pipe_8c_1ac7254c9ab0581563f740b715d805c301" kindref="member">first_pipe</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pipefd[2],<sp/><ref refid="structs__cmds" kindref="compound">t_cmds</ref><sp/>*cmds)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>pid_t<sp/><sp/><sp/><sp/><sp/>pid;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" kindref="member">check_cmd</ref>(data,<sp/>cmds))</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pid<sp/>=<sp/>fork())<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pid<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>close(pipefd[0]);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(dup2(pipefd[1],<sp/>1)<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="exe__cmd_8c_1a77721335c9203a6b8979c81c001d77e1" kindref="member">exe_cmd</ref>(data,<sp/>cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref>,<sp/>1))</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref><sp/>=<sp/>cmds-&gt;<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref>-&gt;<ref refid="structs__cmd_1aadb06044d2e679ed4395a2680dc6962a" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="shell_8h_1a0b773212abd3f5ea05fa3ef3945efd1d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="pipe_8c_1a2fbfcf1b08d99f573f1102a669d1b728" kindref="member">exe_pipe</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/><ref refid="structs__cmds" kindref="compound">t_cmds</ref><sp/>*cmds)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>pid_t<sp/><sp/><sp/><sp/><sp/>pid_general;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pipefd[2];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pid_general<sp/>=<sp/>fork())<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pid_general<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pipe(pipefd)<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="pipe_8c_1ac7254c9ab0581563f740b715d805c301" kindref="member">first_pipe</ref>(data,<sp/>pipefd,<sp/>cmds))</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="pipe_8c_1a6267c0f1ac0750c77dc4e676bf140b80" kindref="member">loop_pipe</ref>(data,<sp/>pipefd,<sp/>cmds))</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="pipe_8c_1a6c5a209f770a66dc5c2f73e10ff86db3" kindref="member">last_pipe</ref>(data,<sp/>pipefd,<sp/>cmds))</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>wait(&amp;(data-&gt;<ref refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" kindref="member">return_exe</ref>));</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="shell_8h_1a7c48c503a505583c6693462bdda06b45" kindref="member">segfault</ref>(data-&gt;<ref refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" kindref="member">return_exe</ref>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/pipe.c"/>
+  </compounddef>
+</doxygen>

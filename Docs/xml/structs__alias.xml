@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structs__alias" kind="struct" prot="public">
+    <compoundname>s_alias</compoundname>
+    <includes refid="shell_8h" local="no">shell.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structs__alias_1a32487cbad62d1e9a7ea00010f5dc58bb" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* old</definition>
+        <argsstring></argsstring>
+        <name>old</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="19" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="shell_8h_1ad5f519b4cbb35030e5d5713a466439e7" compoundref="alias_8c" startline="21" endline="38">new_alias</referencedby>
+        <referencedby refid="shell_8h_1ae7ca988050564368cd481dd94902435b" compoundref="alias_8c" startline="40" endline="54">alias_finder</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__alias_1a80de185e58c66866a3e560697b9fb978" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* new</definition>
+        <argsstring></argsstring>
+        <name>new</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="20" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="shell_8h_1ae7ca988050564368cd481dd94902435b" compoundref="alias_8c" startline="40" endline="54">alias_finder</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__alias_1a228d8745e3b5e095fe1a256c236a8d9a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structs__alias" kindref="compound">s_alias</ref> *</type>
+        <definition>struct s_alias* next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="21" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="shell_8h_1ad5f519b4cbb35030e5d5713a466439e7" compoundref="alias_8c" startline="21" endline="38">new_alias</referencedby>
+        <referencedby refid="shell_8h_1ae7ca988050564368cd481dd94902435b" compoundref="alias_8c" startline="40" endline="54">alias_finder</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="29">
+        <label>s_alias</label>
+        <link refid="structs__alias"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="18" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="17" bodyend="22"/>
+    <listofallmembers>
+      <member refid="structs__alias_1a80de185e58c66866a3e560697b9fb978" prot="public" virt="non-virtual"><scope>s_alias</scope><name>new</name></member>
+      <member refid="structs__alias_1a228d8745e3b5e095fe1a256c236a8d9a" prot="public" virt="non-virtual"><scope>s_alias</scope><name>next</name></member>
+      <member refid="structs__alias_1a32487cbad62d1e9a7ea00010f5dc58bb" prot="public" virt="non-virtual"><scope>s_alias</scope><name>old</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

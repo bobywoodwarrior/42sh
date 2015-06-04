@@ -1,0 +1,10 @@
+<map id="set_pwd_old_pwd" name="set_pwd_old_pwd">
+<area shape="rect" id="node3" href="$builtin_2utils_8c.html#a0059bf9838c7770b46270fedbc869799" title="get_env_value" alt="" coords="185,5,295,32"/>
+<area shape="rect" id="node5" href="$my__strlen_8c.html#ac7e9bd08d068851e31a5b6d408004638" title="my_strlen" alt="" coords="502,132,581,159"/>
+<area shape="rect" id="node7" href="$my__strcpy_8c.html#a73fd71e5a924f50c46bbdfb8b76fc6f7" title="my_strcpy" alt="" coords="357,157,440,184"/>
+<area shape="rect" id="node9" href="$getvar_8c.html#a2883a48551d7c810ebd592fb241efeed" title="my_cstrconcat" alt="" coords="345,5,453,32"/>
+<area shape="rect" id="node12" href="$cd_8c.html#af74884482c27a5e006206669ebbd5b8e" title="get_new_pwd" alt="" coords="187,107,293,133"/>
+<area shape="rect" id="node18" href="$my__strdup_8c.html#a4548135c4f1cfcaeff31c8dabb3692d3" title="my_strdup" alt="" coords="199,208,281,235"/>
+<area shape="rect" id="node15" href="$my__strcmp_8c.html#a7656d2f543a26ba1552b06f75667ba3c" title="my_strcmp" alt="" coords="355,107,442,133"/>
+<area shape="rect" id="node20" href="$get__next__line_8c.html#a43354ef027ff107d540fe9cd7b0aed1b" title="new_str" alt="" coords="365,259,433,285"/>
+</map>

@@ -1,0 +1,170 @@
+\section{prompt\-\_\-read\-\_\-termcaps/gere\-\_\-key.c File Reference}
+\label{gere__key_8c}\index{prompt\-\_\-read\-\_\-termcaps/gere\-\_\-key.\-c@{prompt\-\_\-read\-\_\-termcaps/gere\-\_\-key.\-c}}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}shell.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lib.\-h\char`\"{}}\\*
+Include dependency graph for gere\-\_\-key.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{gere__key_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void $\ast$ {\bf gere\-\_\-history} (char $\ast$cmd, char $\ast$c, {\bf t\-\_\-history} $\ast$list, {\bf t\-\_\-stock} $\ast$ptr)
+\item 
+void $\ast$ {\bf gere\-\_\-char} ({\bf t\-\_\-stock} $\ast$ptr)
+\item 
+void $\ast$ {\bf gere\-\_\-arrow} ({\bf t\-\_\-stock} $\ast$ptr)
+\item 
+void {\bf gere\-\_\-tab} ({\bf t\-\_\-stock} $\ast$ptr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{gere\-\_\-key.\-c@{gere\-\_\-key.\-c}!gere\-\_\-arrow@{gere\-\_\-arrow}}
+\index{gere\-\_\-arrow@{gere\-\_\-arrow}!gere_key.c@{gere\-\_\-key.\-c}}
+\subsubsection[{gere\-\_\-arrow}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ gere\-\_\-arrow (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-stock} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\label{gere__key_8c_a9a93184b1cbfe4b19e576e90d77dfbce}
+
+
+Definition at line 57 of file gere\-\_\-key.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gere__key_8c_a9a93184b1cbfe4b19e576e90d77dfbce_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{gere__key_8c_a9a93184b1cbfe4b19e576e90d77dfbce_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{gere\-\_\-key.\-c@{gere\-\_\-key.\-c}!gere\-\_\-char@{gere\-\_\-char}}
+\index{gere\-\_\-char@{gere\-\_\-char}!gere_key.c@{gere\-\_\-key.\-c}}
+\subsubsection[{gere\-\_\-char}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ gere\-\_\-char (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-stock} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\label{gere__key_8c_abe57af5513acea09813b87df7b582f27}
+
+
+Definition at line 38 of file gere\-\_\-key.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gere__key_8c_abe57af5513acea09813b87df7b582f27_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{gere__key_8c_abe57af5513acea09813b87df7b582f27_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{gere\-\_\-key.\-c@{gere\-\_\-key.\-c}!gere\-\_\-history@{gere\-\_\-history}}
+\index{gere\-\_\-history@{gere\-\_\-history}!gere_key.c@{gere\-\_\-key.\-c}}
+\subsubsection[{gere\-\_\-history}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ gere\-\_\-history (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{cmd, }
+\item[{char $\ast$}]{c, }
+\item[{{\bf t\-\_\-history} $\ast$}]{list, }
+\item[{{\bf t\-\_\-stock} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\label{gere__key_8c_a53f1b007a4f559c1ed15fa556ad75927}
+
+
+Definition at line 16 of file gere\-\_\-key.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gere__key_8c_a53f1b007a4f559c1ed15fa556ad75927_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{gere__key_8c_a53f1b007a4f559c1ed15fa556ad75927_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{gere\-\_\-key.\-c@{gere\-\_\-key.\-c}!gere\-\_\-tab@{gere\-\_\-tab}}
+\index{gere\-\_\-tab@{gere\-\_\-tab}!gere_key.c@{gere\-\_\-key.\-c}}
+\subsubsection[{gere\-\_\-tab}]{\setlength{\rightskip}{0pt plus 5cm}void gere\-\_\-tab (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-stock} $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}\label{gere__key_8c_ac7b5d923e42cfb0580ecd5200d477268}
+
+
+Definition at line 88 of file gere\-\_\-key.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gere__key_8c_ac7b5d923e42cfb0580ecd5200d477268_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{gere__key_8c_ac7b5d923e42cfb0580ecd5200d477268_icgraph}
+\end{center}
+\end{figure}
+
+

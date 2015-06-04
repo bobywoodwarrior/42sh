@@ -1,0 +1,2188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="shell_8h" kind="file">
+    <compoundname>shell.h</compoundname>
+    <includedby refid="alias_8c" local="yes">alias/alias.c</includedby>
+    <includedby refid="alias__etc_8c" local="yes">alias/alias_etc.c</includedby>
+    <includedby refid="gnl_8c" local="yes">alias/gnl.c</includedby>
+    <includedby refid="pars__alias_8c" local="yes">alias/pars_alias.c</includedby>
+    <includedby refid="auto__complete_8c" local="yes">auto_complete/auto_complete.c</includedby>
+    <includedby refid="functions__complete_8c" local="yes">auto_complete/functions_complete.c</includedby>
+    <includedby refid="exe__cmd_8c" local="yes">exe/exe_cmd.c</includedby>
+    <includedby refid="pipe_8c" local="yes">exe/pipe.c</includedby>
+    <includedby refid="redirection__left_8c" local="yes">exe/redirection_left.c</includedby>
+    <includedby refid="redirection__right_8c" local="yes">exe/redirection_right.c</includedby>
+    <includedby refid="glob_8c" local="yes">glob/glob.c</includedby>
+    <includedby refid="stars_8c" local="yes">glob/stars.c</includedby>
+    <includedby refid="parsing__cmd_8c" local="yes">parsing/parsing_cmd.c</includedby>
+    <includedby refid="parsing__general_8c" local="yes">parsing/parsing_general.c</includedby>
+    <includedby refid="parsing__pipe_8c" local="yes">parsing/parsing_pipe.c</includedby>
+    <includedby refid="parsing__tilde_8c" local="yes">parsing/parsing_tilde.c</includedby>
+    <includedby refid="redirection_8c" local="yes">parsing/redirection.c</includedby>
+    <includedby refid="clean__screen_8c" local="yes">prompt_read_termcaps/clean_screen.c</includedby>
+    <includedby refid="clear__line_8c" local="yes">prompt_read_termcaps/clear_line.c</includedby>
+    <includedby refid="gere__key_8c" local="yes">prompt_read_termcaps/gere_key.c</includedby>
+    <includedby refid="init_8c" local="yes">prompt_read_termcaps/init.c</includedby>
+    <includedby refid="insert__list__double_8c" local="yes">prompt_read_termcaps/insert_list_double.c</includedby>
+    <includedby refid="last__word_8c" local="yes">prompt_read_termcaps/last_word.c</includedby>
+    <includedby refid="loop__read_8c" local="yes">prompt_read_termcaps/loop_read.c</includedby>
+    <includedby refid="modif__cmd_8c" local="yes">prompt_read_termcaps/modif_cmd.c</includedby>
+    <includedby refid="move_8c" local="yes">prompt_read_termcaps/move.c</includedby>
+    <includedby refid="print__cursor_8c" local="yes">prompt_read_termcaps/print_cursor.c</includedby>
+    <includedby refid="prompt__dyn_8c" local="yes">prompt_read_termcaps/prompt_dyn.c</includedby>
+    <includedby refid="tab__fonc_8c" local="yes">ps1/tab_fonc.c</includedby>
+    <includedby refid="ps1_2utils_8c" local="yes">ps1/utils.c</includedby>
+    <includedby refid="builtin_8h" local="yes">include/builtin.h</includedby>
+    <invincdepgraph>
+      <node id="603">
+        <label>include/shell.h</label>
+        <link refid="shell.h"/>
+        <childnode refid="604" relation="include">
+        </childnode>
+        <childnode refid="605" relation="include">
+        </childnode>
+        <childnode refid="606" relation="include">
+        </childnode>
+        <childnode refid="607" relation="include">
+        </childnode>
+        <childnode refid="608" relation="include">
+        </childnode>
+        <childnode refid="609" relation="include">
+        </childnode>
+        <childnode refid="610" relation="include">
+        </childnode>
+        <childnode refid="611" relation="include">
+        </childnode>
+        <childnode refid="612" relation="include">
+        </childnode>
+        <childnode refid="613" relation="include">
+        </childnode>
+        <childnode refid="614" relation="include">
+        </childnode>
+        <childnode refid="615" relation="include">
+        </childnode>
+        <childnode refid="616" relation="include">
+        </childnode>
+        <childnode refid="617" relation="include">
+        </childnode>
+        <childnode refid="618" relation="include">
+        </childnode>
+        <childnode refid="619" relation="include">
+        </childnode>
+        <childnode refid="620" relation="include">
+        </childnode>
+        <childnode refid="621" relation="include">
+        </childnode>
+        <childnode refid="622" relation="include">
+        </childnode>
+        <childnode refid="623" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+        <childnode refid="625" relation="include">
+        </childnode>
+        <childnode refid="626" relation="include">
+        </childnode>
+        <childnode refid="627" relation="include">
+        </childnode>
+        <childnode refid="628" relation="include">
+        </childnode>
+        <childnode refid="629" relation="include">
+        </childnode>
+        <childnode refid="630" relation="include">
+        </childnode>
+        <childnode refid="631" relation="include">
+        </childnode>
+        <childnode refid="632" relation="include">
+        </childnode>
+        <childnode refid="633" relation="include">
+        </childnode>
+        <childnode refid="634" relation="include">
+        </childnode>
+      </node>
+      <node id="610">
+        <label>exe/exe_cmd.c</label>
+        <link refid="exe__cmd_8c"/>
+      </node>
+      <node id="612">
+        <label>exe/redirection_left.c</label>
+        <link refid="redirection__left_8c"/>
+      </node>
+      <node id="624">
+        <label>prompt_read_termcaps/init.c</label>
+        <link refid="init_8c"/>
+      </node>
+      <node id="619">
+        <label>parsing/parsing_tilde.c</label>
+        <link refid="parsing__tilde_8c"/>
+      </node>
+      <node id="636">
+        <label>builtin/cd.c</label>
+        <link refid="cd_8c"/>
+      </node>
+      <node id="631">
+        <label>prompt_read_termcaps/prompt_dyn.c</label>
+        <link refid="prompt__dyn_8c"/>
+      </node>
+      <node id="628">
+        <label>prompt_read_termcaps/modif_cmd.c</label>
+        <link refid="modif__cmd_8c"/>
+      </node>
+      <node id="615">
+        <label>glob/stars.c</label>
+        <link refid="stars_8c"/>
+      </node>
+      <node id="634">
+        <label>include/builtin.h</label>
+        <link refid="builtin_8h"/>
+        <childnode refid="605" relation="include">
+        </childnode>
+        <childnode refid="607" relation="include">
+        </childnode>
+        <childnode refid="635" relation="include">
+        </childnode>
+        <childnode refid="636" relation="include">
+        </childnode>
+        <childnode refid="637" relation="include">
+        </childnode>
+        <childnode refid="638" relation="include">
+        </childnode>
+        <childnode refid="639" relation="include">
+        </childnode>
+        <childnode refid="610" relation="include">
+        </childnode>
+        <childnode refid="619" relation="include">
+        </childnode>
+        <childnode refid="632" relation="include">
+        </childnode>
+        <childnode refid="633" relation="include">
+        </childnode>
+      </node>
+      <node id="633">
+        <label>ps1/utils.c</label>
+        <link refid="ps1_2utils_8c"/>
+      </node>
+      <node id="629">
+        <label>prompt_read_termcaps/move.c</label>
+        <link refid="move_8c"/>
+      </node>
+      <node id="616">
+        <label>parsing/parsing_cmd.c</label>
+        <link refid="parsing__cmd_8c"/>
+      </node>
+      <node id="637">
+        <label>builtin/forbuiltin.c</label>
+        <link refid="forbuiltin_8c"/>
+      </node>
+      <node id="618">
+        <label>parsing/parsing_pipe.c</label>
+        <link refid="parsing__pipe_8c"/>
+      </node>
+      <node id="606">
+        <label>alias/gnl.c</label>
+        <link refid="gnl_8c"/>
+      </node>
+      <node id="623">
+        <label>prompt_read_termcaps/gere_key.c</label>
+        <link refid="gere__key_8c"/>
+      </node>
+      <node id="608">
+        <label>auto_complete/auto_complete.c</label>
+        <link refid="auto__complete_8c"/>
+      </node>
+      <node id="632">
+        <label>ps1/tab_fonc.c</label>
+        <link refid="tab__fonc_8c"/>
+      </node>
+      <node id="625">
+        <label>prompt_read_termcaps/insert_list_double.c</label>
+        <link refid="insert__list__double_8c"/>
+      </node>
+      <node id="621">
+        <label>prompt_read_termcaps/clean_screen.c</label>
+        <link refid="clean__screen_8c"/>
+      </node>
+      <node id="620">
+        <label>parsing/redirection.c</label>
+        <link refid="redirection_8c"/>
+      </node>
+      <node id="605">
+        <label>alias/alias_etc.c</label>
+        <link refid="alias__etc_8c"/>
+      </node>
+      <node id="635">
+        <label>builtin/builtin.c</label>
+        <link refid="builtin_8c"/>
+      </node>
+      <node id="614">
+        <label>glob/glob.c</label>
+        <link refid="glob_8c"/>
+      </node>
+      <node id="639">
+        <label>builtin/top_builtin.c</label>
+        <link refid="top__builtin_8c"/>
+      </node>
+      <node id="617">
+        <label>parsing/parsing_general.c</label>
+        <link refid="parsing__general_8c"/>
+      </node>
+      <node id="638">
+        <label>builtin/getvar.c</label>
+        <link refid="getvar_8c"/>
+      </node>
+      <node id="613">
+        <label>exe/redirection_right.c</label>
+        <link refid="redirection__right_8c"/>
+      </node>
+      <node id="611">
+        <label>exe/pipe.c</label>
+        <link refid="pipe_8c"/>
+      </node>
+      <node id="607">
+        <label>alias/pars_alias.c</label>
+        <link refid="pars__alias_8c"/>
+      </node>
+      <node id="604">
+        <label>alias/alias.c</label>
+        <link refid="alias_8c"/>
+      </node>
+      <node id="626">
+        <label>prompt_read_termcaps/last_word.c</label>
+        <link refid="last__word_8c"/>
+      </node>
+      <node id="627">
+        <label>prompt_read_termcaps/loop_read.c</label>
+        <link refid="loop__read_8c"/>
+      </node>
+      <node id="630">
+        <label>prompt_read_termcaps/print_cursor.c</label>
+        <link refid="print__cursor_8c"/>
+      </node>
+      <node id="609">
+        <label>auto_complete/functions_complete.c</label>
+        <link refid="functions__complete_8c"/>
+      </node>
+      <node id="622">
+        <label>prompt_read_termcaps/clear_line.c</label>
+        <link refid="clear__line_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structs__alias" prot="public">s_alias</innerclass>
+    <innerclass refid="structs__list__line" prot="public">s_list_line</innerclass>
+    <innerclass refid="structs__list" prot="public">s_list</innerclass>
+    <innerclass refid="structs__cmd" prot="public">s_cmd</innerclass>
+    <innerclass refid="structs__cmds" prot="public">s_cmds</innerclass>
+    <innerclass refid="structs__stock" prot="public">s_stock</innerclass>
+    <innerclass refid="structs__history" prot="public">s_history</innerclass>
+    <innerclass refid="structs__data" prot="public">s_data</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="shell_8h_1a86e1969b50e55e5d506233078ca0fa4c" prot="public" static="no">
+        <name>READ_SIZE</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="14" column="10" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="shell_8h_1a6754f4915186decc3a861cd78d15499e" compoundref="gnl_8c" startline="73" endline="100">gnl</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="shell_8h_1a7d28911d2cf3becfbdc3bb2271375405" prot="public" static="no">
+        <name>RCNAME</name>
+        <initializer>&quot;.42rc&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="15" column="10" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="15" bodyend="-1"/>
+        <referencedby refid="shell_8h_1adea8df0d450d18361023ed783f462f39" compoundref="alias_8c" startline="56" endline="72">get_line_file</referencedby>
+        <referencedby refid="pars__alias_8c_1a203bc66f586da530ebb9eeee519bd082" compoundref="pars__alias_8c" startline="21" endline="45">get_bash</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="shell_8h_1a45e9b5e9787a31371e46210ff3730e68" prot="public" static="no">
+        <type>struct <ref refid="structs__alias" kindref="compound">s_alias</ref></type>
+        <definition>typedef struct s_alias			 t_alias</definition>
+        <argsstring></argsstring>
+        <name>t_alias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="shell_8h_1ab4590bb20f2c51674483a55293e861eb" prot="public" static="no">
+        <type>struct <ref refid="structs__list__line" kindref="compound">s_list_line</ref></type>
+        <definition>typedef struct s_list_line			 t_list_line</definition>
+        <argsstring></argsstring>
+        <name>t_list_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="shell_8h_1aa073beba29d3550fb1d0d3170f122e91" prot="public" static="no">
+        <type>struct <ref refid="structs__list" kindref="compound">s_list</ref></type>
+        <definition>typedef struct s_list			 t_list</definition>
+        <argsstring></argsstring>
+        <name>t_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" prot="public" static="no">
+        <type>struct <ref refid="structs__cmd" kindref="compound">s_cmd</ref></type>
+        <definition>typedef struct s_cmd			 t_cmd</definition>
+        <argsstring></argsstring>
+        <name>t_cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="shell_8h_1afb1327cff317f4de2efd5a873ff849d7" prot="public" static="no">
+        <type>struct <ref refid="structs__cmds" kindref="compound">s_cmds</ref></type>
+        <definition>typedef struct s_cmds			 t_cmds</definition>
+        <argsstring></argsstring>
+        <name>t_cmds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" prot="public" static="no">
+        <type>struct <ref refid="structs__stock" kindref="compound">s_stock</ref></type>
+        <definition>typedef struct s_stock			 t_stock</definition>
+        <argsstring></argsstring>
+        <name>t_stock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" prot="public" static="no">
+        <type>struct <ref refid="structs__history" kindref="compound">s_history</ref></type>
+        <definition>typedef struct s_history                        t_history</definition>
+        <argsstring></argsstring>
+        <name>t_history</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="shell_8h_1ad97ee37a039f787c83ca3af760399b65" prot="public" static="no">
+        <type>struct <ref refid="structs__data" kindref="compound">s_data</ref></type>
+        <definition>typedef struct s_data			 t_data</definition>
+        <argsstring></argsstring>
+        <name>t_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="76" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" prot="public" static="no" mutable="no">
+        <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        <definition>t_data* g_data</definition>
+        <argsstring></argsstring>
+        <name>g_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="78" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="parsing__pipe_8c_1a1ffdb84b9297c89dcd30e9402f2c3515" compoundref="parsing__pipe_8c" startline="36" endline="51">add_cmd</referencedby>
+        <referencedby refid="shell_8h_1a016d082e790265a3ffe8fbff90b2a0b2" compoundref="clean__screen_8c" startline="18" endline="39">clean_screen</referencedby>
+        <referencedby refid="shell_8h_1a355426ca95d2d3e650e274a762d1d99b" compoundref="gere__key_8c" startline="88" endline="105">gere_tab</referencedby>
+        <referencedby refid="shell_8h_1a929bf8ea49ac6f94a2b1ab00c9f16343" compoundref="modif__cmd_8c" startline="14" endline="38">add_char</referencedby>
+        <referencedby refid="shell_8h_1a8a81cc045a4530835ce45b6817e17335" compoundref="modif__cmd_8c" startline="40" endline="67">delete_char</referencedby>
+        <referencedby refid="shell_8h_1a10717a0c53430c97d2ccedbfb1728211" compoundref="modif__cmd_8c" startline="69" endline="87">delete_backward</referencedby>
+        <referencedby refid="shell_8h_1acbb6e8e618f4c43c7eeb93923b92e385" compoundref="move_8c" startline="14" endline="26">up</referencedby>
+        <referencedby refid="shell_8h_1a3a9f901ffe6cc6b5f7d902526c01748e" compoundref="move_8c" startline="28" endline="50">down</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="shell_8h_1a75146577e9b06cc37c090f3c94b2278e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+        <definition>t_cmd* parsing_cmd</definition>
+        <argsstring>(char *)</argsstring>
+        <name>parsing_cmd</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="80" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" bodystart="87" bodyend="109"/>
+        <references refid="parsing__cmd_8c_1ae3a29b783909de965bd6285058ad5694" compoundref="parsing__cmd_8c" startline="74" endline="85">init_parsing</references>
+        <references refid="parsing__cmd_8c_1a76889c4c767c0af44a85984cbaf48d62" compoundref="parsing__cmd_8c" startline="16" endline="21">is_redi</references>
+        <references refid="redirection_8c_1ab141cb2c1876246eb1194566beb195c8" compoundref="redirection_8c" startline="46" endline="71">add_redi</references>
+        <references refid="parsing__cmd_8c_1a14a8f0c61b979cd9b0413c120dff438a" compoundref="parsing__cmd_8c" startline="46" endline="72">add_word_to_tab</references>
+        <referencedby refid="parsing__pipe_8c_1a1ffdb84b9297c89dcd30e9402f2c3515" compoundref="parsing__pipe_8c" startline="36" endline="51">add_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1ae8d6b38307281c05e1b03ca11f8bbb8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+        <definition>t_cmd* parsing_pipe</definition>
+        <argsstring>(char *)</argsstring>
+        <name>parsing_pipe</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="81" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_pipe.c" bodystart="53" bodyend="78"/>
+        <references refid="parsing__pipe_8c_1a1ffdb84b9297c89dcd30e9402f2c3515" compoundref="parsing__pipe_8c" startline="36" endline="51">add_cmd</references>
+        <references refid="parsing__pipe_8c_1af2f9183740ca6c997f4137fe08c50ff5" compoundref="parsing__pipe_8c" startline="25" endline="34">calc_new_str</references>
+        <references refid="parsing__pipe_8c_1aba9655c6270687dc8c90b6739c192f85" compoundref="parsing__pipe_8c" startline="16" endline="23">next_cmd</references>
+        <referencedby refid="parsing__general_8c_1a8a47bb6cfcb5378a27b639793a995814" compoundref="parsing__general_8c" startline="28" endline="41">new_cmds</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1ae9c51201cb3ad89b921d2f3576875ca4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1afb1327cff317f4de2efd5a873ff849d7" kindref="member">t_cmds</ref> *</type>
+        <definition>t_cmds* parsing_general</definition>
+        <argsstring>(char *)</argsstring>
+        <name>parsing_general</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="82" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_general.c" bodystart="68" bodyend="94"/>
+        <references refid="parsing__general_8c_1a4d215aeab88defa9d98461ae58615688" compoundref="parsing__general_8c" startline="15" endline="26">is_sep_cmd</references>
+        <references refid="parsing__general_8c_1a2d75753bac50088aa4b9be29314f98fc" compoundref="parsing__general_8c" startline="43" endline="59">add_cmds</references>
+        <references refid="parsing__pipe_8c_1af2f9183740ca6c997f4137fe08c50ff5" compoundref="parsing__pipe_8c" startline="25" endline="34">calc_new_str</references>
+        <references refid="parsing__general_8c_1a8ce5b1616824e4b8ae78ddd79d8cfc5b" compoundref="parsing__general_8c" startline="61" endline="66">go_next_cmds</references>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1afa6fff44bde50c8a0f4b8868f6b81777" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        <definition>t_data* check_recur</definition>
+        <argsstring>(t_data *data, char *old, char *new)</argsstring>
+        <name>check_recur</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>old</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="83" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/alias.c" bodystart="102" bodyend="107"/>
+        <references refid="structs__data_1a605d498106be2e521c13025a71deb7ba" compoundref="shell_8h" startline="69">s_data::alias</references>
+        <references refid="alias_8c_1ad5f519b4cbb35030e5d5713a466439e7" compoundref="alias_8c" startline="21" endline="38">new_alias</references>
+        <referencedby refid="pars__alias_8c_1a7d7873e60a328ecd3a34c3370594b040" compoundref="pars__alias_8c" startline="76" endline="98">get_old_new</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a94ed7403f0bc582353a563669932efdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        <definition>t_data* get_all_alias</definition>
+        <argsstring>(t_data *data, char **bash, int x)</argsstring>
+        <name>get_all_alias</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>bash</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="84" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c" bodystart="100" bodyend="117"/>
+        <references refid="my__strncmp_8c_1a5c4d2d32920036f1ad38c2bd614abfd9" compoundref="my__strncmp_8c" startline="11" endline="23">my_strncmp</references>
+        <references refid="pars__alias_8c_1a7d7873e60a328ecd3a34c3370594b040" compoundref="pars__alias_8c" startline="76" endline="98">get_old_new</references>
+        <references refid="alias__etc_8c_1acd9ad0dfae53c8683ec2597a188e6c1b" compoundref="alias__etc_8c" startline="33" endline="60">bashset</references>
+        <referencedby refid="shell_8h_1a8e5633ce3ca1c968f88de68f3ed735c7" compoundref="pars__alias_8c" startline="119" endline="128">pars_alias</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1ad5f519b4cbb35030e5d5713a466439e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1a45e9b5e9787a31371e46210ff3730e68" kindref="member">t_alias</ref> *</type>
+        <definition>t_alias* new_alias</definition>
+        <argsstring>(t_alias *old, char *first, char *sec)</argsstring>
+        <name>new_alias</name>
+        <param>
+          <type><ref refid="shell_8h_1a45e9b5e9787a31371e46210ff3730e68" kindref="member">t_alias</ref> *</type>
+          <declname>old</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>first</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>sec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="85" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/alias.c" bodystart="21" bodyend="38"/>
+        <references refid="structs__alias_1a228d8745e3b5e095fe1a256c236a8d9a" compoundref="shell_8h" startline="21">s_alias::next</references>
+        <references refid="structs__alias_1a32487cbad62d1e9a7ea00010f5dc58bb" compoundref="shell_8h" startline="19">s_alias::old</references>
+        <referencedby refid="shell_8h_1afa6fff44bde50c8a0f4b8868f6b81777" compoundref="alias_8c" startline="102" endline="107">check_recur</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a011086cf248f555db073ba6df76030e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> *</type>
+        <definition>t_history* insert_list_double</definition>
+        <argsstring>(t_history *, char *)</argsstring>
+        <name>insert_list_double</name>
+        <param>
+          <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> *</type>
+        </param>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="86" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/insert_list_double.c" bodystart="14" bodyend="28"/>
+        <references refid="structs__history_1a91a70b77df95bd8b0830b49a094c2acb" compoundref="shell_8h" startline="61">s_history::data</references>
+        <references refid="structs__history_1af7dadc2c1ca47fd86993081a65a8d9e8" compoundref="shell_8h" startline="63">s_history::prev</references>
+        <references refid="structs__history_1a5d4e20503141c1617cd3ef296ea66d0e" compoundref="shell_8h" startline="62">s_history::next</references>
+        <referencedby refid="shell_8h_1a1e8106cf0c11e2bd136b43a9cc608c9a" compoundref="prompt__dyn_8c" startline="45" endline="57">get_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a03522e35827e231817075a4d6389c77c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pars_ps1</definition>
+        <argsstring>(char **)</argsstring>
+        <name>pars_ps1</name>
+        <param>
+          <type>char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="87" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/ps1/utils.c" bodystart="92" bodyend="103"/>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+        <references refid="ps1_2utils_8c_1a526e44b33bc72aa77f1cd2eb7e4ee6a6" compoundref="ps1_2utils_8c" startline="56" endline="67">get_ps1</references>
+        <references refid="ps1_2utils_8c_1a3227f1af4721393b70d7b8a08692c6c6" compoundref="ps1_2utils_8c" startline="69" endline="90">fix_ps1</references>
+        <referencedby refid="shell_8h_1a016d082e790265a3ffe8fbff90b2a0b2" compoundref="clean__screen_8c" startline="18" endline="39">clean_screen</referencedby>
+        <referencedby refid="shell_8h_1a355426ca95d2d3e650e274a762d1d99b" compoundref="gere__key_8c" startline="88" endline="105">gere_tab</referencedby>
+        <referencedby refid="shell_8h_1a929bf8ea49ac6f94a2b1ab00c9f16343" compoundref="modif__cmd_8c" startline="14" endline="38">add_char</referencedby>
+        <referencedby refid="shell_8h_1a8a81cc045a4530835ce45b6817e17335" compoundref="modif__cmd_8c" startline="40" endline="67">delete_char</referencedby>
+        <referencedby refid="shell_8h_1a10717a0c53430c97d2ccedbfb1728211" compoundref="modif__cmd_8c" startline="69" endline="87">delete_backward</referencedby>
+        <referencedby refid="shell_8h_1acbb6e8e618f4c43c7eeb93923b92e385" compoundref="move_8c" startline="14" endline="26">up</referencedby>
+        <referencedby refid="shell_8h_1a3a9f901ffe6cc6b5f7d902526c01748e" compoundref="move_8c" startline="28" endline="50">down</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1acd9ad0dfae53c8683ec2597a188e6c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bashset</definition>
+        <argsstring>(char *str, t_data *data)</argsstring>
+        <name>bashset</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="88" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/alias_etc.c" bodystart="33" bodyend="60"/>
+        <references refid="my__strndup_8c_1aa470a7e58967778144f7d737bf64c3e8" compoundref="my__strndup_8c" startline="14" endline="27">my_strndup</references>
+        <references refid="alias__etc_8c_1a2554b2fd4cf3639ec091ec6a5a432675" compoundref="alias__etc_8c" startline="20" endline="31">setbashenv</references>
+        <references refid="builtin_8c_1aa3ae54ee16af4313f2ccb3c2fff447e9" compoundref="builtin_8c" startline="44" endline="69">my_setenv</references>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <referencedby refid="shell_8h_1a94ed7403f0bc582353a563669932efdd" compoundref="pars__alias_8c" startline="100" endline="117">get_all_alias</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a7c48c503a505583c6693462bdda06b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int segfault</definition>
+        <argsstring>(int)</argsstring>
+        <name>segfault</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="89" column="1"/>
+        <referencedby refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" compoundref="exe__cmd_8c" startline="19" endline="45">exe_function</referencedby>
+        <referencedby refid="shell_8h_1a0b773212abd3f5ea05fa3ef3945efd1d" compoundref="pipe_8c" startline="90" endline="111">exe_pipe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a9c8e6dc113eea68f9307b76af43e5d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int is_exe</definition>
+        <argsstring>(char *path)</argsstring>
+        <name>is_exe</name>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="90" column="1"/>
+        <referencedby refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" compoundref="exe__cmd_8c" startline="19" endline="45">exe_function</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a88d6a0e4709f3f3521a44ae3bcdf6862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int add_redi</definition>
+        <argsstring>(char *, t_cmd *, int *)</argsstring>
+        <name>add_redi</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="91" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/redirection.c" bodystart="46" bodyend="71"/>
+        <references refid="redirection_8c_1a1cd0120acb08c062e567a2f26e64545a" compoundref="redirection_8c" startline="25" endline="44">set_redi</references>
+        <references refid="structs__list_1a4bcaaa089cc834cf70b73bafa9af1e05" compoundref="shell_8h" startline="34">s_list::next</references>
+        <references refid="parsing__cmd_8c_1a76889c4c767c0af44a85984cbaf48d62" compoundref="parsing__cmd_8c" startline="16" endline="21">is_redi</references>
+        <references refid="shell_8h_1a1a145470918f339fe655f978216c73e2">error_syntax_error</references>
+        <references refid="parsing__cmd_8c_1a630ad05ab22a793081c5c8f3ab941220" compoundref="parsing__cmd_8c" startline="23" endline="44">index_end_word</references>
+        <references refid="structs__list_1adf16cd437526a5c5e0e0af87745acbb8" compoundref="shell_8h" startline="32">s_list::file</references>
+        <referencedby refid="shell_8h_1a75146577e9b06cc37c090f3c94b2278e" compoundref="parsing__cmd_8c" startline="87" endline="109">parsing_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a1a145470918f339fe655f978216c73e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int error_syntax_error</definition>
+        <argsstring>(int exit)</argsstring>
+        <name>error_syntax_error</name>
+        <param>
+          <type>int</type>
+          <declname>exit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="92" column="1"/>
+        <referencedby refid="parsing__general_8c_1a4d215aeab88defa9d98461ae58615688" compoundref="parsing__general_8c" startline="15" endline="26">is_sep_cmd</referencedby>
+        <referencedby refid="shell_8h_1a88d6a0e4709f3f3521a44ae3bcdf6862" compoundref="redirection_8c" startline="46" endline="71">add_redi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int exe_cmd</definition>
+        <argsstring>(t_data *, t_cmd *, int)</argsstring>
+        <name>exe_cmd</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="93" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c" bodystart="103" bodyend="127"/>
+        <references refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" compoundref="shell_8h" startline="39">s_cmd::tab</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="glob_8c_1a092c8d6d324b0991de7695be7c950f69" compoundref="glob_8c" startline="57" endline="83">parsing_globing</references>
+        <references refid="parsing__tilde_8c_1a800e94b9063ed3c13ca3f3339317bea6" compoundref="parsing__tilde_8c" startline="16" endline="39">pars_tilde</references>
+        <references refid="top__builtin_8c_1aecb1f227db5bcfc86869d066066f450d" compoundref="top__builtin_8c" startline="16" endline="33">my_redir_builtin</references>
+        <references refid="builtin_8h_1ad111e603bbebe5d87f6bc39264ce4733" compoundref="builtin_8h" startline="20">EXIT</references>
+        <references refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" compoundref="builtin_8h" startline="19">SUCCESS</references>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" compoundref="exe__cmd_8c" startline="74" endline="101">exe_path</references>
+        <references refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" compoundref="exe__cmd_8c" startline="19" endline="45">exe_function</references>
+        <references refid="shell_8h_1a7c8b1bb310843604574d3699e2c3465c">error_cmd_not_found</references>
+        <referencedby refid="pipe_8c_1a6c5a209f770a66dc5c2f73e10ff86db3" compoundref="pipe_8c" startline="31" endline="41">last_pipe</referencedby>
+        <referencedby refid="pipe_8c_1a6267c0f1ac0750c77dc4e676bf140b80" compoundref="pipe_8c" startline="43" endline="68">loop_pipe</referencedby>
+        <referencedby refid="pipe_8c_1ac7254c9ab0581563f740b715d805c301" compoundref="pipe_8c" startline="70" endline="88">first_pipe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a0b773212abd3f5ea05fa3ef3945efd1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int exe_pipe</definition>
+        <argsstring>(t_data *, t_cmds *)</argsstring>
+        <name>exe_pipe</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1afb1327cff317f4de2efd5a873ff849d7" kindref="member">t_cmds</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="94" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/pipe.c" bodystart="90" bodyend="111"/>
+        <references refid="pipe_8c_1ac7254c9ab0581563f740b715d805c301" compoundref="pipe_8c" startline="70" endline="88">first_pipe</references>
+        <references refid="pipe_8c_1a6267c0f1ac0750c77dc4e676bf140b80" compoundref="pipe_8c" startline="43" endline="68">loop_pipe</references>
+        <references refid="pipe_8c_1a6c5a209f770a66dc5c2f73e10ff86db3" compoundref="pipe_8c" startline="31" endline="41">last_pipe</references>
+        <references refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" compoundref="shell_8h" startline="73">s_data::return_exe</references>
+        <references refid="shell_8h_1a7c48c503a505583c6693462bdda06b45">segfault</references>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1ade577cee6ed36ca9bc44e1d9f29a7d4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sh</definition>
+        <argsstring>(t_data *)</argsstring>
+        <name>sh</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a480f2c4c3df5d3d39f609e1455975b17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int redirection_right</definition>
+        <argsstring>(t_list *)</argsstring>
+        <name>redirection_right</name>
+        <param>
+          <type><ref refid="shell_8h_1aa073beba29d3550fb1d0d3170f122e91" kindref="member">t_list</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="96" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_right.c" bodystart="24" bodyend="38"/>
+        <references refid="redirection__right_8c_1ab8ba3b24d5aac02328d50a28e498905b" compoundref="redirection__right_8c" startline="17" endline="22">open_file_wr</references>
+        <references refid="structs__list_1adf16cd437526a5c5e0e0af87745acbb8" compoundref="shell_8h" startline="32">s_list::file</references>
+        <references refid="structs__list_1a47fd463223ac923d306c984fb143dfa4" compoundref="shell_8h" startline="33">s_list::double_redi</references>
+        <references refid="structs__list_1a4bcaaa089cc834cf70b73bafa9af1e05" compoundref="shell_8h" startline="34">s_list::next</references>
+        <referencedby refid="builtin_8h_1aecb1f227db5bcfc86869d066066f450d" compoundref="top__builtin_8c" startline="16" endline="33">my_redir_builtin</referencedby>
+        <referencedby refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" compoundref="exe__cmd_8c" startline="19" endline="45">exe_function</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a453672a5f3546a46dbd0b808a68fd71b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int redirection_left</definition>
+        <argsstring>(t_list *)</argsstring>
+        <name>redirection_left</name>
+        <param>
+          <type><ref refid="shell_8h_1aa073beba29d3550fb1d0d3170f122e91" kindref="member">t_list</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="97" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_left.c" bodystart="83" bodyend="99"/>
+        <references refid="structs__list_1a47fd463223ac923d306c984fb143dfa4" compoundref="shell_8h" startline="33">s_list::double_redi</references>
+        <references refid="redirection__left_8c_1a7d4285d2d4f2790e8ccad0f0f4a103a3" compoundref="redirection__left_8c" startline="66" endline="81">double_redi_left</references>
+        <references refid="structs__list_1adf16cd437526a5c5e0e0af87745acbb8" compoundref="shell_8h" startline="32">s_list::file</references>
+        <references refid="redirection__left_8c_1a058a86ac024b5d3bbba7a0b6e9914b7b" compoundref="redirection__left_8c" startline="19" endline="22">open_file_rd</references>
+        <references refid="structs__list_1a4bcaaa089cc834cf70b73bafa9af1e05" compoundref="shell_8h" startline="34">s_list::next</references>
+        <referencedby refid="builtin_8h_1aecb1f227db5bcfc86869d066066f450d" compoundref="top__builtin_8c" startline="16" endline="33">my_redir_builtin</referencedby>
+        <referencedby refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" compoundref="exe__cmd_8c" startline="19" endline="45">exe_function</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1aaa516d4ccb03a5c0226bf430180d737e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int is_redi</definition>
+        <argsstring>(char)</argsstring>
+        <name>is_redi</name>
+        <param>
+          <type>char</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="98" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" bodystart="16" bodyend="21"/>
+        <referencedby refid="shell_8h_1afe3033f820f77741e41ee05caa219554" compoundref="parsing__cmd_8c" startline="23" endline="44">index_end_word</referencedby>
+        <referencedby refid="shell_8h_1a75146577e9b06cc37c090f3c94b2278e" compoundref="parsing__cmd_8c" startline="87" endline="109">parsing_cmd</referencedby>
+        <referencedby refid="shell_8h_1a88d6a0e4709f3f3521a44ae3bcdf6862" compoundref="redirection_8c" startline="46" endline="71">add_redi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a4a932a3567484ecc159fb43f41392992" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int builtin</definition>
+        <argsstring>(t_data *data, char **cmd)</argsstring>
+        <name>builtin</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="99" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/top_builtin.c" bodystart="35" bodyend="62"/>
+        <references refid="cd_8c_1a04d617582a090298a993bb56e5a66cb9" compoundref="cd_8c" startline="73" endline="98">my_cd</references>
+        <references refid="builtin_8c_1a3f937a32f761532cf83be2cd3dae0e09" compoundref="builtin_8c" startline="92" endline="99">my_exit</references>
+        <references refid="builtin_8c_1a8608a65d45d2d3d7ec0e83a91d1f51a3" compoundref="builtin_8c" startline="71" endline="90">my_env</references>
+        <references refid="builtin_8c_1aa3ae54ee16af4313f2ccb3c2fff447e9" compoundref="builtin_8c" startline="44" endline="69">my_setenv</references>
+        <references refid="builtin_8c_1a7bd51fb3b758ec7342192213355ec102" compoundref="builtin_8c" startline="16" endline="42">my_unsetenv</references>
+        <references refid="builtin_8c_1a95a62fb319cfd787bd672b23b9288c67" compoundref="builtin_8c" startline="101" endline="127">my_echo</references>
+        <references refid="getvar_8c_1a6055c5e4f8247c5a1151cd65e5061574" compoundref="getvar_8c" startline="28" endline="48">my_replace_key</references>
+        <references refid="structs__bref_1a3cffecc657840bcfdbd40bfaf96be9d5" compoundref="builtin_8h" startline="25">s_bref::builtin</references>
+        <references refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" compoundref="shell_8h" startline="73">s_data::return_exe</references>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="builtin_8h_1a82364b047b41d18199c9372ace974305" compoundref="builtin_8h" startline="18">NO_MATCH</references>
+        <referencedby refid="builtin_8h_1aecb1f227db5bcfc86869d066066f450d" compoundref="top__builtin_8c" startline="16" endline="33">my_redir_builtin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1afe3033f820f77741e41ee05caa219554" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int index_end_word</definition>
+        <argsstring>(char *, int *)</argsstring>
+        <name>index_end_word</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="100" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" bodystart="23" bodyend="44"/>
+        <references refid="parsing__cmd_8c_1a76889c4c767c0af44a85984cbaf48d62" compoundref="parsing__cmd_8c" startline="16" endline="21">is_redi</references>
+        <referencedby refid="parsing__cmd_8c_1a14a8f0c61b979cd9b0413c120dff438a" compoundref="parsing__cmd_8c" startline="46" endline="72">add_word_to_tab</referencedby>
+        <referencedby refid="shell_8h_1a88d6a0e4709f3f3521a44ae3bcdf6862" compoundref="redirection_8c" startline="46" endline="71">add_redi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a4f26e199a91bdcc604a1943a1caf91e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int is_stars</definition>
+        <argsstring>(char *)</argsstring>
+        <name>is_stars</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="101" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/glob/stars.c" bodystart="14" bodyend="27"/>
+        <referencedby refid="shell_8h_1aaaecb53bea2c752a15fb72f27bdb85c4" compoundref="glob_8c" startline="57" endline="83">parsing_globing</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a016d082e790265a3ffe8fbff90b2a0b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int clean_screen</definition>
+        <argsstring>(char *)</argsstring>
+        <name>clean_screen</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="102" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/clean_screen.c" bodystart="18" bodyend="39"/>
+        <references refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" compoundref="shell_8h" startline="78">g_data</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <referencedby refid="shell_8h_1a089febdbd9db477f99c25841413150a8" compoundref="gere__key_8c" startline="38" endline="55">gere_char</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a7c8b1bb310843604574d3699e2c3465c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int error_cmd_not_found</definition>
+        <argsstring>(char *cmd, int exit)</argsstring>
+        <name>error_cmd_not_found</name>
+        <param>
+          <type>char *</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>exit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="103" column="1"/>
+        <referencedby refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</referencedby>
+        <referencedby refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" compoundref="pipe_8c" startline="18" endline="29">check_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a61bdc6973b469d94f62b412506a86a60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int if_stars</definition>
+        <argsstring>(char **, char **, int, int)</argsstring>
+        <name>if_stars</name>
+        <param>
+          <type>char **</type>
+        </param>
+        <param>
+          <type>char **</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="104" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/glob/stars.c" bodystart="29" bodyend="43"/>
+        <references refid="glob_8c_1a79f692f042cb5e15d048e2661729c98f" compoundref="glob_8c" startline="26" endline="33">return_globing</references>
+        <referencedby refid="shell_8h_1aaaecb53bea2c752a15fb72f27bdb85c4" compoundref="glob_8c" startline="57" endline="83">parsing_globing</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a8e5633ce3ca1c968f88de68f3ed735c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pars_alias</definition>
+        <argsstring>(t_data *data)</argsstring>
+        <name>pars_alias</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="105" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c" bodystart="119" bodyend="128"/>
+        <references refid="pars__alias_8c_1a203bc66f586da530ebb9eeee519bd082" compoundref="pars__alias_8c" startline="21" endline="45">get_bash</references>
+        <references refid="pars__alias_8c_1a94ed7403f0bc582353a563669932efdd" compoundref="pars__alias_8c" startline="100" endline="117">get_all_alias</references>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1adea8df0d450d18361023ed783f462f39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int get_line_file</definition>
+        <argsstring>()</argsstring>
+        <name>get_line_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="106" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/alias.c" bodystart="56" bodyend="72"/>
+        <references refid="shell_8h_1a7d28911d2cf3becfbdc3bb2271375405" compoundref="shell_8h" startline="15">RCNAME</references>
+        <references refid="gnl_8c_1a6754f4915186decc3a861cd78d15499e" compoundref="gnl_8c" startline="73" endline="100">gnl</references>
+        <referencedby refid="pars__alias_8c_1a203bc66f586da530ebb9eeee519bd082" compoundref="pars__alias_8c" startline="21" endline="45">get_bash</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a6cadc3565b189cd09265052e7ab300ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int is_slash</definition>
+        <argsstring>(char *)</argsstring>
+        <name>is_slash</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="107" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/auto_complete/functions_complete.c" bodystart="15" bodyend="27"/>
+        <referencedby refid="shell_8h_1afe7f6d5c210dc13734d4e5bcfd204de8" compoundref="functions__complete_8c" startline="29" endline="46">epur_slash</referencedby>
+        <referencedby refid="shell_8h_1a86c98aaf559611425f7f8079e0019335" compoundref="functions__complete_8c" startline="48" endline="71">my_write_tab</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1aef5a99da1ffbf13443354619597957ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int is_builtin</definition>
+        <argsstring>(char *)</argsstring>
+        <name>is_builtin</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="108" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/is_builtin.c" bodystart="13" bodyend="20"/>
+        <references refid="my__strcmp_8c_1a7656d2f543a26ba1552b06f75667ba3c" compoundref="my__strcmp_8c" startline="13" endline="23">my_strcmp</references>
+        <referencedby refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" compoundref="pipe_8c" startline="18" endline="29">check_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1afe7f6d5c210dc13734d4e5bcfd204de8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* epur_slash</definition>
+        <argsstring>(char *)</argsstring>
+        <name>epur_slash</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="109" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/auto_complete/functions_complete.c" bodystart="29" bodyend="46"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="functions__complete_8c_1a43aaf009c1f4a148004ee8cf4f4c5a5a" compoundref="functions__complete_8c" startline="15" endline="27">is_slash</references>
+        <references refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" compoundref="my__strcpy__from_8c" startline="13" endline="24">my_strcpy_from</references>
+        <referencedby refid="shell_8h_1a596ea92c775765f65acd11ecbe74a5ba" compoundref="auto__complete_8c" startline="57" endline="72">auto_complete</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a596ea92c775765f65acd11ecbe74a5ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* auto_complete</definition>
+        <argsstring>(char *)</argsstring>
+        <name>auto_complete</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="110" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/auto_complete/auto_complete.c" bodystart="57" bodyend="72"/>
+        <references refid="functions__complete_8c_1aac577fdfca82ccd407b2105d39b56fce" compoundref="functions__complete_8c" startline="48" endline="71">my_write_tab</references>
+        <references refid="functions__complete_8c_1a0561ce09429ac571427c7b77a61aaed8" compoundref="functions__complete_8c" startline="29" endline="46">epur_slash</references>
+        <referencedby refid="shell_8h_1a355426ca95d2d3e650e274a762d1d99b" compoundref="gere__key_8c" startline="88" endline="105">gere_tab</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1ab4d814ba6221d4345d560ce9cfef5d19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* malloc_str</definition>
+        <argsstring>(int)</argsstring>
+        <name>malloc_str</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="111" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/malloc_str.c" bodystart="13" bodyend="27"/>
+        <referencedby refid="shell_8h_1a2b4de1f22e62da77dfedc3b21067194c" compoundref="exe__cmd_8c" startline="47" endline="57">make_path</referencedby>
+        <referencedby refid="shell_8h_1aa93a7396e54be09774dcefe2cb664afb" compoundref="str__to__word__tab_8c" startline="46" endline="71">str_to_word_tab</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* loop</definition>
+        <argsstring>(t_history *)</argsstring>
+        <name>loop</name>
+        <param>
+          <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="112" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c" bodystart="67" bodyend="93"/>
+        <references refid="init_8c_1aa33a64ab0af49185a45ecd44a5aebeaa" compoundref="init_8c" startline="14" endline="28">init_stock</references>
+        <references refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" compoundref="shell_8h" startline="55">s_stock::c</references>
+        <references refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" compoundref="loop__read_8c" startline="16" endline="23">clean</references>
+        <references refid="gere__key_8c_1a53f1b007a4f559c1ed15fa556ad75927" compoundref="gere__key_8c" startline="16" endline="36">gere_history</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="gere__key_8c_1a9a93184b1cbfe4b19e576e90d77dfbce" compoundref="gere__key_8c" startline="57" endline="71">gere_arrow</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="loop__read_8c_1acb438155c44ae29d7351b71202ab6e3e" compoundref="loop__read_8c" startline="39" endline="65">change_word</references>
+        <references refid="gere__key_8c_1abe57af5513acea09813b87df7b582f27" compoundref="gere__key_8c" startline="38" endline="55">gere_char</references>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a1e8106cf0c11e2bd136b43a9cc608c9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* get_cmd</definition>
+        <argsstring>(t_history **)</argsstring>
+        <name>get_cmd</name>
+        <param>
+          <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="113" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/prompt_dyn.c" bodystart="45" bodyend="57"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="insert__list__double_8c_1ad8cfc41ab9a15b35fb2a892956180cff" compoundref="insert__list__double_8c" startline="14" endline="28">insert_list_double</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a6754f4915186decc3a861cd78d15499e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* gnl</definition>
+        <argsstring>(const int fd)</argsstring>
+        <name>gnl</name>
+        <param>
+          <type>const int</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="114" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/gnl.c" bodystart="73" bodyend="100"/>
+        <references refid="shell_8h_1a86e1969b50e55e5d506233078ca0fa4c" compoundref="shell_8h" startline="14">READ_SIZE</references>
+        <referencedby refid="shell_8h_1adea8df0d450d18361023ed783f462f39" compoundref="alias_8c" startline="56" endline="72">get_line_file</referencedby>
+        <referencedby refid="pars__alias_8c_1a203bc66f586da530ebb9eeee519bd082" compoundref="pars__alias_8c" startline="21" endline="45">get_bash</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1aef6f0a2dadbae4099dfa9a0cc9ea1782" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* concat_alias</definition>
+        <argsstring>(char *, t_alias *)</argsstring>
+        <name>concat_alias</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a45e9b5e9787a31371e46210ff3730e68" kindref="member">t_alias</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="115" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/alias_etc.c" bodystart="71" bodyend="91"/>
+        <references refid="alias_8c_1ac8db3662f7b7cc7ee5b03b6c5591447d" compoundref="alias_8c" startline="74" endline="100">alias_find</references>
+        <references refid="my__strndup_8c_1aa470a7e58967778144f7d737bf64c3e8" compoundref="my__strndup_8c" startline="14" endline="27">my_strndup</references>
+        <references refid="my__strdup_8c_1a4548135c4f1cfcaeff31c8dabb3692d3" compoundref="my__strdup_8c" startline="14" endline="27">my_strdup</references>
+        <references refid="str__cat_8c_1ae2589b5e18e85e7f44abd6bddf4724a4" compoundref="str__cat_8c" startline="14" endline="41">my_strconcat</references>
+        <referencedby refid="parsing__pipe_8c_1a1ffdb84b9297c89dcd30e9402f2c3515" compoundref="parsing__pipe_8c" startline="36" endline="51">add_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a2b4de1f22e62da77dfedc3b21067194c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* make_path</definition>
+        <argsstring>(char *path, char *str)</argsstring>
+        <name>make_path</name>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="116" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c" bodystart="47" bodyend="57"/>
+        <references refid="malloc__str_8c_1af4240b9ebd1f790c96c4c8e181827fba" compoundref="malloc__str_8c" startline="13" endline="27">malloc_str</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" compoundref="my__strcat_8c" startline="11" endline="28">my_strcat</references>
+        <referencedby refid="exe__cmd_8c_1a97368bf5fe74e84efa91f0266a404052" compoundref="exe__cmd_8c" startline="59" endline="72">loop_exe_path</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a0fae88d1db84fef35d175daa3f9c6b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* get_bin_path</definition>
+        <argsstring>(t_data *data, char *bin)</argsstring>
+        <name>get_bin_path</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>bin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="117" column="1"/>
+        <referencedby refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" compoundref="pipe_8c" startline="18" endline="29">check_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a1093f9bacf4d698d4f34d7ee472344d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* last_word</definition>
+        <argsstring>(char *, int)</argsstring>
+        <name>last_word</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="118" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/last_word.c" bodystart="15" bodyend="33"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <referencedby refid="shell_8h_1a355426ca95d2d3e650e274a762d1d99b" compoundref="gere__key_8c" startline="88" endline="105">gere_tab</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1ae2589b5e18e85e7f44abd6bddf4724a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_strconcat</definition>
+        <argsstring>(char *s1, char *s2)</argsstring>
+        <name>my_strconcat</name>
+        <param>
+          <type>char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="119" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/str_cat.c" bodystart="14" bodyend="41"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <referencedby refid="shell_8h_1aef6f0a2dadbae4099dfa9a0cc9ea1782" compoundref="alias__etc_8c" startline="71" endline="91">concat_alias</referencedby>
+        <referencedby refid="ps1_8h_1a691d38547be90f9a41ee0fde06f94f75" compoundref="tab__fonc_8c" startline="26" endline="47">case_pwd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1ae7ca988050564368cd481dd94902435b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* alias_finder</definition>
+        <argsstring>(t_alias *s, char *alias)</argsstring>
+        <name>alias_finder</name>
+        <param>
+          <type><ref refid="shell_8h_1a45e9b5e9787a31371e46210ff3730e68" kindref="member">t_alias</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>alias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="120" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/alias.c" bodystart="40" bodyend="54"/>
+        <references refid="my__strcmp_8c_1a7656d2f543a26ba1552b06f75667ba3c" compoundref="my__strcmp_8c" startline="13" endline="23">my_strcmp</references>
+        <references refid="structs__alias_1a80de185e58c66866a3e560697b9fb978" compoundref="shell_8h" startline="20">s_alias::new</references>
+        <references refid="structs__alias_1a228d8745e3b5e095fe1a256c236a8d9a" compoundref="shell_8h" startline="21">s_alias::next</references>
+        <references refid="structs__alias_1a32487cbad62d1e9a7ea00010f5dc58bb" compoundref="shell_8h" startline="19">s_alias::old</references>
+        <referencedby refid="shell_8h_1ac8db3662f7b7cc7ee5b03b6c5591447d" compoundref="alias_8c" startline="74" endline="100">alias_find</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1ac8db3662f7b7cc7ee5b03b6c5591447d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* alias_find</definition>
+        <argsstring>(t_alias *alias, char *to_find)</argsstring>
+        <name>alias_find</name>
+        <param>
+          <type><ref refid="shell_8h_1a45e9b5e9787a31371e46210ff3730e68" kindref="member">t_alias</ref> *</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>to_find</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="121" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/alias.c" bodystart="74" bodyend="100"/>
+        <references refid="alias_8c_1ae7ca988050564368cd481dd94902435b" compoundref="alias_8c" startline="40" endline="54">alias_finder</references>
+        <references refid="my__strcmp_8c_1a7656d2f543a26ba1552b06f75667ba3c" compoundref="my__strcmp_8c" startline="13" endline="23">my_strcmp</references>
+        <references refid="my__strdup_8c_1a4548135c4f1cfcaeff31c8dabb3692d3" compoundref="my__strdup_8c" startline="14" endline="27">my_strdup</references>
+        <references refid="alias_8c_1ac8db3662f7b7cc7ee5b03b6c5591447d" compoundref="alias_8c" startline="74" endline="100">alias_find</references>
+        <references refid="alias__etc_8c_1aeee2c96c8e8193fc245dee41ac044a77" compoundref="alias__etc_8c" startline="62" endline="69">end_find</references>
+        <referencedby refid="shell_8h_1ac8db3662f7b7cc7ee5b03b6c5591447d" compoundref="alias_8c" startline="74" endline="100">alias_find</referencedby>
+        <referencedby refid="shell_8h_1aef6f0a2dadbae4099dfa9a0cc9ea1782" compoundref="alias__etc_8c" startline="71" endline="91">concat_alias</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1aeee2c96c8e8193fc245dee41ac044a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* end_find</definition>
+        <argsstring>(char *new, char *prev, char *to_find)</argsstring>
+        <name>end_find</name>
+        <param>
+          <type>char *</type>
+          <declname>new</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>prev</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>to_find</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="122" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/alias_etc.c" bodystart="62" bodyend="69"/>
+        <referencedby refid="shell_8h_1ac8db3662f7b7cc7ee5b03b6c5591447d" compoundref="alias_8c" startline="74" endline="100">alias_find</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1acbb6e8e618f4c43c7eeb93923b92e385" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* up</definition>
+        <argsstring>(char *, t_history **, int *, char **)</argsstring>
+        <name>up</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> **</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="123" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/move.c" bodystart="14" bodyend="26"/>
+        <references refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" compoundref="loop__read_8c" startline="16" endline="23">clean</references>
+        <references refid="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" compoundref="clear__line_8c" startline="16" endline="28">clean_line</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</references>
+        <references refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" compoundref="shell_8h" startline="78">g_data</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" compoundref="my__strcpy_8c" startline="11" endline="23">my_strcpy</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <referencedby refid="shell_8h_1ae47252a37d7b8c816ca7a1d2e83ce8b7" compoundref="gere__key_8c" startline="16" endline="36">gere_history</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a3a9f901ffe6cc6b5f7d902526c01748e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* down</definition>
+        <argsstring>(char *, t_history **, int *, char **)</argsstring>
+        <name>down</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> **</type>
+        </param>
+        <param>
+          <type>int *</type>
+        </param>
+        <param>
+          <type>char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="124" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/move.c" bodystart="28" bodyend="50"/>
+        <references refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" compoundref="loop__read_8c" startline="16" endline="23">clean</references>
+        <references refid="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" compoundref="clear__line_8c" startline="16" endline="28">clean_line</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</references>
+        <references refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" compoundref="shell_8h" startline="78">g_data</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="structs__history_1af7dadc2c1ca47fd86993081a65a8d9e8" compoundref="shell_8h" startline="63">s_history::prev</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" compoundref="my__strcpy_8c" startline="11" endline="23">my_strcpy</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <referencedby refid="shell_8h_1ae47252a37d7b8c816ca7a1d2e83ce8b7" compoundref="gere__key_8c" startline="16" endline="36">gere_history</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a327654aa7fc09df62ee320f55cc80de7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* calc_new_str</definition>
+        <argsstring>(char *, int, int)</argsstring>
+        <name>calc_new_str</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="125" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_pipe.c" bodystart="25" bodyend="34"/>
+        <references refid="get__next__line_8c_1a43354ef027ff107d540fe9cd7b0aed1b" compoundref="get__next__line_8c" startline="37" endline="47">new_str</references>
+        <referencedby refid="shell_8h_1ae9c51201cb3ad89b921d2f3576875ca4" compoundref="parsing__general_8c" startline="68" endline="94">parsing_general</referencedby>
+        <referencedby refid="shell_8h_1ae8d6b38307281c05e1b03ca11f8bbb8c" compoundref="parsing__pipe_8c" startline="53" endline="78">parsing_pipe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a8a65c90ea8fc24f744d1bfc22ab4ccd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* read_cmd</definition>
+        <argsstring>()</argsstring>
+        <name>read_cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="126" column="1"/>
+        <referencedby refid="redirection__left_8c_1a7d4285d2d4f2790e8ccad0f0f4a103a3" compoundref="redirection__left_8c" startline="66" endline="81">double_redi_left</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a44fa45709eb2e5561b4f39cf406c843d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* epure_str</definition>
+        <argsstring>(char *)</argsstring>
+        <name>epure_str</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1aa93a7396e54be09774dcefe2cb664afb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** str_to_word_tab</definition>
+        <argsstring>(char *, char *)</argsstring>
+        <name>str_to_word_tab</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="128" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/str_to_word_tab.c" bodystart="46" bodyend="71"/>
+        <references refid="str__to__word__tab_8c_1a57bdb7b6d479b3e82fb9f2279d76a2be" compoundref="str__to__word__tab_8c" startline="26" endline="44">how_many_words</references>
+        <references refid="str__to__word__tab_8c_1a8425589aca191f509539e8e61dcd6076" compoundref="str__to__word__tab_8c" startline="15" endline="24">is_sep</references>
+        <references refid="malloc__str_8c_1af4240b9ebd1f790c96c4c8e181827fba" compoundref="malloc__str_8c" startline="13" endline="27">malloc_str</references>
+        <references refid="my__strncat_8c_1a3b24f5275c408c2de1bf77b90f87e35f" compoundref="my__strncat_8c" startline="13" endline="28">my_strncat</references>
+        <referencedby refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" compoundref="exe__cmd_8c" startline="74" endline="101">exe_path</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1aaaecb53bea2c752a15fb72f27bdb85c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** parsing_globing</definition>
+        <argsstring>(char **)</argsstring>
+        <name>parsing_globing</name>
+        <param>
+          <type>char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="129" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/glob/glob.c" bodystart="57" bodyend="83"/>
+        <references refid="stars_8c_1a73cefecfa75f18a7430e6b756214752d" compoundref="stars_8c" startline="14" endline="27">is_stars</references>
+        <references refid="stars_8c_1a5b6eb307c8f5f55efe7af56ea79a4c78" compoundref="stars_8c" startline="29" endline="43">if_stars</references>
+        <referencedby refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a9d453b40894496133ee7954e9ef68279" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** return_globing</definition>
+        <argsstring>(char *)</argsstring>
+        <name>return_globing</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="130" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/glob/glob.c" bodystart="26" bodyend="33"/>
+        <referencedby refid="shell_8h_1a61bdc6973b469d94f62b412506a86a60" compoundref="stars_8c" startline="29" endline="43">if_stars</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a26d7528347b5a654e5ffce85c1cb3c02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** make_env</definition>
+        <argsstring>(char **)</argsstring>
+        <name>make_env</name>
+        <param>
+          <type>char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1aae15200ba07dd26f07781342a0b110f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** default_path</definition>
+        <argsstring>()</argsstring>
+        <name>default_path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="132" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/default_path.c" bodystart="13" bodyend="22"/>
+        <referencedby refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" compoundref="exe__cmd_8c" startline="74" endline="101">exe_path</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a733a7370f33430443ae3914f72d5fdba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** pars_tilde</definition>
+        <argsstring>(t_data *, char **)</argsstring>
+        <name>pars_tilde</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        </param>
+        <param>
+          <type>char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="133" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_tilde.c" bodystart="16" bodyend="39"/>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" compoundref="my__strcat_8c" startline="11" endline="28">my_strcat</references>
+        <referencedby refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a022bb39a7be1bb675180887d1920d394" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clean_line_prev</definition>
+        <argsstring>(t_history *, char *, char *)</argsstring>
+        <name>clean_line_prev</name>
+        <param>
+          <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> *</type>
+        </param>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a90de19073da7fff41b2b9a6464f78dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clean_line_next</definition>
+        <argsstring>(t_history *, char *, char *)</argsstring>
+        <name>clean_line_next</name>
+        <param>
+          <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> *</type>
+        </param>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type>char *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a98cf73858bc9e8acd95a1caa1410e3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clean</definition>
+        <argsstring>(char *, int)</argsstring>
+        <name>clean</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="136" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c" bodystart="16" bodyend="23"/>
+        <referencedby refid="shell_8h_1ae47252a37d7b8c816ca7a1d2e83ce8b7" compoundref="gere__key_8c" startline="16" endline="36">gere_history</referencedby>
+        <referencedby refid="shell_8h_1a19c96fd25dc36fc2337e2107bb0a54c5" compoundref="init_8c" startline="14" endline="28">init_stock</referencedby>
+        <referencedby refid="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" compoundref="loop__read_8c" startline="67" endline="93">loop</referencedby>
+        <referencedby refid="shell_8h_1acbb6e8e618f4c43c7eeb93923b92e385" compoundref="move_8c" startline="14" endline="26">up</referencedby>
+        <referencedby refid="shell_8h_1a3a9f901ffe6cc6b5f7d902526c01748e" compoundref="move_8c" startline="28" endline="50">down</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a9a22cdb14fbffec8b1857153bd8fefff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clean_line</definition>
+        <argsstring>(void)</argsstring>
+        <name>clean_line</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="137" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/clear_line.c" bodystart="16" bodyend="28"/>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <referencedby refid="shell_8h_1a8a81cc045a4530835ce45b6817e17335" compoundref="modif__cmd_8c" startline="40" endline="67">delete_char</referencedby>
+        <referencedby refid="shell_8h_1a10717a0c53430c97d2ccedbfb1728211" compoundref="modif__cmd_8c" startline="69" endline="87">delete_backward</referencedby>
+        <referencedby refid="shell_8h_1acbb6e8e618f4c43c7eeb93923b92e385" compoundref="move_8c" startline="14" endline="26">up</referencedby>
+        <referencedby refid="shell_8h_1a3a9f901ffe6cc6b5f7d902526c01748e" compoundref="move_8c" startline="28" endline="50">down</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1aa03f017a35da8a430148654234880534" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_cursor_left</definition>
+        <argsstring>(int)</argsstring>
+        <name>print_cursor_left</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="138" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/print_cursor.c" bodystart="14" bodyend="29"/>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <referencedby refid="shell_8h_1ab4ce23e3bb732e092c9ec75e6c739242" compoundref="gere__key_8c" startline="57" endline="71">gere_arrow</referencedby>
+        <referencedby refid="shell_8h_1a355426ca95d2d3e650e274a762d1d99b" compoundref="gere__key_8c" startline="88" endline="105">gere_tab</referencedby>
+        <referencedby refid="loop__read_8c_1acb438155c44ae29d7351b71202ab6e3e" compoundref="loop__read_8c" startline="39" endline="65">change_word</referencedby>
+        <referencedby refid="shell_8h_1a929bf8ea49ac6f94a2b1ab00c9f16343" compoundref="modif__cmd_8c" startline="14" endline="38">add_char</referencedby>
+        <referencedby refid="shell_8h_1a8a81cc045a4530835ce45b6817e17335" compoundref="modif__cmd_8c" startline="40" endline="67">delete_char</referencedby>
+        <referencedby refid="shell_8h_1a10717a0c53430c97d2ccedbfb1728211" compoundref="modif__cmd_8c" startline="69" endline="87">delete_backward</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1ae1896fc58ae2d86e1607940e8c4dff66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void print_cursor_right</definition>
+        <argsstring>(int)</argsstring>
+        <name>print_cursor_right</name>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="139" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/print_cursor.c" bodystart="31" bodyend="46"/>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <referencedby refid="shell_8h_1ab4ce23e3bb732e092c9ec75e6c739242" compoundref="gere__key_8c" startline="57" endline="71">gere_arrow</referencedby>
+        <referencedby refid="loop__read_8c_1acb438155c44ae29d7351b71202ab6e3e" compoundref="loop__read_8c" startline="39" endline="65">change_word</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a86c98aaf559611425f7f8079e0019335" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_write_tab</definition>
+        <argsstring>(char **)</argsstring>
+        <name>my_write_tab</name>
+        <param>
+          <type>char **</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="140" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/auto_complete/functions_complete.c" bodystart="48" bodyend="71"/>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="functions__complete_8c_1a43aaf009c1f4a148004ee8cf4f4c5a5a" compoundref="functions__complete_8c" startline="15" endline="27">is_slash</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <referencedby refid="shell_8h_1a596ea92c775765f65acd11ecbe74a5ba" compoundref="auto__complete_8c" startline="57" endline="72">auto_complete</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a355426ca95d2d3e650e274a762d1d99b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gere_tab</definition>
+        <argsstring>(t_stock *)</argsstring>
+        <name>gere_tab</name>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="141" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/gere_key.c" bodystart="88" bodyend="105"/>
+        <references refid="last__word_8c_1a357ab8f24d10bea851731b776e2d4414" compoundref="last__word_8c" startline="15" endline="33">last_word</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="auto__complete_8c_1a9db47b33aabb3abb191c33e9bc38b173" compoundref="auto__complete_8c" startline="57" endline="72">auto_complete</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</references>
+        <references refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" compoundref="shell_8h" startline="78">g_data</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" compoundref="print__cursor_8c" startline="14" endline="29">print_cursor_left</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <referencedby refid="shell_8h_1a089febdbd9db477f99c25841413150a8" compoundref="gere__key_8c" startline="38" endline="55">gere_char</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1ae47252a37d7b8c816ca7a1d2e83ce8b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* gere_history</definition>
+        <argsstring>(char *, char *, t_history *, t_stock *)</argsstring>
+        <name>gere_history</name>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type>char *</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="142" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/gere_key.c" bodystart="16" bodyend="36"/>
+        <references refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" compoundref="loop__read_8c" startline="16" endline="23">clean</references>
+        <references refid="move_8c_1a26c659be8ab219ea68df6c038feced8a" compoundref="move_8c" startline="14" endline="26">up</references>
+        <references refid="move_8c_1a9cf576f664805ab837347db06b4c4036" compoundref="move_8c" startline="28" endline="50">down</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" compoundref="shell_8h" startline="55">s_stock::c</references>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <referencedby refid="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" compoundref="loop__read_8c" startline="67" endline="93">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a19c96fd25dc36fc2337e2107bb0a54c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* init_stock</definition>
+        <argsstring>(void)</argsstring>
+        <name>init_stock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="143" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/init.c" bodystart="14" bodyend="28"/>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" compoundref="shell_8h" startline="55">s_stock::c</references>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" compoundref="loop__read_8c" startline="16" endline="23">clean</references>
+        <referencedby refid="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" compoundref="loop__read_8c" startline="67" endline="93">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a089febdbd9db477f99c25841413150a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* gere_char</definition>
+        <argsstring>(t_stock *)</argsstring>
+        <name>gere_char</name>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="144" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/gere_key.c" bodystart="38" bodyend="55"/>
+        <references refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" compoundref="shell_8h" startline="55">s_stock::c</references>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="clean__screen_8c_1a7a70e74d15838251dcd3b1887c9d3c19" compoundref="clean__screen_8c" startline="18" endline="39">clean_screen</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="modif__cmd_8c_1a1c8ba7df47fbf1fb64a9dc3d1740ba03" compoundref="modif__cmd_8c" startline="69" endline="87">delete_backward</references>
+        <references refid="modif__cmd_8c_1ad89597d4cb1771ebe12c656e50e8dd51" compoundref="modif__cmd_8c" startline="40" endline="67">delete_char</references>
+        <references refid="gere__key_8c_1ac7b5d923e42cfb0580ecd5200d477268" compoundref="gere__key_8c" startline="88" endline="105">gere_tab</references>
+        <references refid="modif__cmd_8c_1a9cdedadfe9af1533b8f61dd6ae0e4d9f" compoundref="modif__cmd_8c" startline="14" endline="38">add_char</references>
+        <referencedby refid="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" compoundref="loop__read_8c" startline="67" endline="93">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1ab4ce23e3bb732e092c9ec75e6c739242" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* gere_arrow</definition>
+        <argsstring>(t_stock *)</argsstring>
+        <name>gere_arrow</name>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="145" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/gere_key.c" bodystart="57" bodyend="71"/>
+        <references refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" compoundref="shell_8h" startline="55">s_stock::c</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" compoundref="print__cursor_8c" startline="14" endline="29">print_cursor_left</references>
+        <references refid="print__cursor_8c_1a99286a45664a92d19230d9ec6ce733a2" compoundref="print__cursor_8c" startline="31" endline="46">print_cursor_right</references>
+        <referencedby refid="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" compoundref="loop__read_8c" startline="67" endline="93">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a929bf8ea49ac6f94a2b1ab00c9f16343" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* add_char</definition>
+        <argsstring>(t_stock *)</argsstring>
+        <name>add_char</name>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="146" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/modif_cmd.c" bodystart="14" bodyend="38"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" compoundref="shell_8h" startline="55">s_stock::c</references>
+        <references refid="my__strncpy_8c_1a488ec5fec2f5d4fda8bf780b1e08ef63" compoundref="my__strncpy_8c" startline="11" endline="23">my_strncpy</references>
+        <references refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" compoundref="my__strcat_8c" startline="11" endline="28">my_strcat</references>
+        <references refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" compoundref="my__strcpy__from_8c" startline="13" endline="24">my_strcpy_from</references>
+        <references refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" compoundref="my__strcpy_8c" startline="11" endline="23">my_strcpy</references>
+        <references refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</references>
+        <references refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" compoundref="shell_8h" startline="78">g_data</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" compoundref="print__cursor_8c" startline="14" endline="29">print_cursor_left</references>
+        <referencedby refid="shell_8h_1a089febdbd9db477f99c25841413150a8" compoundref="gere__key_8c" startline="38" endline="55">gere_char</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a8a81cc045a4530835ce45b6817e17335" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* delete_char</definition>
+        <argsstring>(t_stock *)</argsstring>
+        <name>delete_char</name>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="147" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/modif_cmd.c" bodystart="40" bodyend="67"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" compoundref="clear__line_8c" startline="16" endline="28">clean_line</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</references>
+        <references refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" compoundref="shell_8h" startline="78">g_data</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="my__strncpy_8c_1a488ec5fec2f5d4fda8bf780b1e08ef63" compoundref="my__strncpy_8c" startline="11" endline="23">my_strncpy</references>
+        <references refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" compoundref="my__strcpy__from_8c" startline="13" endline="24">my_strcpy_from</references>
+        <references refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" compoundref="my__strcpy_8c" startline="11" endline="23">my_strcpy</references>
+        <references refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" compoundref="my__strcat_8c" startline="11" endline="28">my_strcat</references>
+        <references refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" compoundref="print__cursor_8c" startline="14" endline="29">print_cursor_left</references>
+        <referencedby refid="shell_8h_1a089febdbd9db477f99c25841413150a8" compoundref="gere__key_8c" startline="38" endline="55">gere_char</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="shell_8h_1a10717a0c53430c97d2ccedbfb1728211" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* delete_backward</definition>
+        <argsstring>(t_stock *)</argsstring>
+        <name>delete_backward</name>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="148" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/modif_cmd.c" bodystart="69" bodyend="87"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="my__strncpy_8c_1a488ec5fec2f5d4fda8bf780b1e08ef63" compoundref="my__strncpy_8c" startline="11" endline="23">my_strncpy</references>
+        <references refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" compoundref="my__strcpy__from_8c" startline="13" endline="24">my_strcpy_from</references>
+        <references refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" compoundref="my__strcpy_8c" startline="11" endline="23">my_strcpy</references>
+        <references refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" compoundref="my__strcat_8c" startline="11" endline="28">my_strcat</references>
+        <references refid="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" compoundref="clear__line_8c" startline="16" endline="28">clean_line</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</references>
+        <references refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" compoundref="shell_8h" startline="78">g_data</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" compoundref="print__cursor_8c" startline="14" endline="29">print_cursor_left</references>
+        <referencedby refid="shell_8h_1a089febdbd9db477f99c25841413150a8" compoundref="gere__key_8c" startline="38" endline="55">gere_char</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>shell.h<sp/>for<sp/>42sh<sp/>in<sp/>/home/bauer_a/rendu/PSU_2014_42sh/include</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;bauer_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Sat<sp/>Mar<sp/>28<sp/>13:46:14<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sun<sp/>May<sp/>24<sp/>17:29:13<sp/>2015<sp/>anthony<sp/>geiger</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SHELL_H_</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SHELL_H_</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="shell_8h_1a86e1969b50e55e5d506233078ca0fa4c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>READ_SIZE<sp/>512</highlight></codeline>
+<codeline lineno="15" refid="shell_8h_1a7d28911d2cf3becfbdc3bb2271375405" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>RCNAME<sp/>&quot;.42rc&quot;</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="structs__alias" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="structs__alias" kindref="compound">s_alias</ref></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19" refid="structs__alias_1a32487cbad62d1e9a7ea00010f5dc58bb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__alias_1a32487cbad62d1e9a7ea00010f5dc58bb" kindref="member">old</ref>;</highlight></codeline>
+<codeline lineno="20" refid="structs__alias_1a80de185e58c66866a3e560697b9fb978" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21" refid="structs__alias_1a228d8745e3b5e095fe1a256c236a8d9a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structs__alias" kindref="compound">s_alias</ref><sp/><sp/><sp/><sp/>*<ref refid="structs__alias_1a228d8745e3b5e095fe1a256c236a8d9a" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1a45e9b5e9787a31371e46210ff3730e68" kindref="member">t_alias</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structs__list__line" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="structs__list__line" kindref="compound">s_list_line</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26" refid="structs__list__line_1a8adb30f4f6669f927fd9232f686c637b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__list__line_1a8adb30f4f6669f927fd9232f686c637b" kindref="member">line</ref>;</highlight></codeline>
+<codeline lineno="27" refid="structs__list__line_1a3263d832fe4969fc3f9dbd0e668e0935" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structs__list__line" kindref="compound">s_list_line</ref><sp/><sp/><sp/><sp/>*<ref refid="structs__list__line_1a3263d832fe4969fc3f9dbd0e668e0935" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1ab4590bb20f2c51674483a55293e861eb" kindref="member">t_list_line</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structs__list" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="structs__list" kindref="compound">s_list</ref></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32" refid="structs__list_1adf16cd437526a5c5e0e0af87745acbb8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__list_1adf16cd437526a5c5e0e0af87745acbb8" kindref="member">file</ref>;</highlight></codeline>
+<codeline lineno="33" refid="structs__list_1a47fd463223ac923d306c984fb143dfa4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structs__list_1a47fd463223ac923d306c984fb143dfa4" kindref="member">double_redi</ref>;</highlight></codeline>
+<codeline lineno="34" refid="structs__list_1a4bcaaa089cc834cf70b73bafa9af1e05" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structs__list" kindref="compound">s_list</ref><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__list_1a4bcaaa089cc834cf70b73bafa9af1e05" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1aa073beba29d3550fb1d0d3170f122e91" kindref="member">t_list</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structs__cmd" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="structs__cmd" kindref="compound">s_cmd</ref></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39" refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>;</highlight></codeline>
+<codeline lineno="40" refid="structs__cmd_1a8629d9a24e605fcc6a82b55b1a870a07" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structs__list" kindref="compound">t_list</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__cmd_1a8629d9a24e605fcc6a82b55b1a870a07" kindref="member">redi_r</ref>;</highlight></codeline>
+<codeline lineno="41" refid="structs__cmd_1a3eb86f4753299ed84389481f46694140" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structs__list" kindref="compound">t_list</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__cmd_1a3eb86f4753299ed84389481f46694140" kindref="member">redi_l</ref>;</highlight></codeline>
+<codeline lineno="42" refid="structs__cmd_1aadb06044d2e679ed4395a2680dc6962a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structs__cmd" kindref="compound">s_cmd</ref><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__cmd_1aadb06044d2e679ed4395a2680dc6962a" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="structs__cmds" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="structs__cmds" kindref="compound">s_cmds</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47" refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kindref="member">cmd</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structs__cmds_1a2f44b091be60ccdd664997eb163d2ff4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structs__cmds_1a2f44b091be60ccdd664997eb163d2ff4" kindref="member">sep</ref>;</highlight></codeline>
+<codeline lineno="49" refid="structs__cmds_1a0025c4bc6dd26be6d05df24de3a1ae88" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structs__cmds" kindref="compound">s_cmds</ref><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__cmds_1a0025c4bc6dd26be6d05df24de3a1ae88" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1afb1327cff317f4de2efd5a873ff849d7" kindref="member">t_cmds</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="structs__stock" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="structs__stock" kindref="compound">s_stock</ref></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54" refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>;</highlight></codeline>
+<codeline lineno="55" refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>;</highlight></codeline>
+<codeline lineno="56" refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="structs__history" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="structs__history" kindref="compound">s_history</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61" refid="structs__history_1a91a70b77df95bd8b0830b49a094c2acb" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__history_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="62" refid="structs__history_1a5d4e20503141c1617cd3ef296ea66d0e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structs__history" kindref="compound">s_history</ref><sp/><sp/>*<ref refid="structs__history_1a5d4e20503141c1617cd3ef296ea66d0e" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="63" refid="structs__history_1af7dadc2c1ca47fd86993081a65a8d9e8" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structs__history" kindref="compound">s_history</ref><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__history_1af7dadc2c1ca47fd86993081a65a8d9e8" kindref="member">prev</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="structs__data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"><ref refid="structs__data" kindref="compound">s_data</ref></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68" refid="structs__data_1abf3d90c932142f8b97a4757ddec92fb1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structs__data_1abf3d90c932142f8b97a4757ddec92fb1" kindref="member">dynam_prompt</ref>;</highlight></codeline>
+<codeline lineno="69" refid="structs__data_1a605d498106be2e521c13025a71deb7ba" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structs__alias" kindref="compound">t_alias</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__data_1a605d498106be2e521c13025a71deb7ba" kindref="member">alias</ref>;</highlight></codeline>
+<codeline lineno="70" refid="structs__data_1afcffbc0c123dbca7c984b936e58c976b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structs__cmds" kindref="compound">t_cmds</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__data_1afcffbc0c123dbca7c984b936e58c976b" kindref="member">cmds</ref>;</highlight></codeline>
+<codeline lineno="71" refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>;</highlight></codeline>
+<codeline lineno="72" refid="structs__data_1acfb34a195b82ba94df86b2ff75a18647" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__data_1acfb34a195b82ba94df86b2ff75a18647" kindref="member">ps1</ref>;</highlight></codeline>
+<codeline lineno="73" refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" kindref="member">return_exe</ref>;</highlight></codeline>
+<codeline lineno="74" refid="structs__data_1ac031cf6c1b18f3f224e088dd3a13b680" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structs__data_1ac031cf6c1b18f3f224e088dd3a13b680" kindref="member">return_exit</ref>;</highlight></codeline>
+<codeline lineno="75" refid="structs__data_1a1f8c1ae59fa5c273cd528969d4ba8dd7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structs__history" kindref="compound">t_history</ref><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__data_1a1f8c1ae59fa5c273cd528969d4ba8dd7" kindref="member">list</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" refkind="member"><highlight class="normal"><ref refid="structs__data" kindref="compound">t_data</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" kindref="member">g_data</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="parsing__cmd_8c_1a03eecd3e4496f8e1b3567709d88ae5b8" kindref="member">parsing_cmd</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="parsing__pipe_8c_1ae16134c5a21e816f178cf67d66d44503" kindref="member">parsing_pipe</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><ref refid="structs__cmds" kindref="compound">t_cmds</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="parsing__general_8c_1abcadffa198fad47ab7758691c6ad4883" kindref="member">parsing_general</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><ref refid="structs__data" kindref="compound">t_data</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="alias_8c_1afa6fff44bde50c8a0f4b8868f6b81777" kindref="member">check_recur</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*old,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><ref refid="structs__data" kindref="compound">t_data</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="pars__alias_8c_1a94ed7403f0bc582353a563669932efdd" kindref="member">get_all_alias</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**bash,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><ref refid="structs__alias" kindref="compound">t_alias</ref>*<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="alias_8c_1ad5f519b4cbb35030e5d5713a466439e7" kindref="member">new_alias</ref>(<ref refid="structs__alias" kindref="compound">t_alias</ref><sp/>*old,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*first,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*sec);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><ref refid="structs__history" kindref="compound">t_history</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="insert__list__double_8c_1ad8cfc41ab9a15b35fb2a892956180cff" kindref="member">insert_list_double</ref>(<ref refid="structs__history" kindref="compound">t_history</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" kindref="member">pars_ps1</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="alias__etc_8c_1acd9ad0dfae53c8683ec2597a188e6c1b" kindref="member">bashset</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/><ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1a7c48c503a505583c6693462bdda06b45" kindref="member">segfault</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1a9c8e6dc113eea68f9307b76af43e5d44" kindref="member">is_exe</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="redirection_8c_1ab141cb2c1876246eb1194566beb195c8" kindref="member">add_redi</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1a1a145470918f339fe655f978216c73e2" kindref="member">error_syntax_error</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exit);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="exe__cmd_8c_1a77721335c9203a6b8979c81c001d77e1" kindref="member">exe_cmd</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*,<sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="pipe_8c_1a2fbfcf1b08d99f573f1102a669d1b728" kindref="member">exe_pipe</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*,<sp/><ref refid="structs__cmds" kindref="compound">t_cmds</ref><sp/>*);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1ade577cee6ed36ca9bc44e1d9f29a7d4a" kindref="member">sh</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="redirection__right_8c_1a8cd483493477b8b727d1773f6ea11ee8" kindref="member">redirection_right</ref>(<ref refid="structs__list" kindref="compound">t_list</ref><sp/>*);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="redirection__left_8c_1a4e39d0c23677b4b63663795cfab2b698" kindref="member">redirection_left</ref>(<ref refid="structs__list" kindref="compound">t_list</ref><sp/>*);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="parsing__cmd_8c_1a76889c4c767c0af44a85984cbaf48d62" kindref="member">is_redi</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="top__builtin_8c_1a4a932a3567484ecc159fb43f41392992" kindref="member">builtin</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**cmd);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="parsing__cmd_8c_1a630ad05ab22a793081c5c8f3ab941220" kindref="member">index_end_word</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stars_8c_1a73cefecfa75f18a7430e6b756214752d" kindref="member">is_stars</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="clean__screen_8c_1a7a70e74d15838251dcd3b1887c9d3c19" kindref="member">clean_screen</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1a7c8b1bb310843604574d3699e2c3465c" kindref="member">error_cmd_not_found</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*cmd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exit);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="stars_8c_1a5b6eb307c8f5f55efe7af56ea79a4c78" kindref="member">if_stars</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="pars__alias_8c_1a8e5633ce3ca1c968f88de68f3ed735c7" kindref="member">pars_alias</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="alias_8c_1adea8df0d450d18361023ed783f462f39" kindref="member">get_line_file</ref>();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="functions__complete_8c_1a43aaf009c1f4a148004ee8cf4f4c5a5a" kindref="member">is_slash</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="is__builtin_8c_1ae140477ff5ef84d0d57e8c35dbc877c2" kindref="member">is_builtin</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="functions__complete_8c_1a0561ce09429ac571427c7b77a61aaed8" kindref="member">epur_slash</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="auto__complete_8c_1a9db47b33aabb3abb191c33e9bc38b173" kindref="member">auto_complete</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="malloc__str_8c_1af4240b9ebd1f790c96c4c8e181827fba" kindref="member">malloc_str</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="loop__read_8c_1a5d35ad919004e2cf4ea5517811342db9" kindref="member">loop</ref>(<ref refid="structs__history" kindref="compound">t_history</ref><sp/>*);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="prompt__dyn_8c_1abee56d6f9016afa0a8fc53a93f1e021b" kindref="member">get_cmd</ref>(<ref refid="structs__history" kindref="compound">t_history</ref><sp/>**);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="gnl_8c_1a6754f4915186decc3a861cd78d15499e" kindref="member">gnl</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="alias__etc_8c_1a2cede4e33e1a1250deaee16f518024c4" kindref="member">concat_alias</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/><ref refid="structs__alias" kindref="compound">t_alias</ref><sp/>*);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="exe__cmd_8c_1a2b4de1f22e62da77dfedc3b21067194c" kindref="member">make_path</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="shell_8h_1a0fae88d1db84fef35d175daa3f9c6b30" kindref="member">get_bin_path</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*bin);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="last__word_8c_1a357ab8f24d10bea851731b776e2d4414" kindref="member">last_word</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="str__cat_8c_1ae2589b5e18e85e7f44abd6bddf4724a4" kindref="member">my_strconcat</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s1,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s2);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="alias_8c_1ae7ca988050564368cd481dd94902435b" kindref="member">alias_finder</ref>(<ref refid="structs__alias" kindref="compound">t_alias</ref><sp/>*s,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*alias);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="alias_8c_1ac8db3662f7b7cc7ee5b03b6c5591447d" kindref="member">alias_find</ref>(<ref refid="structs__alias" kindref="compound">t_alias</ref><sp/>*alias,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*to_find);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="alias__etc_8c_1aeee2c96c8e8193fc245dee41ac044a77" kindref="member">end_find</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*prev,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*to_find);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="move_8c_1a26c659be8ab219ea68df6c038feced8a" kindref="member">up</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/><ref refid="structs__history" kindref="compound">t_history</ref><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="move_8c_1a9cf576f664805ab837347db06b4c4036" kindref="member">down</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/><ref refid="structs__history" kindref="compound">t_history</ref><sp/>**,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="parsing__pipe_8c_1af2f9183740ca6c997f4137fe08c50ff5" kindref="member">calc_new_str</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="shell_8h_1a8a65c90ea8fc24f744d1bfc22ab4ccd2" kindref="member">read_cmd</ref>();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="shell_8h_1a44fa45709eb2e5561b4f39cf406c843d" kindref="member">epure_str</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="str__to__word__tab_8c_1ab03f9e95db8c82fe8ac4c95f5844b0bb" kindref="member">str_to_word_tab</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="glob_8c_1a092c8d6d324b0991de7695be7c950f69" kindref="member">parsing_globing</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="glob_8c_1a79f692f042cb5e15d048e2661729c98f" kindref="member">return_globing</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="shell_8h_1a26d7528347b5a654e5ffce85c1cb3c02" kindref="member">make_env</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="default__path_8c_1aae15200ba07dd26f07781342a0b110f5" kindref="member">default_path</ref>();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="parsing__tilde_8c_1a800e94b9063ed3c13ca3f3339317bea6" kindref="member">pars_tilde</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1a022bb39a7be1bb675180887d1920d394" kindref="member">clean_line_prev</ref>(<ref refid="structs__history" kindref="compound">t_history</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="shell_8h_1a90de19073da7fff41b2b9a6464f78dff" kindref="member">clean_line_next</ref>(<ref refid="structs__history" kindref="compound">t_history</ref><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" kindref="member">clean</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" kindref="member">clean_line</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" kindref="member">print_cursor_left</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="print__cursor_8c_1a99286a45664a92d19230d9ec6ce733a2" kindref="member">print_cursor_right</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="functions__complete_8c_1aac577fdfca82ccd407b2105d39b56fce" kindref="member">my_write_tab</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="gere__key_8c_1ac7b5d923e42cfb0580ecd5200d477268" kindref="member">gere_tab</ref>(<ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="gere__key_8c_1a53f1b007a4f559c1ed15fa556ad75927" kindref="member">gere_history</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*,<sp/><ref refid="structs__history" kindref="compound">t_history</ref><sp/>*,<sp/><ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="init_8c_1aa33a64ab0af49185a45ecd44a5aebeaa" kindref="member">init_stock</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="gere__key_8c_1abe57af5513acea09813b87df7b582f27" kindref="member">gere_char</ref>(<ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="gere__key_8c_1a9a93184b1cbfe4b19e576e90d77dfbce" kindref="member">gere_arrow</ref>(<ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="modif__cmd_8c_1a9cdedadfe9af1533b8f61dd6ae0e4d9f" kindref="member">add_char</ref>(<ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="modif__cmd_8c_1ad89597d4cb1771ebe12c656e50e8dd51" kindref="member">delete_char</ref>(<ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="modif__cmd_8c_1a1c8ba7df47fbf1fb64a9dc3d1740ba03" kindref="member">delete_backward</ref>(<ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!SHELL_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h"/>
+  </compounddef>
+</doxygen>

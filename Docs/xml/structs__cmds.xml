@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structs__cmds" kind="struct" prot="public">
+    <compoundname>s_cmds</compoundname>
+    <includes refid="shell_8h" local="no">shell.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" prot="public" static="no" mutable="no">
+        <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+        <definition>t_cmd* cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="47" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" compoundref="pipe_8c" startline="18" endline="29">check_cmd</referencedby>
+        <referencedby refid="pipe_8c_1a6c5a209f770a66dc5c2f73e10ff86db3" compoundref="pipe_8c" startline="31" endline="41">last_pipe</referencedby>
+        <referencedby refid="pipe_8c_1a6267c0f1ac0750c77dc4e676bf140b80" compoundref="pipe_8c" startline="43" endline="68">loop_pipe</referencedby>
+        <referencedby refid="pipe_8c_1ac7254c9ab0581563f740b715d805c301" compoundref="pipe_8c" startline="70" endline="88">first_pipe</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__cmds_1a2f44b091be60ccdd664997eb163d2ff4" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char sep</definition>
+        <argsstring></argsstring>
+        <name>sep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="48" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="parsing__general_8c_1a8a47bb6cfcb5378a27b639793a995814" compoundref="parsing__general_8c" startline="28" endline="41">new_cmds</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__cmds_1a0025c4bc6dd26be6d05df24de3a1ae88" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structs__cmds" kindref="compound">s_cmds</ref> *</type>
+        <definition>struct s_cmds* next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="49" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="parsing__general_8c_1a2d75753bac50088aa4b9be29314f98fc" compoundref="parsing__general_8c" startline="43" endline="59">add_cmds</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="37">
+        <label>s_cmd</label>
+        <link refid="structs__cmd"/>
+        <childnode refid="37" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>redi_l</edgelabel>
+          <edgelabel>redi_r</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>s_list</label>
+        <link refid="structs__list"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>s_cmds</label>
+        <link refid="structs__cmds"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>cmd</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="46" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="45" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" prot="public" virt="non-virtual"><scope>s_cmds</scope><name>cmd</name></member>
+      <member refid="structs__cmds_1a0025c4bc6dd26be6d05df24de3a1ae88" prot="public" virt="non-virtual"><scope>s_cmds</scope><name>next</name></member>
+      <member refid="structs__cmds_1a2f44b091be60ccdd664997eb163d2ff4" prot="public" virt="non-virtual"><scope>s_cmds</scope><name>sep</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

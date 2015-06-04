@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="make__env_8c" kind="file">
+    <compoundname>make_env.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <incdepgraph>
+      <node id="748">
+        <label>stdlib.h</label>
+      </node>
+      <node id="750">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="749">
+        <label>string.h</label>
+      </node>
+      <node id="747">
+        <label>make_env.c</label>
+        <link refid="make_env.c"/>
+        <childnode refid="748" relation="include">
+        </childnode>
+        <childnode refid="749" relation="include">
+        </childnode>
+        <childnode refid="750" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="make__env_8c_1ab483523a31212de6a23b1e117d009bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int return_index</definition>
+        <argsstring>(char **env, char *str)</argsstring>
+        <name>return_index</name>
+        <param>
+          <type>char **</type>
+          <declname>env</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/PSU_2014_42sh/make_env.c" line="15" column="1" bodyfile="/home/geiger_a/PSU_2014_42sh/make_env.c" bodystart="15" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="make__env_8c_1af0d3428604522f10c237ed69ef68e718" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** make_env</definition>
+        <argsstring>(char **argp)</argsstring>
+        <name>make_env</name>
+        <param>
+          <type>char **</type>
+          <declname>argp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/PSU_2014_42sh/make_env.c" line="31" column="1" bodyfile="/home/geiger_a/PSU_2014_42sh/make_env.c" bodystart="31" bodyend="51"/>
+        <referencedby refid="main_8c_1a7b26396c9888d66d997b0007e8ff1e60" compoundref="main_8c" startline="24" endline="44">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>make_env.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/bauer_a/rendu/PSU_2014_42sh</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;bauer_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Mon<sp/>Apr<sp/>20<sp/>14:18:23<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Fri<sp/>May<sp/>15<sp/>15:20:02<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="make__env_8c_1ab483523a31212de6a23b1e117d009bc2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="make__env_8c_1ab483523a31212de6a23b1e117d009bc2" kindref="member">return_index</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**env,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(env<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(env[i]<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strncmp(env[i],<sp/>str,<sp/>strlen(str))<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(i);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="shell_8h_1a26d7528347b5a654e5ffce85c1cb3c02" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="make__env_8c_1af0d3428604522f10c237ed69ef68e718" kindref="member">make_env</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argp)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>**env;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(argp<sp/>==<sp/>NULL<sp/>||<sp/>argp[0]<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(argp[i]<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((env<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)<sp/>*<sp/>(i<sp/>+<sp/>1)))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(argp[i]<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>env[i]<sp/>=<sp/>strdup(argp[i]);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>env[i]<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(env);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/PSU_2014_42sh/make_env.c"/>
+  </compounddef>
+</doxygen>

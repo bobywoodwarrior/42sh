@@ -1,0 +1,7 @@
+<map id="s_data" name="s_data">
+<area shape="rect" id="node2" href="$structs__cmds.html" title="s_cmds" alt="" coords="5,201,75,228"/>
+<area shape="rect" id="node5" href="$structs__cmd.html" title="s_cmd" alt="" coords="9,109,71,136"/>
+<area shape="rect" id="node8" href="$structs__list.html" title="s_list" alt="" coords="14,5,65,32"/>
+<area shape="rect" id="node11" href="$structs__history.html" title="s_history" alt="" coords="152,201,225,228"/>
+<area shape="rect" id="node14" href="$structs__alias.html" title="s_alias" alt="" coords="306,201,371,228"/>
+</map>

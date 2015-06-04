@@ -1,0 +1,54 @@
+.TH "sh.c" 3 "Fri May 22 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+sh.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include 'lib\&.h'\fP
+.br
+\fC#include 'ps1\&.h'\fP
+.br
+\fC#include 'shell\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBcount_pipe\fP (\fBt_cmd\fP *cmd)"
+.br
+.ti -1c
+.RI "int \fBcheck_exe\fP (int return_exe, char sep)"
+.br
+.ti -1c
+.RI "int \fBcall_exe\fP (\fBt_data\fP *data)"
+.br
+.ti -1c
+.RI "int \fBsh\fP (\fBt_data\fP *data)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int call_exe (\fBt_data\fP *data)"
+
+.PP
+Definition at line 38 of file sh\&.c\&.
+.SS "int check_exe (intreturn_exe, charsep)"
+
+.PP
+Definition at line 29 of file sh\&.c\&.
+.SS "int count_pipe (\fBt_cmd\fP *cmd)"
+
+.PP
+Definition at line 16 of file sh\&.c\&.
+.SS "int sh (\fBt_data\fP *data)"
+
+.PP
+Definition at line 51 of file sh\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

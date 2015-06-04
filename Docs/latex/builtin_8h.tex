@@ -1,0 +1,634 @@
+\section{include/builtin.h File Reference}
+\label{builtin_8h}\index{include/builtin.\-h@{include/builtin.\-h}}
+{\ttfamily \#include \char`\"{}shell.\-h\char`\"{}}\\*
+Include dependency graph for builtin.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{builtin_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct {\bf s\-\_\-bref}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bf E\-S\-C\-A\-P\-E}~27
+\item 
+\#define {\bf F\-A\-I\-L\-U\-R\-E}~-\/2
+\item 
+\#define {\bf N\-O\-\_\-\-M\-A\-T\-C\-H}~-\/1
+\item 
+\#define {\bf S\-U\-C\-C\-E\-S\-S}~0
+\item 
+\#define {\bf E\-X\-I\-T}~1
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct {\bf s\-\_\-bref} {\bf t\-\_\-bref}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf my\-\_\-redir\-\_\-builtin} ({\bf t\-\_\-data} $\ast$data, {\bf t\-\_\-cmd} $\ast$cmd)
+\item 
+char $\ast$$\ast$ {\bf cattab\-\_\-ext} (char $\ast$new)
+\item 
+int {\bf my\-\_\-cd\-\_\-error} (char $\ast$str)
+\item 
+int {\bf my\-\_\-replace\-\_\-key} (char $\ast$$\ast$expr, {\bf t\-\_\-data} $\ast$data)
+\item 
+char $\ast$ {\bf my\-\_\-cstrconcat} (char $\ast$s1, char $\ast$s2)
+\item 
+char $\ast$ {\bf get\-\_\-env\-\_\-value} (char $\ast$$\ast$env, char $\ast$key, int $\ast$offset)
+\item 
+int {\bf my\-\_\-print} (char $\ast$str, char inter, char noret, char $\ast$nextword)
+\item 
+char $\ast$$\ast$ {\bf my\-\_\-epurtab} (char $\ast$$\ast$tab)
+\item 
+char $\ast$$\ast$ {\bf my\-\_\-cattab} (char $\ast$$\ast$tab, char $\ast$new)
+\item 
+int {\bf my\-\_\-getnbr\-\_\-base} (char $\ast$str, char $\ast$base, int $\ast$offset, int i)
+\item 
+int {\bf my\-\_\-cd} (char $\ast$$\ast$, {\bf t\-\_\-data} $\ast$)
+\item 
+int {\bf my\-\_\-exit} (char $\ast$$\ast$, {\bf t\-\_\-data} $\ast$)
+\item 
+int {\bf my\-\_\-env} (char $\ast$$\ast$, {\bf t\-\_\-data} $\ast$)
+\item 
+int {\bf my\-\_\-setenv} (char $\ast$$\ast$, {\bf t\-\_\-data} $\ast$)
+\item 
+int {\bf my\-\_\-unsetenv} (char $\ast$$\ast$, {\bf t\-\_\-data} $\ast$)
+\item 
+int {\bf my\-\_\-echo} (char $\ast$$\ast$, {\bf t\-\_\-data} $\ast$)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{builtin.\-h@{builtin.\-h}!E\-S\-C\-A\-P\-E@{E\-S\-C\-A\-P\-E}}
+\index{E\-S\-C\-A\-P\-E@{E\-S\-C\-A\-P\-E}!builtin.h@{builtin.\-h}}
+\subsubsection[{E\-S\-C\-A\-P\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-S\-C\-A\-P\-E~27}\label{builtin_8h_afe4b0e625372cd38ec60150d6f5594b8}
+
+
+Definition at line 16 of file builtin.\-h.
+
+\index{builtin.\-h@{builtin.\-h}!E\-X\-I\-T@{E\-X\-I\-T}}
+\index{E\-X\-I\-T@{E\-X\-I\-T}!builtin.h@{builtin.\-h}}
+\subsubsection[{E\-X\-I\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\-X\-I\-T~1}\label{builtin_8h_ad111e603bbebe5d87f6bc39264ce4733}
+
+
+Definition at line 20 of file builtin.\-h.
+
+\index{builtin.\-h@{builtin.\-h}!F\-A\-I\-L\-U\-R\-E@{F\-A\-I\-L\-U\-R\-E}}
+\index{F\-A\-I\-L\-U\-R\-E@{F\-A\-I\-L\-U\-R\-E}!builtin.h@{builtin.\-h}}
+\subsubsection[{F\-A\-I\-L\-U\-R\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\-A\-I\-L\-U\-R\-E~-\/2}\label{builtin_8h_a6d58f9ac447476b4e084d7ca383f5183}
+
+
+Definition at line 17 of file builtin.\-h.
+
+\index{builtin.\-h@{builtin.\-h}!N\-O\-\_\-\-M\-A\-T\-C\-H@{N\-O\-\_\-\-M\-A\-T\-C\-H}}
+\index{N\-O\-\_\-\-M\-A\-T\-C\-H@{N\-O\-\_\-\-M\-A\-T\-C\-H}!builtin.h@{builtin.\-h}}
+\subsubsection[{N\-O\-\_\-\-M\-A\-T\-C\-H}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-O\-\_\-\-M\-A\-T\-C\-H~-\/1}\label{builtin_8h_a82364b047b41d18199c9372ace974305}
+
+
+Definition at line 18 of file builtin.\-h.
+
+\index{builtin.\-h@{builtin.\-h}!S\-U\-C\-C\-E\-S\-S@{S\-U\-C\-C\-E\-S\-S}}
+\index{S\-U\-C\-C\-E\-S\-S@{S\-U\-C\-C\-E\-S\-S}!builtin.h@{builtin.\-h}}
+\subsubsection[{S\-U\-C\-C\-E\-S\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-U\-C\-C\-E\-S\-S~0}\label{builtin_8h_aa90cac659d18e8ef6294c7ae337f6b58}
+
+
+Definition at line 19 of file builtin.\-h.
+
+
+
+\subsection{Typedef Documentation}
+\index{builtin.\-h@{builtin.\-h}!t\-\_\-bref@{t\-\_\-bref}}
+\index{t\-\_\-bref@{t\-\_\-bref}!builtin.h@{builtin.\-h}}
+\subsubsection[{t\-\_\-bref}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf s\-\_\-bref}		 {\bf t\-\_\-bref}}\label{builtin_8h_a73c4175ebb4c747bdf44fbf2820385c1}
+
+
+\subsection{Function Documentation}
+\index{builtin.\-h@{builtin.\-h}!cattab\-\_\-ext@{cattab\-\_\-ext}}
+\index{cattab\-\_\-ext@{cattab\-\_\-ext}!builtin.h@{builtin.\-h}}
+\subsubsection[{cattab\-\_\-ext}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ cattab\-\_\-ext (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{new}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_ac46a37eeaf4141428d46b5605bbd6c51}
+
+
+Definition at line 60 of file utils.\-c.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_ac46a37eeaf4141428d46b5605bbd6c51_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!get\-\_\-env\-\_\-value@{get\-\_\-env\-\_\-value}}
+\index{get\-\_\-env\-\_\-value@{get\-\_\-env\-\_\-value}!builtin.h@{builtin.\-h}}
+\subsubsection[{get\-\_\-env\-\_\-value}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\-\_\-env\-\_\-value (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{env, }
+\item[{char $\ast$}]{key, }
+\item[{int $\ast$}]{offset}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_a0059bf9838c7770b46270fedbc869799}
+
+
+Definition at line 42 of file utils.\-c.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a0059bf9838c7770b46270fedbc869799_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-cattab@{my\-\_\-cattab}}
+\index{my\-\_\-cattab@{my\-\_\-cattab}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-cattab}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ my\-\_\-cattab (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{tab, }
+\item[{char $\ast$}]{new}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_a795c38158cb00f9fcad0dd7db17e7ded}
+
+
+Definition at line 124 of file forbuiltin.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{builtin_8h_a795c38158cb00f9fcad0dd7db17e7ded_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a795c38158cb00f9fcad0dd7db17e7ded_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-cd@{my\-\_\-cd}}
+\index{my\-\_\-cd@{my\-\_\-cd}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-cd}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-cd (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{, }
+\item[{{\bf t\-\_\-data} $\ast$}]{}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_a2157775684b24545b151e0c2e5f38954}
+
+
+Definition at line 73 of file cd.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a2157775684b24545b151e0c2e5f38954_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a2157775684b24545b151e0c2e5f38954_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-cd\-\_\-error@{my\-\_\-cd\-\_\-error}}
+\index{my\-\_\-cd\-\_\-error@{my\-\_\-cd\-\_\-error}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-cd\-\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-cd\-\_\-error (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_a27ff54b856199cbd22e0983f4b369f6b}
+
+
+Definition at line 18 of file cd.\-c.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a27ff54b856199cbd22e0983f4b369f6b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-cstrconcat@{my\-\_\-cstrconcat}}
+\index{my\-\_\-cstrconcat@{my\-\_\-cstrconcat}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-cstrconcat}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ my\-\_\-cstrconcat (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{s1, }
+\item[{char $\ast$}]{s2}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_a2883a48551d7c810ebd592fb241efeed}
+
+
+Definition at line 50 of file getvar.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{builtin_8h_a2883a48551d7c810ebd592fb241efeed_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a2883a48551d7c810ebd592fb241efeed_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-echo@{my\-\_\-echo}}
+\index{my\-\_\-echo@{my\-\_\-echo}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-echo}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-echo (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{, }
+\item[{{\bf t\-\_\-data} $\ast$}]{}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_a772e7ea72ee3ac31a9da9d3c8423816e}
+
+
+Definition at line 101 of file builtin.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a772e7ea72ee3ac31a9da9d3c8423816e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a772e7ea72ee3ac31a9da9d3c8423816e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-env@{my\-\_\-env}}
+\index{my\-\_\-env@{my\-\_\-env}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-env}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-env (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{, }
+\item[{{\bf t\-\_\-data} $\ast$}]{}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_a475eb535199d99dff9033edf1b87a84d}
+
+
+Definition at line 71 of file builtin.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{builtin_8h_a475eb535199d99dff9033edf1b87a84d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a475eb535199d99dff9033edf1b87a84d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-epurtab@{my\-\_\-epurtab}}
+\index{my\-\_\-epurtab@{my\-\_\-epurtab}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-epurtab}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ my\-\_\-epurtab (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{tab}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_a9c81bd03dd1d5eae7cee8720ff4a4f25}
+
+
+Definition at line 95 of file forbuiltin.\-c.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a9c81bd03dd1d5eae7cee8720ff4a4f25_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-exit@{my\-\_\-exit}}
+\index{my\-\_\-exit@{my\-\_\-exit}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-exit}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-exit (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{, }
+\item[{{\bf t\-\_\-data} $\ast$}]{}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_adff2ceef5d8ba6f5b94b9c3902b2d5f9}
+
+
+Definition at line 92 of file builtin.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_adff2ceef5d8ba6f5b94b9c3902b2d5f9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_adff2ceef5d8ba6f5b94b9c3902b2d5f9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-getnbr\-\_\-base@{my\-\_\-getnbr\-\_\-base}}
+\index{my\-\_\-getnbr\-\_\-base@{my\-\_\-getnbr\-\_\-base}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-getnbr\-\_\-base}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-getnbr\-\_\-base (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{char $\ast$}]{base, }
+\item[{int $\ast$}]{offset, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_a0bd2485960de353416dedf1cf03a943e}
+
+
+Definition at line 14 of file utils.\-c.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a0bd2485960de353416dedf1cf03a943e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-print@{my\-\_\-print}}
+\index{my\-\_\-print@{my\-\_\-print}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-print (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{char}]{inter, }
+\item[{char}]{noret, }
+\item[{char $\ast$}]{nextword}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_a3da96f75f1c99d390ce5582d73f7bf18}
+
+
+Definition at line 72 of file forbuiltin.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a3da96f75f1c99d390ce5582d73f7bf18_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a3da96f75f1c99d390ce5582d73f7bf18_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-redir\-\_\-builtin@{my\-\_\-redir\-\_\-builtin}}
+\index{my\-\_\-redir\-\_\-builtin@{my\-\_\-redir\-\_\-builtin}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-redir\-\_\-builtin}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-redir\-\_\-builtin (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{{\bf t\-\_\-cmd} $\ast$}]{cmd}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_aecb1f227db5bcfc86869d066066f450d}
+
+
+Definition at line 16 of file top\-\_\-builtin.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_aecb1f227db5bcfc86869d066066f450d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_aecb1f227db5bcfc86869d066066f450d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-replace\-\_\-key@{my\-\_\-replace\-\_\-key}}
+\index{my\-\_\-replace\-\_\-key@{my\-\_\-replace\-\_\-key}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-replace\-\_\-key}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-replace\-\_\-key (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{expr, }
+\item[{{\bf t\-\_\-data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_a6055c5e4f8247c5a1151cd65e5061574}
+
+
+Definition at line 28 of file getvar.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{builtin_8h_a6055c5e4f8247c5a1151cd65e5061574_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a6055c5e4f8247c5a1151cd65e5061574_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-setenv@{my\-\_\-setenv}}
+\index{my\-\_\-setenv@{my\-\_\-setenv}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-setenv}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-setenv (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{, }
+\item[{{\bf t\-\_\-data} $\ast$}]{}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_a0f75b40d45c389d2f019b5ad672f3ed1}
+
+
+Definition at line 44 of file builtin.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a0f75b40d45c389d2f019b5ad672f3ed1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_a0f75b40d45c389d2f019b5ad672f3ed1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{builtin.\-h@{builtin.\-h}!my\-\_\-unsetenv@{my\-\_\-unsetenv}}
+\index{my\-\_\-unsetenv@{my\-\_\-unsetenv}!builtin.h@{builtin.\-h}}
+\subsubsection[{my\-\_\-unsetenv}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-unsetenv (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{, }
+\item[{{\bf t\-\_\-data} $\ast$}]{}
+\end{DoxyParamCaption}
+)}\label{builtin_8h_ab15f4c5af8f204fcf26ff0bf30391b77}
+
+
+Definition at line 16 of file builtin.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{builtin_8h_ab15f4c5af8f204fcf26ff0bf30391b77_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{builtin_8h_ab15f4c5af8f204fcf26ff0bf30391b77_icgraph}
+\end{center}
+\end{figure}
+
+

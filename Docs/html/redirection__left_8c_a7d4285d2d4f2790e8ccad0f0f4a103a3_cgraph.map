@@ -1,0 +1,8 @@
+<map id="double_redi_left" name="double_redi_left">
+<area shape="rect" id="node3" href="$my__putstr_8c.html#aa2895eb8fcea370c01f1f3b7795b2743" title="my_putstr" alt="" coords="329,52,407,79"/>
+<area shape="rect" id="node5" href="$shell_8h.html#a8a65c90ea8fc24f744d1bfc22ab4ccd2" title="read_cmd" alt="" coords="181,27,264,54"/>
+<area shape="rect" id="node7" href="$my__strcmp_8c.html#a7656d2f543a26ba1552b06f75667ba3c" title="my_strcmp" alt="" coords="179,78,266,104"/>
+<area shape="rect" id="node9" href="$redirection__left_8c.html#ac59f9fd6667dc7848f769a37da76319b" title="add_end_list" alt="" coords="173,128,272,155"/>
+<area shape="rect" id="node11" href="$redirection__left_8c.html#a870bc72198c51984b1f8dd97b650a7c3" title="write_list_redi" alt="" coords="171,179,274,206"/>
+<area shape="rect" id="node14" href="$my__putchar_8c.html#a305f90840add16d2d82af412da2260af" title="my_putchar" alt="" coords="323,179,413,206"/>
+</map>

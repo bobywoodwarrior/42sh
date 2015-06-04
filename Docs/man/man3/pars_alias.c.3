@@ -1,0 +1,71 @@
+.TH "alias/pars_alias.c" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+alias/pars_alias.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <sys/types\&.h>\fP
+.br
+\fC#include <sys/stat\&.h>\fP
+.br
+\fC#include <fcntl\&.h>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include 'builtin\&.h'\fP
+.br
+\fC#include 'shell\&.h'\fP
+.br
+\fC#include 'lib\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "char ** \fBget_bash\fP ()"
+.br
+.ti -1c
+.RI "char * \fBget_old\fP (char *str, int x, int i)"
+.br
+.ti -1c
+.RI "\fBt_data\fP * \fBget_old_new\fP (char *str, \fBt_data\fP *data, int x)"
+.br
+.ti -1c
+.RI "\fBt_data\fP * \fBget_all_alias\fP (\fBt_data\fP *data, char **bash, int x)"
+.br
+.ti -1c
+.RI "int \fBpars_alias\fP (\fBt_data\fP *data)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBt_data\fP* get_all_alias (\fBt_data\fP *data, char **bash, intx)"
+
+.PP
+Definition at line 100 of file pars_alias\&.c\&.
+.SS "char** get_bash ()"
+
+.PP
+Definition at line 21 of file pars_alias\&.c\&.
+.SS "char* get_old (char *str, intx, inti)"
+
+.PP
+Definition at line 47 of file pars_alias\&.c\&.
+.SS "\fBt_data\fP* get_old_new (char *str, \fBt_data\fP *data, intx)"
+
+.PP
+Definition at line 76 of file pars_alias\&.c\&.
+.SS "int pars_alias (\fBt_data\fP *data)"
+
+.PP
+Definition at line 119 of file pars_alias\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

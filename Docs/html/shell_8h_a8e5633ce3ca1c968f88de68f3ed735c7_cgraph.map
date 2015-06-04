@@ -1,0 +1,25 @@
+<map id="pars_alias" name="pars_alias">
+<area shape="rect" id="node3" href="$pars__alias_8c.html#a203bc66f586da530ebb9eeee519bd082" title="get_bash" alt="" coords="441,56,519,83"/>
+<area shape="rect" id="node18" href="$pars__alias_8c.html#a94ed7403f0bc582353a563669932efdd" title="get_all_alias" alt="" coords="139,221,237,248"/>
+<area shape="rect" id="node5" href="$alias_8c.html#adea8df0d450d18361023ed783f462f39" title="get_line_file" alt="" coords="585,5,679,32"/>
+<area shape="rect" id="node7" href="$gnl_8c.html#a6754f4915186decc3a861cd78d15499e" title="gnl" alt="" coords="761,56,801,83"/>
+<area shape="rect" id="node10" href="$my__strdup_8c.html#a4548135c4f1cfcaeff31c8dabb3692d3" title="my_strdup" alt="" coords="591,107,673,133"/>
+<area shape="rect" id="node12" href="$get__next__line_8c.html#a43354ef027ff107d540fe9cd7b0aed1b" title="new_str" alt="" coords="747,157,815,184"/>
+<area shape="rect" id="node14" href="$my__strlen_8c.html#ac7e9bd08d068851e31a5b6d408004638" title="my_strlen" alt="" coords="742,208,821,235"/>
+<area shape="rect" id="node16" href="$my__strcpy_8c.html#a73fd71e5a924f50c46bbdfb8b76fc6f7" title="my_strcpy" alt="" coords="740,107,823,133"/>
+<area shape="rect" id="node20" href="$my__strncmp_8c.html#a5c4d2d32920036f1ad38c2bd614abfd9" title="my_strncmp" alt="" coords="288,309,381,336"/>
+<area shape="rect" id="node22" href="$pars__alias_8c.html#a7d7873e60a328ecd3a34c3370594b040" title="get_old_new" alt="" coords="285,183,384,209"/>
+<area shape="rect" id="node37" href="$alias__etc_8c.html#acd9ad0dfae53c8683ec2597a188e6c1b" title="bashset" alt="" coords="300,259,369,285"/>
+<area shape="rect" id="node24" href="$my__strndup_8c.html#aa470a7e58967778144f7d737bf64c3e8" title="my_strndup" alt="" coords="587,208,677,235"/>
+<area shape="rect" id="node30" href="$pars__alias_8c.html#a3257a6fcadd0309f1df178525eea9257" title="get_old" alt="" coords="447,157,513,184"/>
+<area shape="rect" id="node33" href="$alias_8c.html#afa6fff44bde50c8a0f4b8868f6b81777" title="check_recur" alt="" coords="433,107,527,133"/>
+<area shape="rect" id="node28" href="$my__strncpy_8c.html#a488ec5fec2f5d4fda8bf780b1e08ef63" title="my_strncpy" alt="" coords="737,259,826,285"/>
+<area shape="rect" id="node35" href="$alias_8c.html#ad5f519b4cbb35030e5d5713a466439e7" title="new_alias" alt="" coords="591,157,673,184"/>
+<area shape="rect" id="node40" href="$alias__etc_8c.html#a2554b2fd4cf3639ec091ec6a5a432675" title="setbashenv" alt="" coords="435,309,525,336"/>
+<area shape="rect" id="node43" href="$builtin_8c.html#aa3ae54ee16af4313f2ccb3c2fff447e9" title="my_setenv" alt="" coords="437,360,523,387"/>
+<area shape="rect" id="node45" href="$cd_8c.html#a27ff54b856199cbd22e0983f4b369f6b" title="my_cd_error" alt="" coords="583,309,681,336"/>
+<area shape="rect" id="node47" href="$getvar_8c.html#a2883a48551d7c810ebd592fb241efeed" title="my_cstrconcat" alt="" coords="578,259,686,285"/>
+<area shape="rect" id="node50" href="$builtin_2utils_8c.html#a0059bf9838c7770b46270fedbc869799" title="get_env_value" alt="" coords="577,411,687,437"/>
+<area shape="rect" id="node52" href="$forbuiltin_8c.html#a795c38158cb00f9fcad0dd7db17e7ded" title="my_cattab" alt="" coords="591,360,673,387"/>
+<area shape="rect" id="node54" href="$builtin_2utils_8c.html#ac46a37eeaf4141428d46b5605bbd6c51" title="cattab_ext" alt="" coords="740,360,823,387"/>
+</map>

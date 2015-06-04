@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structs__stock" kind="struct" prot="public">
+    <compoundname>s_stock</compoundname>
+    <includes refid="shell_8h" local="no">shell.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structs__stock_1a7353cae57e2530c316ddacb27ef14932" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* cmd</definition>
+        <argsstring></argsstring>
+        <name>cmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="54" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="shell_8h_1ae47252a37d7b8c816ca7a1d2e83ce8b7" compoundref="gere__key_8c" startline="16" endline="36">gere_history</referencedby>
+        <referencedby refid="shell_8h_1a089febdbd9db477f99c25841413150a8" compoundref="gere__key_8c" startline="38" endline="55">gere_char</referencedby>
+        <referencedby refid="shell_8h_1ab4ce23e3bb732e092c9ec75e6c739242" compoundref="gere__key_8c" startline="57" endline="71">gere_arrow</referencedby>
+        <referencedby refid="shell_8h_1a355426ca95d2d3e650e274a762d1d99b" compoundref="gere__key_8c" startline="88" endline="105">gere_tab</referencedby>
+        <referencedby refid="shell_8h_1a19c96fd25dc36fc2337e2107bb0a54c5" compoundref="init_8c" startline="14" endline="28">init_stock</referencedby>
+        <referencedby refid="loop__read_8c_1acb438155c44ae29d7351b71202ab6e3e" compoundref="loop__read_8c" startline="39" endline="65">change_word</referencedby>
+        <referencedby refid="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" compoundref="loop__read_8c" startline="67" endline="93">loop</referencedby>
+        <referencedby refid="shell_8h_1a929bf8ea49ac6f94a2b1ab00c9f16343" compoundref="modif__cmd_8c" startline="14" endline="38">add_char</referencedby>
+        <referencedby refid="shell_8h_1a8a81cc045a4530835ce45b6817e17335" compoundref="modif__cmd_8c" startline="40" endline="67">delete_char</referencedby>
+        <referencedby refid="shell_8h_1a10717a0c53430c97d2ccedbfb1728211" compoundref="modif__cmd_8c" startline="69" endline="87">delete_backward</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="55" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="shell_8h_1ae47252a37d7b8c816ca7a1d2e83ce8b7" compoundref="gere__key_8c" startline="16" endline="36">gere_history</referencedby>
+        <referencedby refid="shell_8h_1a089febdbd9db477f99c25841413150a8" compoundref="gere__key_8c" startline="38" endline="55">gere_char</referencedby>
+        <referencedby refid="shell_8h_1ab4ce23e3bb732e092c9ec75e6c739242" compoundref="gere__key_8c" startline="57" endline="71">gere_arrow</referencedby>
+        <referencedby refid="shell_8h_1a19c96fd25dc36fc2337e2107bb0a54c5" compoundref="init_8c" startline="14" endline="28">init_stock</referencedby>
+        <referencedby refid="loop__read_8c_1acb438155c44ae29d7351b71202ab6e3e" compoundref="loop__read_8c" startline="39" endline="65">change_word</referencedby>
+        <referencedby refid="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" compoundref="loop__read_8c" startline="67" endline="93">loop</referencedby>
+        <referencedby refid="shell_8h_1a929bf8ea49ac6f94a2b1ab00c9f16343" compoundref="modif__cmd_8c" startline="14" endline="38">add_char</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__stock_1a1910d262855b71da353ed0d07a6c7823" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int pos</definition>
+        <argsstring></argsstring>
+        <name>pos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="56" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="shell_8h_1ae47252a37d7b8c816ca7a1d2e83ce8b7" compoundref="gere__key_8c" startline="16" endline="36">gere_history</referencedby>
+        <referencedby refid="shell_8h_1a089febdbd9db477f99c25841413150a8" compoundref="gere__key_8c" startline="38" endline="55">gere_char</referencedby>
+        <referencedby refid="shell_8h_1ab4ce23e3bb732e092c9ec75e6c739242" compoundref="gere__key_8c" startline="57" endline="71">gere_arrow</referencedby>
+        <referencedby refid="shell_8h_1a355426ca95d2d3e650e274a762d1d99b" compoundref="gere__key_8c" startline="88" endline="105">gere_tab</referencedby>
+        <referencedby refid="shell_8h_1a19c96fd25dc36fc2337e2107bb0a54c5" compoundref="init_8c" startline="14" endline="28">init_stock</referencedby>
+        <referencedby refid="loop__read_8c_1acb438155c44ae29d7351b71202ab6e3e" compoundref="loop__read_8c" startline="39" endline="65">change_word</referencedby>
+        <referencedby refid="shell_8h_1a929bf8ea49ac6f94a2b1ab00c9f16343" compoundref="modif__cmd_8c" startline="14" endline="38">add_char</referencedby>
+        <referencedby refid="shell_8h_1a8a81cc045a4530835ce45b6817e17335" compoundref="modif__cmd_8c" startline="40" endline="67">delete_char</referencedby>
+        <referencedby refid="shell_8h_1a10717a0c53430c97d2ccedbfb1728211" compoundref="modif__cmd_8c" startline="69" endline="87">delete_backward</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="53" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="52" bodyend="57"/>
+    <listofallmembers>
+      <member refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" prot="public" virt="non-virtual"><scope>s_stock</scope><name>c</name></member>
+      <member refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" prot="public" virt="non-virtual"><scope>s_stock</scope><name>cmd</name></member>
+      <member refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" prot="public" virt="non-virtual"><scope>s_stock</scope><name>pos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

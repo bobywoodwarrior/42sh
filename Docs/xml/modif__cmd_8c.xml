@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="modif__cmd_8c" kind="file">
+    <compoundname>modif_cmd.c</compoundname>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <incdepgraph>
+      <node id="770">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="768">
+        <label>prompt_read_termcaps/modif_cmd.c</label>
+        <link refid="modif_cmd.c"/>
+        <childnode refid="769" relation="include">
+        </childnode>
+        <childnode refid="770" relation="include">
+        </childnode>
+      </node>
+      <node id="769">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="modif__cmd_8c_1a9cdedadfe9af1533b8f61dd6ae0e4d9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* add_char</definition>
+        <argsstring>(t_stock *ptr)</argsstring>
+        <name>add_char</name>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/modif_cmd.c" line="14" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/modif_cmd.c" bodystart="14" bodyend="38"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" compoundref="shell_8h" startline="55">s_stock::c</references>
+        <references refid="my__strncpy_8c_1a488ec5fec2f5d4fda8bf780b1e08ef63" compoundref="my__strncpy_8c" startline="11" endline="23">my_strncpy</references>
+        <references refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" compoundref="my__strcat_8c" startline="11" endline="28">my_strcat</references>
+        <references refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" compoundref="my__strcpy__from_8c" startline="13" endline="24">my_strcpy_from</references>
+        <references refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" compoundref="my__strcpy_8c" startline="11" endline="23">my_strcpy</references>
+        <references refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</references>
+        <references refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" compoundref="shell_8h" startline="78">g_data</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" compoundref="print__cursor_8c" startline="14" endline="29">print_cursor_left</references>
+        <referencedby refid="shell_8h_1a089febdbd9db477f99c25841413150a8" compoundref="gere__key_8c" startline="38" endline="55">gere_char</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="modif__cmd_8c_1ad89597d4cb1771ebe12c656e50e8dd51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* delete_char</definition>
+        <argsstring>(t_stock *ptr)</argsstring>
+        <name>delete_char</name>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/modif_cmd.c" line="40" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/modif_cmd.c" bodystart="40" bodyend="67"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" compoundref="clear__line_8c" startline="16" endline="28">clean_line</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</references>
+        <references refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" compoundref="shell_8h" startline="78">g_data</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="my__strncpy_8c_1a488ec5fec2f5d4fda8bf780b1e08ef63" compoundref="my__strncpy_8c" startline="11" endline="23">my_strncpy</references>
+        <references refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" compoundref="my__strcpy__from_8c" startline="13" endline="24">my_strcpy_from</references>
+        <references refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" compoundref="my__strcpy_8c" startline="11" endline="23">my_strcpy</references>
+        <references refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" compoundref="my__strcat_8c" startline="11" endline="28">my_strcat</references>
+        <references refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" compoundref="print__cursor_8c" startline="14" endline="29">print_cursor_left</references>
+        <referencedby refid="shell_8h_1a089febdbd9db477f99c25841413150a8" compoundref="gere__key_8c" startline="38" endline="55">gere_char</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="modif__cmd_8c_1a1c8ba7df47fbf1fb64a9dc3d1740ba03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* delete_backward</definition>
+        <argsstring>(t_stock *ptr)</argsstring>
+        <name>delete_backward</name>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/modif_cmd.c" line="69" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/modif_cmd.c" bodystart="69" bodyend="87"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="my__strncpy_8c_1a488ec5fec2f5d4fda8bf780b1e08ef63" compoundref="my__strncpy_8c" startline="11" endline="23">my_strncpy</references>
+        <references refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" compoundref="my__strcpy__from_8c" startline="13" endline="24">my_strcpy_from</references>
+        <references refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" compoundref="my__strcpy_8c" startline="11" endline="23">my_strcpy</references>
+        <references refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" compoundref="my__strcat_8c" startline="11" endline="28">my_strcat</references>
+        <references refid="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" compoundref="clear__line_8c" startline="16" endline="28">clean_line</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</references>
+        <references refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" compoundref="shell_8h" startline="78">g_data</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" compoundref="print__cursor_8c" startline="14" endline="29">print_cursor_left</references>
+        <referencedby refid="shell_8h_1a089febdbd9db477f99c25841413150a8" compoundref="gere__key_8c" startline="38" endline="55">gere_char</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>modif_cmd.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/blanqu_a/Workspace/rendu/PSU_2014_42sh</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;blanqu_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Thu<sp/>May<sp/>21<sp/>14:06:59<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>15:47:31<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="shell_8h_1a929bf8ea49ac6f94a2b1ab00c9f16343" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="modif__cmd_8c_1a9cdedadfe9af1533b8f61dd6ae0e4d9f" kindref="member">add_char</ref>(<ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*ptr)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>left[<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>)];</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>right[<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>)];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>==<sp/><ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>))</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[0],<sp/>1);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>[ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>++]<sp/>=<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[0];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strncpy_8c_1a488ec5fec2f5d4fda8bf780b1e08ef63" kindref="member">my_strncpy</ref>(left,<sp/>ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" kindref="member">my_strcat</ref>(left,<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" kindref="member">my_strcpy_from</ref>(right,<sp/>ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" kindref="member">my_strcpy</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>left);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" kindref="member">my_strcat</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>right);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" kindref="member">pars_ps1</ref>(<ref refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" kindref="member">g_data</ref>-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>++;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" kindref="member">print_cursor_left</ref>(<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>)<sp/>-<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ptr);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="shell_8h_1a8a81cc045a4530835ce45b6817e17335" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="modif__cmd_8c_1ad89597d4cb1771ebe12c656e50e8dd51" kindref="member">delete_char</ref>(<ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*ptr)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>left[<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>)];</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>right[<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>)];</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>==<sp/><ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>))</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" kindref="member">clean_line</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>[--ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" kindref="member">pars_ps1</ref>(<ref refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" kindref="member">g_data</ref>-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strncpy_8c_1a488ec5fec2f5d4fda8bf780b1e08ef63" kindref="member">my_strncpy</ref>(left,<sp/>ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" kindref="member">my_strcpy_from</ref>(right,<sp/>ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" kindref="member">my_strcpy</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>left);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" kindref="member">my_strcat</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>right);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" kindref="member">clean_line</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" kindref="member">pars_ps1</ref>(<ref refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" kindref="member">g_data</ref>-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>--;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" kindref="member">print_cursor_left</ref>(<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>)<sp/>-<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ptr);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="shell_8h_1a10717a0c53430c97d2ccedbfb1728211" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="modif__cmd_8c_1a1c8ba7df47fbf1fb64a9dc3d1740ba03" kindref="member">delete_backward</ref>(<ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*ptr)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>left[<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>)];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>right[<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>)];</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>&lt;<sp/><ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>))</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strncpy_8c_1a488ec5fec2f5d4fda8bf780b1e08ef63" kindref="member">my_strncpy</ref>(left,<sp/>ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" kindref="member">my_strcpy_from</ref>(right,<sp/>ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" kindref="member">my_strcpy</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>left);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" kindref="member">my_strcat</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>right);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" kindref="member">clean_line</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" kindref="member">pars_ps1</ref>(<ref refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" kindref="member">g_data</ref>-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" kindref="member">print_cursor_left</ref>(<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>)<sp/>-<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ptr);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/modif_cmd.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_9aa948441d3b15a37b6db58289d760b7" kind="dir">
+    <compoundname>glob</compoundname>
+    <innerfile refid="glob_8c">glob.c</innerfile>
+    <innerfile refid="stars_8c">stars.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/glob/"/>
+  </compounddef>
+</doxygen>

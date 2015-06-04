@@ -1,0 +1,195 @@
+\section{alias/alias.c File Reference}
+\label{alias_8c}\index{alias/alias.\-c@{alias/alias.\-c}}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$sys/types.\-h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\-h$>$}\\*
+{\ttfamily \#include $<$fcntl.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}shell.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lib.\-h\char`\"{}}\\*
+Include dependency graph for alias.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alias_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\bf t\-\_\-alias} $\ast$ {\bf new\-\_\-alias} ({\bf t\-\_\-alias} $\ast$old, char $\ast$first, char $\ast$sec)
+\item 
+char $\ast$ {\bf alias\-\_\-finder} ({\bf t\-\_\-alias} $\ast$s, char $\ast$alias)
+\item 
+int {\bf get\-\_\-line\-\_\-file} ()
+\item 
+char $\ast$ {\bf alias\-\_\-find} ({\bf t\-\_\-alias} $\ast$alias, char $\ast$to\-\_\-find)
+\item 
+{\bf t\-\_\-data} $\ast$ {\bf check\-\_\-recur} ({\bf t\-\_\-data} $\ast$data, char $\ast$old, char $\ast$new)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{alias.\-c@{alias.\-c}!alias\-\_\-find@{alias\-\_\-find}}
+\index{alias\-\_\-find@{alias\-\_\-find}!alias.c@{alias.\-c}}
+\subsubsection[{alias\-\_\-find}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ alias\-\_\-find (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-alias} $\ast$}]{alias, }
+\item[{char $\ast$}]{to\-\_\-find}
+\end{DoxyParamCaption}
+)}\label{alias_8c_ac8db3662f7b7cc7ee5b03b6c5591447d}
+
+
+Definition at line 74 of file alias.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{alias_8c_ac8db3662f7b7cc7ee5b03b6c5591447d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alias_8c_ac8db3662f7b7cc7ee5b03b6c5591447d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{alias.\-c@{alias.\-c}!alias\-\_\-finder@{alias\-\_\-finder}}
+\index{alias\-\_\-finder@{alias\-\_\-finder}!alias.c@{alias.\-c}}
+\subsubsection[{alias\-\_\-finder}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ alias\-\_\-finder (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-alias} $\ast$}]{s, }
+\item[{char $\ast$}]{alias}
+\end{DoxyParamCaption}
+)}\label{alias_8c_ae7ca988050564368cd481dd94902435b}
+
+
+Definition at line 40 of file alias.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{alias_8c_ae7ca988050564368cd481dd94902435b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alias_8c_ae7ca988050564368cd481dd94902435b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{alias.\-c@{alias.\-c}!check\-\_\-recur@{check\-\_\-recur}}
+\index{check\-\_\-recur@{check\-\_\-recur}!alias.c@{alias.\-c}}
+\subsubsection[{check\-\_\-recur}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-data}$\ast$ check\-\_\-recur (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{char $\ast$}]{old, }
+\item[{char $\ast$}]{new}
+\end{DoxyParamCaption}
+)}\label{alias_8c_afa6fff44bde50c8a0f4b8868f6b81777}
+
+
+Definition at line 102 of file alias.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{alias_8c_afa6fff44bde50c8a0f4b8868f6b81777_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alias_8c_afa6fff44bde50c8a0f4b8868f6b81777_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{alias.\-c@{alias.\-c}!get\-\_\-line\-\_\-file@{get\-\_\-line\-\_\-file}}
+\index{get\-\_\-line\-\_\-file@{get\-\_\-line\-\_\-file}!alias.c@{alias.\-c}}
+\subsubsection[{get\-\_\-line\-\_\-file}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-line\-\_\-file (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{alias_8c_adea8df0d450d18361023ed783f462f39}
+
+
+Definition at line 56 of file alias.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{alias_8c_adea8df0d450d18361023ed783f462f39_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{alias_8c_adea8df0d450d18361023ed783f462f39_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{alias.\-c@{alias.\-c}!new\-\_\-alias@{new\-\_\-alias}}
+\index{new\-\_\-alias@{new\-\_\-alias}!alias.c@{alias.\-c}}
+\subsubsection[{new\-\_\-alias}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-alias}$\ast$ new\-\_\-alias (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-alias} $\ast$}]{old, }
+\item[{char $\ast$}]{first, }
+\item[{char $\ast$}]{sec}
+\end{DoxyParamCaption}
+)}\label{alias_8c_ad5f519b4cbb35030e5d5713a466439e7}
+
+
+Definition at line 21 of file alias.\-c.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alias_8c_ad5f519b4cbb35030e5d5713a466439e7_icgraph}
+\end{center}
+\end{figure}
+
+

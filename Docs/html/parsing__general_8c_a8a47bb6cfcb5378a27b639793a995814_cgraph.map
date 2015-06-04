@@ -1,0 +1,28 @@
+<map id="new_cmds" name="new_cmds">
+<area shape="rect" id="node3" href="$parsing__pipe_8c.html#ae16134c5a21e816f178cf67d66d44503" title="parsing_pipe" alt="" coords="141,336,240,362"/>
+<area shape="rect" id="node5" href="$parsing__pipe_8c.html#a1ffdb84b9297c89dcd30e9402f2c3515" title="add_cmd" alt="" coords="289,336,367,362"/>
+<area shape="rect" id="node60" href="$parsing__pipe_8c.html#af2f9183740ca6c997f4137fe08c50ff5" title="calc_new_str" alt="" coords="417,285,517,312"/>
+<area shape="rect" id="node63" href="$parsing__pipe_8c.html#aba9655c6270687dc8c90b6739c192f85" title="next_cmd" alt="" coords="288,386,368,413"/>
+<area shape="rect" id="node7" href="$alias__etc_8c.html#a2cede4e33e1a1250deaee16f518024c4" title="concat_alias" alt="" coords="417,184,516,210"/>
+<area shape="rect" id="node37" href="$parsing__cmd_8c.html#a03eecd3e4496f8e1b3567709d88ae5b8" title="parsing_cmd" alt="" coords="417,386,516,413"/>
+<area shape="rect" id="node9" href="$alias_8c.html#ac8db3662f7b7cc7ee5b03b6c5591447d" title="alias_find" alt="" coords="590,82,669,109"/>
+<area shape="rect" id="node16" href="$my__strdup_8c.html#a4548135c4f1cfcaeff31c8dabb3692d3" title="my_strdup" alt="" coords="765,133,848,160"/>
+<area shape="rect" id="node27" href="$my__strndup_8c.html#aa470a7e58967778144f7d737bf64c3e8" title="my_strndup" alt="" coords="761,234,852,261"/>
+<area shape="rect" id="node34" href="$str__cat_8c.html#ae2589b5e18e85e7f44abd6bddf4724a4" title="my_strconcat" alt="" coords="579,184,680,210"/>
+<area shape="rect" id="node11" href="$alias_8c.html#ae7ca988050564368cd481dd94902435b" title="alias_finder" alt="" coords="761,32,852,58"/>
+<area shape="rect" id="node13" href="$my__strcmp_8c.html#a7656d2f543a26ba1552b06f75667ba3c" title="my_strcmp" alt="" coords="931,6,1018,33"/>
+<area shape="rect" id="node25" href="$alias__etc_8c.html#aeee2c96c8e8193fc245dee41ac044a77" title="end_find" alt="" coords="770,82,843,109"/>
+<area shape="rect" id="node18" href="$get__next__line_8c.html#a43354ef027ff107d540fe9cd7b0aed1b" title="new_str" alt="" coords="941,285,1009,312"/>
+<area shape="rect" id="node20" href="$my__strlen_8c.html#ac7e9bd08d068851e31a5b6d408004638" title="my_strlen" alt="" coords="935,184,1014,210"/>
+<area shape="rect" id="node22" href="$my__strcpy_8c.html#a73fd71e5a924f50c46bbdfb8b76fc6f7" title="my_strcpy" alt="" coords="933,133,1016,160"/>
+<area shape="rect" id="node31" href="$my__strncpy_8c.html#a488ec5fec2f5d4fda8bf780b1e08ef63" title="my_strncpy" alt="" coords="930,234,1019,261"/>
+<area shape="rect" id="node39" href="$parsing__cmd_8c.html#ae3a29b783909de965bd6285058ad5694" title="init_parsing" alt="" coords="585,386,674,413"/>
+<area shape="rect" id="node41" href="$parsing__cmd_8c.html#a76889c4c767c0af44a85984cbaf48d62" title="is_redi" alt="" coords="943,437,1006,464"/>
+<area shape="rect" id="node43" href="$redirection_8c.html#ab141cb2c1876246eb1194566beb195c8" title="add_redi" alt="" coords="591,488,667,514"/>
+<area shape="rect" id="node55" href="$parsing__cmd_8c.html#a14a8f0c61b979cd9b0413c120dff438a" title="add_word_to_tab" alt="" coords="566,437,693,464"/>
+<area shape="rect" id="node45" href="$redirection_8c.html#a1cd0120acb08c062e567a2f26e64545a" title="set_redi" alt="" coords="771,589,842,616"/>
+<area shape="rect" id="node50" href="$shell_8h.html#a1a145470918f339fe655f978216c73e2" title="error_syntax_error" alt="" coords="741,488,872,514"/>
+<area shape="rect" id="node52" href="$parsing__cmd_8c.html#a630ad05ab22a793081c5c8f3ab941220" title="index_end_word" alt="" coords="745,437,868,464"/>
+<area shape="rect" id="node47" href="$redirection_8c.html#a9d291893b76eeddb11d3b35fb5804747" title="set_last_in_list" alt="" coords="921,589,1029,616"/>
+<area shape="rect" id="node58" href="$len__tab_8c.html#a28ece56f3d95845087e9d1c1649b55f6" title="len_tab" alt="" coords="774,386,839,413"/>
+</map>

@@ -1,0 +1,87 @@
+.TH "builtin/forbuiltin.c" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+builtin/forbuiltin.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string\&.h>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include 'builtin\&.h'\fP
+.br
+\fC#include 'lib\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBother_echo_case\fP (char *str, int *i, char done)"
+.br
+.ti -1c
+.RI "int \fBmy_interpret\fP (char *str, int i, int k, char done)"
+.br
+.ti -1c
+.RI "int \fBmy_print\fP (char *str, char inter, char noret, char *nextword)"
+.br
+.ti -1c
+.RI "char ** \fBmy_epurtab\fP (char **tab)"
+.br
+.ti -1c
+.RI "char ** \fBmy_cattab\fP (char **tab, char *new)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "char \fBg_ref\fP [8][2]"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "char** my_cattab (char **tab, char *new)"
+
+.PP
+Definition at line 124 of file forbuiltin\&.c\&.
+.SS "char** my_epurtab (char **tab)"
+
+.PP
+Definition at line 95 of file forbuiltin\&.c\&.
+.SS "int my_interpret (char *str, inti, intk, chardone)"
+
+.PP
+Definition at line 43 of file forbuiltin\&.c\&.
+.SS "int my_print (char *str, charinter, charnoret, char *nextword)"
+
+.PP
+Definition at line 72 of file forbuiltin\&.c\&.
+.SS "void other_echo_case (char *str, int *i, chardone)"
+
+.PP
+Definition at line 26 of file forbuiltin\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "char g_ref[8][2]"
+\fBInitial value:\fP
+.PP
+.nf
+= {{'a', '\a'},
+               {'b', '\b'},
+               {'e', ESCAPE},
+               {'f', '\f'},
+               {'n', '\n'},
+               {'r', '\r'},
+               {'t', '\t'},
+               {'v', '\v'}}
+.fi
+.PP
+Definition at line 17 of file forbuiltin\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

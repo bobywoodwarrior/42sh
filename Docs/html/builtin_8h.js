@@ -1,0 +1,26 @@
+var builtin_8h =
+[
+    [ "s_bref", "structs__bref.html", "structs__bref" ],
+    [ "ESCAPE", "builtin_8h.html#afe4b0e625372cd38ec60150d6f5594b8", null ],
+    [ "EXIT", "builtin_8h.html#ad111e603bbebe5d87f6bc39264ce4733", null ],
+    [ "FAILURE", "builtin_8h.html#a6d58f9ac447476b4e084d7ca383f5183", null ],
+    [ "NO_MATCH", "builtin_8h.html#a82364b047b41d18199c9372ace974305", null ],
+    [ "SUCCESS", "builtin_8h.html#aa90cac659d18e8ef6294c7ae337f6b58", null ],
+    [ "t_bref", "builtin_8h.html#a73c4175ebb4c747bdf44fbf2820385c1", null ],
+    [ "cattab_ext", "builtin_8h.html#ac46a37eeaf4141428d46b5605bbd6c51", null ],
+    [ "get_env_value", "builtin_8h.html#a0059bf9838c7770b46270fedbc869799", null ],
+    [ "my_cattab", "builtin_8h.html#a795c38158cb00f9fcad0dd7db17e7ded", null ],
+    [ "my_cd", "builtin_8h.html#a2157775684b24545b151e0c2e5f38954", null ],
+    [ "my_cd_error", "builtin_8h.html#a27ff54b856199cbd22e0983f4b369f6b", null ],
+    [ "my_cstrconcat", "builtin_8h.html#a2883a48551d7c810ebd592fb241efeed", null ],
+    [ "my_echo", "builtin_8h.html#a772e7ea72ee3ac31a9da9d3c8423816e", null ],
+    [ "my_env", "builtin_8h.html#a475eb535199d99dff9033edf1b87a84d", null ],
+    [ "my_epurtab", "builtin_8h.html#a9c81bd03dd1d5eae7cee8720ff4a4f25", null ],
+    [ "my_exit", "builtin_8h.html#adff2ceef5d8ba6f5b94b9c3902b2d5f9", null ],
+    [ "my_getnbr_base", "builtin_8h.html#a0bd2485960de353416dedf1cf03a943e", null ],
+    [ "my_print", "builtin_8h.html#a3da96f75f1c99d390ce5582d73f7bf18", null ],
+    [ "my_redir_builtin", "builtin_8h.html#aecb1f227db5bcfc86869d066066f450d", null ],
+    [ "my_replace_key", "builtin_8h.html#a6055c5e4f8247c5a1151cd65e5061574", null ],
+    [ "my_setenv", "builtin_8h.html#a0f75b40d45c389d2f019b5ad672f3ed1", null ],
+    [ "my_unsetenv", "builtin_8h.html#ab15f4c5af8f204fcf26ff0bf30391b77", null ]
+];

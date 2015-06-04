@@ -1,0 +1,161 @@
+\section{builtin/cd.c File Reference}
+\label{cd_8c}\index{builtin/cd.\-c@{builtin/cd.\-c}}
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}builtin.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lib.\-h\char`\"{}}\\*
+Include dependency graph for cd.\-c\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cd_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf my\-\_\-cd\-\_\-error} (char $\ast$str)
+\item 
+char $\ast$ {\bf get\-\_\-new\-\_\-pwd} (char $\ast$pwd, char $\ast$path)
+\item 
+int {\bf set\-\_\-pwd\-\_\-old\-\_\-pwd} (char $\ast$$\ast$env, char $\ast$path)
+\item 
+int {\bf my\-\_\-cd} (char $\ast$$\ast$expr, {\bf t\-\_\-data} $\ast$data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{cd.\-c@{cd.\-c}!get\-\_\-new\-\_\-pwd@{get\-\_\-new\-\_\-pwd}}
+\index{get\-\_\-new\-\_\-pwd@{get\-\_\-new\-\_\-pwd}!cd.c@{cd.\-c}}
+\subsubsection[{get\-\_\-new\-\_\-pwd}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\-\_\-new\-\_\-pwd (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{pwd, }
+\item[{char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}\label{cd_8c_af74884482c27a5e006206669ebbd5b8e}
+
+
+Definition at line 24 of file cd.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cd_8c_af74884482c27a5e006206669ebbd5b8e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cd_8c_af74884482c27a5e006206669ebbd5b8e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cd.\-c@{cd.\-c}!my\-\_\-cd@{my\-\_\-cd}}
+\index{my\-\_\-cd@{my\-\_\-cd}!cd.c@{cd.\-c}}
+\subsubsection[{my\-\_\-cd}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-cd (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{expr, }
+\item[{{\bf t\-\_\-data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{cd_8c_a04d617582a090298a993bb56e5a66cb9}
+
+
+Definition at line 73 of file cd.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cd_8c_a04d617582a090298a993bb56e5a66cb9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cd_8c_a04d617582a090298a993bb56e5a66cb9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cd.\-c@{cd.\-c}!my\-\_\-cd\-\_\-error@{my\-\_\-cd\-\_\-error}}
+\index{my\-\_\-cd\-\_\-error@{my\-\_\-cd\-\_\-error}!cd.c@{cd.\-c}}
+\subsubsection[{my\-\_\-cd\-\_\-error}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-cd\-\_\-error (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\label{cd_8c_a27ff54b856199cbd22e0983f4b369f6b}
+
+
+Definition at line 18 of file cd.\-c.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cd_8c_a27ff54b856199cbd22e0983f4b369f6b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{cd.\-c@{cd.\-c}!set\-\_\-pwd\-\_\-old\-\_\-pwd@{set\-\_\-pwd\-\_\-old\-\_\-pwd}}
+\index{set\-\_\-pwd\-\_\-old\-\_\-pwd@{set\-\_\-pwd\-\_\-old\-\_\-pwd}!cd.c@{cd.\-c}}
+\subsubsection[{set\-\_\-pwd\-\_\-old\-\_\-pwd}]{\setlength{\rightskip}{0pt plus 5cm}int set\-\_\-pwd\-\_\-old\-\_\-pwd (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{env, }
+\item[{char $\ast$}]{path}
+\end{DoxyParamCaption}
+)}\label{cd_8c_adff71582669f5726a87d35e9f9a15057}
+
+
+Definition at line 53 of file cd.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cd_8c_adff71582669f5726a87d35e9f9a15057_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cd_8c_adff71582669f5726a87d35e9f9a15057_icgraph}
+\end{center}
+\end{figure}
+
+

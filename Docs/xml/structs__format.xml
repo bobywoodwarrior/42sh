@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structs__format" kind="struct" prot="public">
+    <compoundname>s_format</compoundname>
+    <includes refid="ps1_8h" local="no">ps1.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structs__format_1a32fcb6024930af1ae33392a753c59679" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char format</definition>
+        <argsstring></argsstring>
+        <name>format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/ps1.h" line="24" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/ps1.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structs__format_1a821d5bfc90f45a86fe06458eca0f3f1e" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* ptr_tab)(char **env)</definition>
+        <argsstring>)(char **env)</argsstring>
+        <name>ptr_tab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/ps1.h" line="25" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/ps1.h" bodystart="25" bodyend="-1"/>
+        <referencedby refid="ps1_2utils_8c_1ab30c142300025115303c32027b0065c7" compoundref="ps1_2utils_8c" startline="33" endline="54">launch_format</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/ps1.h" line="23" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/ps1.h" bodystart="22" bodyend="26"/>
+    <listofallmembers>
+      <member refid="structs__format_1a32fcb6024930af1ae33392a753c59679" prot="public" virt="non-virtual"><scope>s_format</scope><name>format</name></member>
+      <member refid="structs__format_1a821d5bfc90f45a86fe06458eca0f3f1e" prot="public" virt="non-virtual"><scope>s_format</scope><name>ptr_tab</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

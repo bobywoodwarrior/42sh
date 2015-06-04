@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="parsing__pipe_8c" kind="file">
+    <compoundname>parsing_pipe.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <incdepgraph>
+      <node id="716">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="715">
+        <label>stdlib.h</label>
+      </node>
+      <node id="712">
+        <label>parsing/parsing_pipe.c</label>
+        <link refid="parsing_pipe.c"/>
+        <childnode refid="713" relation="include">
+        </childnode>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="715" relation="include">
+        </childnode>
+        <childnode refid="716" relation="include">
+        </childnode>
+      </node>
+      <node id="714">
+        <label>string.h</label>
+      </node>
+      <node id="713">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="parsing__pipe_8c_1aba9655c6270687dc8c90b6739c192f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void next_cmd</definition>
+        <argsstring>(char *str, int *i, int *i_save)</argsstring>
+        <name>next_cmd</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>i_save</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_pipe.c" line="16" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_pipe.c" bodystart="16" bodyend="23"/>
+        <referencedby refid="shell_8h_1ae8d6b38307281c05e1b03ca11f8bbb8c" compoundref="parsing__pipe_8c" startline="53" endline="78">parsing_pipe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="parsing__pipe_8c_1af2f9183740ca6c997f4137fe08c50ff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* calc_new_str</definition>
+        <argsstring>(char *str, int i, int i_save)</argsstring>
+        <name>calc_new_str</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i_save</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_pipe.c" line="25" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_pipe.c" bodystart="25" bodyend="34"/>
+        <references refid="get__next__line_8c_1a43354ef027ff107d540fe9cd7b0aed1b" compoundref="get__next__line_8c" startline="37" endline="47">new_str</references>
+        <referencedby refid="shell_8h_1ae9c51201cb3ad89b921d2f3576875ca4" compoundref="parsing__general_8c" startline="68" endline="94">parsing_general</referencedby>
+        <referencedby refid="shell_8h_1ae8d6b38307281c05e1b03ca11f8bbb8c" compoundref="parsing__pipe_8c" startline="53" endline="78">parsing_pipe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="parsing__pipe_8c_1a1ffdb84b9297c89dcd30e9402f2c3515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+        <definition>t_cmd* add_cmd</definition>
+        <argsstring>(char *new_str, t_cmd **cmd, t_cmd **tmp)</argsstring>
+        <name>add_cmd</name>
+        <param>
+          <type>char *</type>
+          <declname>new_str</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> **</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> **</type>
+          <declname>tmp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_pipe.c" line="36" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_pipe.c" bodystart="36" bodyend="51"/>
+        <references refid="alias__etc_8c_1a2cede4e33e1a1250deaee16f518024c4" compoundref="alias__etc_8c" startline="71" endline="91">concat_alias</references>
+        <references refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" compoundref="shell_8h" startline="78">g_data</references>
+        <references refid="structs__data_1a605d498106be2e521c13025a71deb7ba" compoundref="shell_8h" startline="69">s_data::alias</references>
+        <references refid="parsing__cmd_8c_1a03eecd3e4496f8e1b3567709d88ae5b8" compoundref="parsing__cmd_8c" startline="87" endline="109">parsing_cmd</references>
+        <referencedby refid="shell_8h_1ae8d6b38307281c05e1b03ca11f8bbb8c" compoundref="parsing__pipe_8c" startline="53" endline="78">parsing_pipe</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="parsing__pipe_8c_1ae16134c5a21e816f178cf67d66d44503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+        <definition>t_cmd* parsing_pipe</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>parsing_pipe</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_pipe.c" line="53" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_pipe.c" bodystart="53" bodyend="78"/>
+        <references refid="parsing__pipe_8c_1a1ffdb84b9297c89dcd30e9402f2c3515" compoundref="parsing__pipe_8c" startline="36" endline="51">add_cmd</references>
+        <references refid="parsing__pipe_8c_1af2f9183740ca6c997f4137fe08c50ff5" compoundref="parsing__pipe_8c" startline="25" endline="34">calc_new_str</references>
+        <references refid="parsing__pipe_8c_1aba9655c6270687dc8c90b6739c192f85" compoundref="parsing__pipe_8c" startline="16" endline="23">next_cmd</references>
+        <referencedby refid="parsing__general_8c_1a8a47bb6cfcb5378a27b639793a995814" compoundref="parsing__general_8c" startline="28" endline="41">new_cmds</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>parsing_general.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/bauer_a/rendu/PSU_2014_42sh/parsing</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;bauer_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Tue<sp/>Mar<sp/>31<sp/>10:47:56<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sun<sp/>May<sp/>24<sp/>16:56:03<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="parsing__pipe_8c_1aba9655c6270687dc8c90b6739c192f85" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="parsing__pipe_8c_1aba9655c6270687dc8c90b6739c192f85" kindref="member">next_cmd</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*i_save)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str[*i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;|&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>str[*i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>*i<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str[*i<sp/>+<sp/>1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>str[*i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>*i<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>*i_save<sp/>=<sp/>*i<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="shell_8h_1a327654aa7fc09df62ee320f55cc80de7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="parsing__pipe_8c_1af2f9183740ca6c997f4137fe08c50ff5" kindref="member">calc_new_str</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i_save)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="get__next__line_8c_1a43354ef027ff107d540fe9cd7b0aed1b" kindref="member">new_str</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>str[i<sp/>-<sp/>1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>i--;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((new_str<sp/>=<sp/>strndup(str<sp/>+<sp/>i_save,<sp/>(i<sp/>-<sp/>i_save)))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(new_str);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="parsing__pipe_8c_1a1ffdb84b9297c89dcd30e9402f2c3515" refkind="member"><highlight class="normal"><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="parsing__pipe_8c_1a1ffdb84b9297c89dcd30e9402f2c3515" kindref="member">add_cmd</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="get__next__line_8c_1a43354ef027ff107d540fe9cd7b0aed1b" kindref="member">new_str</ref>,<sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/>**cmd,<sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/>**tmp)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(new_str<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((new_str<sp/>=<sp/><ref refid="alias__etc_8c_1a2cede4e33e1a1250deaee16f518024c4" kindref="member">concat_alias</ref>(new_str,<sp/><ref refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" kindref="member">g_data</ref>-&gt;<ref refid="structs__data_1a605d498106be2e521c13025a71deb7ba" kindref="member">alias</ref>))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*cmd<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*cmd<sp/>=<sp/><ref refid="parsing__cmd_8c_1a03eecd3e4496f8e1b3567709d88ae5b8" kindref="member">parsing_cmd</ref>(new_str))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*cmd);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((*tmp)-&gt;next<sp/>=<sp/><ref refid="parsing__cmd_8c_1a03eecd3e4496f8e1b3567709d88ae5b8" kindref="member">parsing_cmd</ref>(new_str))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((*tmp)-&gt;next);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="shell_8h_1ae8d6b38307281c05e1b03ca11f8bbb8c" refkind="member"><highlight class="normal"><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="parsing__pipe_8c_1ae16134c5a21e816f178cf67d66d44503" kindref="member">parsing_pipe</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/><sp/><sp/><sp/><sp/>*cmd;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/><sp/><sp/><sp/><sp/>*tmp;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i_save;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>i_save<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>cmd<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;|&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((tmp<sp/>=<sp/><ref refid="parsing__pipe_8c_1a1ffdb84b9297c89dcd30e9402f2c3515" kindref="member">add_cmd</ref>(<ref refid="parsing__pipe_8c_1af2f9183740ca6c997f4137fe08c50ff5" kindref="member">calc_new_str</ref>(str,<sp/>i,<sp/>i_save),<sp/>&amp;cmd,<sp/>&amp;tmp))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="parsing__pipe_8c_1aba9655c6270687dc8c90b6739c192f85" kindref="member">next_cmd</ref>(str,<sp/>&amp;i,<sp/>&amp;i_save);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((tmp<sp/>=<sp/><ref refid="parsing__pipe_8c_1a1ffdb84b9297c89dcd30e9402f2c3515" kindref="member">add_cmd</ref>(<ref refid="parsing__pipe_8c_1af2f9183740ca6c997f4137fe08c50ff5" kindref="member">calc_new_str</ref>(str,<sp/>i,<sp/>i_save),<sp/>&amp;cmd,<sp/>&amp;tmp))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(cmd);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_pipe.c"/>
+  </compounddef>
+</doxygen>

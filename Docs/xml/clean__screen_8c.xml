@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="clean__screen_8c" kind="file">
+    <compoundname>clean_screen.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">sys/wait.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <incdepgraph>
+      <node id="735">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="730">
+        <label>stdlib.h</label>
+      </node>
+      <node id="734">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+      <node id="732">
+        <label>sys/types.h</label>
+      </node>
+      <node id="731">
+        <label>unistd.h</label>
+      </node>
+      <node id="729">
+        <label>prompt_read_termcaps/clean_screen.c</label>
+        <link refid="clean_screen.c"/>
+        <childnode refid="730" relation="include">
+        </childnode>
+        <childnode refid="731" relation="include">
+        </childnode>
+        <childnode refid="732" relation="include">
+        </childnode>
+        <childnode refid="733" relation="include">
+        </childnode>
+        <childnode refid="734" relation="include">
+        </childnode>
+        <childnode refid="735" relation="include">
+        </childnode>
+      </node>
+      <node id="733">
+        <label>sys/wait.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="clean__screen_8c_1a7a70e74d15838251dcd3b1887c9d3c19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int clean_screen</definition>
+        <argsstring>(char *cmd)</argsstring>
+        <name>clean_screen</name>
+        <param>
+          <type>char *</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/clean_screen.c" line="18" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/clean_screen.c" bodystart="18" bodyend="39"/>
+        <references refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" compoundref="shell_8h" startline="78">g_data</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <referencedby refid="shell_8h_1a089febdbd9db477f99c25841413150a8" compoundref="gere__key_8c" startline="38" endline="55">gere_char</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>clear_screen.c<sp/>for<sp/>prompt<sp/>in<sp/>/home/blanqu_a/Workspace/rendu/PSU_2014_42sh/prompt_read_termcaps</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;blanqu_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Mon<sp/>May<sp/>18<sp/>17:18:49<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>16:55:36<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/wait.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="shell_8h_1a016d082e790265a3ffe8fbff90b2a0b2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="clean__screen_8c_1a7a70e74d15838251dcd3b1887c9d3c19" kindref="member">clean_screen</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*cmd)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>pid_t<sp/>pid;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>**argv;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((argv<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)<sp/>*<sp/>1))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>argv[0]<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pid<sp/>=<sp/>fork())<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pid<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(execve(</highlight><highlight class="stringliteral">&quot;/usr/bin/clear&quot;</highlight><highlight class="normal">,<sp/>argv,<sp/><ref refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" kindref="member">g_data</ref>-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>)<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>wait(NULL);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><ref refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" kindref="member">pars_ps1</ref>(<ref refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" kindref="member">g_data</ref>-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(cmd,<sp/>1);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/clean_screen.c"/>
+  </compounddef>
+</doxygen>

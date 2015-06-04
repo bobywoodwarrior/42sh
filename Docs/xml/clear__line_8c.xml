@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="clear__line_8c" kind="file">
+    <compoundname>clear_line.c</compoundname>
+    <includes local="no">sys/ioctl.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <incdepgraph>
+      <node id="740">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="738">
+        <label>sys/ioctl.h</label>
+      </node>
+      <node id="741">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+      <node id="739">
+        <label>unistd.h</label>
+      </node>
+      <node id="737">
+        <label>prompt_read_termcaps/clear_line.c</label>
+        <link refid="clear_line.c"/>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+        <childnode refid="740" relation="include">
+        </childnode>
+        <childnode refid="741" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clean_line</definition>
+        <argsstring>()</argsstring>
+        <name>clean_line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/clear_line.c" line="16" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/clear_line.c" bodystart="16" bodyend="28"/>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <referencedby refid="shell_8h_1a8a81cc045a4530835ce45b6817e17335" compoundref="modif__cmd_8c" startline="40" endline="67">delete_char</referencedby>
+        <referencedby refid="shell_8h_1a10717a0c53430c97d2ccedbfb1728211" compoundref="modif__cmd_8c" startline="69" endline="87">delete_backward</referencedby>
+        <referencedby refid="shell_8h_1acbb6e8e618f4c43c7eeb93923b92e385" compoundref="move_8c" startline="14" endline="26">up</referencedby>
+        <referencedby refid="shell_8h_1a3a9f901ffe6cc6b5f7d902526c01748e" compoundref="move_8c" startline="28" endline="50">down</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>clear_line.c<sp/>for<sp/>prompt<sp/>in<sp/>/home/blanqu_a/Workspace/rendu/PSU_2014_42sh/prompt_read_termcaps</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;blanqu_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Mon<sp/>May<sp/>18<sp/>15:47:20<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>16:57:13<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/ioctl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="shell_8h_1a9a22cdb14fbffec8b1857153bd8fefff" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" kindref="member">clean_line</ref>()</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">winsize<sp/><sp/><sp/><sp/>w;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ioctl(STDOUT_FILENO,<sp/>TIOCGWINSZ,<sp/>&amp;w)<sp/>!=<sp/>-1)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i++<sp/>&lt;<sp/>w.ws_col)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>write(1,<sp/></highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/clear_line.c"/>
+  </compounddef>
+</doxygen>

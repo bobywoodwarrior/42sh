@@ -1,0 +1,493 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.5">
+  <compound refid="structs__alias" kind="struct"><name>s_alias</name>
+    <member refid="structs__alias_1a32487cbad62d1e9a7ea00010f5dc58bb" kind="variable"><name>old</name></member>
+    <member refid="structs__alias_1a80de185e58c66866a3e560697b9fb978" kind="variable"><name>new</name></member>
+    <member refid="structs__alias_1a228d8745e3b5e095fe1a256c236a8d9a" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="structs__bref" kind="struct"><name>s_bref</name>
+    <member refid="structs__bref_1a409d98460fccb0c31bf8887117e68f36" kind="variable"><name>ref</name></member>
+    <member refid="structs__bref_1a3cffecc657840bcfdbd40bfaf96be9d5" kind="variable"><name>builtin</name></member>
+  </compound>
+  <compound refid="structs__cmd" kind="struct"><name>s_cmd</name>
+    <member refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kind="variable"><name>tab</name></member>
+    <member refid="structs__cmd_1a8629d9a24e605fcc6a82b55b1a870a07" kind="variable"><name>redi_r</name></member>
+    <member refid="structs__cmd_1a3eb86f4753299ed84389481f46694140" kind="variable"><name>redi_l</name></member>
+    <member refid="structs__cmd_1aadb06044d2e679ed4395a2680dc6962a" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="structs__cmds" kind="struct"><name>s_cmds</name>
+    <member refid="structs__cmds_1a7833a1c1c3d06a0dc2ef489abda7bf64" kind="variable"><name>cmd</name></member>
+    <member refid="structs__cmds_1a2f44b091be60ccdd664997eb163d2ff4" kind="variable"><name>sep</name></member>
+    <member refid="structs__cmds_1a0025c4bc6dd26be6d05df24de3a1ae88" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="structs__data" kind="struct"><name>s_data</name>
+    <member refid="structs__data_1abf3d90c932142f8b97a4757ddec92fb1" kind="variable"><name>dynam_prompt</name></member>
+    <member refid="structs__data_1a605d498106be2e521c13025a71deb7ba" kind="variable"><name>alias</name></member>
+    <member refid="structs__data_1afcffbc0c123dbca7c984b936e58c976b" kind="variable"><name>cmds</name></member>
+    <member refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kind="variable"><name>env</name></member>
+    <member refid="structs__data_1acfb34a195b82ba94df86b2ff75a18647" kind="variable"><name>ps1</name></member>
+    <member refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" kind="variable"><name>return_exe</name></member>
+    <member refid="structs__data_1ac031cf6c1b18f3f224e088dd3a13b680" kind="variable"><name>return_exit</name></member>
+    <member refid="structs__data_1a1f8c1ae59fa5c273cd528969d4ba8dd7" kind="variable"><name>list</name></member>
+  </compound>
+  <compound refid="structs__format" kind="struct"><name>s_format</name>
+    <member refid="structs__format_1a32fcb6024930af1ae33392a753c59679" kind="variable"><name>format</name></member>
+    <member refid="structs__format_1a821d5bfc90f45a86fe06458eca0f3f1e" kind="variable"><name>ptr_tab</name></member>
+  </compound>
+  <compound refid="structs__history" kind="struct"><name>s_history</name>
+    <member refid="structs__history_1a91a70b77df95bd8b0830b49a094c2acb" kind="variable"><name>data</name></member>
+    <member refid="structs__history_1a5d4e20503141c1617cd3ef296ea66d0e" kind="variable"><name>next</name></member>
+    <member refid="structs__history_1af7dadc2c1ca47fd86993081a65a8d9e8" kind="variable"><name>prev</name></member>
+  </compound>
+  <compound refid="structs__list" kind="struct"><name>s_list</name>
+    <member refid="structs__list_1adf16cd437526a5c5e0e0af87745acbb8" kind="variable"><name>file</name></member>
+    <member refid="structs__list_1a47fd463223ac923d306c984fb143dfa4" kind="variable"><name>double_redi</name></member>
+    <member refid="structs__list_1a4bcaaa089cc834cf70b73bafa9af1e05" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="structs__list__line" kind="struct"><name>s_list_line</name>
+    <member refid="structs__list__line_1a8adb30f4f6669f927fd9232f686c637b" kind="variable"><name>line</name></member>
+    <member refid="structs__list__line_1a3263d832fe4969fc3f9dbd0e668e0935" kind="variable"><name>next</name></member>
+  </compound>
+  <compound refid="structs__stock" kind="struct"><name>s_stock</name>
+    <member refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kind="variable"><name>cmd</name></member>
+    <member refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kind="variable"><name>c</name></member>
+    <member refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kind="variable"><name>pos</name></member>
+  </compound>
+  <compound refid="alias_8c" kind="file"><name>alias.c</name>
+    <member refid="alias_8c_1ad5f519b4cbb35030e5d5713a466439e7" kind="function"><name>new_alias</name></member>
+    <member refid="alias_8c_1ae7ca988050564368cd481dd94902435b" kind="function"><name>alias_finder</name></member>
+    <member refid="alias_8c_1adea8df0d450d18361023ed783f462f39" kind="function"><name>get_line_file</name></member>
+    <member refid="alias_8c_1ac8db3662f7b7cc7ee5b03b6c5591447d" kind="function"><name>alias_find</name></member>
+    <member refid="alias_8c_1afa6fff44bde50c8a0f4b8868f6b81777" kind="function"><name>check_recur</name></member>
+  </compound>
+  <compound refid="alias__etc_8c" kind="file"><name>alias_etc.c</name>
+    <member refid="alias__etc_8c_1a2554b2fd4cf3639ec091ec6a5a432675" kind="function"><name>setbashenv</name></member>
+    <member refid="alias__etc_8c_1acd9ad0dfae53c8683ec2597a188e6c1b" kind="function"><name>bashset</name></member>
+    <member refid="alias__etc_8c_1aeee2c96c8e8193fc245dee41ac044a77" kind="function"><name>end_find</name></member>
+    <member refid="alias__etc_8c_1a2cede4e33e1a1250deaee16f518024c4" kind="function"><name>concat_alias</name></member>
+  </compound>
+  <compound refid="gnl_8c" kind="file"><name>gnl.c</name>
+    <member refid="gnl_8c_1a863d89a61da99bbc7016e1011e6820c8" kind="function"><name>my_spstrconcat</name></member>
+    <member refid="gnl_8c_1ab999bdfe53cdbb51de9b6afe222b97dd" kind="function"><name>get_new_line</name></member>
+    <member refid="gnl_8c_1a6754f4915186decc3a861cd78d15499e" kind="function"><name>gnl</name></member>
+  </compound>
+  <compound refid="pars__alias_8c" kind="file"><name>pars_alias.c</name>
+    <member refid="pars__alias_8c_1a203bc66f586da530ebb9eeee519bd082" kind="function"><name>get_bash</name></member>
+    <member refid="pars__alias_8c_1a3257a6fcadd0309f1df178525eea9257" kind="function"><name>get_old</name></member>
+    <member refid="pars__alias_8c_1a7d7873e60a328ecd3a34c3370594b040" kind="function"><name>get_old_new</name></member>
+    <member refid="pars__alias_8c_1a94ed7403f0bc582353a563669932efdd" kind="function"><name>get_all_alias</name></member>
+    <member refid="pars__alias_8c_1a8e5633ce3ca1c968f88de68f3ed735c7" kind="function"><name>pars_alias</name></member>
+  </compound>
+  <compound refid="str__cat_8c" kind="file"><name>str_cat.c</name>
+    <member refid="str__cat_8c_1ae2589b5e18e85e7f44abd6bddf4724a4" kind="function"><name>my_strconcat</name></member>
+  </compound>
+  <compound refid="auto__complete_8c" kind="file"><name>auto_complete.c</name>
+    <member refid="auto__complete_8c_1afabba8a18c51e26a795d4de5d3c83b4e" kind="function"><name>is_stars_at_end</name></member>
+    <member refid="auto__complete_8c_1aaddec5e699d0e6d3c63ae78a72e0c822" kind="function"><name>ret_globing</name></member>
+    <member refid="auto__complete_8c_1af2c282e9b15da1bbf96f5203e831f7cb" kind="function"><name>add_stars</name></member>
+    <member refid="auto__complete_8c_1a9db47b33aabb3abb191c33e9bc38b173" kind="function"><name>auto_complete</name></member>
+  </compound>
+  <compound refid="functions__complete_8c" kind="file"><name>functions_complete.c</name>
+    <member refid="functions__complete_8c_1a43aaf009c1f4a148004ee8cf4f4c5a5a" kind="function"><name>is_slash</name></member>
+    <member refid="functions__complete_8c_1a0561ce09429ac571427c7b77a61aaed8" kind="function"><name>epur_slash</name></member>
+    <member refid="functions__complete_8c_1aac577fdfca82ccd407b2105d39b56fce" kind="function"><name>my_write_tab</name></member>
+  </compound>
+  <compound refid="builtin_8c" kind="file"><name>builtin.c</name>
+    <member refid="builtin_8c_1a7bd51fb3b758ec7342192213355ec102" kind="function"><name>my_unsetenv</name></member>
+    <member refid="builtin_8c_1aa3ae54ee16af4313f2ccb3c2fff447e9" kind="function"><name>my_setenv</name></member>
+    <member refid="builtin_8c_1a8608a65d45d2d3d7ec0e83a91d1f51a3" kind="function"><name>my_env</name></member>
+    <member refid="builtin_8c_1a3f937a32f761532cf83be2cd3dae0e09" kind="function"><name>my_exit</name></member>
+    <member refid="builtin_8c_1a95a62fb319cfd787bd672b23b9288c67" kind="function"><name>my_echo</name></member>
+  </compound>
+  <compound refid="cd_8c" kind="file"><name>cd.c</name>
+    <member refid="cd_8c_1a27ff54b856199cbd22e0983f4b369f6b" kind="function"><name>my_cd_error</name></member>
+    <member refid="cd_8c_1af74884482c27a5e006206669ebbd5b8e" kind="function"><name>get_new_pwd</name></member>
+    <member refid="cd_8c_1adff71582669f5726a87d35e9f9a15057" kind="function"><name>set_pwd_old_pwd</name></member>
+    <member refid="cd_8c_1a04d617582a090298a993bb56e5a66cb9" kind="function"><name>my_cd</name></member>
+  </compound>
+  <compound refid="forbuiltin_8c" kind="file"><name>forbuiltin.c</name>
+    <member refid="forbuiltin_8c_1a8ca280e502460ed6510ec75af0321d03" kind="variable"><name>g_ref</name></member>
+    <member refid="forbuiltin_8c_1af3d3a3e1f2acbf9eccc05028b283bbb6" kind="function"><name>other_echo_case</name></member>
+    <member refid="forbuiltin_8c_1abd901da92b9ba2506b04b5c3a640bba2" kind="function"><name>my_interpret</name></member>
+    <member refid="forbuiltin_8c_1a3da96f75f1c99d390ce5582d73f7bf18" kind="function"><name>my_print</name></member>
+    <member refid="forbuiltin_8c_1a9c81bd03dd1d5eae7cee8720ff4a4f25" kind="function"><name>my_epurtab</name></member>
+    <member refid="forbuiltin_8c_1a795c38158cb00f9fcad0dd7db17e7ded" kind="function"><name>my_cattab</name></member>
+  </compound>
+  <compound refid="getvar_8c" kind="file"><name>getvar.c</name>
+    <member refid="getvar_8c_1a31f8c796cea615093b779b9e32db6d02" kind="function"><name>delete_first_word</name></member>
+    <member refid="getvar_8c_1a6055c5e4f8247c5a1151cd65e5061574" kind="function"><name>my_replace_key</name></member>
+    <member refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" kind="function"><name>my_cstrconcat</name></member>
+  </compound>
+  <compound refid="top__builtin_8c" kind="file"><name>top_builtin.c</name>
+    <member refid="top__builtin_8c_1aecb1f227db5bcfc86869d066066f450d" kind="function"><name>my_redir_builtin</name></member>
+    <member refid="top__builtin_8c_1a4a932a3567484ecc159fb43f41392992" kind="function"><name>builtin</name></member>
+  </compound>
+  <compound refid="builtin_2utils_8c" kind="file"><name>utils.c</name>
+    <member refid="builtin_2utils_8c_1a0bd2485960de353416dedf1cf03a943e" kind="function"><name>my_getnbr_base</name></member>
+    <member refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kind="function"><name>get_env_value</name></member>
+    <member refid="builtin_2utils_8c_1ac46a37eeaf4141428d46b5605bbd6c51" kind="function"><name>cattab_ext</name></member>
+  </compound>
+  <compound refid="ps1_2utils_8c" kind="file"><name>utils.c</name>
+    <member refid="ps1_2utils_8c_1aefcacc933a37addad7115f56ea4002d1" kind="variable"><name>g_tab_ptr</name></member>
+    <member refid="ps1_2utils_8c_1a87c542912fe159e4137edfda5b3bda75" kind="function"><name>case_beep</name></member>
+    <member refid="ps1_2utils_8c_1ab30c142300025115303c32027b0065c7" kind="function"><name>launch_format</name></member>
+    <member refid="ps1_2utils_8c_1a526e44b33bc72aa77f1cd2eb7e4ee6a6" kind="function"><name>get_ps1</name></member>
+    <member refid="ps1_2utils_8c_1a3227f1af4721393b70d7b8a08692c6c6" kind="function"><name>fix_ps1</name></member>
+    <member refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" kind="function"><name>pars_ps1</name></member>
+  </compound>
+  <compound refid="default__path_8c" kind="file"><name>default_path.c</name>
+    <member refid="default__path_8c_1aae15200ba07dd26f07781342a0b110f5" kind="function"><name>default_path</name></member>
+  </compound>
+  <compound refid="exe__cmd_8c" kind="file"><name>exe_cmd.c</name>
+    <member refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" kind="function"><name>exe_function</name></member>
+    <member refid="exe__cmd_8c_1a2b4de1f22e62da77dfedc3b21067194c" kind="function"><name>make_path</name></member>
+    <member refid="exe__cmd_8c_1a97368bf5fe74e84efa91f0266a404052" kind="function"><name>loop_exe_path</name></member>
+    <member refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" kind="function"><name>exe_path</name></member>
+    <member refid="exe__cmd_8c_1a77721335c9203a6b8979c81c001d77e1" kind="function"><name>exe_cmd</name></member>
+  </compound>
+  <compound refid="is__builtin_8c" kind="file"><name>is_builtin.c</name>
+    <member refid="is__builtin_8c_1ae140477ff5ef84d0d57e8c35dbc877c2" kind="function"><name>is_builtin</name></member>
+  </compound>
+  <compound refid="pipe_8c" kind="file"><name>pipe.c</name>
+    <member refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" kind="function"><name>check_cmd</name></member>
+    <member refid="pipe_8c_1a6c5a209f770a66dc5c2f73e10ff86db3" kind="function"><name>last_pipe</name></member>
+    <member refid="pipe_8c_1a6267c0f1ac0750c77dc4e676bf140b80" kind="function"><name>loop_pipe</name></member>
+    <member refid="pipe_8c_1ac7254c9ab0581563f740b715d805c301" kind="function"><name>first_pipe</name></member>
+    <member refid="pipe_8c_1a2fbfcf1b08d99f573f1102a669d1b728" kind="function"><name>exe_pipe</name></member>
+  </compound>
+  <compound refid="redirection__left_8c" kind="file"><name>redirection_left.c</name>
+    <member refid="redirection__left_8c_1a058a86ac024b5d3bbba7a0b6e9914b7b" kind="function"><name>open_file_rd</name></member>
+    <member refid="redirection__left_8c_1ac59f9fd6667dc7848f769a37da76319b" kind="function"><name>add_end_list</name></member>
+    <member refid="redirection__left_8c_1a870bc72198c51984b1f8dd97b650a7c3" kind="function"><name>write_list_redi</name></member>
+    <member refid="redirection__left_8c_1a7d4285d2d4f2790e8ccad0f0f4a103a3" kind="function"><name>double_redi_left</name></member>
+    <member refid="redirection__left_8c_1a4e39d0c23677b4b63663795cfab2b698" kind="function"><name>redirection_left</name></member>
+  </compound>
+  <compound refid="redirection__right_8c" kind="file"><name>redirection_right.c</name>
+    <member refid="redirection__right_8c_1ab8ba3b24d5aac02328d50a28e498905b" kind="function"><name>open_file_wr</name></member>
+    <member refid="redirection__right_8c_1a8cd483493477b8b727d1773f6ea11ee8" kind="function"><name>redirection_right</name></member>
+  </compound>
+  <compound refid="glob_8c" kind="file"><name>glob.c</name>
+    <member refid="glob_8c_1aa5f409adaf658e07a17ffc0097496455" kind="function"><name>length_double_array</name></member>
+    <member refid="glob_8c_1a79f692f042cb5e15d048e2661729c98f" kind="function"><name>return_globing</name></member>
+    <member refid="glob_8c_1a94ce754d4547c963ce172dcbd9a8a6fe" kind="function"><name>length_malloc_globing</name></member>
+    <member refid="glob_8c_1a092c8d6d324b0991de7695be7c950f69" kind="function"><name>parsing_globing</name></member>
+  </compound>
+  <compound refid="stars_8c" kind="file"><name>stars.c</name>
+    <member refid="stars_8c_1a73cefecfa75f18a7430e6b756214752d" kind="function"><name>is_stars</name></member>
+    <member refid="stars_8c_1a5b6eb307c8f5f55efe7af56ea79a4c78" kind="function"><name>if_stars</name></member>
+  </compound>
+  <compound refid="builtin_8h" kind="file"><name>builtin.h</name>
+    <member refid="builtin_8h_1afe4b0e625372cd38ec60150d6f5594b8" kind="define"><name>ESCAPE</name></member>
+    <member refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" kind="define"><name>FAILURE</name></member>
+    <member refid="builtin_8h_1a82364b047b41d18199c9372ace974305" kind="define"><name>NO_MATCH</name></member>
+    <member refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" kind="define"><name>SUCCESS</name></member>
+    <member refid="builtin_8h_1ad111e603bbebe5d87f6bc39264ce4733" kind="define"><name>EXIT</name></member>
+    <member refid="builtin_8h_1a73c4175ebb4c747bdf44fbf2820385c1" kind="typedef"><name>t_bref</name></member>
+    <member refid="builtin_8h_1aecb1f227db5bcfc86869d066066f450d" kind="function"><name>my_redir_builtin</name></member>
+    <member refid="builtin_8h_1ac46a37eeaf4141428d46b5605bbd6c51" kind="function"><name>cattab_ext</name></member>
+    <member refid="builtin_8h_1a27ff54b856199cbd22e0983f4b369f6b" kind="function"><name>my_cd_error</name></member>
+    <member refid="builtin_8h_1a6055c5e4f8247c5a1151cd65e5061574" kind="function"><name>my_replace_key</name></member>
+    <member refid="builtin_8h_1a2883a48551d7c810ebd592fb241efeed" kind="function"><name>my_cstrconcat</name></member>
+    <member refid="builtin_8h_1a0059bf9838c7770b46270fedbc869799" kind="function"><name>get_env_value</name></member>
+    <member refid="builtin_8h_1a3da96f75f1c99d390ce5582d73f7bf18" kind="function"><name>my_print</name></member>
+    <member refid="builtin_8h_1a9c81bd03dd1d5eae7cee8720ff4a4f25" kind="function"><name>my_epurtab</name></member>
+    <member refid="builtin_8h_1a795c38158cb00f9fcad0dd7db17e7ded" kind="function"><name>my_cattab</name></member>
+    <member refid="builtin_8h_1a0bd2485960de353416dedf1cf03a943e" kind="function"><name>my_getnbr_base</name></member>
+    <member refid="builtin_8h_1a2157775684b24545b151e0c2e5f38954" kind="function"><name>my_cd</name></member>
+    <member refid="builtin_8h_1adff2ceef5d8ba6f5b94b9c3902b2d5f9" kind="function"><name>my_exit</name></member>
+    <member refid="builtin_8h_1a475eb535199d99dff9033edf1b87a84d" kind="function"><name>my_env</name></member>
+    <member refid="builtin_8h_1a0f75b40d45c389d2f019b5ad672f3ed1" kind="function"><name>my_setenv</name></member>
+    <member refid="builtin_8h_1ab15f4c5af8f204fcf26ff0bf30391b77" kind="function"><name>my_unsetenv</name></member>
+    <member refid="builtin_8h_1a772e7ea72ee3ac31a9da9d3c8423816e" kind="function"><name>my_echo</name></member>
+  </compound>
+  <compound refid="get__next__line_8h" kind="file"><name>get_next_line.h</name>
+    <member refid="get__next__line_8h_1a6c7cd32e1bac137f05e4a752b4ad10af" kind="define"><name>BUFF_SIZE</name></member>
+  </compound>
+  <compound refid="lib_8h" kind="file"><name>lib.h</name>
+    <member refid="lib_8h_1ab4d814ba6221d4345d560ce9cfef5d19" kind="function"><name>malloc_str</name></member>
+    <member refid="lib_8h_1a98bc04bbaa2df3d99d2cc7ce7a8f4cbb" kind="function"><name>my_strcat</name></member>
+    <member refid="lib_8h_1a1f3184706691dba8b6983a04b8bf1cbe" kind="function"><name>my_strncat</name></member>
+    <member refid="lib_8h_1a3cfe4ae03a0888aa2d78d5d8ed455580" kind="function"><name>get_next_line</name></member>
+    <member refid="lib_8h_1a905ee77da70f8724239b39b7afcddcc5" kind="function"><name>my_strcpy</name></member>
+    <member refid="lib_8h_1afbf137b6e9ee5d74ac4676f6ff2f8dd1" kind="function"><name>my_strncpy</name></member>
+    <member refid="lib_8h_1a3944361d961ff87614dd90bef4fc97d7" kind="function"><name>my_strcpy_from</name></member>
+    <member refid="lib_8h_1ac56401d1d3bc6a7c3ae959b6030782e1" kind="function"><name>my_putchar</name></member>
+    <member refid="lib_8h_1a3f0d73dd274474aaf7f5f73ddfde8f12" kind="function"><name>my_putstr</name></member>
+    <member refid="lib_8h_1ae31dc0dea7dd9327d0fcf0198bacd2ea" kind="function"><name>my_put_nbr</name></member>
+    <member refid="lib_8h_1a31679cba354afe62e162269b666ccc68" kind="function"><name>my_strcat_from</name></member>
+    <member refid="lib_8h_1ac45cbddfa25de0a352c590381e969240" kind="function"><name>my_getnbr</name></member>
+    <member refid="lib_8h_1aed7507d364ed81ce905a08bd894f25ea" kind="function"><name>my_strcmp</name></member>
+    <member refid="lib_8h_1af2b07ab433e5abc909e11753d7aa3ced" kind="function"><name>my_strlen</name></member>
+    <member refid="lib_8h_1aded99d60292ad3cddbf43d0030f57732" kind="function"><name>len_tab</name></member>
+    <member refid="lib_8h_1aa470a7e58967778144f7d737bf64c3e8" kind="function"><name>my_strndup</name></member>
+    <member refid="lib_8h_1a4548135c4f1cfcaeff31c8dabb3692d3" kind="function"><name>my_strdup</name></member>
+    <member refid="lib_8h_1a5c4d2d32920036f1ad38c2bd614abfd9" kind="function"><name>my_strncmp</name></member>
+  </compound>
+  <compound refid="ps1_8h" kind="file"><name>ps1.h</name>
+    <member refid="ps1_8h_1aeb7fb1d98bb972105415bef946116d47" kind="define"><name>FORMAT_CHAR</name></member>
+    <member refid="ps1_8h_1a9536f47a335bb06de4d37e9074f421c0" kind="define"><name>NAME_CHAR</name></member>
+    <member refid="ps1_8h_1a942746487bf4089db1b4f2d67917c60b" kind="define"><name>HOST_CHAR</name></member>
+    <member refid="ps1_8h_1a205fef933b4387df3054f5506e8cd1d1" kind="define"><name>PWD_CHAR</name></member>
+    <member refid="ps1_8h_1aec7445b2fb2546a315299c2c51474b57" kind="define"><name>LAST_DIR_CHAR</name></member>
+    <member refid="ps1_8h_1a00e4cc9bfeecc68ee12ac25bde9bd897" kind="define"><name>TERM_CHAR</name></member>
+    <member refid="ps1_8h_1a512e1f1ad550cb7f0e0fe02741113c6e" kind="define"><name>BEEP_CHAR</name></member>
+    <member refid="ps1_8h_1ad58c6afed9400caabec0c6d1b0f033ff" kind="typedef"><name>t_format</name></member>
+    <member refid="ps1_8h_1a0abbe5bf65b1101a9571444ca5ab37f4" kind="function"><name>case_name</name></member>
+    <member refid="ps1_8h_1a1c2798ccf833589ed359f0f4ea30d98f" kind="function"><name>case_host</name></member>
+    <member refid="ps1_8h_1a691d38547be90f9a41ee0fde06f94f75" kind="function"><name>case_pwd</name></member>
+    <member refid="ps1_8h_1abd2aff6cb058bb6c34d2263255ed0832" kind="function"><name>case_last_dir</name></member>
+    <member refid="ps1_8h_1acff18e5b1fb60631e8970d0aa6df8843" kind="function"><name>case_term</name></member>
+    <member refid="ps1_8h_1a87c542912fe159e4137edfda5b3bda75" kind="function"><name>case_beep</name></member>
+    <member refid="ps1_8h_1a9a61eccec6f9e5611019648327862636" kind="function"><name>pars_ps1</name></member>
+  </compound>
+  <compound refid="shell_8h" kind="file"><name>shell.h</name>
+    <member refid="shell_8h_1a86e1969b50e55e5d506233078ca0fa4c" kind="define"><name>READ_SIZE</name></member>
+    <member refid="shell_8h_1a7d28911d2cf3becfbdc3bb2271375405" kind="define"><name>RCNAME</name></member>
+    <member refid="shell_8h_1a45e9b5e9787a31371e46210ff3730e68" kind="typedef"><name>t_alias</name></member>
+    <member refid="shell_8h_1ab4590bb20f2c51674483a55293e861eb" kind="typedef"><name>t_list_line</name></member>
+    <member refid="shell_8h_1aa073beba29d3550fb1d0d3170f122e91" kind="typedef"><name>t_list</name></member>
+    <member refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kind="typedef"><name>t_cmd</name></member>
+    <member refid="shell_8h_1afb1327cff317f4de2efd5a873ff849d7" kind="typedef"><name>t_cmds</name></member>
+    <member refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kind="typedef"><name>t_stock</name></member>
+    <member refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kind="typedef"><name>t_history</name></member>
+    <member refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kind="typedef"><name>t_data</name></member>
+    <member refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" kind="variable"><name>g_data</name></member>
+    <member refid="shell_8h_1a75146577e9b06cc37c090f3c94b2278e" kind="function"><name>parsing_cmd</name></member>
+    <member refid="shell_8h_1ae8d6b38307281c05e1b03ca11f8bbb8c" kind="function"><name>parsing_pipe</name></member>
+    <member refid="shell_8h_1ae9c51201cb3ad89b921d2f3576875ca4" kind="function"><name>parsing_general</name></member>
+    <member refid="shell_8h_1afa6fff44bde50c8a0f4b8868f6b81777" kind="function"><name>check_recur</name></member>
+    <member refid="shell_8h_1a94ed7403f0bc582353a563669932efdd" kind="function"><name>get_all_alias</name></member>
+    <member refid="shell_8h_1ad5f519b4cbb35030e5d5713a466439e7" kind="function"><name>new_alias</name></member>
+    <member refid="shell_8h_1a011086cf248f555db073ba6df76030e0" kind="function"><name>insert_list_double</name></member>
+    <member refid="shell_8h_1a03522e35827e231817075a4d6389c77c" kind="function"><name>pars_ps1</name></member>
+    <member refid="shell_8h_1acd9ad0dfae53c8683ec2597a188e6c1b" kind="function"><name>bashset</name></member>
+    <member refid="shell_8h_1a7c48c503a505583c6693462bdda06b45" kind="function"><name>segfault</name></member>
+    <member refid="shell_8h_1a9c8e6dc113eea68f9307b76af43e5d44" kind="function"><name>is_exe</name></member>
+    <member refid="shell_8h_1a88d6a0e4709f3f3521a44ae3bcdf6862" kind="function"><name>add_redi</name></member>
+    <member refid="shell_8h_1a1a145470918f339fe655f978216c73e2" kind="function"><name>error_syntax_error</name></member>
+    <member refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" kind="function"><name>exe_cmd</name></member>
+    <member refid="shell_8h_1a0b773212abd3f5ea05fa3ef3945efd1d" kind="function"><name>exe_pipe</name></member>
+    <member refid="shell_8h_1ade577cee6ed36ca9bc44e1d9f29a7d4a" kind="function"><name>sh</name></member>
+    <member refid="shell_8h_1a480f2c4c3df5d3d39f609e1455975b17" kind="function"><name>redirection_right</name></member>
+    <member refid="shell_8h_1a453672a5f3546a46dbd0b808a68fd71b" kind="function"><name>redirection_left</name></member>
+    <member refid="shell_8h_1aaa516d4ccb03a5c0226bf430180d737e" kind="function"><name>is_redi</name></member>
+    <member refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" kind="function"><name>builtin</name></member>
+    <member refid="shell_8h_1afe3033f820f77741e41ee05caa219554" kind="function"><name>index_end_word</name></member>
+    <member refid="shell_8h_1a4f26e199a91bdcc604a1943a1caf91e9" kind="function"><name>is_stars</name></member>
+    <member refid="shell_8h_1a016d082e790265a3ffe8fbff90b2a0b2" kind="function"><name>clean_screen</name></member>
+    <member refid="shell_8h_1a7c8b1bb310843604574d3699e2c3465c" kind="function"><name>error_cmd_not_found</name></member>
+    <member refid="shell_8h_1a61bdc6973b469d94f62b412506a86a60" kind="function"><name>if_stars</name></member>
+    <member refid="shell_8h_1a8e5633ce3ca1c968f88de68f3ed735c7" kind="function"><name>pars_alias</name></member>
+    <member refid="shell_8h_1adea8df0d450d18361023ed783f462f39" kind="function"><name>get_line_file</name></member>
+    <member refid="shell_8h_1a6cadc3565b189cd09265052e7ab300ed" kind="function"><name>is_slash</name></member>
+    <member refid="shell_8h_1aef5a99da1ffbf13443354619597957ff" kind="function"><name>is_builtin</name></member>
+    <member refid="shell_8h_1afe7f6d5c210dc13734d4e5bcfd204de8" kind="function"><name>epur_slash</name></member>
+    <member refid="shell_8h_1a596ea92c775765f65acd11ecbe74a5ba" kind="function"><name>auto_complete</name></member>
+    <member refid="shell_8h_1ab4d814ba6221d4345d560ce9cfef5d19" kind="function"><name>malloc_str</name></member>
+    <member refid="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" kind="function"><name>loop</name></member>
+    <member refid="shell_8h_1a1e8106cf0c11e2bd136b43a9cc608c9a" kind="function"><name>get_cmd</name></member>
+    <member refid="shell_8h_1a6754f4915186decc3a861cd78d15499e" kind="function"><name>gnl</name></member>
+    <member refid="shell_8h_1aef6f0a2dadbae4099dfa9a0cc9ea1782" kind="function"><name>concat_alias</name></member>
+    <member refid="shell_8h_1a2b4de1f22e62da77dfedc3b21067194c" kind="function"><name>make_path</name></member>
+    <member refid="shell_8h_1a0fae88d1db84fef35d175daa3f9c6b30" kind="function"><name>get_bin_path</name></member>
+    <member refid="shell_8h_1a1093f9bacf4d698d4f34d7ee472344d3" kind="function"><name>last_word</name></member>
+    <member refid="shell_8h_1ae2589b5e18e85e7f44abd6bddf4724a4" kind="function"><name>my_strconcat</name></member>
+    <member refid="shell_8h_1ae7ca988050564368cd481dd94902435b" kind="function"><name>alias_finder</name></member>
+    <member refid="shell_8h_1ac8db3662f7b7cc7ee5b03b6c5591447d" kind="function"><name>alias_find</name></member>
+    <member refid="shell_8h_1aeee2c96c8e8193fc245dee41ac044a77" kind="function"><name>end_find</name></member>
+    <member refid="shell_8h_1acbb6e8e618f4c43c7eeb93923b92e385" kind="function"><name>up</name></member>
+    <member refid="shell_8h_1a3a9f901ffe6cc6b5f7d902526c01748e" kind="function"><name>down</name></member>
+    <member refid="shell_8h_1a327654aa7fc09df62ee320f55cc80de7" kind="function"><name>calc_new_str</name></member>
+    <member refid="shell_8h_1a8a65c90ea8fc24f744d1bfc22ab4ccd2" kind="function"><name>read_cmd</name></member>
+    <member refid="shell_8h_1a44fa45709eb2e5561b4f39cf406c843d" kind="function"><name>epure_str</name></member>
+    <member refid="shell_8h_1aa93a7396e54be09774dcefe2cb664afb" kind="function"><name>str_to_word_tab</name></member>
+    <member refid="shell_8h_1aaaecb53bea2c752a15fb72f27bdb85c4" kind="function"><name>parsing_globing</name></member>
+    <member refid="shell_8h_1a9d453b40894496133ee7954e9ef68279" kind="function"><name>return_globing</name></member>
+    <member refid="shell_8h_1a26d7528347b5a654e5ffce85c1cb3c02" kind="function"><name>make_env</name></member>
+    <member refid="shell_8h_1aae15200ba07dd26f07781342a0b110f5" kind="function"><name>default_path</name></member>
+    <member refid="shell_8h_1a733a7370f33430443ae3914f72d5fdba" kind="function"><name>pars_tilde</name></member>
+    <member refid="shell_8h_1a022bb39a7be1bb675180887d1920d394" kind="function"><name>clean_line_prev</name></member>
+    <member refid="shell_8h_1a90de19073da7fff41b2b9a6464f78dff" kind="function"><name>clean_line_next</name></member>
+    <member refid="shell_8h_1a98cf73858bc9e8acd95a1caa1410e3c1" kind="function"><name>clean</name></member>
+    <member refid="shell_8h_1a9a22cdb14fbffec8b1857153bd8fefff" kind="function"><name>clean_line</name></member>
+    <member refid="shell_8h_1aa03f017a35da8a430148654234880534" kind="function"><name>print_cursor_left</name></member>
+    <member refid="shell_8h_1ae1896fc58ae2d86e1607940e8c4dff66" kind="function"><name>print_cursor_right</name></member>
+    <member refid="shell_8h_1a86c98aaf559611425f7f8079e0019335" kind="function"><name>my_write_tab</name></member>
+    <member refid="shell_8h_1a355426ca95d2d3e650e274a762d1d99b" kind="function"><name>gere_tab</name></member>
+    <member refid="shell_8h_1ae47252a37d7b8c816ca7a1d2e83ce8b7" kind="function"><name>gere_history</name></member>
+    <member refid="shell_8h_1a19c96fd25dc36fc2337e2107bb0a54c5" kind="function"><name>init_stock</name></member>
+    <member refid="shell_8h_1a089febdbd9db477f99c25841413150a8" kind="function"><name>gere_char</name></member>
+    <member refid="shell_8h_1ab4ce23e3bb732e092c9ec75e6c739242" kind="function"><name>gere_arrow</name></member>
+    <member refid="shell_8h_1a929bf8ea49ac6f94a2b1ab00c9f16343" kind="function"><name>add_char</name></member>
+    <member refid="shell_8h_1a8a81cc045a4530835ce45b6817e17335" kind="function"><name>delete_char</name></member>
+    <member refid="shell_8h_1a10717a0c53430c97d2ccedbfb1728211" kind="function"><name>delete_backward</name></member>
+  </compound>
+  <compound refid="get__next__line_8c" kind="file"><name>get_next_line.c</name>
+    <member refid="get__next__line_8c_1ab044b91a346486fe462ea0d5543325e5" kind="function"><name>my_read</name></member>
+    <member refid="get__next__line_8c_1a43354ef027ff107d540fe9cd7b0aed1b" kind="function"><name>new_str</name></member>
+    <member refid="get__next__line_8c_1aed7a5e18848da190b01eb9e791c51824" kind="function"><name>get_next_line</name></member>
+  </compound>
+  <compound refid="len__tab_8c" kind="file"><name>len_tab.c</name>
+    <member refid="len__tab_8c_1a28ece56f3d95845087e9d1c1649b55f6" kind="function"><name>len_tab</name></member>
+  </compound>
+  <compound refid="malloc__str_8c" kind="file"><name>malloc_str.c</name>
+    <member refid="malloc__str_8c_1af4240b9ebd1f790c96c4c8e181827fba" kind="function"><name>malloc_str</name></member>
+  </compound>
+  <compound refid="my__getnbr_8c" kind="file"><name>my_getnbr.c</name>
+    <member refid="my__getnbr_8c_1aad569c9f93b415855a1a9cd23e91b922" kind="function"><name>check</name></member>
+    <member refid="my__getnbr_8c_1ad48badc9f257d977f8021a87c27520d7" kind="function"><name>my_getnbr_2</name></member>
+    <member refid="my__getnbr_8c_1a62694fc10e80f5d95a4bc3ab1754f6c3" kind="function"><name>my_getnbr</name></member>
+  </compound>
+  <compound refid="my__put__nbr_8c" kind="file"><name>my_put_nbr.c</name>
+    <member refid="my__put__nbr_8c_1a32702ba3a4078d4addf860740c67aef8" kind="function"><name>power_10</name></member>
+    <member refid="my__put__nbr_8c_1a42cce0fb5cfa874bf507ae4fa98a0aa5" kind="function"><name>my_put_nbr</name></member>
+  </compound>
+  <compound refid="my__putchar_8c" kind="file"><name>my_putchar.c</name>
+    <member refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kind="function"><name>my_putchar</name></member>
+  </compound>
+  <compound refid="my__putstr_8c" kind="file"><name>my_putstr.c</name>
+    <member refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kind="function"><name>my_putstr</name></member>
+  </compound>
+  <compound refid="my__strcat_8c" kind="file"><name>my_strcat.c</name>
+    <member refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" kind="function"><name>my_strcat</name></member>
+  </compound>
+  <compound refid="my__strcat__from_8c" kind="file"><name>my_strcat_from.c</name>
+    <member refid="my__strcat__from_8c_1af36871f5cc68b2e672c4b8d39c4239dd" kind="function"><name>my_strcat_from</name></member>
+  </compound>
+  <compound refid="my__strcmp_8c" kind="file"><name>my_strcmp.c</name>
+    <member refid="my__strcmp_8c_1a7656d2f543a26ba1552b06f75667ba3c" kind="function"><name>my_strcmp</name></member>
+  </compound>
+  <compound refid="my__strcpy_8c" kind="file"><name>my_strcpy.c</name>
+    <member refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" kind="function"><name>my_strcpy</name></member>
+  </compound>
+  <compound refid="my__strcpy__from_8c" kind="file"><name>my_strcpy_from.c</name>
+    <member refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" kind="function"><name>my_strcpy_from</name></member>
+  </compound>
+  <compound refid="my__strdup_8c" kind="file"><name>my_strdup.c</name>
+    <member refid="my__strdup_8c_1a4548135c4f1cfcaeff31c8dabb3692d3" kind="function"><name>my_strdup</name></member>
+  </compound>
+  <compound refid="my__strlen_8c" kind="file"><name>my_strlen.c</name>
+    <member refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kind="function"><name>my_strlen</name></member>
+  </compound>
+  <compound refid="my__strncat_8c" kind="file"><name>my_strncat.c</name>
+    <member refid="my__strncat_8c_1a3b24f5275c408c2de1bf77b90f87e35f" kind="function"><name>my_strncat</name></member>
+  </compound>
+  <compound refid="my__strncmp_8c" kind="file"><name>my_strncmp.c</name>
+    <member refid="my__strncmp_8c_1a5c4d2d32920036f1ad38c2bd614abfd9" kind="function"><name>my_strncmp</name></member>
+  </compound>
+  <compound refid="my__strncpy_8c" kind="file"><name>my_strncpy.c</name>
+    <member refid="my__strncpy_8c_1a488ec5fec2f5d4fda8bf780b1e08ef63" kind="function"><name>my_strncpy</name></member>
+  </compound>
+  <compound refid="my__strndup_8c" kind="file"><name>my_strndup.c</name>
+    <member refid="my__strndup_8c_1aa470a7e58967778144f7d737bf64c3e8" kind="function"><name>my_strndup</name></member>
+  </compound>
+  <compound refid="str__to__word__tab_8c" kind="file"><name>str_to_word_tab.c</name>
+    <member refid="str__to__word__tab_8c_1a8425589aca191f509539e8e61dcd6076" kind="function"><name>is_sep</name></member>
+    <member refid="str__to__word__tab_8c_1a57bdb7b6d479b3e82fb9f2279d76a2be" kind="function"><name>how_many_words</name></member>
+    <member refid="str__to__word__tab_8c_1ab03f9e95db8c82fe8ac4c95f5844b0bb" kind="function"><name>str_to_word_tab</name></member>
+  </compound>
+  <compound refid="parsing__cmd_8c" kind="file"><name>parsing_cmd.c</name>
+    <member refid="parsing__cmd_8c_1a76889c4c767c0af44a85984cbaf48d62" kind="function"><name>is_redi</name></member>
+    <member refid="parsing__cmd_8c_1a630ad05ab22a793081c5c8f3ab941220" kind="function"><name>index_end_word</name></member>
+    <member refid="parsing__cmd_8c_1a14a8f0c61b979cd9b0413c120dff438a" kind="function"><name>add_word_to_tab</name></member>
+    <member refid="parsing__cmd_8c_1ae3a29b783909de965bd6285058ad5694" kind="function"><name>init_parsing</name></member>
+    <member refid="parsing__cmd_8c_1a03eecd3e4496f8e1b3567709d88ae5b8" kind="function"><name>parsing_cmd</name></member>
+  </compound>
+  <compound refid="parsing__general_8c" kind="file"><name>parsing_general.c</name>
+    <member refid="parsing__general_8c_1a4d215aeab88defa9d98461ae58615688" kind="function"><name>is_sep_cmd</name></member>
+    <member refid="parsing__general_8c_1a8a47bb6cfcb5378a27b639793a995814" kind="function"><name>new_cmds</name></member>
+    <member refid="parsing__general_8c_1a2d75753bac50088aa4b9be29314f98fc" kind="function"><name>add_cmds</name></member>
+    <member refid="parsing__general_8c_1a8ce5b1616824e4b8ae78ddd79d8cfc5b" kind="function"><name>go_next_cmds</name></member>
+    <member refid="parsing__general_8c_1abcadffa198fad47ab7758691c6ad4883" kind="function"><name>parsing_general</name></member>
+  </compound>
+  <compound refid="parsing__pipe_8c" kind="file"><name>parsing_pipe.c</name>
+    <member refid="parsing__pipe_8c_1aba9655c6270687dc8c90b6739c192f85" kind="function"><name>next_cmd</name></member>
+    <member refid="parsing__pipe_8c_1af2f9183740ca6c997f4137fe08c50ff5" kind="function"><name>calc_new_str</name></member>
+    <member refid="parsing__pipe_8c_1a1ffdb84b9297c89dcd30e9402f2c3515" kind="function"><name>add_cmd</name></member>
+    <member refid="parsing__pipe_8c_1ae16134c5a21e816f178cf67d66d44503" kind="function"><name>parsing_pipe</name></member>
+  </compound>
+  <compound refid="parsing__tilde_8c" kind="file"><name>parsing_tilde.c</name>
+    <member refid="parsing__tilde_8c_1a800e94b9063ed3c13ca3f3339317bea6" kind="function"><name>pars_tilde</name></member>
+  </compound>
+  <compound refid="redirection_8c" kind="file"><name>redirection.c</name>
+    <member refid="redirection_8c_1a9d291893b76eeddb11d3b35fb5804747" kind="function"><name>set_last_in_list</name></member>
+    <member refid="redirection_8c_1a1cd0120acb08c062e567a2f26e64545a" kind="function"><name>set_redi</name></member>
+    <member refid="redirection_8c_1ab141cb2c1876246eb1194566beb195c8" kind="function"><name>add_redi</name></member>
+  </compound>
+  <compound refid="clean__screen_8c" kind="file"><name>clean_screen.c</name>
+    <member refid="clean__screen_8c_1a7a70e74d15838251dcd3b1887c9d3c19" kind="function"><name>clean_screen</name></member>
+  </compound>
+  <compound refid="clear__line_8c" kind="file"><name>clear_line.c</name>
+    <member refid="clear__line_8c_1a9eb51cbe57ccf2c3836c2d4c76a63154" kind="function"><name>clean_line</name></member>
+  </compound>
+  <compound refid="gere__key_8c" kind="file"><name>gere_key.c</name>
+    <member refid="gere__key_8c_1a53f1b007a4f559c1ed15fa556ad75927" kind="function"><name>gere_history</name></member>
+    <member refid="gere__key_8c_1abe57af5513acea09813b87df7b582f27" kind="function"><name>gere_char</name></member>
+    <member refid="gere__key_8c_1a9a93184b1cbfe4b19e576e90d77dfbce" kind="function"><name>gere_arrow</name></member>
+    <member refid="gere__key_8c_1ad10efa40372f8aaeaef9145aa948f61b" kind="function"><name>complete_cmd</name></member>
+    <member refid="gere__key_8c_1ac7b5d923e42cfb0580ecd5200d477268" kind="function"><name>gere_tab</name></member>
+  </compound>
+  <compound refid="init_8c" kind="file"><name>init.c</name>
+    <member refid="init_8c_1aa33a64ab0af49185a45ecd44a5aebeaa" kind="function"><name>init_stock</name></member>
+  </compound>
+  <compound refid="insert__list__double_8c" kind="file"><name>insert_list_double.c</name>
+    <member refid="insert__list__double_8c_1ad8cfc41ab9a15b35fb2a892956180cff" kind="function"><name>insert_list_double</name></member>
+  </compound>
+  <compound refid="last__word_8c" kind="file"><name>last_word.c</name>
+    <member refid="last__word_8c_1a357ab8f24d10bea851731b776e2d4414" kind="function"><name>last_word</name></member>
+  </compound>
+  <compound refid="loop__read_8c" kind="file"><name>loop_read.c</name>
+    <member refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" kind="function"><name>clean</name></member>
+    <member refid="loop__read_8c_1a269f0a83e6d242cfc16f6d3c2ab2723d" kind="function"><name>go_start_line</name></member>
+    <member refid="loop__read_8c_1afd961c890e4e2e41e8dfbfc04176b0d8" kind="function"><name>go_end_line</name></member>
+    <member refid="loop__read_8c_1acb438155c44ae29d7351b71202ab6e3e" kind="function"><name>change_word</name></member>
+    <member refid="loop__read_8c_1a5d35ad919004e2cf4ea5517811342db9" kind="function"><name>loop</name></member>
+  </compound>
+  <compound refid="modif__cmd_8c" kind="file"><name>modif_cmd.c</name>
+    <member refid="modif__cmd_8c_1a9cdedadfe9af1533b8f61dd6ae0e4d9f" kind="function"><name>add_char</name></member>
+    <member refid="modif__cmd_8c_1ad89597d4cb1771ebe12c656e50e8dd51" kind="function"><name>delete_char</name></member>
+    <member refid="modif__cmd_8c_1a1c8ba7df47fbf1fb64a9dc3d1740ba03" kind="function"><name>delete_backward</name></member>
+  </compound>
+  <compound refid="move_8c" kind="file"><name>move.c</name>
+    <member refid="move_8c_1a26c659be8ab219ea68df6c038feced8a" kind="function"><name>up</name></member>
+    <member refid="move_8c_1a9cf576f664805ab837347db06b4c4036" kind="function"><name>down</name></member>
+  </compound>
+  <compound refid="print__cursor_8c" kind="file"><name>print_cursor.c</name>
+    <member refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" kind="function"><name>print_cursor_left</name></member>
+    <member refid="print__cursor_8c_1a99286a45664a92d19230d9ec6ce733a2" kind="function"><name>print_cursor_right</name></member>
+  </compound>
+  <compound refid="prompt__dyn_8c" kind="file"><name>prompt_dyn.c</name>
+    <member refid="prompt__dyn_8c_1a49bb60dfc1b4f20cc526ba6f231c3ef0" kind="function"><name>mod_raw</name></member>
+    <member refid="prompt__dyn_8c_1a427ac6d8e0a0bee2997a0b0a40593c3b" kind="function"><name>my_read_dyn</name></member>
+    <member refid="prompt__dyn_8c_1abee56d6f9016afa0a8fc53a93f1e021b" kind="function"><name>get_cmd</name></member>
+  </compound>
+  <compound refid="tab__fonc_8c" kind="file"><name>tab_fonc.c</name>
+    <member refid="tab__fonc_8c_1a0abbe5bf65b1101a9571444ca5ab37f4" kind="function"><name>case_name</name></member>
+    <member refid="tab__fonc_8c_1a1c2798ccf833589ed359f0f4ea30d98f" kind="function"><name>case_host</name></member>
+    <member refid="tab__fonc_8c_1a691d38547be90f9a41ee0fde06f94f75" kind="function"><name>case_pwd</name></member>
+    <member refid="tab__fonc_8c_1abd2aff6cb058bb6c34d2263255ed0832" kind="function"><name>case_last_dir</name></member>
+    <member refid="tab__fonc_8c_1acff18e5b1fb60631e8970d0aa6df8843" kind="function"><name>case_term</name></member>
+  </compound>
+  <compound refid="dir_4ac3aefb9d9c4a22cf23f594cbf57925" kind="dir"><name>alias</name>
+  </compound>
+  <compound refid="dir_18dda7dbf49b271626e33a4adee9d618" kind="dir"><name>auto_complete</name>
+  </compound>
+  <compound refid="dir_dcd6bf565d8b6008694ea35f4b77d1ca" kind="dir"><name>builtin</name>
+  </compound>
+  <compound refid="dir_298cace015897d4784c970721217655e" kind="dir"><name>exe</name>
+  </compound>
+  <compound refid="dir_9aa948441d3b15a37b6db58289d760b7" kind="dir"><name>glob</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_9d44753e04ffb2096b193bfbdacbac92" kind="dir"><name>lib/my</name>
+  </compound>
+  <compound refid="dir_643e863c297e14dce1d35446f03b11d2" kind="dir"><name>parsing</name>
+  </compound>
+  <compound refid="dir_88aafd85f93f518a0b9c13001f488cc0" kind="dir"><name>prompt_read_termcaps</name>
+  </compound>
+  <compound refid="dir_eb00d8d4373fa374e67cc6e27cf03d82" kind="dir"><name>ps1</name>
+  </compound>
+</doxygenindex>

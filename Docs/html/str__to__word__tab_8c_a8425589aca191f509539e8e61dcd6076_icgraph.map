@@ -1,0 +1,10 @@
+<map id="is_sep" name="is_sep">
+<area shape="rect" id="node3" href="$str__to__word__tab_8c.html#a57bdb7b6d479b3e82fb9f2279d76a2be" title="how_many_words" alt="" coords="115,31,245,57"/>
+<area shape="rect" id="node5" href="$shell_8h.html#aa93a7396e54be09774dcefe2cb664afb" title="str_to_word_tab" alt="" coords="294,56,410,83"/>
+<area shape="rect" id="node7" href="$exe__cmd_8c.html#ae9807c4c371475abfdea4695570f741f" title="exe_path" alt="" coords="459,56,536,83"/>
+<area shape="rect" id="node9" href="$shell_8h.html#aaa570cbabecdb1a23f82ad57ed563378" title="exe_cmd" alt="" coords="585,56,663,83"/>
+<area shape="rect" id="node11" href="$pipe_8c.html#a6c5a209f770a66dc5c2f73e10ff86db3" title="last_pipe" alt="" coords="715,5,789,32"/>
+<area shape="rect" id="node15" href="$pipe_8c.html#a6267c0f1ac0750c77dc4e676bf140b80" title="loop_pipe" alt="" coords="712,56,792,83"/>
+<area shape="rect" id="node18" href="$pipe_8c.html#ac7254c9ab0581563f740b715d805c301" title="first_pipe" alt="" coords="715,107,789,133"/>
+<area shape="rect" id="node13" href="$shell_8h.html#a0b773212abd3f5ea05fa3ef3945efd1d" title="exe_pipe" alt="" coords="840,56,917,83"/>
+</map>

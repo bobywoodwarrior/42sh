@@ -1,0 +1,61 @@
+.TH "builtin/builtin.c" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+builtin/builtin.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include 'builtin\&.h'\fP
+.br
+\fC#include 'lib\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmy_unsetenv\fP (char **expr, \fBt_data\fP *data)"
+.br
+.ti -1c
+.RI "int \fBmy_setenv\fP (char **expr, \fBt_data\fP *data)"
+.br
+.ti -1c
+.RI "int \fBmy_env\fP (char **expr, \fBt_data\fP *data)"
+.br
+.ti -1c
+.RI "int \fBmy_exit\fP (char **expr, \fBt_data\fP *data)"
+.br
+.ti -1c
+.RI "int \fBmy_echo\fP (char **expr, \fBt_data\fP *data)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int my_echo (char **expr, \fBt_data\fP *data)"
+
+.PP
+Definition at line 101 of file builtin\&.c\&.
+.SS "int my_env (char **expr, \fBt_data\fP *data)"
+
+.PP
+Definition at line 71 of file builtin\&.c\&.
+.SS "int my_exit (char **expr, \fBt_data\fP *data)"
+
+.PP
+Definition at line 92 of file builtin\&.c\&.
+.SS "int my_setenv (char **expr, \fBt_data\fP *data)"
+
+.PP
+Definition at line 44 of file builtin\&.c\&.
+.SS "int my_unsetenv (char **expr, \fBt_data\fP *data)"
+
+.PP
+Definition at line 16 of file builtin\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

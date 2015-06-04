@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="functions__complete_8c" kind="file">
+    <compoundname>functions_complete.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <incdepgraph>
+      <node id="446">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="444">
+        <label>stdlib.h</label>
+      </node>
+      <node id="445">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+      <node id="443">
+        <label>auto_complete/functions_complete.c</label>
+        <link refid="functions_complete.c"/>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="functions__complete_8c_1a43aaf009c1f4a148004ee8cf4f4c5a5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int is_slash</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>is_slash</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/auto_complete/functions_complete.c" line="15" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/auto_complete/functions_complete.c" bodystart="15" bodyend="27"/>
+        <referencedby refid="shell_8h_1afe7f6d5c210dc13734d4e5bcfd204de8" compoundref="functions__complete_8c" startline="29" endline="46">epur_slash</referencedby>
+        <referencedby refid="shell_8h_1a86c98aaf559611425f7f8079e0019335" compoundref="functions__complete_8c" startline="48" endline="71">my_write_tab</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="functions__complete_8c_1a0561ce09429ac571427c7b77a61aaed8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* epur_slash</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>epur_slash</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/auto_complete/functions_complete.c" line="29" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/auto_complete/functions_complete.c" bodystart="29" bodyend="46"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="functions__complete_8c_1a43aaf009c1f4a148004ee8cf4f4c5a5a" compoundref="functions__complete_8c" startline="15" endline="27">is_slash</references>
+        <references refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" compoundref="my__strcpy__from_8c" startline="13" endline="24">my_strcpy_from</references>
+        <referencedby refid="shell_8h_1a596ea92c775765f65acd11ecbe74a5ba" compoundref="auto__complete_8c" startline="57" endline="72">auto_complete</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="functions__complete_8c_1aac577fdfca82ccd407b2105d39b56fce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_write_tab</definition>
+        <argsstring>(char **tab)</argsstring>
+        <name>my_write_tab</name>
+        <param>
+          <type>char **</type>
+          <declname>tab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/auto_complete/functions_complete.c" line="48" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/auto_complete/functions_complete.c" bodystart="48" bodyend="71"/>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="functions__complete_8c_1a43aaf009c1f4a148004ee8cf4f4c5a5a" compoundref="functions__complete_8c" startline="15" endline="27">is_slash</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <referencedby refid="shell_8h_1a596ea92c775765f65acd11ecbe74a5ba" compoundref="auto__complete_8c" startline="57" endline="72">auto_complete</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>functions_complete.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/dubosc_a/rendu/PSU_2014_42sh/auto_complete</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Valentin<sp/>Duboscq</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;dubosc_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Thu<sp/>May<sp/>21<sp/>16:43:42<sp/>2015<sp/>Valentin<sp/>Duboscq</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Fri<sp/>May<sp/>22<sp/>16:01:37<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="shell_8h_1a6cadc3565b189cd09265052e7ab300ed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="functions__complete_8c_1a43aaf009c1f4a148004ee8cf4f4c5a5a" kindref="member">is_slash</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str[i])</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="shell_8h_1afe7f6d5c210dc13734d4e5bcfd204de8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="functions__complete_8c_1a0561ce09429ac571427c7b77a61aaed8" kindref="member">epur_slash</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*tmp;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((tmp<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">)<sp/>*<sp/>(<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(str)<sp/>+<sp/>1)))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="functions__complete_8c_1a43aaf009c1f4a148004ee8cf4f4c5a5a" kindref="member">is_slash</ref>(str)<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/><ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(str);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>i--;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="my__strcpy__from_8c_1ae92251d0e61d15319fbada996bf2a493" kindref="member">my_strcpy_from</ref>(tmp,<sp/>str,<sp/>i<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(str);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="shell_8h_1a86c98aaf559611425f7f8079e0019335" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="functions__complete_8c_1aac577fdfca82ccd407b2105d39b56fce" kindref="member">my_write_tab</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**tab)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>j;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(tab[i])</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="functions__complete_8c_1a43aaf009c1f4a148004ee8cf4f4c5a5a" kindref="member">is_slash</ref>(tab[i])<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>=<sp/><ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(tab[i]);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(tab[i][j]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j--;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(tab[i][j])</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(tab[i][j++],<sp/>1);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\t&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/auto_complete/functions_complete.c"/>
+  </compounddef>
+</doxygen>

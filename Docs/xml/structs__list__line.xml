@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structs__list__line" kind="struct" prot="public">
+    <compoundname>s_list_line</compoundname>
+    <includes refid="shell_8h" local="no">shell.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structs__list__line_1a8adb30f4f6669f927fd9232f686c637b" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* line</definition>
+        <argsstring></argsstring>
+        <name>line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="26" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="redirection__left_8c_1ac59f9fd6667dc7848f769a37da76319b" compoundref="redirection__left_8c" startline="24" endline="40">add_end_list</referencedby>
+        <referencedby refid="redirection__left_8c_1a870bc72198c51984b1f8dd97b650a7c3" compoundref="redirection__left_8c" startline="42" endline="64">write_list_redi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__list__line_1a3263d832fe4969fc3f9dbd0e668e0935" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structs__list__line" kindref="compound">s_list_line</ref> *</type>
+        <definition>struct s_list_line* next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="27" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="27" bodyend="-1"/>
+        <referencedby refid="redirection__left_8c_1ac59f9fd6667dc7848f769a37da76319b" compoundref="redirection__left_8c" startline="24" endline="40">add_end_list</referencedby>
+        <referencedby refid="redirection__left_8c_1a870bc72198c51984b1f8dd97b650a7c3" compoundref="redirection__left_8c" startline="42" endline="64">write_list_redi</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="53">
+        <label>s_list_line</label>
+        <link refid="structs__list__line"/>
+        <childnode refid="53" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="25" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="24" bodyend="28"/>
+    <listofallmembers>
+      <member refid="structs__list__line_1a8adb30f4f6669f927fd9232f686c637b" prot="public" virt="non-virtual"><scope>s_list_line</scope><name>line</name></member>
+      <member refid="structs__list__line_1a3263d832fe4969fc3f9dbd0e668e0935" prot="public" virt="non-virtual"><scope>s_list_line</scope><name>next</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

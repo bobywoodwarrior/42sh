@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_9d44753e04ffb2096b193bfbdacbac92" kind="dir">
+    <compoundname>lib/my</compoundname>
+    <innerfile refid="get__next__line_8c">get_next_line.c</innerfile>
+    <innerfile refid="len__tab_8c">len_tab.c</innerfile>
+    <innerfile refid="malloc__str_8c">malloc_str.c</innerfile>
+    <innerfile refid="my__getnbr_8c">my_getnbr.c</innerfile>
+    <innerfile refid="my__put__nbr_8c">my_put_nbr.c</innerfile>
+    <innerfile refid="my__putchar_8c">my_putchar.c</innerfile>
+    <innerfile refid="my__putstr_8c">my_putstr.c</innerfile>
+    <innerfile refid="my__strcat_8c">my_strcat.c</innerfile>
+    <innerfile refid="my__strcat__from_8c">my_strcat_from.c</innerfile>
+    <innerfile refid="my__strcmp_8c">my_strcmp.c</innerfile>
+    <innerfile refid="my__strcpy_8c">my_strcpy.c</innerfile>
+    <innerfile refid="my__strcpy__from_8c">my_strcpy_from.c</innerfile>
+    <innerfile refid="my__strdup_8c">my_strdup.c</innerfile>
+    <innerfile refid="my__strlen_8c">my_strlen.c</innerfile>
+    <innerfile refid="my__strncat_8c">my_strncat.c</innerfile>
+    <innerfile refid="my__strncmp_8c">my_strncmp.c</innerfile>
+    <innerfile refid="my__strncpy_8c">my_strncpy.c</innerfile>
+    <innerfile refid="my__strndup_8c">my_strndup.c</innerfile>
+    <innerfile refid="str__to__word__tab_8c">str_to_word_tab.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/"/>
+  </compounddef>
+</doxygen>

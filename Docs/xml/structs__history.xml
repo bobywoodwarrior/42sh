@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structs__history" kind="struct" prot="public">
+    <compoundname>s_history</compoundname>
+    <includes refid="shell_8h" local="no">shell.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structs__history_1a91a70b77df95bd8b0830b49a094c2acb" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="61" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="shell_8h_1a011086cf248f555db073ba6df76030e0" compoundref="insert__list__double_8c" startline="14" endline="28">insert_list_double</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__history_1a5d4e20503141c1617cd3ef296ea66d0e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structs__history" kindref="compound">s_history</ref> *</type>
+        <definition>struct s_history* next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="62" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="shell_8h_1a011086cf248f555db073ba6df76030e0" compoundref="insert__list__double_8c" startline="14" endline="28">insert_list_double</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__history_1af7dadc2c1ca47fd86993081a65a8d9e8" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structs__history" kindref="compound">s_history</ref> *</type>
+        <definition>struct s_history* prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="63" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="shell_8h_1a011086cf248f555db073ba6df76030e0" compoundref="insert__list__double_8c" startline="14" endline="28">insert_list_double</referencedby>
+        <referencedby refid="shell_8h_1a3a9f901ffe6cc6b5f7d902526c01748e" compoundref="move_8c" startline="28" endline="50">down</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="49">
+        <label>s_history</label>
+        <link refid="structs__history"/>
+        <childnode refid="49" relation="usage">
+          <edgelabel>prev</edgelabel>
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="60" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="59" bodyend="64"/>
+    <listofallmembers>
+      <member refid="structs__history_1a91a70b77df95bd8b0830b49a094c2acb" prot="public" virt="non-virtual"><scope>s_history</scope><name>data</name></member>
+      <member refid="structs__history_1a5d4e20503141c1617cd3ef296ea66d0e" prot="public" virt="non-virtual"><scope>s_history</scope><name>next</name></member>
+      <member refid="structs__history_1af7dadc2c1ca47fd86993081a65a8d9e8" prot="public" virt="non-virtual"><scope>s_history</scope><name>prev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

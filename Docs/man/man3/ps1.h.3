@@ -1,0 +1,139 @@
+.TH "include/ps1.h" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/ps1.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBs_format\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBFORMAT_CHAR\fP   '%'"
+.br
+.ti -1c
+.RI "#define \fBNAME_CHAR\fP   'n'"
+.br
+.ti -1c
+.RI "#define \fBHOST_CHAR\fP   'j'"
+.br
+.ti -1c
+.RI "#define \fBPWD_CHAR\fP   '~'"
+.br
+.ti -1c
+.RI "#define \fBLAST_DIR_CHAR\fP   'c'"
+.br
+.ti -1c
+.RI "#define \fBTERM_CHAR\fP   't'"
+.br
+.ti -1c
+.RI "#define \fBBEEP_CHAR\fP   'a'"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBs_format\fP \fBt_format\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBcase_name\fP (char **env)"
+.br
+.ti -1c
+.RI "void \fBcase_host\fP (char **env)"
+.br
+.ti -1c
+.RI "void \fBcase_pwd\fP (char **env)"
+.br
+.ti -1c
+.RI "void \fBcase_last_dir\fP (char **env)"
+.br
+.ti -1c
+.RI "void \fBcase_term\fP (char **env)"
+.br
+.ti -1c
+.RI "void \fBcase_beep\fP (char **env)"
+.br
+.ti -1c
+.RI "int \fBpars_ps1\fP (char **env)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define BEEP_CHAR   'a'"
+
+.PP
+Definition at line 20 of file ps1\&.h\&.
+.SS "#define FORMAT_CHAR   '%'"
+
+.PP
+Definition at line 14 of file ps1\&.h\&.
+.SS "#define HOST_CHAR   'j'"
+
+.PP
+Definition at line 16 of file ps1\&.h\&.
+.SS "#define LAST_DIR_CHAR   'c'"
+
+.PP
+Definition at line 18 of file ps1\&.h\&.
+.SS "#define NAME_CHAR   'n'"
+
+.PP
+Definition at line 15 of file ps1\&.h\&.
+.SS "#define PWD_CHAR   '~'"
+
+.PP
+Definition at line 17 of file ps1\&.h\&.
+.SS "#define TERM_CHAR   't'"
+
+.PP
+Definition at line 19 of file ps1\&.h\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBs_format\fP			 \fBt_format\fP"
+
+.SH "Function Documentation"
+.PP 
+.SS "void case_beep (char **env)"
+
+.PP
+Definition at line 27 of file utils\&.c\&.
+.SS "void case_host (char **env)"
+
+.PP
+Definition at line 21 of file tab_fonc\&.c\&.
+.SS "void case_last_dir (char **env)"
+
+.PP
+Definition at line 49 of file tab_fonc\&.c\&.
+.SS "void case_name (char **env)"
+
+.PP
+Definition at line 16 of file tab_fonc\&.c\&.
+.SS "void case_pwd (char **env)"
+
+.PP
+Definition at line 26 of file tab_fonc\&.c\&.
+.SS "void case_term (char **env)"
+
+.PP
+Definition at line 54 of file tab_fonc\&.c\&.
+.SS "int pars_ps1 (char **env)"
+
+.PP
+Definition at line 92 of file utils\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

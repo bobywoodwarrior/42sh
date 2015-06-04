@@ -1,0 +1,67 @@
+.TH "exe/redirection_left.c" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+exe/redirection_left.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <sys/types\&.h>\fP
+.br
+\fC#include <sys/stat\&.h>\fP
+.br
+\fC#include <fcntl\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+\fC#include 'shell\&.h'\fP
+.br
+\fC#include 'lib\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBopen_file_rd\fP (char *name)"
+.br
+.ti -1c
+.RI "\fBt_list_line\fP * \fBadd_end_list\fP (\fBt_list_line\fP *list, char *str)"
+.br
+.ti -1c
+.RI "int \fBwrite_list_redi\fP (\fBt_list_line\fP *list)"
+.br
+.ti -1c
+.RI "int \fBdouble_redi_left\fP (char *stop)"
+.br
+.ti -1c
+.RI "int \fBredirection_left\fP (\fBt_list\fP *list_r)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBt_list_line\fP* add_end_list (\fBt_list_line\fP *list, char *str)"
+
+.PP
+Definition at line 24 of file redirection_left\&.c\&.
+.SS "int double_redi_left (char *stop)"
+
+.PP
+Definition at line 66 of file redirection_left\&.c\&.
+.SS "int open_file_rd (char *name)"
+
+.PP
+Definition at line 19 of file redirection_left\&.c\&.
+.SS "int redirection_left (\fBt_list\fP *list_r)"
+
+.PP
+Definition at line 83 of file redirection_left\&.c\&.
+.SS "int write_list_redi (\fBt_list_line\fP *list)"
+
+.PP
+Definition at line 42 of file redirection_left\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

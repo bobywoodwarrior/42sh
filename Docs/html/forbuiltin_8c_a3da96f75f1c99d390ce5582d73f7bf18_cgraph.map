@@ -1,0 +1,6 @@
+<map id="my_print" name="my_print">
+<area shape="rect" id="node3" href="$forbuiltin_8c.html#abd901da92b9ba2506b04b5c3a640bba2" title="my_interpret" alt="" coords="126,56,221,83"/>
+<area shape="rect" id="node5" href="$my__putchar_8c.html#a305f90840add16d2d82af412da2260af" title="my_putchar" alt="" coords="461,56,552,83"/>
+<area shape="rect" id="node7" href="$forbuiltin_8c.html#af3d3a3e1f2acbf9eccc05028b283bbb6" title="other_echo_case" alt="" coords="270,5,397,32"/>
+<area shape="rect" id="node10" href="$builtin_2utils_8c.html#a0bd2485960de353416dedf1cf03a943e" title="my_getnbr_base" alt="" coords="446,5,567,32"/>
+</map>

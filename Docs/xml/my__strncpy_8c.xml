@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="my__strncpy_8c" kind="file">
+    <compoundname>my_strncpy.c</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="my__strncpy_8c_1a488ec5fec2f5d4fda8bf780b1e08ef63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * my_strncpy</definition>
+        <argsstring>(char *dest, char *src, int nb)</argsstring>
+        <name>my_strncpy</name>
+        <param>
+          <type>char *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>src</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_strncpy.c" line="11" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_strncpy.c" bodystart="11" bodyend="23"/>
+        <referencedby refid="lib_8h_1aa470a7e58967778144f7d737bf64c3e8" compoundref="my__strndup_8c" startline="14" endline="27">my_strndup</referencedby>
+        <referencedby refid="shell_8h_1a929bf8ea49ac6f94a2b1ab00c9f16343" compoundref="modif__cmd_8c" startline="14" endline="38">add_char</referencedby>
+        <referencedby refid="shell_8h_1a8a81cc045a4530835ce45b6817e17335" compoundref="modif__cmd_8c" startline="40" endline="67">delete_char</referencedby>
+        <referencedby refid="shell_8h_1a10717a0c53430c97d2ccedbfb1728211" compoundref="modif__cmd_8c" startline="69" endline="87">delete_backward</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>my_strncpy.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/blanqu_a/Workspace/rendu/PSU_2014_42sh</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;blanqu_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Wed<sp/>May<sp/>20<sp/>16:54:37<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Fri<sp/>May<sp/>22<sp/>17:35:41<sp/>2015<sp/>anthony<sp/>geiger</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="lib_8h_1afbf137b6e9ee5d74ac4676f6ff2f8dd1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="my__strncpy_8c_1a488ec5fec2f5d4fda8bf780b1e08ef63" kindref="member">my_strncpy</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*dest,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*src,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(src[i]<sp/>&amp;&amp;<sp/>i<sp/>&lt;<sp/>nb)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>dest[i]<sp/>=<sp/>src[i];</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>dest[i]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(dest);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_strncpy.c"/>
+  </compounddef>
+</doxygen>

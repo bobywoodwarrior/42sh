@@ -1,0 +1,11 @@
+cat /dev/urandom | head -c 1000 | wc -c
+
+
+
+gcc --shared -fPIC malloc.c -o malloc.so
+
+i=0; while [ $i -lt 100 ]; do cat /dev/urandom | LD_PRELOAD=./malloc.so valgrind ./42sh 2>> err; i=$(($i + 1)); done
+
+cat err | grep "jump" | wc -l
+
+cat err | grep SIGSEGV | wc -l

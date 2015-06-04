@@ -1,0 +1,59 @@
+.TH "parsing/parsing_general.c" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+parsing/parsing_general.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include 'shell\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBis_sep_cmd\fP (char *str, int i)"
+.br
+.ti -1c
+.RI "\fBt_cmds\fP * \fBnew_cmds\fP (char *\fBnew_str\fP, char sep)"
+.br
+.ti -1c
+.RI "\fBt_cmds\fP * \fBadd_cmds\fP (char *\fBnew_str\fP, \fBt_cmds\fP **cmds, \fBt_cmds\fP **tmp, char sep)"
+.br
+.ti -1c
+.RI "void \fBgo_next_cmds\fP (char *str, int *i, int *i_save)"
+.br
+.ti -1c
+.RI "\fBt_cmds\fP * \fBparsing_general\fP (char *str)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBt_cmds\fP* add_cmds (char *new_str, \fBt_cmds\fP **cmds, \fBt_cmds\fP **tmp, charsep)"
+
+.PP
+Definition at line 43 of file parsing_general\&.c\&.
+.SS "void go_next_cmds (char *str, int *i, int *i_save)"
+
+.PP
+Definition at line 61 of file parsing_general\&.c\&.
+.SS "int is_sep_cmd (char *str, inti)"
+
+.PP
+Definition at line 15 of file parsing_general\&.c\&.
+.SS "\fBt_cmds\fP* new_cmds (char *new_str, charsep)"
+
+.PP
+Definition at line 28 of file parsing_general\&.c\&.
+.SS "\fBt_cmds\fP* parsing_general (char *str)"
+
+.PP
+Definition at line 68 of file parsing_general\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

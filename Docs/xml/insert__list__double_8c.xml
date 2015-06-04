@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="insert__list__double_8c" kind="file">
+    <compoundname>insert_list_double.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <incdepgraph>
+      <node id="755">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="754">
+        <label>stdlib.h</label>
+      </node>
+      <node id="753">
+        <label>prompt_read_termcaps/insert_list_double.c</label>
+        <link refid="insert_list_double.c"/>
+        <childnode refid="754" relation="include">
+        </childnode>
+        <childnode refid="755" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="insert__list__double_8c_1ad8cfc41ab9a15b35fb2a892956180cff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> *</type>
+        <definition>t_history* insert_list_double</definition>
+        <argsstring>(t_history *l, char *data)</argsstring>
+        <name>insert_list_double</name>
+        <param>
+          <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/insert_list_double.c" line="14" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/insert_list_double.c" bodystart="14" bodyend="28"/>
+        <references refid="structs__history_1a91a70b77df95bd8b0830b49a094c2acb" compoundref="shell_8h" startline="61">s_history::data</references>
+        <references refid="structs__history_1af7dadc2c1ca47fd86993081a65a8d9e8" compoundref="shell_8h" startline="63">s_history::prev</references>
+        <references refid="structs__history_1a5d4e20503141c1617cd3ef296ea66d0e" compoundref="shell_8h" startline="62">s_history::next</references>
+        <referencedby refid="shell_8h_1a1e8106cf0c11e2bd136b43a9cc608c9a" compoundref="prompt__dyn_8c" startline="45" endline="57">get_cmd</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>insert_list_double.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/bauer_a/rendu/PSU_2014_42sh/prompt_read_termcaps</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;bauer_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Mon<sp/>May<sp/>11<sp/>15:20:38<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>15:55:00<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="shell_8h_1a011086cf248f555db073ba6df76030e0" refkind="member"><highlight class="normal"><ref refid="structs__history" kindref="compound">t_history</ref><sp/><sp/><sp/>*<ref refid="insert__list__double_8c_1ad8cfc41ab9a15b35fb2a892956180cff" kindref="member">insert_list_double</ref>(<ref refid="structs__history" kindref="compound">t_history</ref><sp/>*l,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><ref refid="structs__history" kindref="compound">t_history</ref><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structs__history" kindref="compound">t_history</ref>)))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;<ref refid="structs__history_1a91a70b77df95bd8b0830b49a094c2acb" kindref="member">data</ref><sp/>=<sp/>data;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;next<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;prev<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(l<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>l-&gt;<ref refid="structs__history_1af7dadc2c1ca47fd86993081a65a8d9e8" kindref="member">prev</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;<ref refid="structs__history_1a5d4e20503141c1617cd3ef296ea66d0e" kindref="member">next</ref><sp/>=<sp/>l;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/insert_list_double.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,14 @@
+<map id="my_strndup" name="my_strndup">
+<area shape="rect" id="node3" href="$alias__etc_8c.html#a2554b2fd4cf3639ec091ec6a5a432675" title="setbashenv" alt="" coords="148,128,239,155"/>
+<area shape="rect" id="node5" href="$shell_8h.html#acd9ad0dfae53c8683ec2597a188e6c1b" title="bashset" alt="" coords="305,77,375,104"/>
+<area shape="rect" id="node12" href="$shell_8h.html#aef6f0a2dadbae4099dfa9a0cc9ea1782" title="concat_alias" alt="" coords="144,179,243,205"/>
+<area shape="rect" id="node24" href="$pars__alias_8c.html#a3257a6fcadd0309f1df178525eea9257" title="get_old" alt="" coords="160,27,227,53"/>
+<area shape="rect" id="node26" href="$pars__alias_8c.html#a7d7873e60a328ecd3a34c3370594b040" title="get_old_new" alt="" coords="291,27,389,53"/>
+<area shape="rect" id="node7" href="$shell_8h.html#a94ed7403f0bc582353a563669932efdd" title="get_all_alias" alt="" coords="437,52,536,79"/>
+<area shape="rect" id="node9" href="$shell_8h.html#a8e5633ce3ca1c968f88de68f3ed735c7" title="pars_alias" alt="" coords="586,52,670,79"/>
+<area shape="rect" id="node14" href="$parsing__pipe_8c.html#a1ffdb84b9297c89dcd30e9402f2c3515" title="add_cmd" alt="" coords="301,179,379,205"/>
+<area shape="rect" id="node16" href="$shell_8h.html#ae8d6b38307281c05e1b03ca11f8bbb8c" title="parsing_pipe" alt="" coords="437,179,536,205"/>
+<area shape="rect" id="node18" href="$parsing__general_8c.html#a8a47bb6cfcb5378a27b639793a995814" title="new_cmds" alt="" coords="585,179,671,205"/>
+<area shape="rect" id="node20" href="$parsing__general_8c.html#a2d75753bac50088aa4b9be29314f98fc" title="add_cmds" alt="" coords="721,179,807,205"/>
+<area shape="rect" id="node22" href="$shell_8h.html#ae9c51201cb3ad89b921d2f3576875ca4" title="parsing_general" alt="" coords="857,179,975,205"/>
+</map>

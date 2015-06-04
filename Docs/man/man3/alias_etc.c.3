@@ -1,0 +1,54 @@
+.TH "alias/alias_etc.c" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+alias/alias_etc.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include 'lib\&.h'\fP
+.br
+\fC#include 'shell\&.h'\fP
+.br
+\fC#include 'builtin\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBsetbashenv\fP (int i, char *str, int start, char **to_set)"
+.br
+.ti -1c
+.RI "int \fBbashset\fP (char *str, \fBt_data\fP *data)"
+.br
+.ti -1c
+.RI "char * \fBend_find\fP (char *new, char *prev, char *to_find)"
+.br
+.ti -1c
+.RI "char * \fBconcat_alias\fP (char *str, \fBt_alias\fP *list_alias)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int bashset (char *str, \fBt_data\fP *data)"
+
+.PP
+Definition at line 33 of file alias_etc\&.c\&.
+.SS "char* concat_alias (char *str, \fBt_alias\fP *list_alias)"
+
+.PP
+Definition at line 71 of file alias_etc\&.c\&.
+.SS "char* end_find (char *new, char *prev, char *to_find)"
+
+.PP
+Definition at line 62 of file alias_etc\&.c\&.
+.SS "int setbashenv (inti, char *str, intstart, char **to_set)"
+
+.PP
+Definition at line 20 of file alias_etc\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

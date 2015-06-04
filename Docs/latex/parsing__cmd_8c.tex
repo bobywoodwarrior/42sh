@@ -1,0 +1,175 @@
+\section{parsing/parsing\-\_\-cmd.c File Reference}
+\label{parsing__cmd_8c}\index{parsing/parsing\-\_\-cmd.\-c@{parsing/parsing\-\_\-cmd.\-c}}
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}shell.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lib.\-h\char`\"{}}\\*
+Include dependency graph for parsing\-\_\-cmd.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{parsing__cmd_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf is\-\_\-redi} (char c)
+\item 
+int {\bf index\-\_\-end\-\_\-word} (char $\ast$str\-\_\-cmd, int $\ast$i)
+\item 
+int {\bf add\-\_\-word\-\_\-to\-\_\-tab} (char $\ast$str\-\_\-cmd, {\bf t\-\_\-cmd} $\ast$cmd, int $\ast$i)
+\item 
+{\bf t\-\_\-cmd} $\ast$ {\bf init\-\_\-parsing} ()
+\item 
+{\bf t\-\_\-cmd} $\ast$ {\bf parsing\-\_\-cmd} (char $\ast$str\-\_\-cmd)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{parsing\-\_\-cmd.\-c@{parsing\-\_\-cmd.\-c}!add\-\_\-word\-\_\-to\-\_\-tab@{add\-\_\-word\-\_\-to\-\_\-tab}}
+\index{add\-\_\-word\-\_\-to\-\_\-tab@{add\-\_\-word\-\_\-to\-\_\-tab}!parsing_cmd.c@{parsing\-\_\-cmd.\-c}}
+\subsubsection[{add\-\_\-word\-\_\-to\-\_\-tab}]{\setlength{\rightskip}{0pt plus 5cm}int add\-\_\-word\-\_\-to\-\_\-tab (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str\-\_\-cmd, }
+\item[{{\bf t\-\_\-cmd} $\ast$}]{cmd, }
+\item[{int $\ast$}]{i}
+\end{DoxyParamCaption}
+)}\label{parsing__cmd_8c_a14a8f0c61b979cd9b0413c120dff438a}
+
+
+Definition at line 46 of file parsing\-\_\-cmd.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parsing__cmd_8c_a14a8f0c61b979cd9b0413c120dff438a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parsing__cmd_8c_a14a8f0c61b979cd9b0413c120dff438a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{parsing\-\_\-cmd.\-c@{parsing\-\_\-cmd.\-c}!index\-\_\-end\-\_\-word@{index\-\_\-end\-\_\-word}}
+\index{index\-\_\-end\-\_\-word@{index\-\_\-end\-\_\-word}!parsing_cmd.c@{parsing\-\_\-cmd.\-c}}
+\subsubsection[{index\-\_\-end\-\_\-word}]{\setlength{\rightskip}{0pt plus 5cm}int index\-\_\-end\-\_\-word (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str\-\_\-cmd, }
+\item[{int $\ast$}]{i}
+\end{DoxyParamCaption}
+)}\label{parsing__cmd_8c_a630ad05ab22a793081c5c8f3ab941220}
+
+
+Definition at line 23 of file parsing\-\_\-cmd.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{parsing__cmd_8c_a630ad05ab22a793081c5c8f3ab941220_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parsing__cmd_8c_a630ad05ab22a793081c5c8f3ab941220_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{parsing\-\_\-cmd.\-c@{parsing\-\_\-cmd.\-c}!init\-\_\-parsing@{init\-\_\-parsing}}
+\index{init\-\_\-parsing@{init\-\_\-parsing}!parsing_cmd.c@{parsing\-\_\-cmd.\-c}}
+\subsubsection[{init\-\_\-parsing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-cmd}$\ast$ init\-\_\-parsing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{parsing__cmd_8c_ae3a29b783909de965bd6285058ad5694}
+
+
+Definition at line 74 of file parsing\-\_\-cmd.\-c.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parsing__cmd_8c_ae3a29b783909de965bd6285058ad5694_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{parsing\-\_\-cmd.\-c@{parsing\-\_\-cmd.\-c}!is\-\_\-redi@{is\-\_\-redi}}
+\index{is\-\_\-redi@{is\-\_\-redi}!parsing_cmd.c@{parsing\-\_\-cmd.\-c}}
+\subsubsection[{is\-\_\-redi}]{\setlength{\rightskip}{0pt plus 5cm}int is\-\_\-redi (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}\label{parsing__cmd_8c_a76889c4c767c0af44a85984cbaf48d62}
+
+
+Definition at line 16 of file parsing\-\_\-cmd.\-c.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parsing__cmd_8c_a76889c4c767c0af44a85984cbaf48d62_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{parsing\-\_\-cmd.\-c@{parsing\-\_\-cmd.\-c}!parsing\-\_\-cmd@{parsing\-\_\-cmd}}
+\index{parsing\-\_\-cmd@{parsing\-\_\-cmd}!parsing_cmd.c@{parsing\-\_\-cmd.\-c}}
+\subsubsection[{parsing\-\_\-cmd}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-cmd}$\ast$ parsing\-\_\-cmd (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str\-\_\-cmd}
+\end{DoxyParamCaption}
+)}\label{parsing__cmd_8c_a03eecd3e4496f8e1b3567709d88ae5b8}
+
+
+Definition at line 87 of file parsing\-\_\-cmd.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parsing__cmd_8c_a03eecd3e4496f8e1b3567709d88ae5b8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{parsing__cmd_8c_a03eecd3e4496f8e1b3567709d88ae5b8_icgraph}
+\end{center}
+\end{figure}
+
+

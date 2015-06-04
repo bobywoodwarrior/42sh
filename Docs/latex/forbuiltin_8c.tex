@@ -1,0 +1,224 @@
+\section{builtin/forbuiltin.c File Reference}
+\label{forbuiltin_8c}\index{builtin/forbuiltin.\-c@{builtin/forbuiltin.\-c}}
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}builtin.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lib.\-h\char`\"{}}\\*
+Include dependency graph for forbuiltin.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{forbuiltin_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf other\-\_\-echo\-\_\-case} (char $\ast$str, int $\ast$i, char done)
+\item 
+int {\bf my\-\_\-interpret} (char $\ast$str, int i, int k, char done)
+\item 
+int {\bf my\-\_\-print} (char $\ast$str, char inter, char noret, char $\ast$nextword)
+\item 
+char $\ast$$\ast$ {\bf my\-\_\-epurtab} (char $\ast$$\ast$tab)
+\item 
+char $\ast$$\ast$ {\bf my\-\_\-cattab} (char $\ast$$\ast$tab, char $\ast$new)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char {\bf g\-\_\-ref} [8][2]
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{forbuiltin.\-c@{forbuiltin.\-c}!my\-\_\-cattab@{my\-\_\-cattab}}
+\index{my\-\_\-cattab@{my\-\_\-cattab}!forbuiltin.c@{forbuiltin.\-c}}
+\subsubsection[{my\-\_\-cattab}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ my\-\_\-cattab (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{tab, }
+\item[{char $\ast$}]{new}
+\end{DoxyParamCaption}
+)}\label{forbuiltin_8c_a795c38158cb00f9fcad0dd7db17e7ded}
+
+
+Definition at line 124 of file forbuiltin.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{forbuiltin_8c_a795c38158cb00f9fcad0dd7db17e7ded_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{forbuiltin_8c_a795c38158cb00f9fcad0dd7db17e7ded_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{forbuiltin.\-c@{forbuiltin.\-c}!my\-\_\-epurtab@{my\-\_\-epurtab}}
+\index{my\-\_\-epurtab@{my\-\_\-epurtab}!forbuiltin.c@{forbuiltin.\-c}}
+\subsubsection[{my\-\_\-epurtab}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ my\-\_\-epurtab (
+\begin{DoxyParamCaption}
+\item[{char $\ast$$\ast$}]{tab}
+\end{DoxyParamCaption}
+)}\label{forbuiltin_8c_a9c81bd03dd1d5eae7cee8720ff4a4f25}
+
+
+Definition at line 95 of file forbuiltin.\-c.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{forbuiltin_8c_a9c81bd03dd1d5eae7cee8720ff4a4f25_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{forbuiltin.\-c@{forbuiltin.\-c}!my\-\_\-interpret@{my\-\_\-interpret}}
+\index{my\-\_\-interpret@{my\-\_\-interpret}!forbuiltin.c@{forbuiltin.\-c}}
+\subsubsection[{my\-\_\-interpret}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-interpret (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{int}]{i, }
+\item[{int}]{k, }
+\item[{char}]{done}
+\end{DoxyParamCaption}
+)}\label{forbuiltin_8c_abd901da92b9ba2506b04b5c3a640bba2}
+
+
+Definition at line 43 of file forbuiltin.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{forbuiltin_8c_abd901da92b9ba2506b04b5c3a640bba2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{forbuiltin_8c_abd901da92b9ba2506b04b5c3a640bba2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{forbuiltin.\-c@{forbuiltin.\-c}!my\-\_\-print@{my\-\_\-print}}
+\index{my\-\_\-print@{my\-\_\-print}!forbuiltin.c@{forbuiltin.\-c}}
+\subsubsection[{my\-\_\-print}]{\setlength{\rightskip}{0pt plus 5cm}int my\-\_\-print (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{char}]{inter, }
+\item[{char}]{noret, }
+\item[{char $\ast$}]{nextword}
+\end{DoxyParamCaption}
+)}\label{forbuiltin_8c_a3da96f75f1c99d390ce5582d73f7bf18}
+
+
+Definition at line 72 of file forbuiltin.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{forbuiltin_8c_a3da96f75f1c99d390ce5582d73f7bf18_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{forbuiltin_8c_a3da96f75f1c99d390ce5582d73f7bf18_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{forbuiltin.\-c@{forbuiltin.\-c}!other\-\_\-echo\-\_\-case@{other\-\_\-echo\-\_\-case}}
+\index{other\-\_\-echo\-\_\-case@{other\-\_\-echo\-\_\-case}!forbuiltin.c@{forbuiltin.\-c}}
+\subsubsection[{other\-\_\-echo\-\_\-case}]{\setlength{\rightskip}{0pt plus 5cm}void other\-\_\-echo\-\_\-case (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{int $\ast$}]{i, }
+\item[{char}]{done}
+\end{DoxyParamCaption}
+)}\label{forbuiltin_8c_af3d3a3e1f2acbf9eccc05028b283bbb6}
+
+
+Definition at line 26 of file forbuiltin.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{forbuiltin_8c_af3d3a3e1f2acbf9eccc05028b283bbb6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{forbuiltin_8c_af3d3a3e1f2acbf9eccc05028b283bbb6_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{forbuiltin.\-c@{forbuiltin.\-c}!g\-\_\-ref@{g\-\_\-ref}}
+\index{g\-\_\-ref@{g\-\_\-ref}!forbuiltin.c@{forbuiltin.\-c}}
+\subsubsection[{g\-\_\-ref}]{\setlength{\rightskip}{0pt plus 5cm}char g\-\_\-ref[8][2]}\label{forbuiltin_8c_a8ca280e502460ed6510ec75af0321d03}
+{\bfseries Initial value\-:}
+\begin{DoxyCode}
+= \{\{\textcolor{charliteral}{'a'}, \textcolor{charliteral}{'\(\backslash\)a'}\},
+               \{\textcolor{charliteral}{'b'}, \textcolor{charliteral}{'\(\backslash\)b'}\},
+               \{\textcolor{charliteral}{'e'}, ESCAPE\},
+               \{\textcolor{charliteral}{'f'}, \textcolor{charliteral}{'\(\backslash\)f'}\},
+               \{\textcolor{charliteral}{'n'}, \textcolor{charliteral}{'\(\backslash\)n'}\},
+               \{\textcolor{charliteral}{'r'}, \textcolor{charliteral}{'\(\backslash\)r'}\},
+               \{\textcolor{charliteral}{'t'}, \textcolor{charliteral}{'\(\backslash\)t'}\},
+               \{\textcolor{charliteral}{'v'}, \textcolor{charliteral}{'\(\backslash\)v'}\}\}
+\end{DoxyCode}
+
+
+Definition at line 17 of file forbuiltin.\-c.
+

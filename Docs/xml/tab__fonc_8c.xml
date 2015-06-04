@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="tab__fonc_8c" kind="file">
+    <compoundname>tab_fonc.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="builtin_8h" local="yes">builtin.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <incdepgraph>
+      <node id="789">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="787">
+        <label>stdlib.h</label>
+      </node>
+      <node id="788">
+        <label>builtin.h</label>
+        <link refid="builtin_8h"/>
+        <childnode refid="789" relation="include">
+        </childnode>
+      </node>
+      <node id="790">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+      <node id="786">
+        <label>ps1/tab_fonc.c</label>
+        <link refid="tab_fonc.c"/>
+        <childnode refid="787" relation="include">
+        </childnode>
+        <childnode refid="788" relation="include">
+        </childnode>
+        <childnode refid="790" relation="include">
+        </childnode>
+        <childnode refid="789" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="tab__fonc_8c_1a0abbe5bf65b1101a9571444ca5ab37f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void case_name</definition>
+        <argsstring>(char **env)</argsstring>
+        <name>case_name</name>
+        <param>
+          <type>char **</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/ps1/tab_fonc.c" line="16" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/ps1/tab_fonc.c" bodystart="16" bodyend="19"/>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+      </memberdef>
+      <memberdef kind="function" id="tab__fonc_8c_1a1c2798ccf833589ed359f0f4ea30d98f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void case_host</definition>
+        <argsstring>(char **env)</argsstring>
+        <name>case_host</name>
+        <param>
+          <type>char **</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/ps1/tab_fonc.c" line="21" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/ps1/tab_fonc.c" bodystart="21" bodyend="24"/>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+      </memberdef>
+      <memberdef kind="function" id="tab__fonc_8c_1a691d38547be90f9a41ee0fde06f94f75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void case_pwd</definition>
+        <argsstring>(char **env)</argsstring>
+        <name>case_pwd</name>
+        <param>
+          <type>char **</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/ps1/tab_fonc.c" line="26" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/ps1/tab_fonc.c" bodystart="26" bodyend="47"/>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+        <references refid="my__strncmp_8c_1a5c4d2d32920036f1ad38c2bd614abfd9" compoundref="my__strncmp_8c" startline="11" endline="23">my_strncmp</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="my__strdup_8c_1a4548135c4f1cfcaeff31c8dabb3692d3" compoundref="my__strdup_8c" startline="14" endline="27">my_strdup</references>
+        <references refid="str__cat_8c_1ae2589b5e18e85e7f44abd6bddf4724a4" compoundref="str__cat_8c" startline="14" endline="41">my_strconcat</references>
+      </memberdef>
+      <memberdef kind="function" id="tab__fonc_8c_1abd2aff6cb058bb6c34d2263255ed0832" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void case_last_dir</definition>
+        <argsstring>(char **env)</argsstring>
+        <name>case_last_dir</name>
+        <param>
+          <type>char **</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/ps1/tab_fonc.c" line="49" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/ps1/tab_fonc.c" bodystart="49" bodyend="52"/>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+      </memberdef>
+      <memberdef kind="function" id="tab__fonc_8c_1acff18e5b1fb60631e8970d0aa6df8843" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void case_term</definition>
+        <argsstring>(char **env)</argsstring>
+        <name>case_term</name>
+        <param>
+          <type>char **</type>
+          <declname>env</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/ps1/tab_fonc.c" line="54" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/ps1/tab_fonc.c" bodystart="54" bodyend="57"/>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>tab_fonc.c<sp/>for<sp/>tab<sp/>in<sp/>/home/geiger_a/PSU_2014_42sh/PS1</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>anthony<sp/>geiger</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;geiger_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Thu<sp/>May<sp/>21<sp/>17:07:16<sp/>2015<sp/>anthony<sp/>geiger</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>14:50:14<sp/>2015<sp/>anthony<sp/>geiger</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="builtin_8h" kindref="compound">builtin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="ps1_8h_1a0abbe5bf65b1101a9571444ca5ab37f4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tab__fonc_8c_1a0abbe5bf65b1101a9571444ca5ab37f4" kindref="member">case_name</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**env)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(<ref refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kindref="member">get_env_value</ref>(env,<sp/></highlight><highlight class="stringliteral">&quot;USER&quot;</highlight><highlight class="normal">,<sp/>NULL),<sp/>1);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="ps1_8h_1a1c2798ccf833589ed359f0f4ea30d98f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tab__fonc_8c_1a1c2798ccf833589ed359f0f4ea30d98f" kindref="member">case_host</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**env)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(<ref refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kindref="member">get_env_value</ref>(env,<sp/></highlight><highlight class="stringliteral">&quot;HOST&quot;</highlight><highlight class="normal">,<sp/>NULL),<sp/>1);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="ps1_8h_1a691d38547be90f9a41ee0fde06f94f75" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tab__fonc_8c_1a691d38547be90f9a41ee0fde06f94f75" kindref="member">case_pwd</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**env)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*pwd;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pwd<sp/>=<sp/><ref refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kindref="member">get_env_value</ref>(env,<sp/></highlight><highlight class="stringliteral">&quot;PWD&quot;</highlight><highlight class="normal">,<sp/>NULL))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="my__strncmp_8c_1a5c4d2d32920036f1ad38c2bd614abfd9" kindref="member">my_strncmp</ref>(</highlight><highlight class="stringliteral">&quot;/home/&quot;</highlight><highlight class="normal">,<sp/>pwd,<sp/>6)<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>pwd[6]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(pwd,<sp/>1);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>return<sp/>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="my__strncmp_8c_1a5c4d2d32920036f1ad38c2bd614abfd9" kindref="member">my_strncmp</ref>(</highlight><highlight class="stringliteral">&quot;/home/&quot;</highlight><highlight class="normal">,<sp/>pwd,<sp/>6)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>7;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(pwd[i]<sp/>&amp;&amp;<sp/>pwd[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>++i;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pwd<sp/>=<sp/><ref refid="my__strdup_8c_1a4548135c4f1cfcaeff31c8dabb3692d3" kindref="member">my_strdup</ref>(pwd<sp/>+<sp/>i);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pwd<sp/>=<sp/><ref refid="str__cat_8c_1ae2589b5e18e85e7f44abd6bddf4724a4" kindref="member">my_strconcat</ref>(</highlight><highlight class="stringliteral">&quot;~&quot;</highlight><highlight class="normal">,<sp/>pwd);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(pwd,<sp/>1);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="ps1_8h_1abd2aff6cb058bb6c34d2263255ed0832" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tab__fonc_8c_1abd2aff6cb058bb6c34d2263255ed0832" kindref="member">case_last_dir</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**env)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(<ref refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kindref="member">get_env_value</ref>(env,<sp/></highlight><highlight class="stringliteral">&quot;OLD_PWD&quot;</highlight><highlight class="normal">,<sp/>NULL),<sp/>1);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="ps1_8h_1acff18e5b1fb60631e8970d0aa6df8843" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="tab__fonc_8c_1acff18e5b1fb60631e8970d0aa6df8843" kindref="member">case_term</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**env)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(<ref refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kindref="member">get_env_value</ref>(env,<sp/></highlight><highlight class="stringliteral">&quot;TERM&quot;</highlight><highlight class="normal">,<sp/>NULL),<sp/>1);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/ps1/tab_fonc.c"/>
+  </compounddef>
+</doxygen>

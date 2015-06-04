@@ -1,0 +1,10 @@
+<map id="my_getnbr" name="my_getnbr">
+<area shape="rect" id="node3" href="$builtin_8h.html#adff2ceef5d8ba6f5b94b9c3902b2d5f9" title="my_exit" alt="" coords="139,56,207,83"/>
+<area shape="rect" id="node5" href="$shell_8h.html#a4a932a3567484ecc159fb43f41392992" title="builtin" alt="" coords="257,56,311,83"/>
+<area shape="rect" id="node7" href="$builtin_8h.html#aecb1f227db5bcfc86869d066066f450d" title="my_redir_builtin" alt="" coords="360,56,475,83"/>
+<area shape="rect" id="node9" href="$shell_8h.html#aaa570cbabecdb1a23f82ad57ed563378" title="exe_cmd" alt="" coords="523,56,602,83"/>
+<area shape="rect" id="node11" href="$pipe_8c.html#a6c5a209f770a66dc5c2f73e10ff86db3" title="last_pipe" alt="" coords="653,5,728,32"/>
+<area shape="rect" id="node15" href="$pipe_8c.html#a6267c0f1ac0750c77dc4e676bf140b80" title="loop_pipe" alt="" coords="651,56,731,83"/>
+<area shape="rect" id="node18" href="$pipe_8c.html#ac7254c9ab0581563f740b715d805c301" title="first_pipe" alt="" coords="653,107,728,133"/>
+<area shape="rect" id="node13" href="$shell_8h.html#a0b773212abd3f5ea05fa3ef3945efd1d" title="exe_pipe" alt="" coords="779,56,856,83"/>
+</map>

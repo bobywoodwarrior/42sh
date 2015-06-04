@@ -1,0 +1,188 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="builtin_2utils_8c" kind="file">
+    <compoundname>utils.c</compoundname>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <incdepgraph>
+      <node id="487">
+        <label>stdlib.h</label>
+      </node>
+      <node id="485">
+        <label>builtin/utils.c</label>
+        <link refid="builtin/utils.c"/>
+        <childnode refid="486" relation="include">
+        </childnode>
+        <childnode refid="487" relation="include">
+        </childnode>
+      </node>
+      <node id="486">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="builtin_2utils_8c_1a0bd2485960de353416dedf1cf03a943e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_getnbr_base</definition>
+        <argsstring>(char *str, char *base, int *offset, int i)</argsstring>
+        <name>my_getnbr_base</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/builtin/utils.c" line="14" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/utils.c" bodystart="14" bodyend="40"/>
+        <referencedby refid="forbuiltin_8c_1af3d3a3e1f2acbf9eccc05028b283bbb6" compoundref="forbuiltin_8c" startline="26" endline="41">other_echo_case</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* get_env_value</definition>
+        <argsstring>(char **env, char *key, int *offset)</argsstring>
+        <name>get_env_value</name>
+        <param>
+          <type>char **</type>
+          <declname>env</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/builtin/utils.c" line="42" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/utils.c" bodystart="42" bodyend="58"/>
+        <referencedby refid="builtin_8h_1ab15f4c5af8f204fcf26ff0bf30391b77" compoundref="builtin_8c" startline="16" endline="42">my_unsetenv</referencedby>
+        <referencedby refid="builtin_8h_1a0f75b40d45c389d2f019b5ad672f3ed1" compoundref="builtin_8c" startline="44" endline="69">my_setenv</referencedby>
+        <referencedby refid="cd_8c_1adff71582669f5726a87d35e9f9a15057" compoundref="cd_8c" startline="53" endline="71">set_pwd_old_pwd</referencedby>
+        <referencedby refid="builtin_8h_1a2157775684b24545b151e0c2e5f38954" compoundref="cd_8c" startline="73" endline="98">my_cd</referencedby>
+        <referencedby refid="builtin_8h_1a6055c5e4f8247c5a1151cd65e5061574" compoundref="getvar_8c" startline="28" endline="48">my_replace_key</referencedby>
+        <referencedby refid="shell_8h_1a03522e35827e231817075a4d6389c77c" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</referencedby>
+        <referencedby refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" compoundref="exe__cmd_8c" startline="74" endline="101">exe_path</referencedby>
+        <referencedby refid="shell_8h_1a733a7370f33430443ae3914f72d5fdba" compoundref="parsing__tilde_8c" startline="16" endline="39">pars_tilde</referencedby>
+        <referencedby refid="ps1_8h_1a0abbe5bf65b1101a9571444ca5ab37f4" compoundref="tab__fonc_8c" startline="16" endline="19">case_name</referencedby>
+        <referencedby refid="ps1_8h_1a1c2798ccf833589ed359f0f4ea30d98f" compoundref="tab__fonc_8c" startline="21" endline="24">case_host</referencedby>
+        <referencedby refid="ps1_8h_1a691d38547be90f9a41ee0fde06f94f75" compoundref="tab__fonc_8c" startline="26" endline="47">case_pwd</referencedby>
+        <referencedby refid="ps1_8h_1abd2aff6cb058bb6c34d2263255ed0832" compoundref="tab__fonc_8c" startline="49" endline="52">case_last_dir</referencedby>
+        <referencedby refid="ps1_8h_1acff18e5b1fb60631e8970d0aa6df8843" compoundref="tab__fonc_8c" startline="54" endline="57">case_term</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_2utils_8c_1ac46a37eeaf4141428d46b5605bbd6c51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** cattab_ext</definition>
+        <argsstring>(char *new)</argsstring>
+        <name>cattab_ext</name>
+        <param>
+          <type>char *</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/builtin/utils.c" line="60" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/utils.c" bodystart="60" bodyend="69"/>
+        <referencedby refid="builtin_8h_1a795c38158cb00f9fcad0dd7db17e7ded" compoundref="forbuiltin_8c" startline="124" endline="151">my_cattab</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>probably_useless.c<sp/>for<sp/>useless<sp/>in<sp/>/home/rouss_p/rendu/PSU_2014_42sh/builtin</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>pierre<sp/>rousselle</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;rouss_p@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Mon<sp/>May<sp/><sp/>4<sp/>16:19:00<sp/>2015<sp/>pierre<sp/>rousselle</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Fri<sp/>May<sp/>22<sp/>17:40:17<sp/>2015<sp/>pierre<sp/>rousselle</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="builtin_8h_1a0bd2485960de353416dedf1cf03a943e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="builtin_2utils_8c_1a0bd2485960de353416dedf1cf03a943e" kindref="member">my_getnbr_base</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*base,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>k;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nbr;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imax;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>nbr<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strlen(base)<sp/>==<sp/>8)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>imax<sp/>=<sp/>3;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>imax<sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str[i]<sp/>&amp;&amp;<sp/>i<sp/>&lt;<sp/>imax)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>k<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(k<sp/>&lt;<sp/>strlen(base))</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str[i]<sp/>==<sp/>base[k++])</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nbr<sp/>=<sp/>(nbr<sp/>*<sp/>strlen(base))<sp/>+<sp/>k<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>break<sp/>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(k<sp/>==<sp/>strlen(base))</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal"><sp/>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>++i;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>*offset<sp/>+=<sp/>i;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(nbr);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="builtin_8h_1a0059bf9838c7770b46270fedbc869799" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kindref="member">get_env_value</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**env,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*offset)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(env<sp/>&amp;&amp;<sp/>env[i])</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strncmp(env[i],<sp/>key,<sp/>strlen(key))<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>env[i][strlen(key)]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;=&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(offset<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*offset<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(env[i]<sp/>+<sp/>strlen(key)<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>++i;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="builtin_8h_1ac46a37eeaf4141428d46b5605bbd6c51" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>**<ref refid="builtin_2utils_8c_1ac46a37eeaf4141428d46b5605bbd6c51" kindref="member">cattab_ext</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>**dupped;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((dupped<sp/>=<sp/>malloc(2<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>dupped[0]<sp/>=<sp/>strdup(</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>dupped[1]<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(dupped);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/builtin/utils.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,54 @@
+.TH "parsing/parsing_pipe.c" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+parsing/parsing_pipe.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include 'shell\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBnext_cmd\fP (char *str, int *i, int *i_save)"
+.br
+.ti -1c
+.RI "char * \fBcalc_new_str\fP (char *str, int i, int i_save)"
+.br
+.ti -1c
+.RI "\fBt_cmd\fP * \fBadd_cmd\fP (char *\fBnew_str\fP, \fBt_cmd\fP **cmd, \fBt_cmd\fP **tmp)"
+.br
+.ti -1c
+.RI "\fBt_cmd\fP * \fBparsing_pipe\fP (char *str)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBt_cmd\fP* add_cmd (char *new_str, \fBt_cmd\fP **cmd, \fBt_cmd\fP **tmp)"
+
+.PP
+Definition at line 36 of file parsing_pipe\&.c\&.
+.SS "char* calc_new_str (char *str, inti, inti_save)"
+
+.PP
+Definition at line 25 of file parsing_pipe\&.c\&.
+.SS "void next_cmd (char *str, int *i, int *i_save)"
+
+.PP
+Definition at line 16 of file parsing_pipe\&.c\&.
+.SS "\fBt_cmd\fP* parsing_pipe (char *str)"
+
+.PP
+Definition at line 53 of file parsing_pipe\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

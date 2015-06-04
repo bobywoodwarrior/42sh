@@ -1,0 +1,8 @@
+<map id="my_echo" name="my_echo">
+<area shape="rect" id="node3" href="$my__strcmp_8c.html#a7656d2f543a26ba1552b06f75667ba3c" title="my_strcmp" alt="" coords="131,31,218,57"/>
+<area shape="rect" id="node5" href="$forbuiltin_8c.html#a3da96f75f1c99d390ce5582d73f7bf18" title="my_print" alt="" coords="139,81,210,108"/>
+<area shape="rect" id="node7" href="$forbuiltin_8c.html#abd901da92b9ba2506b04b5c3a640bba2" title="my_interpret" alt="" coords="267,56,362,83"/>
+<area shape="rect" id="node9" href="$my__putchar_8c.html#a305f90840add16d2d82af412da2260af" title="my_putchar" alt="" coords="603,56,693,83"/>
+<area shape="rect" id="node11" href="$forbuiltin_8c.html#af3d3a3e1f2acbf9eccc05028b283bbb6" title="other_echo_case" alt="" coords="411,5,538,32"/>
+<area shape="rect" id="node14" href="$builtin_2utils_8c.html#a0bd2485960de353416dedf1cf03a943e" title="my_getnbr_base" alt="" coords="587,5,709,32"/>
+</map>

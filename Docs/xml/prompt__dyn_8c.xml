@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="prompt__dyn_8c" kind="file">
+    <compoundname>prompt_dyn.c</compoundname>
+    <includes local="no">termios.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <incdepgraph>
+      <node id="783">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="782">
+        <label>stdlib.h</label>
+      </node>
+      <node id="780">
+        <label>prompt_read_termcaps/prompt_dyn.c</label>
+        <link refid="prompt_dyn.c"/>
+        <childnode refid="781" relation="include">
+        </childnode>
+        <childnode refid="782" relation="include">
+        </childnode>
+        <childnode refid="783" relation="include">
+        </childnode>
+        <childnode refid="784" relation="include">
+        </childnode>
+      </node>
+      <node id="781">
+        <label>termios.h</label>
+      </node>
+      <node id="784">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="prompt__dyn_8c_1a49bb60dfc1b4f20cc526ba6f231c3ef0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int mod_raw</definition>
+        <argsstring>(struct termios *t)</argsstring>
+        <name>mod_raw</name>
+        <param>
+          <type>struct termios *</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/prompt_dyn.c" line="16" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/prompt_dyn.c" bodystart="16" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="prompt__dyn_8c_1a427ac6d8e0a0bee2997a0b0a40593c3b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>static char* my_read_dyn</definition>
+        <argsstring>(t_history *list)</argsstring>
+        <name>my_read_dyn</name>
+        <param>
+          <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/prompt_dyn.c" line="26" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/prompt_dyn.c" bodystart="26" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="prompt__dyn_8c_1abee56d6f9016afa0a8fc53a93f1e021b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* get_cmd</definition>
+        <argsstring>(t_history **list)</argsstring>
+        <name>get_cmd</name>
+        <param>
+          <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> **</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/prompt_dyn.c" line="45" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/prompt_dyn.c" bodystart="45" bodyend="57"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="insert__list__double_8c_1ad8cfc41ab9a15b35fb2a892956180cff" compoundref="insert__list__double_8c" startline="14" endline="28">insert_list_double</references>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>main.c<sp/>for<sp/>prompt<sp/>in<sp/>/home/blanqu_a/Workspace/rendu/PSU_2014_42sh/prompt_read_termcaps</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;blanqu_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Sat<sp/>May<sp/>16<sp/>10:46:28<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>16:53:24<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;termios.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>mod_raw(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/>termios<sp/>*t)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>t-&gt;c_lflag<sp/>&amp;=<sp/>~(ECHO<sp/>|<sp/>ICANON);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>t-&gt;c_cc[VMIN]<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>t-&gt;c_cc[VTIME]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tcsetattr(0,<sp/>TCSANOW,<sp/>t)<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>*my_read_dyn(<ref refid="structs__history" kindref="compound">t_history</ref><sp/>*list)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">termios<sp/><sp/><sp/><sp/>save;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">termios<sp/><sp/><sp/><sp/>t;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*cmd;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tcgetattr(0,<sp/>&amp;save)<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>t<sp/>=<sp/>save;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mod_raw(&amp;t)<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>cmd<sp/>=<sp/><ref refid="loop__read_8c_1a5d35ad919004e2cf4ea5517811342db9" kindref="member">loop</ref>(list);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tcsetattr(0,<sp/>TCSANOW,<sp/>&amp;save)<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\r&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="ps1_2utils_8c_1a9a61eccec6f9e5611019648327862636" kindref="member">pars_ps1</ref>(<ref refid="shell_8h_1a5abe4787847342ca58d34fb513b84cf2" kindref="member">g_data</ref>-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(cmd);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="shell_8h_1a1e8106cf0c11e2bd136b43a9cc608c9a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="prompt__dyn_8c_1abee56d6f9016afa0a8fc53a93f1e021b" kindref="member">get_cmd</ref>(<ref refid="structs__history" kindref="compound">t_history</ref><sp/>**list)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*ret;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((ret<sp/>=<sp/>my_read_dyn(*list)))</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ret)<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>*list<sp/>=<sp/><ref refid="insert__list__double_8c_1ad8cfc41ab9a15b35fb2a892956180cff" kindref="member">insert_list_double</ref>(*list,<sp/>ret);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(ret,<sp/>1);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ret);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/prompt_dyn.c"/>
+  </compounddef>
+</doxygen>

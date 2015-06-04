@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="errors_8c" kind="file">
+    <compoundname>errors.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <incdepgraph>
+      <node id="525">
+        <label>errors.c</label>
+        <link refid="errors.c"/>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="526">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="errors_8c_1a7c8b1bb310843604574d3699e2c3465c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int error_cmd_not_found</definition>
+        <argsstring>(char *cmd, int exit)</argsstring>
+        <name>error_cmd_not_found</name>
+        <param>
+          <type>char *</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>exit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/PSU_2014_42sh/errors.c" line="13" column="1" bodyfile="/home/geiger_a/PSU_2014_42sh/errors.c" bodystart="13" bodyend="17"/>
+        <referencedby refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" compoundref="exe__cmd_8c" startline="112" endline="135">exe_cmd</referencedby>
+        <referencedby refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" compoundref="pipe_8c" startline="17" endline="27">check_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="errors_8c_1a1a145470918f339fe655f978216c73e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int error_syntax_error</definition>
+        <argsstring>(int exit)</argsstring>
+        <name>error_syntax_error</name>
+        <param>
+          <type>int</type>
+          <declname>exit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/PSU_2014_42sh/errors.c" line="19" column="1" bodyfile="/home/geiger_a/PSU_2014_42sh/errors.c" bodystart="19" bodyend="23"/>
+        <referencedby refid="parsing__general_8c_1a4d215aeab88defa9d98461ae58615688" compoundref="parsing__general_8c" startline="15" endline="26">is_sep_cmd</referencedby>
+        <referencedby refid="shell_8h_1a88d6a0e4709f3f3521a44ae3bcdf6862" compoundref="redirection_8c" startline="46" endline="71">add_redi</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>errors.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/bauer_a/rendu/PSU_2014_42sh</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;bauer_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Wed<sp/>May<sp/>20<sp/>17:23:35<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Fri<sp/>May<sp/>22<sp/>13:30:16<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="shell_8h_1a7c8b1bb310843604574d3699e2c3465c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="errors_8c_1a7c8b1bb310843604574d3699e2c3465c" kindref="member">error_cmd_not_found</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*cmd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exit)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;%s:<sp/>command<sp/>not<sp/>found.\n&quot;</highlight><highlight class="normal">,<sp/>cmd);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(exit);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="shell_8h_1a1a145470918f339fe655f978216c73e2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="errors_8c_1a1a145470918f339fe655f978216c73e2" kindref="member">error_syntax_error</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>exit)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;Invalid<sp/>null<sp/>command.\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(exit);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/PSU_2014_42sh/errors.c"/>
+  </compounddef>
+</doxygen>

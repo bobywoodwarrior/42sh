@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_643e863c297e14dce1d35446f03b11d2" kind="dir">
+    <compoundname>parsing</compoundname>
+    <innerfile refid="parsing__cmd_8c">parsing_cmd.c</innerfile>
+    <innerfile refid="parsing__general_8c">parsing_general.c</innerfile>
+    <innerfile refid="parsing__pipe_8c">parsing_pipe.c</innerfile>
+    <innerfile refid="parsing__tilde_8c">parsing_tilde.c</innerfile>
+    <innerfile refid="redirection_8c">redirection.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/parsing/"/>
+  </compounddef>
+</doxygen>

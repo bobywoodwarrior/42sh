@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="loop__read_8c" kind="file">
+    <compoundname>loop_read.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <incdepgraph>
+      <node id="765">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="763">
+        <label>stdlib.h</label>
+      </node>
+      <node id="766">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+      <node id="764">
+        <label>unistd.h</label>
+      </node>
+      <node id="762">
+        <label>prompt_read_termcaps/loop_read.c</label>
+        <link refid="loop_read.c"/>
+        <childnode refid="763" relation="include">
+        </childnode>
+        <childnode refid="764" relation="include">
+        </childnode>
+        <childnode refid="765" relation="include">
+        </childnode>
+        <childnode refid="766" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void clean</definition>
+        <argsstring>(char *c, const int nb)</argsstring>
+        <name>clean</name>
+        <param>
+          <type>char *</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>const int</type>
+          <declname>nb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c" line="16" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c" bodystart="16" bodyend="23"/>
+        <referencedby refid="shell_8h_1ae47252a37d7b8c816ca7a1d2e83ce8b7" compoundref="gere__key_8c" startline="16" endline="36">gere_history</referencedby>
+        <referencedby refid="shell_8h_1a19c96fd25dc36fc2337e2107bb0a54c5" compoundref="init_8c" startline="14" endline="28">init_stock</referencedby>
+        <referencedby refid="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" compoundref="loop__read_8c" startline="67" endline="93">loop</referencedby>
+        <referencedby refid="shell_8h_1acbb6e8e618f4c43c7eeb93923b92e385" compoundref="move_8c" startline="14" endline="26">up</referencedby>
+        <referencedby refid="shell_8h_1a3a9f901ffe6cc6b5f7d902526c01748e" compoundref="move_8c" startline="28" endline="50">down</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="loop__read_8c_1a269f0a83e6d242cfc16f6d3c2ab2723d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* go_start_line</definition>
+        <argsstring>(t_stock *ptr)</argsstring>
+        <name>go_start_line</name>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c" line="25" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="loop__read_8c_1afd961c890e4e2e41e8dfbfc04176b0d8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>static void* go_end_line</definition>
+        <argsstring>(t_stock *ptr)</argsstring>
+        <name>go_end_line</name>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c" line="32" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c" bodystart="32" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="loop__read_8c_1acb438155c44ae29d7351b71202ab6e3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* change_word</definition>
+        <argsstring>(t_stock *ptr)</argsstring>
+        <name>change_word</name>
+        <param>
+          <type><ref refid="shell_8h_1a0f24e74a422ae2652c98d19094c9cce9" kindref="member">t_stock</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c" line="39" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c" bodystart="39" bodyend="65"/>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" compoundref="shell_8h" startline="55">s_stock::c</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" compoundref="print__cursor_8c" startline="14" endline="29">print_cursor_left</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="print__cursor_8c_1a99286a45664a92d19230d9ec6ce733a2" compoundref="print__cursor_8c" startline="31" endline="46">print_cursor_right</references>
+        <referencedby refid="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" compoundref="loop__read_8c" startline="67" endline="93">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="loop__read_8c_1a5d35ad919004e2cf4ea5517811342db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* loop</definition>
+        <argsstring>(t_history *list)</argsstring>
+        <name>loop</name>
+        <param>
+          <type><ref refid="shell_8h_1a8a6daea5a2ef9f738d46d354017a255c" kindref="member">t_history</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c" line="67" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c" bodystart="67" bodyend="93"/>
+        <references refid="init_8c_1aa33a64ab0af49185a45ecd44a5aebeaa" compoundref="init_8c" startline="14" endline="28">init_stock</references>
+        <references refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" compoundref="shell_8h" startline="55">s_stock::c</references>
+        <references refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" compoundref="loop__read_8c" startline="16" endline="23">clean</references>
+        <references refid="gere__key_8c_1a53f1b007a4f559c1ed15fa556ad75927" compoundref="gere__key_8c" startline="16" endline="36">gere_history</references>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="gere__key_8c_1a9a93184b1cbfe4b19e576e90d77dfbce" compoundref="gere__key_8c" startline="57" endline="71">gere_arrow</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="loop__read_8c_1acb438155c44ae29d7351b71202ab6e3e" compoundref="loop__read_8c" startline="39" endline="65">change_word</references>
+        <references refid="gere__key_8c_1abe57af5513acea09813b87df7b582f27" compoundref="gere__key_8c" startline="38" endline="55">gere_char</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>loop_read.c<sp/>for<sp/>prompt<sp/>in<sp/>/home/blanqu_a/Workspace/rendu/PSU_2014_42sh/prompt_read_termcaps</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;blanqu_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Sat<sp/>May<sp/>16<sp/>10:50:56<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>18:10:13<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="shell_8h_1a98cf73858bc9e8acd95a1caa1410e3c1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" kindref="member">clean</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*c,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nb)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>nb)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>c[i++]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*go_start_line(<ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*ptr)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><ref refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" kindref="member">print_cursor_left</ref>(ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ptr);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*go_end_line(<ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*ptr)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="print__cursor_8c_1a99286a45664a92d19230d9ec6ce733a2" kindref="member">print_cursor_right</ref>(<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>)<sp/>-<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>=<sp/><ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ptr);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="loop__read_8c_1acb438155c44ae29d7351b71202ab6e3e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="loop__read_8c_1acb438155c44ae29d7351b71202ab6e3e" kindref="member">change_word</ref>(<ref refid="structs__stock" kindref="compound">t_stock</ref><sp/>*ptr)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>tmp;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>tmp<sp/>=<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[0]<sp/>==<sp/>27<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[1]<sp/>==<sp/>91<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[2]<sp/>==<sp/>49<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[3]<sp/>==<sp/>59<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[4]<sp/>==<sp/>53<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[5]<sp/>==<sp/>68)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>[tmp]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>tmp<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp--;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(tmp<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>[tmp]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp--;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="print__cursor_8c_1a801069b9a41566311568687c59c5a8ca" kindref="member">print_cursor_left</ref>(ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>-<sp/>tmp);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>=<sp/>tmp;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[0]<sp/>==<sp/>27<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[1]<sp/>==<sp/>91<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[2]<sp/>==<sp/>49<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[3]<sp/>==<sp/>59<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[4]<sp/>==<sp/>53<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[5]<sp/>==<sp/>67)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>[tmp]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>tmp<sp/>&lt;<sp/><ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>))</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp++;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>[tmp]<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>[tmp]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp++;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="print__cursor_8c_1a99286a45664a92d19230d9ec6ce733a2" kindref="member">print_cursor_right</ref>(tmp<sp/>-<sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref>);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>=<sp/>tmp;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ptr);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="loop__read_8c_1a5d35ad919004e2cf4ea5517811342db9" kindref="member">loop</ref>(<ref refid="structs__history" kindref="compound">t_history</ref><sp/>*list)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="structs__stock" kindref="compound">t_stock</ref><sp/><sp/><sp/>*ptr;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((ptr<sp/>=<sp/><ref refid="init_8c_1aa33a64ab0af49185a45ecd44a5aebeaa" kindref="member">init_stock</ref>())<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[0]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" kindref="member">clean</ref>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>,<sp/>7);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(read(0,<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>,<sp/>7)<sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;[&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[2]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal"><sp/>||<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[2]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;B&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>ptr<sp/>=<sp/><ref refid="gere__key_8c_1a53f1b007a4f559c1ed15fa556ad75927" kindref="member">gere_history</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>,<sp/>list,<sp/>ptr);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;[&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[2]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;C&apos;</highlight><highlight class="normal"><sp/>||<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[2]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;D&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>ptr<sp/>=<sp/><ref refid="gere__key_8c_1a9a93184b1cbfe4b19e576e90d77dfbce" kindref="member">gere_arrow</ref>(ptr);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[0]<sp/>==<sp/>27<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[1]<sp/>==<sp/>79<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[2]<sp/>==<sp/>72)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptr<sp/>=<sp/>go_start_line(ptr);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[0]<sp/>==<sp/>27<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[1]<sp/>==<sp/>79<sp/>&amp;&amp;<sp/>ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>[2]<sp/>==<sp/>70)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ptr<sp/>=<sp/>go_end_line(ptr);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>)<sp/>==<sp/>6)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>ptr<sp/>=<sp/><ref refid="loop__read_8c_1acb438155c44ae29d7351b71202ab6e3e" kindref="member">change_word</ref>(ptr);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>)<sp/>==<sp/>1<sp/>||<sp/><ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>)<sp/>==<sp/>4)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((ptr<sp/>=<sp/><ref refid="gere__key_8c_1abe57af5513acea09813b87df7b582f27" kindref="member">gere_char</ref>(ptr))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/loop_read.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+.TH "builtin/cd.c" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+builtin/cd.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+\fC#include 'builtin\&.h'\fP
+.br
+\fC#include 'lib\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmy_cd_error\fP (char *str)"
+.br
+.ti -1c
+.RI "char * \fBget_new_pwd\fP (char *pwd, char *path)"
+.br
+.ti -1c
+.RI "int \fBset_pwd_old_pwd\fP (char **env, char *path)"
+.br
+.ti -1c
+.RI "int \fBmy_cd\fP (char **expr, \fBt_data\fP *data)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "char* get_new_pwd (char *pwd, char *path)"
+
+.PP
+Definition at line 24 of file cd\&.c\&.
+.SS "int my_cd (char **expr, \fBt_data\fP *data)"
+
+.PP
+Definition at line 73 of file cd\&.c\&.
+.SS "int my_cd_error (char *str)"
+
+.PP
+Definition at line 18 of file cd\&.c\&.
+.SS "int set_pwd_old_pwd (char **env, char *path)"
+
+.PP
+Definition at line 53 of file cd\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

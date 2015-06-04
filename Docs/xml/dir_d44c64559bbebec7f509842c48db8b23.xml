@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="builtin_8h">builtin.h</innerfile>
+    <innerfile refid="get__next__line_8h">get_next_line.h</innerfile>
+    <innerfile refid="lib_8h">lib.h</innerfile>
+    <innerfile refid="ps1_8h">ps1.h</innerfile>
+    <innerfile refid="shell_8h">shell.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/"/>
+  </compounddef>
+</doxygen>

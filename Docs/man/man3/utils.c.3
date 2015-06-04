@@ -1,0 +1,63 @@
+.TH "ps1/utils.c" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+ps1/utils.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string\&.h>\fP
+.br
+\fC#include 'ps1\&.h'\fP
+.br
+\fC#include 'shell\&.h'\fP
+.br
+\fC#include 'builtin\&.h'\fP
+.br
+\fC#include 'lib\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBcase_beep\fP (char **env)"
+.br
+.ti -1c
+.RI "int \fBlaunch_format\fP (int *i, char *str, char **env)"
+.br
+.ti -1c
+.RI "int \fBget_ps1\fP (char *str, char **env)"
+.br
+.ti -1c
+.RI "char * \fBfix_ps1\fP (char *ps1)"
+.br
+.ti -1c
+.RI "int \fBpars_ps1\fP (char **env)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void case_beep (char **env)"
+
+.PP
+Definition at line 27 of file utils\&.c\&.
+.SS "char* fix_ps1 (char *ps1)"
+
+.PP
+Definition at line 69 of file utils\&.c\&.
+.SS "int get_ps1 (char *str, char **env)"
+
+.PP
+Definition at line 56 of file utils\&.c\&.
+.SS "int launch_format (int *i, char *str, char **env)"
+
+.PP
+Definition at line 33 of file utils\&.c\&.
+.SS "int pars_ps1 (char **env)"
+
+.PP
+Definition at line 92 of file utils\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

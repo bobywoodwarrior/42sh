@@ -1,0 +1,364 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="exe__cmd_8c" kind="file">
+    <compoundname>exe_cmd.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">sys/wait.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <includes refid="builtin_8h" local="yes">builtin.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <incdepgraph>
+      <node id="504">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="499">
+        <label>exe/exe_cmd.c</label>
+        <link refid="exe_cmd.c"/>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="505" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+      </node>
+      <node id="500">
+        <label>stdlib.h</label>
+      </node>
+      <node id="505">
+        <label>builtin.h</label>
+        <link refid="builtin_8h"/>
+        <childnode refid="504" relation="include">
+        </childnode>
+      </node>
+      <node id="506">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+      <node id="501">
+        <label>sys/types.h</label>
+      </node>
+      <node id="503">
+        <label>unistd.h</label>
+      </node>
+      <node id="502">
+        <label>sys/wait.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int exe_function</definition>
+        <argsstring>(t_data *data, t_cmd *cmd, char *cmd1, int pipe)</argsstring>
+        <name>exe_function</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>cmd1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pipe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c" line="19" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c" bodystart="19" bodyend="45"/>
+        <references refid="shell_8h_1a9c8e6dc113eea68f9307b76af43e5d44">is_exe</references>
+        <references refid="redirection__right_8c_1a8cd483493477b8b727d1773f6ea11ee8" compoundref="redirection__right_8c" startline="24" endline="38">redirection_right</references>
+        <references refid="structs__cmd_1a8629d9a24e605fcc6a82b55b1a870a07" compoundref="shell_8h" startline="40">s_cmd::redi_r</references>
+        <references refid="redirection__left_8c_1a4e39d0c23677b4b63663795cfab2b698" compoundref="redirection__left_8c" startline="83" endline="99">redirection_left</references>
+        <references refid="structs__cmd_1a3eb86f4753299ed84389481f46694140" compoundref="shell_8h" startline="41">s_cmd::redi_l</references>
+        <references refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" compoundref="shell_8h" startline="39">s_cmd::tab</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" compoundref="shell_8h" startline="73">s_data::return_exe</references>
+        <references refid="shell_8h_1a7c48c503a505583c6693462bdda06b45">segfault</references>
+        <referencedby refid="exe__cmd_8c_1a97368bf5fe74e84efa91f0266a404052" compoundref="exe__cmd_8c" startline="59" endline="72">loop_exe_path</referencedby>
+        <referencedby refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="exe__cmd_8c_1a2b4de1f22e62da77dfedc3b21067194c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* make_path</definition>
+        <argsstring>(char *path, char *str)</argsstring>
+        <name>make_path</name>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c" line="47" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c" bodystart="47" bodyend="57"/>
+        <references refid="malloc__str_8c_1af4240b9ebd1f790c96c4c8e181827fba" compoundref="malloc__str_8c" startline="13" endline="27">malloc_str</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" compoundref="my__strcat_8c" startline="11" endline="28">my_strcat</references>
+        <referencedby refid="exe__cmd_8c_1a97368bf5fe74e84efa91f0266a404052" compoundref="exe__cmd_8c" startline="59" endline="72">loop_exe_path</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="exe__cmd_8c_1a97368bf5fe74e84efa91f0266a404052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int loop_exe_path</definition>
+        <argsstring>(t_data *data, t_cmd *cmd, char *paths, int pipe)</argsstring>
+        <name>loop_exe_path</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>paths</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pipe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c" line="59" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c" bodystart="59" bodyend="72"/>
+        <references refid="exe__cmd_8c_1a2b4de1f22e62da77dfedc3b21067194c" compoundref="exe__cmd_8c" startline="47" endline="57">make_path</references>
+        <references refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" compoundref="shell_8h" startline="39">s_cmd::tab</references>
+        <references refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" compoundref="exe__cmd_8c" startline="19" endline="45">exe_function</references>
+        <referencedby refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" compoundref="exe__cmd_8c" startline="74" endline="101">exe_path</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int exe_path</definition>
+        <argsstring>(t_data *data, t_cmd *cmd, int pipe)</argsstring>
+        <name>exe_path</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pipe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c" line="74" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c" bodystart="74" bodyend="101"/>
+        <references refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" compoundref="shell_8h" startline="39">s_cmd::tab</references>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="default__path_8c_1aae15200ba07dd26f07781342a0b110f5" compoundref="default__path_8c" startline="13" endline="22">default_path</references>
+        <references refid="str__to__word__tab_8c_1ab03f9e95db8c82fe8ac4c95f5844b0bb" compoundref="str__to__word__tab_8c" startline="46" endline="71">str_to_word_tab</references>
+        <references refid="exe__cmd_8c_1a97368bf5fe74e84efa91f0266a404052" compoundref="exe__cmd_8c" startline="59" endline="72">loop_exe_path</references>
+        <referencedby refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="exe__cmd_8c_1a77721335c9203a6b8979c81c001d77e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int exe_cmd</definition>
+        <argsstring>(t_data *data, t_cmd *cmd, int pipe)</argsstring>
+        <name>exe_cmd</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pipe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c" line="103" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c" bodystart="103" bodyend="127"/>
+        <references refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" compoundref="shell_8h" startline="39">s_cmd::tab</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="glob_8c_1a092c8d6d324b0991de7695be7c950f69" compoundref="glob_8c" startline="57" endline="83">parsing_globing</references>
+        <references refid="parsing__tilde_8c_1a800e94b9063ed3c13ca3f3339317bea6" compoundref="parsing__tilde_8c" startline="16" endline="39">pars_tilde</references>
+        <references refid="top__builtin_8c_1aecb1f227db5bcfc86869d066066f450d" compoundref="top__builtin_8c" startline="16" endline="33">my_redir_builtin</references>
+        <references refid="builtin_8h_1ad111e603bbebe5d87f6bc39264ce4733" compoundref="builtin_8h" startline="20">EXIT</references>
+        <references refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" compoundref="builtin_8h" startline="19">SUCCESS</references>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" compoundref="exe__cmd_8c" startline="74" endline="101">exe_path</references>
+        <references refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" compoundref="exe__cmd_8c" startline="19" endline="45">exe_function</references>
+        <references refid="shell_8h_1a7c8b1bb310843604574d3699e2c3465c">error_cmd_not_found</references>
+        <referencedby refid="pipe_8c_1a6c5a209f770a66dc5c2f73e10ff86db3" compoundref="pipe_8c" startline="31" endline="41">last_pipe</referencedby>
+        <referencedby refid="pipe_8c_1a6267c0f1ac0750c77dc4e676bf140b80" compoundref="pipe_8c" startline="43" endline="68">loop_pipe</referencedby>
+        <referencedby refid="pipe_8c_1ac7254c9ab0581563f740b715d805c301" compoundref="pipe_8c" startline="70" endline="88">first_pipe</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>exe_cmd.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/bauer_a/rendu/PSU_2014_42sh/exe</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;bauer_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Mon<sp/>Apr<sp/>20<sp/>13:44:36<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>17:57:59<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/wait.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="builtin_8h" kindref="compound">builtin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" kindref="member">exe_function</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/>*cmd,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*cmd1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pipe)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>pid_t<sp/><sp/><sp/><sp/><sp/>pid;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fd;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>pid<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="shell_8h_1a9c8e6dc113eea68f9307b76af43e5d44" kindref="member">is_exe</ref>(cmd1))</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!pipe)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pid<sp/>=<sp/>fork())<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pid<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>setsid();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((fd<sp/>=<sp/><ref refid="redirection__right_8c_1a8cd483493477b8b727d1773f6ea11ee8" kindref="member">redirection_right</ref>(cmd-&gt;<ref refid="structs__cmd_1a8629d9a24e605fcc6a82b55b1a870a07" kindref="member">redi_r</ref>))<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>dup2(fd,<sp/>1);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((fd<sp/>=<sp/><ref refid="redirection__left_8c_1a4e39d0c23677b4b63663795cfab2b698" kindref="member">redirection_left</ref>(cmd-&gt;<ref refid="structs__cmd_1a3eb86f4753299ed84389481f46694140" kindref="member">redi_l</ref>))<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>dup2(fd,<sp/>0);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fd<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((execve(cmd1,<sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>,<sp/>data-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>))<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>waitpid(pid,<sp/>&amp;(data-&gt;<ref refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" kindref="member">return_exe</ref>),<sp/>WUNTRACED<sp/>|<sp/>WCONTINUED);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="shell_8h_1a7c48c503a505583c6693462bdda06b45" kindref="member">segfault</ref>(data-&gt;<ref refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" kindref="member">return_exe</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="shell_8h_1a2b4de1f22e62da77dfedc3b21067194c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="exe__cmd_8c_1a2b4de1f22e62da77dfedc3b21067194c" kindref="member">make_path</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*path_cmd;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((path_cmd<sp/>=<sp/><ref refid="malloc__str_8c_1af4240b9ebd1f790c96c4c8e181827fba" kindref="member">malloc_str</ref>(<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(path)<sp/>+<sp/><ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(str)<sp/>+<sp/>2))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" kindref="member">my_strcat</ref>(path_cmd,<sp/>path);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><ref refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" kindref="member">my_strcat</ref>(path_cmd,<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><ref refid="my__strcat_8c_1ade55c5e2149e95f88d3326e5aec3fc5c" kindref="member">my_strcat</ref>(path_cmd,<sp/>str);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(path_cmd);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="exe__cmd_8c_1a97368bf5fe74e84efa91f0266a404052" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="exe__cmd_8c_1a97368bf5fe74e84efa91f0266a404052" kindref="member">loop_exe_path</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/>*cmd,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*paths,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pipe)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*path;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return_exe;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((path<sp/>=<sp/><ref refid="exe__cmd_8c_1a2b4de1f22e62da77dfedc3b21067194c" kindref="member">make_path</ref>(paths,<sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[0]))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((return_exe<sp/>=<sp/><ref refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" kindref="member">exe_function</ref>(data,<sp/>cmd,<sp/>path,<sp/>pipe))<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(return_exe<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>free(path);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" kindref="member">exe_path</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/>*cmd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pipe)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>**paths;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i_path;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return_exe;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[0][0]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;.&apos;</highlight><highlight class="normal"><sp/>||<sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[0][0]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kindref="member">get_env_value</ref>(data-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>,<sp/></highlight><highlight class="stringliteral">&quot;PATH&quot;</highlight><highlight class="normal">,<sp/>&amp;i_path))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((paths<sp/>=<sp/><ref refid="default__path_8c_1aae15200ba07dd26f07781342a0b110f5" kindref="member">default_path</ref>())<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((paths<sp/>=<sp/><ref refid="str__to__word__tab_8c_1ab03f9e95db8c82fe8ac4c95f5844b0bb" kindref="member">str_to_word_tab</ref>(data-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>[i_path]<sp/>+<sp/>5,<sp/></highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(paths[i]<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((return_exe<sp/>=<sp/><ref refid="exe__cmd_8c_1a97368bf5fe74e84efa91f0266a404052" kindref="member">loop_exe_path</ref>(data,<sp/>cmd,<sp/>paths[i],<sp/>pipe))<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(return_exe);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(return_exe<sp/>==<sp/>1)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="exe__cmd_8c_1a77721335c9203a6b8979c81c001d77e1" kindref="member">exe_cmd</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/>*cmd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pipe)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>return_exe;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>return_exe<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref><sp/>==<sp/>NULL<sp/>||<sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[0]<sp/>==<sp/>NULL<sp/>||<sp/><ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[0])<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref><sp/>=<sp/><ref refid="glob_8c_1a092c8d6d324b0991de7695be7c950f69" kindref="member">parsing_globing</ref>(cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref><sp/>=<sp/><ref refid="parsing__tilde_8c_1a800e94b9063ed3c13ca3f3339317bea6" kindref="member">pars_tilde</ref>(data,<sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((return_exe<sp/>=<sp/><ref refid="top__builtin_8c_1aecb1f227db5bcfc86869d066066f450d" kindref="member">my_redir_builtin</ref>(data,<sp/>cmd))<sp/>==<sp/><ref refid="builtin_8h_1ad111e603bbebe5d87f6bc39264ce4733" kindref="member">EXIT</ref><sp/>||</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>((return_exe<sp/>==<sp/><ref refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" kindref="member">SUCCESS</ref><sp/>||<sp/>return_exe<sp/>==<sp/><ref refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" kindref="member">FAILURE</ref>)<sp/>&amp;&amp;<sp/>pipe))</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(return_exe<sp/>==<sp/><ref refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" kindref="member">SUCCESS</ref><sp/>||<sp/>return_exe<sp/>==<sp/><ref refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" kindref="member">FAILURE</ref>)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((return_exe<sp/>=<sp/><ref refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" kindref="member">exe_path</ref>(data,<sp/>cmd,<sp/>pipe))<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(return_exe<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((return_exe<sp/>=<sp/><ref refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" kindref="member">exe_function</ref>(data,<sp/>cmd,<sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[0],<sp/>pipe))<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(return_exe<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="shell_8h_1a7c8b1bb310843604574d3699e2c3465c" kindref="member">error_cmd_not_found</ref>(cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[0],<sp/>1));</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/exe_cmd.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="parsing__cmd_8c" kind="file">
+    <compoundname>parsing_cmd.c</compoundname>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <incdepgraph>
+      <node id="704">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="703">
+        <label>stdlib.h</label>
+      </node>
+      <node id="701">
+        <label>parsing/parsing_cmd.c</label>
+        <link refid="parsing_cmd.c"/>
+        <childnode refid="702" relation="include">
+        </childnode>
+        <childnode refid="703" relation="include">
+        </childnode>
+        <childnode refid="704" relation="include">
+        </childnode>
+        <childnode refid="705" relation="include">
+        </childnode>
+      </node>
+      <node id="705">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+      <node id="702">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="parsing__cmd_8c_1a76889c4c767c0af44a85984cbaf48d62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int is_redi</definition>
+        <argsstring>(char c)</argsstring>
+        <name>is_redi</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" line="16" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" bodystart="16" bodyend="21"/>
+        <referencedby refid="shell_8h_1afe3033f820f77741e41ee05caa219554" compoundref="parsing__cmd_8c" startline="23" endline="44">index_end_word</referencedby>
+        <referencedby refid="shell_8h_1a75146577e9b06cc37c090f3c94b2278e" compoundref="parsing__cmd_8c" startline="87" endline="109">parsing_cmd</referencedby>
+        <referencedby refid="shell_8h_1a88d6a0e4709f3f3521a44ae3bcdf6862" compoundref="redirection_8c" startline="46" endline="71">add_redi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="parsing__cmd_8c_1a630ad05ab22a793081c5c8f3ab941220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int index_end_word</definition>
+        <argsstring>(char *str_cmd, int *i)</argsstring>
+        <name>index_end_word</name>
+        <param>
+          <type>char *</type>
+          <declname>str_cmd</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" line="23" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" bodystart="23" bodyend="44"/>
+        <references refid="parsing__cmd_8c_1a76889c4c767c0af44a85984cbaf48d62" compoundref="parsing__cmd_8c" startline="16" endline="21">is_redi</references>
+        <referencedby refid="parsing__cmd_8c_1a14a8f0c61b979cd9b0413c120dff438a" compoundref="parsing__cmd_8c" startline="46" endline="72">add_word_to_tab</referencedby>
+        <referencedby refid="shell_8h_1a88d6a0e4709f3f3521a44ae3bcdf6862" compoundref="redirection_8c" startline="46" endline="71">add_redi</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="parsing__cmd_8c_1a14a8f0c61b979cd9b0413c120dff438a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int add_word_to_tab</definition>
+        <argsstring>(char *str_cmd, t_cmd *cmd, int *i)</argsstring>
+        <name>add_word_to_tab</name>
+        <param>
+          <type>char *</type>
+          <declname>str_cmd</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" line="46" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" bodystart="46" bodyend="72"/>
+        <references refid="parsing__cmd_8c_1a630ad05ab22a793081c5c8f3ab941220" compoundref="parsing__cmd_8c" startline="23" endline="44">index_end_word</references>
+        <references refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" compoundref="shell_8h" startline="39">s_cmd::tab</references>
+        <references refid="len__tab_8c_1a28ece56f3d95845087e9d1c1649b55f6" compoundref="len__tab_8c" startline="13" endline="21">len_tab</references>
+        <referencedby refid="shell_8h_1a75146577e9b06cc37c090f3c94b2278e" compoundref="parsing__cmd_8c" startline="87" endline="109">parsing_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="parsing__cmd_8c_1ae3a29b783909de965bd6285058ad5694" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+        <definition>t_cmd* init_parsing</definition>
+        <argsstring>()</argsstring>
+        <name>init_parsing</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" line="74" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" bodystart="74" bodyend="85"/>
+        <references refid="structs__cmd_1a8629d9a24e605fcc6a82b55b1a870a07" compoundref="shell_8h" startline="40">s_cmd::redi_r</references>
+        <references refid="structs__cmd_1a3eb86f4753299ed84389481f46694140" compoundref="shell_8h" startline="41">s_cmd::redi_l</references>
+        <references refid="structs__cmd_1aadb06044d2e679ed4395a2680dc6962a" compoundref="shell_8h" startline="42">s_cmd::next</references>
+        <references refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" compoundref="shell_8h" startline="39">s_cmd::tab</references>
+        <referencedby refid="shell_8h_1a75146577e9b06cc37c090f3c94b2278e" compoundref="parsing__cmd_8c" startline="87" endline="109">parsing_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="parsing__cmd_8c_1a03eecd3e4496f8e1b3567709d88ae5b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+        <definition>t_cmd* parsing_cmd</definition>
+        <argsstring>(char *str_cmd)</argsstring>
+        <name>parsing_cmd</name>
+        <param>
+          <type>char *</type>
+          <declname>str_cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" line="87" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c" bodystart="87" bodyend="109"/>
+        <references refid="parsing__cmd_8c_1ae3a29b783909de965bd6285058ad5694" compoundref="parsing__cmd_8c" startline="74" endline="85">init_parsing</references>
+        <references refid="parsing__cmd_8c_1a76889c4c767c0af44a85984cbaf48d62" compoundref="parsing__cmd_8c" startline="16" endline="21">is_redi</references>
+        <references refid="redirection_8c_1ab141cb2c1876246eb1194566beb195c8" compoundref="redirection_8c" startline="46" endline="71">add_redi</references>
+        <references refid="parsing__cmd_8c_1a14a8f0c61b979cd9b0413c120dff438a" compoundref="parsing__cmd_8c" startline="46" endline="72">add_word_to_tab</references>
+        <referencedby refid="parsing__pipe_8c_1a1ffdb84b9297c89dcd30e9402f2c3515" compoundref="parsing__pipe_8c" startline="36" endline="51">add_cmd</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>parsing_cmd.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/bauer_a/rendu/PSU_2014_42sh</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;bauer_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Sat<sp/>Mar<sp/>28<sp/>14:22:25<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Fri<sp/>May<sp/>22<sp/>16:58:19<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="shell_8h_1aaa516d4ccb03a5c0226bf430180d737e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="parsing__cmd_8c_1a76889c4c767c0af44a85984cbaf48d62" kindref="member">is_redi</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>==<sp/></highlight><highlight class="charliteral">&apos;&gt;&apos;</highlight><highlight class="normal"><sp/>||<sp/>c<sp/>==<sp/></highlight><highlight class="charliteral">&apos;&lt;&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="shell_8h_1afe3033f820f77741e41ee05caa219554" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="parsing__cmd_8c_1a630ad05ab22a793081c5c8f3ab941220" kindref="member">index_end_word</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str_cmd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*i)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>j<sp/>=<sp/>*i;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str_cmd[j]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;&quot;&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*i<sp/>+=<sp/>1;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>j++;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str_cmd[j]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;&quot;&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>!<ref refid="parsing__cmd_8c_1a76889c4c767c0af44a85984cbaf48d62" kindref="member">is_redi</ref>(str_cmd[j])<sp/>&amp;&amp;<sp/>str_cmd[j]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>j++;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str_cmd[j]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*i<sp/>=<sp/>j;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(j);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str_cmd[j]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>!<ref refid="parsing__cmd_8c_1a76889c4c767c0af44a85984cbaf48d62" kindref="member">is_redi</ref>(str_cmd[j])<sp/>&amp;&amp;<sp/>str_cmd[j]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>j++;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(j);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="parsing__cmd_8c_1a14a8f0c61b979cd9b0413c120dff438a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="parsing__cmd_8c_1a14a8f0c61b979cd9b0413c120dff438a" kindref="member">add_word_to_tab</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str_cmd,<sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/>*cmd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*i)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((j<sp/>=<sp/><ref refid="parsing__cmd_8c_1a630ad05ab22a793081c5c8f3ab941220" kindref="member">index_end_word</ref>(str_cmd,<sp/>i))<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>=<sp/>strndup(str_cmd<sp/>+<sp/>*i,<sp/>j<sp/>-<sp/>*i))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref><sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)<sp/>*<sp/>2))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[0]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[1]<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref><sp/>=<sp/>realloc(cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>(<ref refid="len__tab_8c_1a28ece56f3d95845087e9d1c1649b55f6" kindref="member">len_tab</ref>(cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>)<sp/>+<sp/>2)))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[<ref refid="len__tab_8c_1a28ece56f3d95845087e9d1c1649b55f6" kindref="member">len_tab</ref>(cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>)<sp/>+<sp/>1]<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>[<ref refid="len__tab_8c_1a28ece56f3d95845087e9d1c1649b55f6" kindref="member">len_tab</ref>(cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>)]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>*i<sp/>=<sp/>j;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="parsing__cmd_8c_1ae3a29b783909de965bd6285058ad5694" refkind="member"><highlight class="normal"><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="parsing__cmd_8c_1ae3a29b783909de965bd6285058ad5694" kindref="member">init_parsing</ref>()</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/><sp/><sp/><sp/><sp/>*cmd;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((cmd<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structs__cmd" kindref="compound">t_cmd</ref>)))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>cmd-&gt;<ref refid="structs__cmd_1a8629d9a24e605fcc6a82b55b1a870a07" kindref="member">redi_r</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>cmd-&gt;<ref refid="structs__cmd_1a3eb86f4753299ed84389481f46694140" kindref="member">redi_l</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>cmd-&gt;<ref refid="structs__cmd_1aadb06044d2e679ed4395a2680dc6962a" kindref="member">next</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(cmd);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="shell_8h_1a75146577e9b06cc37c090f3c94b2278e" refkind="member"><highlight class="normal"><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="parsing__cmd_8c_1a03eecd3e4496f8e1b3567709d88ae5b8" kindref="member">parsing_cmd</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str_cmd)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/><sp/><sp/><sp/><sp/>*cmd;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((cmd<sp/>=<sp/><ref refid="parsing__cmd_8c_1ae3a29b783909de965bd6285058ad5694" kindref="member">init_parsing</ref>())<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str_cmd[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str_cmd[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>str_cmd[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="parsing__cmd_8c_1a76889c4c767c0af44a85984cbaf48d62" kindref="member">is_redi</ref>(str_cmd[i]))</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="redirection_8c_1ab141cb2c1876246eb1194566beb195c8" kindref="member">add_redi</ref>(str_cmd,<sp/>cmd,<sp/>&amp;i))</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="parsing__cmd_8c_1a14a8f0c61b979cd9b0413c120dff438a" kindref="member">add_word_to_tab</ref>(str_cmd,<sp/>cmd,<sp/>&amp;i))</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(cmd);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/parsing/parsing_cmd.c"/>
+  </compounddef>
+</doxygen>

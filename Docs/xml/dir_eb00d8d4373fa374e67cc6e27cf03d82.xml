@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_eb00d8d4373fa374e67cc6e27cf03d82" kind="dir">
+    <compoundname>ps1</compoundname>
+    <innerfile refid="tab__fonc_8c">tab_fonc.c</innerfile>
+    <innerfile refid="ps1_2utils_8c">utils.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/ps1/"/>
+  </compounddef>
+</doxygen>

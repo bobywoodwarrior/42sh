@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structs__list" kind="struct" prot="public">
+    <compoundname>s_list</compoundname>
+    <includes refid="shell_8h" local="no">shell.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structs__list_1adf16cd437526a5c5e0e0af87745acbb8" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="32" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="shell_8h_1a453672a5f3546a46dbd0b808a68fd71b" compoundref="redirection__left_8c" startline="83" endline="99">redirection_left</referencedby>
+        <referencedby refid="shell_8h_1a480f2c4c3df5d3d39f609e1455975b17" compoundref="redirection__right_8c" startline="24" endline="38">redirection_right</referencedby>
+        <referencedby refid="shell_8h_1a88d6a0e4709f3f3521a44ae3bcdf6862" compoundref="redirection_8c" startline="46" endline="71">add_redi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__list_1a47fd463223ac923d306c984fb143dfa4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int double_redi</definition>
+        <argsstring></argsstring>
+        <name>double_redi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="33" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="shell_8h_1a453672a5f3546a46dbd0b808a68fd71b" compoundref="redirection__left_8c" startline="83" endline="99">redirection_left</referencedby>
+        <referencedby refid="shell_8h_1a480f2c4c3df5d3d39f609e1455975b17" compoundref="redirection__right_8c" startline="24" endline="38">redirection_right</referencedby>
+        <referencedby refid="redirection_8c_1a1cd0120acb08c062e567a2f26e64545a" compoundref="redirection_8c" startline="25" endline="44">set_redi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__list_1a4bcaaa089cc834cf70b73bafa9af1e05" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structs__list" kindref="compound">s_list</ref> *</type>
+        <definition>struct s_list* next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="34" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="shell_8h_1a453672a5f3546a46dbd0b808a68fd71b" compoundref="redirection__left_8c" startline="83" endline="99">redirection_left</referencedby>
+        <referencedby refid="shell_8h_1a480f2c4c3df5d3d39f609e1455975b17" compoundref="redirection__right_8c" startline="24" endline="38">redirection_right</referencedby>
+        <referencedby refid="redirection_8c_1a9d291893b76eeddb11d3b35fb5804747" compoundref="redirection_8c" startline="15" endline="23">set_last_in_list</referencedby>
+        <referencedby refid="shell_8h_1a88d6a0e4709f3f3521a44ae3bcdf6862" compoundref="redirection_8c" startline="46" endline="71">add_redi</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="51">
+        <label>s_list</label>
+        <link refid="structs__list"/>
+        <childnode refid="51" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="31" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="30" bodyend="35"/>
+    <listofallmembers>
+      <member refid="structs__list_1a47fd463223ac923d306c984fb143dfa4" prot="public" virt="non-virtual"><scope>s_list</scope><name>double_redi</name></member>
+      <member refid="structs__list_1adf16cd437526a5c5e0e0af87745acbb8" prot="public" virt="non-virtual"><scope>s_list</scope><name>file</name></member>
+      <member refid="structs__list_1a4bcaaa089cc834cf70b73bafa9af1e05" prot="public" virt="non-virtual"><scope>s_list</scope><name>next</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

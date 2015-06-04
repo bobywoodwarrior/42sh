@@ -1,0 +1,191 @@
+.TH "include/builtin.h" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/builtin.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'shell\&.h'\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBs_bref\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBESCAPE\fP   27"
+.br
+.ti -1c
+.RI "#define \fBFAILURE\fP   -2"
+.br
+.ti -1c
+.RI "#define \fBNO_MATCH\fP   -1"
+.br
+.ti -1c
+.RI "#define \fBSUCCESS\fP   0"
+.br
+.ti -1c
+.RI "#define \fBEXIT\fP   1"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBs_bref\fP \fBt_bref\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmy_redir_builtin\fP (\fBt_data\fP *data, \fBt_cmd\fP *cmd)"
+.br
+.ti -1c
+.RI "char ** \fBcattab_ext\fP (char *new)"
+.br
+.ti -1c
+.RI "int \fBmy_cd_error\fP (char *str)"
+.br
+.ti -1c
+.RI "int \fBmy_replace_key\fP (char **expr, \fBt_data\fP *data)"
+.br
+.ti -1c
+.RI "char * \fBmy_cstrconcat\fP (char *s1, char *s2)"
+.br
+.ti -1c
+.RI "char * \fBget_env_value\fP (char **env, char *key, int *offset)"
+.br
+.ti -1c
+.RI "int \fBmy_print\fP (char *str, char inter, char noret, char *nextword)"
+.br
+.ti -1c
+.RI "char ** \fBmy_epurtab\fP (char **tab)"
+.br
+.ti -1c
+.RI "char ** \fBmy_cattab\fP (char **tab, char *new)"
+.br
+.ti -1c
+.RI "int \fBmy_getnbr_base\fP (char *str, char *base, int *offset, int i)"
+.br
+.ti -1c
+.RI "int \fBmy_cd\fP (char **, \fBt_data\fP *)"
+.br
+.ti -1c
+.RI "int \fBmy_exit\fP (char **, \fBt_data\fP *)"
+.br
+.ti -1c
+.RI "int \fBmy_env\fP (char **, \fBt_data\fP *)"
+.br
+.ti -1c
+.RI "int \fBmy_setenv\fP (char **, \fBt_data\fP *)"
+.br
+.ti -1c
+.RI "int \fBmy_unsetenv\fP (char **, \fBt_data\fP *)"
+.br
+.ti -1c
+.RI "int \fBmy_echo\fP (char **, \fBt_data\fP *)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define ESCAPE   27"
+
+.PP
+Definition at line 16 of file builtin\&.h\&.
+.SS "#define EXIT   1"
+
+.PP
+Definition at line 20 of file builtin\&.h\&.
+.SS "#define FAILURE   -2"
+
+.PP
+Definition at line 17 of file builtin\&.h\&.
+.SS "#define NO_MATCH   -1"
+
+.PP
+Definition at line 18 of file builtin\&.h\&.
+.SS "#define SUCCESS   0"
+
+.PP
+Definition at line 19 of file builtin\&.h\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBs_bref\fP		 \fBt_bref\fP"
+
+.SH "Function Documentation"
+.PP 
+.SS "char** cattab_ext (char *new)"
+
+.PP
+Definition at line 60 of file utils\&.c\&.
+.SS "char* get_env_value (char **env, char *key, int *offset)"
+
+.PP
+Definition at line 42 of file utils\&.c\&.
+.SS "char** my_cattab (char **tab, char *new)"
+
+.PP
+Definition at line 124 of file forbuiltin\&.c\&.
+.SS "int my_cd (char **, \fBt_data\fP *)"
+
+.PP
+Definition at line 73 of file cd\&.c\&.
+.SS "int my_cd_error (char *str)"
+
+.PP
+Definition at line 18 of file cd\&.c\&.
+.SS "char* my_cstrconcat (char *s1, char *s2)"
+
+.PP
+Definition at line 50 of file getvar\&.c\&.
+.SS "int my_echo (char **, \fBt_data\fP *)"
+
+.PP
+Definition at line 101 of file builtin\&.c\&.
+.SS "int my_env (char **, \fBt_data\fP *)"
+
+.PP
+Definition at line 71 of file builtin\&.c\&.
+.SS "char** my_epurtab (char **tab)"
+
+.PP
+Definition at line 95 of file forbuiltin\&.c\&.
+.SS "int my_exit (char **, \fBt_data\fP *)"
+
+.PP
+Definition at line 92 of file builtin\&.c\&.
+.SS "int my_getnbr_base (char *str, char *base, int *offset, inti)"
+
+.PP
+Definition at line 14 of file utils\&.c\&.
+.SS "int my_print (char *str, charinter, charnoret, char *nextword)"
+
+.PP
+Definition at line 72 of file forbuiltin\&.c\&.
+.SS "int my_redir_builtin (\fBt_data\fP *data, \fBt_cmd\fP *cmd)"
+
+.PP
+Definition at line 16 of file top_builtin\&.c\&.
+.SS "int my_replace_key (char **expr, \fBt_data\fP *data)"
+
+.PP
+Definition at line 28 of file getvar\&.c\&.
+.SS "int my_setenv (char **, \fBt_data\fP *)"
+
+.PP
+Definition at line 44 of file builtin\&.c\&.
+.SS "int my_unsetenv (char **, \fBt_data\fP *)"
+
+.PP
+Definition at line 16 of file builtin\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

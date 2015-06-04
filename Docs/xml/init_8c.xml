@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="init_8c" kind="file">
+    <compoundname>init.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <incdepgraph>
+      <node id="751">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="749">
+        <label>prompt_read_termcaps/init.c</label>
+        <link refid="init.c"/>
+        <childnode refid="750" relation="include">
+        </childnode>
+        <childnode refid="751" relation="include">
+        </childnode>
+      </node>
+      <node id="750">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="init_8c_1aa33a64ab0af49185a45ecd44a5aebeaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* init_stock</definition>
+        <argsstring>()</argsstring>
+        <name>init_stock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/init.c" line="14" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/init.c" bodystart="14" bodyend="28"/>
+        <references refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" compoundref="shell_8h" startline="54">s_stock::cmd</references>
+        <references refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" compoundref="shell_8h" startline="55">s_stock::c</references>
+        <references refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" compoundref="shell_8h" startline="56">s_stock::pos</references>
+        <references refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" compoundref="loop__read_8c" startline="16" endline="23">clean</references>
+        <referencedby refid="shell_8h_1acbfff6c4ca9e326d10561a54329ddf6c" compoundref="loop__read_8c" startline="67" endline="93">loop</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>init.c<sp/>for<sp/>prompt<sp/>in<sp/>/home/blanqu_a/Workspace/rendu/PSU_2014_42sh/prompt_read_termcaps</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;blanqu_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Mon<sp/>May<sp/>18<sp/>15:45:58<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>17:47:10<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="shell_8h_1a19c96fd25dc36fc2337e2107bb0a54c5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="init_8c_1aa33a64ab0af49185a45ecd44a5aebeaa" kindref="member">init_stock</ref>()</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><ref refid="structs__stock" kindref="compound">t_stock</ref><sp/><sp/><sp/>*ptr;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((ptr<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structs__stock" kindref="compound">t_stock</ref>)))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">)<sp/>*<sp/>4096))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">)<sp/>*<sp/>7))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>ptr-&gt;<ref refid="structs__stock_1a1910d262855b71da353ed0d07a6c7823" kindref="member">pos</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" kindref="member">clean</ref>(ptr-&gt;<ref refid="structs__stock_1a7353cae57e2530c316ddacb27ef14932" kindref="member">cmd</ref>,<sp/>4096);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><ref refid="loop__read_8c_1a121c392dfcdc9e462652f40e7c75b906" kindref="member">clean</ref>(ptr-&gt;<ref refid="structs__stock_1a9df78bd38aa81763ad1c56f3de8d5d3e" kindref="member">c</ref>,<sp/>7);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ptr);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/prompt_read_termcaps/init.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,158 @@
+\section{alias/alias\-\_\-etc.c File Reference}
+\label{alias__etc_8c}\index{alias/alias\-\_\-etc.\-c@{alias/alias\-\_\-etc.\-c}}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}lib.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}shell.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}builtin.\-h\char`\"{}}\\*
+Include dependency graph for alias\-\_\-etc.\-c\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{alias__etc_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf setbashenv} (int i, char $\ast$str, int start, char $\ast$$\ast$to\-\_\-set)
+\item 
+int {\bf bashset} (char $\ast$str, {\bf t\-\_\-data} $\ast$data)
+\item 
+char $\ast$ {\bf end\-\_\-find} (char $\ast$new, char $\ast$prev, char $\ast$to\-\_\-find)
+\item 
+char $\ast$ {\bf concat\-\_\-alias} (char $\ast$str, {\bf t\-\_\-alias} $\ast$list\-\_\-alias)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{alias\-\_\-etc.\-c@{alias\-\_\-etc.\-c}!bashset@{bashset}}
+\index{bashset@{bashset}!alias_etc.c@{alias\-\_\-etc.\-c}}
+\subsubsection[{bashset}]{\setlength{\rightskip}{0pt plus 5cm}int bashset (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{{\bf t\-\_\-data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{alias__etc_8c_acd9ad0dfae53c8683ec2597a188e6c1b}
+
+
+Definition at line 33 of file alias\-\_\-etc.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alias__etc_8c_acd9ad0dfae53c8683ec2597a188e6c1b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{alias__etc_8c_acd9ad0dfae53c8683ec2597a188e6c1b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{alias\-\_\-etc.\-c@{alias\-\_\-etc.\-c}!concat\-\_\-alias@{concat\-\_\-alias}}
+\index{concat\-\_\-alias@{concat\-\_\-alias}!alias_etc.c@{alias\-\_\-etc.\-c}}
+\subsubsection[{concat\-\_\-alias}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ concat\-\_\-alias (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{{\bf t\-\_\-alias} $\ast$}]{list\-\_\-alias}
+\end{DoxyParamCaption}
+)}\label{alias__etc_8c_a2cede4e33e1a1250deaee16f518024c4}
+
+
+Definition at line 71 of file alias\-\_\-etc.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alias__etc_8c_a2cede4e33e1a1250deaee16f518024c4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alias__etc_8c_a2cede4e33e1a1250deaee16f518024c4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{alias\-\_\-etc.\-c@{alias\-\_\-etc.\-c}!end\-\_\-find@{end\-\_\-find}}
+\index{end\-\_\-find@{end\-\_\-find}!alias_etc.c@{alias\-\_\-etc.\-c}}
+\subsubsection[{end\-\_\-find}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ end\-\_\-find (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{new, }
+\item[{char $\ast$}]{prev, }
+\item[{char $\ast$}]{to\-\_\-find}
+\end{DoxyParamCaption}
+)}\label{alias__etc_8c_aeee2c96c8e8193fc245dee41ac044a77}
+
+
+Definition at line 62 of file alias\-\_\-etc.\-c.
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alias__etc_8c_aeee2c96c8e8193fc245dee41ac044a77_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{alias\-\_\-etc.\-c@{alias\-\_\-etc.\-c}!setbashenv@{setbashenv}}
+\index{setbashenv@{setbashenv}!alias_etc.c@{alias\-\_\-etc.\-c}}
+\subsubsection[{setbashenv}]{\setlength{\rightskip}{0pt plus 5cm}int setbashenv (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{char $\ast$}]{str, }
+\item[{int}]{start, }
+\item[{char $\ast$$\ast$}]{to\-\_\-set}
+\end{DoxyParamCaption}
+)}\label{alias__etc_8c_a2554b2fd4cf3639ec091ec6a5a432675}
+
+
+Definition at line 20 of file alias\-\_\-etc.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alias__etc_8c_a2554b2fd4cf3639ec091ec6a5a432675_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{alias__etc_8c_a2554b2fd4cf3639ec091ec6a5a432675_icgraph}
+\end{center}
+\end{figure}
+
+

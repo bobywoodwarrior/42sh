@@ -1,0 +1,10 @@
+<map id="my_print" name="my_print">
+<area shape="rect" id="node3" href="$builtin_8h.html#a772e7ea72ee3ac31a9da9d3c8423816e" title="my_echo" alt="" coords="125,56,203,83"/>
+<area shape="rect" id="node5" href="$shell_8h.html#a4a932a3567484ecc159fb43f41392992" title="builtin" alt="" coords="251,56,306,83"/>
+<area shape="rect" id="node7" href="$builtin_8h.html#aecb1f227db5bcfc86869d066066f450d" title="my_redir_builtin" alt="" coords="355,56,469,83"/>
+<area shape="rect" id="node9" href="$shell_8h.html#aaa570cbabecdb1a23f82ad57ed563378" title="exe_cmd" alt="" coords="518,56,597,83"/>
+<area shape="rect" id="node11" href="$pipe_8c.html#a6c5a209f770a66dc5c2f73e10ff86db3" title="last_pipe" alt="" coords="648,5,723,32"/>
+<area shape="rect" id="node15" href="$pipe_8c.html#a6267c0f1ac0750c77dc4e676bf140b80" title="loop_pipe" alt="" coords="645,56,725,83"/>
+<area shape="rect" id="node18" href="$pipe_8c.html#ac7254c9ab0581563f740b715d805c301" title="first_pipe" alt="" coords="648,107,723,133"/>
+<area shape="rect" id="node13" href="$shell_8h.html#a0b773212abd3f5ea05fa3ef3945efd1d" title="exe_pipe" alt="" coords="773,56,851,83"/>
+</map>

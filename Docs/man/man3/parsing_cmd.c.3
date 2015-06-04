@@ -1,0 +1,61 @@
+.TH "parsing/parsing_cmd.c" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+parsing/parsing_cmd.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include 'shell\&.h'\fP
+.br
+\fC#include 'lib\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBis_redi\fP (char c)"
+.br
+.ti -1c
+.RI "int \fBindex_end_word\fP (char *str_cmd, int *i)"
+.br
+.ti -1c
+.RI "int \fBadd_word_to_tab\fP (char *str_cmd, \fBt_cmd\fP *cmd, int *i)"
+.br
+.ti -1c
+.RI "\fBt_cmd\fP * \fBinit_parsing\fP ()"
+.br
+.ti -1c
+.RI "\fBt_cmd\fP * \fBparsing_cmd\fP (char *str_cmd)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int add_word_to_tab (char *str_cmd, \fBt_cmd\fP *cmd, int *i)"
+
+.PP
+Definition at line 46 of file parsing_cmd\&.c\&.
+.SS "int index_end_word (char *str_cmd, int *i)"
+
+.PP
+Definition at line 23 of file parsing_cmd\&.c\&.
+.SS "\fBt_cmd\fP* init_parsing ()"
+
+.PP
+Definition at line 74 of file parsing_cmd\&.c\&.
+.SS "int is_redi (charc)"
+
+.PP
+Definition at line 16 of file parsing_cmd\&.c\&.
+.SS "\fBt_cmd\fP* parsing_cmd (char *str_cmd)"
+
+.PP
+Definition at line 87 of file parsing_cmd\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

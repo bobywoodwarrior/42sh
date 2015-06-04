@@ -1,0 +1,10 @@
+<map id="print_cursor_left" name="print_cursor_left">
+<area shape="rect" id="node3" href="$shell_8h.html#ab4ce23e3bb732e092c9ec75e6c739242" title="gere_arrow" alt="" coords="351,9,441,36"/>
+<area shape="rect" id="node7" href="$shell_8h.html#a355426ca95d2d3e650e274a762d1d99b" title="gere_tab" alt="" coords="195,34,269,61"/>
+<area shape="rect" id="node12" href="$loop__read_8c.html#acb438155c44ae29d7351b71202ab6e3e" title="change_word" alt="" coords="344,186,448,213"/>
+<area shape="rect" id="node15" href="$shell_8h.html#a929bf8ea49ac6f94a2b1ab00c9f16343" title="add_char" alt="" coords="193,85,271,112"/>
+<area shape="rect" id="node18" href="$shell_8h.html#a8a81cc045a4530835ce45b6817e17335" title="delete_char" alt="" coords="185,136,279,162"/>
+<area shape="rect" id="node21" href="$shell_8h.html#a10717a0c53430c97d2ccedbfb1728211" title="delete_backward" alt="" coords="169,186,295,213"/>
+<area shape="rect" id="node5" href="$shell_8h.html#acbfff6c4ca9e326d10561a54329ddf6c" title="loop" alt="" coords="496,110,544,137"/>
+<area shape="rect" id="node9" href="$shell_8h.html#a089febdbd9db477f99c25841413150a8" title="gere_char" alt="" coords="355,110,437,137"/>
+</map>

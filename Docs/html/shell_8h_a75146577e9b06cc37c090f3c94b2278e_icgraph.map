@@ -1,0 +1,7 @@
+<map id="parsing_cmd" name="parsing_cmd">
+<area shape="rect" id="node3" href="$parsing__pipe_8c.html#a1ffdb84b9297c89dcd30e9402f2c3515" title="add_cmd" alt="" coords="153,5,231,32"/>
+<area shape="rect" id="node5" href="$shell_8h.html#ae8d6b38307281c05e1b03ca11f8bbb8c" title="parsing_pipe" alt="" coords="280,5,379,32"/>
+<area shape="rect" id="node7" href="$parsing__general_8c.html#a8a47bb6cfcb5378a27b639793a995814" title="new_cmds" alt="" coords="427,5,514,32"/>
+<area shape="rect" id="node9" href="$parsing__general_8c.html#a2d75753bac50088aa4b9be29314f98fc" title="add_cmds" alt="" coords="563,5,650,32"/>
+<area shape="rect" id="node11" href="$shell_8h.html#ae9c51201cb3ad89b921d2f3576875ca4" title="parsing_general" alt="" coords="699,5,818,32"/>
+</map>

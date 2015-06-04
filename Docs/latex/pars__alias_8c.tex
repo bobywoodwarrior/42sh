@@ -1,0 +1,195 @@
+\section{alias/pars\-\_\-alias.c File Reference}
+\label{pars__alias_8c}\index{alias/pars\-\_\-alias.\-c@{alias/pars\-\_\-alias.\-c}}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$sys/types.\-h$>$}\\*
+{\ttfamily \#include $<$sys/stat.\-h$>$}\\*
+{\ttfamily \#include $<$fcntl.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}builtin.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}shell.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lib.\-h\char`\"{}}\\*
+Include dependency graph for pars\-\_\-alias.\-c\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pars__alias_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$$\ast$ {\bf get\-\_\-bash} ()
+\item 
+char $\ast$ {\bf get\-\_\-old} (char $\ast$str, int x, int i)
+\item 
+{\bf t\-\_\-data} $\ast$ {\bf get\-\_\-old\-\_\-new} (char $\ast$str, {\bf t\-\_\-data} $\ast$data, int x)
+\item 
+{\bf t\-\_\-data} $\ast$ {\bf get\-\_\-all\-\_\-alias} ({\bf t\-\_\-data} $\ast$data, char $\ast$$\ast$bash, int x)
+\item 
+int {\bf pars\-\_\-alias} ({\bf t\-\_\-data} $\ast$data)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{pars\-\_\-alias.\-c@{pars\-\_\-alias.\-c}!get\-\_\-all\-\_\-alias@{get\-\_\-all\-\_\-alias}}
+\index{get\-\_\-all\-\_\-alias@{get\-\_\-all\-\_\-alias}!pars_alias.c@{pars\-\_\-alias.\-c}}
+\subsubsection[{get\-\_\-all\-\_\-alias}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-data}$\ast$ get\-\_\-all\-\_\-alias (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{char $\ast$$\ast$}]{bash, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\label{pars__alias_8c_a94ed7403f0bc582353a563669932efdd}
+
+
+Definition at line 100 of file pars\-\_\-alias.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pars__alias_8c_a94ed7403f0bc582353a563669932efdd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{pars__alias_8c_a94ed7403f0bc582353a563669932efdd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{pars\-\_\-alias.\-c@{pars\-\_\-alias.\-c}!get\-\_\-bash@{get\-\_\-bash}}
+\index{get\-\_\-bash@{get\-\_\-bash}!pars_alias.c@{pars\-\_\-alias.\-c}}
+\subsubsection[{get\-\_\-bash}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$$\ast$ get\-\_\-bash (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{pars__alias_8c_a203bc66f586da530ebb9eeee519bd082}
+
+
+Definition at line 21 of file pars\-\_\-alias.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{pars__alias_8c_a203bc66f586da530ebb9eeee519bd082_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{pars__alias_8c_a203bc66f586da530ebb9eeee519bd082_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{pars\-\_\-alias.\-c@{pars\-\_\-alias.\-c}!get\-\_\-old@{get\-\_\-old}}
+\index{get\-\_\-old@{get\-\_\-old}!pars_alias.c@{pars\-\_\-alias.\-c}}
+\subsubsection[{get\-\_\-old}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ get\-\_\-old (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{int}]{x, }
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}\label{pars__alias_8c_a3257a6fcadd0309f1df178525eea9257}
+
+
+Definition at line 47 of file pars\-\_\-alias.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{pars__alias_8c_a3257a6fcadd0309f1df178525eea9257_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pars__alias_8c_a3257a6fcadd0309f1df178525eea9257_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{pars\-\_\-alias.\-c@{pars\-\_\-alias.\-c}!get\-\_\-old\-\_\-new@{get\-\_\-old\-\_\-new}}
+\index{get\-\_\-old\-\_\-new@{get\-\_\-old\-\_\-new}!pars_alias.c@{pars\-\_\-alias.\-c}}
+\subsubsection[{get\-\_\-old\-\_\-new}]{\setlength{\rightskip}{0pt plus 5cm}{\bf t\-\_\-data}$\ast$ get\-\_\-old\-\_\-new (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str, }
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{int}]{x}
+\end{DoxyParamCaption}
+)}\label{pars__alias_8c_a7d7873e60a328ecd3a34c3370594b040}
+
+
+Definition at line 76 of file pars\-\_\-alias.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pars__alias_8c_a7d7873e60a328ecd3a34c3370594b040_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pars__alias_8c_a7d7873e60a328ecd3a34c3370594b040_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{pars\-\_\-alias.\-c@{pars\-\_\-alias.\-c}!pars\-\_\-alias@{pars\-\_\-alias}}
+\index{pars\-\_\-alias@{pars\-\_\-alias}!pars_alias.c@{pars\-\_\-alias.\-c}}
+\subsubsection[{pars\-\_\-alias}]{\setlength{\rightskip}{0pt plus 5cm}int pars\-\_\-alias (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{pars__alias_8c_a8e5633ce3ca1c968f88de68f3ed735c7}
+
+
+Definition at line 119 of file pars\-\_\-alias.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pars__alias_8c_a8e5633ce3ca1c968f88de68f3ed735c7_cgraph}
+\end{center}
+\end{figure}
+
+

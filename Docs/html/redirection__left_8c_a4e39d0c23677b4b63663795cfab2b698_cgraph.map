@@ -1,0 +1,10 @@
+<map id="redirection_left" name="redirection_left">
+<area shape="rect" id="node3" href="$redirection__left_8c.html#a7d4285d2d4f2790e8ccad0f0f4a103a3" title="double_redi_left" alt="" coords="163,78,280,104"/>
+<area shape="rect" id="node18" href="$redirection__left_8c.html#a058a86ac024b5d3bbba7a0b6e9914b7b" title="open_file_rd" alt="" coords="174,128,269,155"/>
+<area shape="rect" id="node5" href="$my__putstr_8c.html#aa2895eb8fcea370c01f1f3b7795b2743" title="my_putstr" alt="" coords="486,52,565,79"/>
+<area shape="rect" id="node7" href="$shell_8h.html#a8a65c90ea8fc24f744d1bfc22ab4ccd2" title="read_cmd" alt="" coords="339,27,421,54"/>
+<area shape="rect" id="node9" href="$my__strcmp_8c.html#a7656d2f543a26ba1552b06f75667ba3c" title="my_strcmp" alt="" coords="337,78,423,104"/>
+<area shape="rect" id="node11" href="$redirection__left_8c.html#ac59f9fd6667dc7848f769a37da76319b" title="add_end_list" alt="" coords="331,128,429,155"/>
+<area shape="rect" id="node13" href="$redirection__left_8c.html#a870bc72198c51984b1f8dd97b650a7c3" title="write_list_redi" alt="" coords="329,179,431,206"/>
+<area shape="rect" id="node16" href="$my__putchar_8c.html#a305f90840add16d2d82af412da2260af" title="my_putchar" alt="" coords="480,179,571,206"/>
+</map>

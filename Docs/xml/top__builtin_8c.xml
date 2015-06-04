@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="top__builtin_8c" kind="file">
+    <compoundname>top_builtin.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes refid="builtin_8h" local="yes">builtin.h</includes>
+    <incdepgraph>
+      <node id="483">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="479">
+        <label>stdlib.h</label>
+      </node>
+      <node id="482">
+        <label>builtin.h</label>
+        <link refid="builtin_8h"/>
+        <childnode refid="483" relation="include">
+        </childnode>
+      </node>
+      <node id="480">
+        <label>string.h</label>
+      </node>
+      <node id="481">
+        <label>unistd.h</label>
+      </node>
+      <node id="478">
+        <label>builtin/top_builtin.c</label>
+        <link refid="top_builtin.c"/>
+        <childnode refid="479" relation="include">
+        </childnode>
+        <childnode refid="480" relation="include">
+        </childnode>
+        <childnode refid="481" relation="include">
+        </childnode>
+        <childnode refid="482" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="top__builtin_8c_1aecb1f227db5bcfc86869d066066f450d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_redir_builtin</definition>
+        <argsstring>(t_data *data, t_cmd *cmd)</argsstring>
+        <name>my_redir_builtin</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/builtin/top_builtin.c" line="16" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/top_builtin.c" bodystart="16" bodyend="33"/>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="redirection__right_8c_1a8cd483493477b8b727d1773f6ea11ee8" compoundref="redirection__right_8c" startline="24" endline="38">redirection_right</references>
+        <references refid="structs__cmd_1a8629d9a24e605fcc6a82b55b1a870a07" compoundref="shell_8h" startline="40">s_cmd::redi_r</references>
+        <references refid="redirection__left_8c_1a4e39d0c23677b4b63663795cfab2b698" compoundref="redirection__left_8c" startline="83" endline="99">redirection_left</references>
+        <references refid="structs__cmd_1a3eb86f4753299ed84389481f46694140" compoundref="shell_8h" startline="41">s_cmd::redi_l</references>
+        <references refid="top__builtin_8c_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</references>
+        <references refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" compoundref="shell_8h" startline="39">s_cmd::tab</references>
+        <referencedby refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="top__builtin_8c_1a4a932a3567484ecc159fb43f41392992" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int builtin</definition>
+        <argsstring>(t_data *data, char **cmd)</argsstring>
+        <name>builtin</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/builtin/top_builtin.c" line="35" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/top_builtin.c" bodystart="35" bodyend="62"/>
+        <references refid="cd_8c_1a04d617582a090298a993bb56e5a66cb9" compoundref="cd_8c" startline="73" endline="98">my_cd</references>
+        <references refid="builtin_8c_1a3f937a32f761532cf83be2cd3dae0e09" compoundref="builtin_8c" startline="92" endline="99">my_exit</references>
+        <references refid="builtin_8c_1a8608a65d45d2d3d7ec0e83a91d1f51a3" compoundref="builtin_8c" startline="71" endline="90">my_env</references>
+        <references refid="builtin_8c_1aa3ae54ee16af4313f2ccb3c2fff447e9" compoundref="builtin_8c" startline="44" endline="69">my_setenv</references>
+        <references refid="builtin_8c_1a7bd51fb3b758ec7342192213355ec102" compoundref="builtin_8c" startline="16" endline="42">my_unsetenv</references>
+        <references refid="builtin_8c_1a95a62fb319cfd787bd672b23b9288c67" compoundref="builtin_8c" startline="101" endline="127">my_echo</references>
+        <references refid="getvar_8c_1a6055c5e4f8247c5a1151cd65e5061574" compoundref="getvar_8c" startline="28" endline="48">my_replace_key</references>
+        <references refid="structs__bref_1a3cffecc657840bcfdbd40bfaf96be9d5" compoundref="builtin_8h" startline="25">s_bref::builtin</references>
+        <references refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" compoundref="shell_8h" startline="73">s_data::return_exe</references>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="builtin_8h_1a82364b047b41d18199c9372ace974305" compoundref="builtin_8h" startline="18">NO_MATCH</references>
+        <referencedby refid="builtin_8h_1aecb1f227db5bcfc86869d066066f450d" compoundref="top__builtin_8c" startline="16" endline="33">my_redir_builtin</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>top_builtin.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/rouss_p/rendu/PSU_2014_42sh/builtin</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>pierre<sp/>rousselle</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;rouss_p@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Tue<sp/>May<sp/><sp/>5<sp/>15:39:26<sp/>2015<sp/>pierre<sp/>rousselle</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>15:34:37<sp/>2015<sp/>pierre<sp/>rousselle</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="builtin_8h" kindref="compound">builtin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="builtin_8h_1aecb1f227db5bcfc86869d066066f450d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="top__builtin_8c_1aecb1f227db5bcfc86869d066066f450d" kindref="member">my_redir_builtin</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/>*cmd)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>savein;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>saveout;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fd;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((savein<sp/>=<sp/>dup(0))<sp/>==<sp/>-1<sp/>||<sp/>(saveout<sp/>=<sp/>dup(1))<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" kindref="member">FAILURE</ref>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((fd<sp/>=<sp/><ref refid="redirection__right_8c_1a8cd483493477b8b727d1773f6ea11ee8" kindref="member">redirection_right</ref>(cmd-&gt;<ref refid="structs__cmd_1a8629d9a24e605fcc6a82b55b1a870a07" kindref="member">redi_r</ref>))<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>dup2(fd,<sp/>1);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((fd<sp/>=<sp/><ref refid="redirection__left_8c_1a4e39d0c23677b4b63663795cfab2b698" kindref="member">redirection_left</ref>(cmd-&gt;<ref refid="structs__cmd_1a3eb86f4753299ed84389481f46694140" kindref="member">redi_l</ref>))<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>dup2(fd,<sp/>0);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>ret<sp/>=<sp/><ref refid="top__builtin_8c_1a4a932a3567484ecc159fb43f41392992" kindref="member">builtin</ref>(data,<sp/>cmd-&gt;<ref refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" kindref="member">tab</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>dup2(saveout,<sp/>1);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>dup2(savein,<sp/>0);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ret);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="top__builtin_8c_1a4a932a3567484ecc159fb43f41392992" kindref="member">builtin</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**cmd)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structs__bref" kindref="compound">t_bref</ref><sp/><sp/><sp/><sp/><sp/>builtin_ref[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;cd&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="cd_8c_1a04d617582a090298a993bb56e5a66cb9" kindref="member">my_cd</ref>},<sp/>{</highlight><highlight class="stringliteral">&quot;exit&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="builtin_8c_1a3f937a32f761532cf83be2cd3dae0e09" kindref="member">my_exit</ref>},</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;env&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="builtin_8c_1a8608a65d45d2d3d7ec0e83a91d1f51a3" kindref="member">my_env</ref>},<sp/>{</highlight><highlight class="stringliteral">&quot;setenv&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="builtin_8c_1aa3ae54ee16af4313f2ccb3c2fff447e9" kindref="member">my_setenv</ref>},</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;unsetenv&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="builtin_8c_1a7bd51fb3b758ec7342192213355ec102" kindref="member">my_unsetenv</ref>},<sp/>{</highlight><highlight class="stringliteral">&quot;echo&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="builtin_8c_1a95a62fb319cfd787bd672b23b9288c67" kindref="member">my_echo</ref>},<sp/>{NULL,<sp/>NULL}};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>ret<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="getvar_8c_1a6055c5e4f8247c5a1151cd65e5061574" kindref="member">my_replace_key</ref>(cmd,<sp/>data);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(builtin_ref[i].ref<sp/>&amp;&amp;<sp/>cmd<sp/>&amp;&amp;<sp/>cmd[0])</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(strcmp(cmd[0],<sp/>builtin_ref[i].ref)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>builtin_ref[i].<ref refid="structs__bref_1a3cffecc657840bcfdbd40bfaf96be9d5" kindref="member">builtin</ref>(cmd,<sp/>data);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>break<sp/>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>++i;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>data-&gt;<ref refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" kindref="member">return_exe</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ret<sp/>==<sp/><ref refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" kindref="member">FAILURE</ref>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>data-&gt;<ref refid="structs__data_1a57883f7329f18bee1eae1d5589bdd2ec" kindref="member">return_exe</ref><sp/>=<sp/>256;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!builtin_ref[i].ref)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="builtin_8h_1a82364b047b41d18199c9372ace974305" kindref="member">NO_MATCH</ref>);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(ret);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/builtin/top_builtin.c"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<map id="gere_history" name="gere_history">
+<area shape="rect" id="node3" href="$loop__read_8c.html#a121c392dfcdc9e462652f40e7c75b906" title="clean" alt="" coords="267,5,322,32"/>
+<area shape="rect" id="node5" href="$move_8c.html#a26c659be8ab219ea68df6c038feced8a" title="up" alt="" coords="158,171,197,197"/>
+<area shape="rect" id="node29" href="$my__strlen_8c.html#ac7e9bd08d068851e31a5b6d408004638" title="my_strlen" alt="" coords="255,411,334,437"/>
+<area shape="rect" id="node31" href="$move_8c.html#a9cf576f664805ab837347db06b4c4036" title="down" alt="" coords="150,247,205,273"/>
+<area shape="rect" id="node8" href="$clear__line_8c.html#a9eb51cbe57ccf2c3836c2d4c76a63154" title="clean_line" alt="" coords="253,107,336,133"/>
+<area shape="rect" id="node10" href="$my__putchar_8c.html#a305f90840add16d2d82af412da2260af" title="my_putchar" alt="" coords="699,145,789,172"/>
+<area shape="rect" id="node13" href="$ps1_2utils_8c.html#a9a61eccec6f9e5611019648327862636" title="pars_ps1" alt="" coords="257,309,333,336"/>
+<area shape="rect" id="node15" href="$my__putstr_8c.html#aa2895eb8fcea370c01f1f3b7795b2743" title="my_putstr" alt="" coords="401,157,479,184"/>
+<area shape="rect" id="node27" href="$my__strcpy_8c.html#a73fd71e5a924f50c46bbdfb8b76fc6f7" title="my_strcpy" alt="" coords="253,208,336,235"/>
+<area shape="rect" id="node17" href="$builtin_2utils_8c.html#a0059bf9838c7770b46270fedbc869799" title="get_env_value" alt="" coords="385,259,495,285"/>
+<area shape="rect" id="node19" href="$ps1_2utils_8c.html#a526e44b33bc72aa77f1cd2eb7e4ee6a6" title="get_ps1" alt="" coords="405,208,475,235"/>
+<area shape="rect" id="node24" href="$ps1_2utils_8c.html#a3227f1af4721393b70d7b8a08692c6c6" title="fix_ps1" alt="" coords="409,309,471,336"/>
+<area shape="rect" id="node21" href="$ps1_2utils_8c.html#ab30c142300025115303c32027b0065c7" title="launch_format" alt="" coords="545,183,650,209"/>
+</map>

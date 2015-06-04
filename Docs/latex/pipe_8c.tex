@@ -1,0 +1,197 @@
+\section{exe/pipe.c File Reference}
+\label{pipe_8c}\index{exe/pipe.\-c@{exe/pipe.\-c}}
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include $<$sys/types.\-h$>$}\\*
+{\ttfamily \#include $<$sys/wait.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}shell.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lib.\-h\char`\"{}}\\*
+Include dependency graph for pipe.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pipe_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf check\-\_\-cmd} ({\bf t\-\_\-data} $\ast$data, {\bf t\-\_\-cmds} $\ast$cmds)
+\item 
+int {\bf last\-\_\-pipe} ({\bf t\-\_\-data} $\ast$data, int pipefd[2], {\bf t\-\_\-cmds} $\ast$cmds)
+\item 
+int {\bf loop\-\_\-pipe} ({\bf t\-\_\-data} $\ast$data, int pipefd[2], {\bf t\-\_\-cmds} $\ast$cmds)
+\item 
+int {\bf first\-\_\-pipe} ({\bf t\-\_\-data} $\ast$data, int pipefd[2], {\bf t\-\_\-cmds} $\ast$cmds)
+\item 
+int {\bf exe\-\_\-pipe} ({\bf t\-\_\-data} $\ast$data, {\bf t\-\_\-cmds} $\ast$cmds)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{pipe.\-c@{pipe.\-c}!check\-\_\-cmd@{check\-\_\-cmd}}
+\index{check\-\_\-cmd@{check\-\_\-cmd}!pipe.c@{pipe.\-c}}
+\subsubsection[{check\-\_\-cmd}]{\setlength{\rightskip}{0pt plus 5cm}int check\-\_\-cmd (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{{\bf t\-\_\-cmds} $\ast$}]{cmds}
+\end{DoxyParamCaption}
+)}\label{pipe_8c_adbcab1c6d3083b7c584269817edbe6da}
+
+
+Definition at line 18 of file pipe.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pipe_8c_adbcab1c6d3083b7c584269817edbe6da_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{pipe_8c_adbcab1c6d3083b7c584269817edbe6da_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{pipe.\-c@{pipe.\-c}!exe\-\_\-pipe@{exe\-\_\-pipe}}
+\index{exe\-\_\-pipe@{exe\-\_\-pipe}!pipe.c@{pipe.\-c}}
+\subsubsection[{exe\-\_\-pipe}]{\setlength{\rightskip}{0pt plus 5cm}int exe\-\_\-pipe (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{{\bf t\-\_\-cmds} $\ast$}]{cmds}
+\end{DoxyParamCaption}
+)}\label{pipe_8c_a2fbfcf1b08d99f573f1102a669d1b728}
+
+
+Definition at line 90 of file pipe.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pipe_8c_a2fbfcf1b08d99f573f1102a669d1b728_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{pipe.\-c@{pipe.\-c}!first\-\_\-pipe@{first\-\_\-pipe}}
+\index{first\-\_\-pipe@{first\-\_\-pipe}!pipe.c@{pipe.\-c}}
+\subsubsection[{first\-\_\-pipe}]{\setlength{\rightskip}{0pt plus 5cm}int first\-\_\-pipe (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{int}]{pipefd[2], }
+\item[{{\bf t\-\_\-cmds} $\ast$}]{cmds}
+\end{DoxyParamCaption}
+)}\label{pipe_8c_ac7254c9ab0581563f740b715d805c301}
+
+
+Definition at line 70 of file pipe.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pipe_8c_ac7254c9ab0581563f740b715d805c301_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{pipe_8c_ac7254c9ab0581563f740b715d805c301_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{pipe.\-c@{pipe.\-c}!last\-\_\-pipe@{last\-\_\-pipe}}
+\index{last\-\_\-pipe@{last\-\_\-pipe}!pipe.c@{pipe.\-c}}
+\subsubsection[{last\-\_\-pipe}]{\setlength{\rightskip}{0pt plus 5cm}int last\-\_\-pipe (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{int}]{pipefd[2], }
+\item[{{\bf t\-\_\-cmds} $\ast$}]{cmds}
+\end{DoxyParamCaption}
+)}\label{pipe_8c_a6c5a209f770a66dc5c2f73e10ff86db3}
+
+
+Definition at line 31 of file pipe.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pipe_8c_a6c5a209f770a66dc5c2f73e10ff86db3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{pipe_8c_a6c5a209f770a66dc5c2f73e10ff86db3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{pipe.\-c@{pipe.\-c}!loop\-\_\-pipe@{loop\-\_\-pipe}}
+\index{loop\-\_\-pipe@{loop\-\_\-pipe}!pipe.c@{pipe.\-c}}
+\subsubsection[{loop\-\_\-pipe}]{\setlength{\rightskip}{0pt plus 5cm}int loop\-\_\-pipe (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{int}]{pipefd[2], }
+\item[{{\bf t\-\_\-cmds} $\ast$}]{cmds}
+\end{DoxyParamCaption}
+)}\label{pipe_8c_a6267c0f1ac0750c77dc4e676bf140b80}
+
+
+Definition at line 43 of file pipe.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pipe_8c_a6267c0f1ac0750c77dc4e676bf140b80_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{pipe_8c_a6267c0f1ac0750c77dc4e676bf140b80_icgraph}
+\end{center}
+\end{figure}
+
+

@@ -1,0 +1,585 @@
+.TH "include/shell.h" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+include/shell.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBs_alias\fP"
+.br
+.ti -1c
+.RI "struct \fBs_list_line\fP"
+.br
+.ti -1c
+.RI "struct \fBs_list\fP"
+.br
+.ti -1c
+.RI "struct \fBs_cmd\fP"
+.br
+.ti -1c
+.RI "struct \fBs_cmds\fP"
+.br
+.ti -1c
+.RI "struct \fBs_stock\fP"
+.br
+.ti -1c
+.RI "struct \fBs_history\fP"
+.br
+.ti -1c
+.RI "struct \fBs_data\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBREAD_SIZE\fP   512"
+.br
+.ti -1c
+.RI "#define \fBRCNAME\fP   '\&.42rc'"
+.br
+.in -1c
+.SS "Typedefs"
+
+.in +1c
+.ti -1c
+.RI "typedef struct \fBs_alias\fP \fBt_alias\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBs_list_line\fP \fBt_list_line\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBs_list\fP \fBt_list\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBs_cmd\fP \fBt_cmd\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBs_cmds\fP \fBt_cmds\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBs_stock\fP \fBt_stock\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBs_history\fP \fBt_history\fP"
+.br
+.ti -1c
+.RI "typedef struct \fBs_data\fP \fBt_data\fP"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBt_cmd\fP * \fBparsing_cmd\fP (char *)"
+.br
+.ti -1c
+.RI "\fBt_cmd\fP * \fBparsing_pipe\fP (char *)"
+.br
+.ti -1c
+.RI "\fBt_cmds\fP * \fBparsing_general\fP (char *)"
+.br
+.ti -1c
+.RI "\fBt_data\fP * \fBcheck_recur\fP (\fBt_data\fP *data, char *old, char *new)"
+.br
+.ti -1c
+.RI "\fBt_data\fP * \fBget_all_alias\fP (\fBt_data\fP *data, char **bash, int x)"
+.br
+.ti -1c
+.RI "\fBt_alias\fP * \fBnew_alias\fP (\fBt_alias\fP *old, char *first, char *sec)"
+.br
+.ti -1c
+.RI "\fBt_history\fP * \fBinsert_list_double\fP (\fBt_history\fP *, char *)"
+.br
+.ti -1c
+.RI "int \fBpars_ps1\fP (char **)"
+.br
+.ti -1c
+.RI "int \fBbashset\fP (char *str, \fBt_data\fP *data)"
+.br
+.ti -1c
+.RI "int \fBsegfault\fP (int)"
+.br
+.ti -1c
+.RI "int \fBis_exe\fP (char *path)"
+.br
+.ti -1c
+.RI "int \fBadd_redi\fP (char *, \fBt_cmd\fP *, int *)"
+.br
+.ti -1c
+.RI "int \fBerror_syntax_error\fP (int exit)"
+.br
+.ti -1c
+.RI "int \fBexe_cmd\fP (\fBt_data\fP *, \fBt_cmd\fP *, int)"
+.br
+.ti -1c
+.RI "int \fBexe_pipe\fP (\fBt_data\fP *, \fBt_cmds\fP *)"
+.br
+.ti -1c
+.RI "int \fBsh\fP (\fBt_data\fP *)"
+.br
+.ti -1c
+.RI "int \fBredirection_right\fP (\fBt_list\fP *)"
+.br
+.ti -1c
+.RI "int \fBredirection_left\fP (\fBt_list\fP *)"
+.br
+.ti -1c
+.RI "int \fBis_redi\fP (char)"
+.br
+.ti -1c
+.RI "int \fBbuiltin\fP (\fBt_data\fP *data, char **cmd)"
+.br
+.ti -1c
+.RI "int \fBindex_end_word\fP (char *, int *)"
+.br
+.ti -1c
+.RI "int \fBis_stars\fP (char *)"
+.br
+.ti -1c
+.RI "int \fBclean_screen\fP (char *)"
+.br
+.ti -1c
+.RI "int \fBerror_cmd_not_found\fP (char *cmd, int exit)"
+.br
+.ti -1c
+.RI "int \fBif_stars\fP (char **, char **, int, int)"
+.br
+.ti -1c
+.RI "int \fBpars_alias\fP (\fBt_data\fP *data)"
+.br
+.ti -1c
+.RI "int \fBget_line_file\fP ()"
+.br
+.ti -1c
+.RI "int \fBis_slash\fP (char *)"
+.br
+.ti -1c
+.RI "int \fBis_builtin\fP (char *)"
+.br
+.ti -1c
+.RI "char * \fBepur_slash\fP (char *)"
+.br
+.ti -1c
+.RI "char * \fBauto_complete\fP (char *)"
+.br
+.ti -1c
+.RI "char * \fBmalloc_str\fP (int)"
+.br
+.ti -1c
+.RI "char * \fBloop\fP (\fBt_history\fP *)"
+.br
+.ti -1c
+.RI "char * \fBget_cmd\fP (\fBt_history\fP **)"
+.br
+.ti -1c
+.RI "char * \fBgnl\fP (const int fd)"
+.br
+.ti -1c
+.RI "char * \fBconcat_alias\fP (char *, \fBt_alias\fP *)"
+.br
+.ti -1c
+.RI "char * \fBmake_path\fP (char *path, char *str)"
+.br
+.ti -1c
+.RI "char * \fBget_bin_path\fP (\fBt_data\fP *data, char *bin)"
+.br
+.ti -1c
+.RI "char * \fBlast_word\fP (char *, int)"
+.br
+.ti -1c
+.RI "char * \fBmy_strconcat\fP (char *s1, char *s2)"
+.br
+.ti -1c
+.RI "char * \fBalias_finder\fP (\fBt_alias\fP *s, char *alias)"
+.br
+.ti -1c
+.RI "char * \fBalias_find\fP (\fBt_alias\fP *alias, char *to_find)"
+.br
+.ti -1c
+.RI "char * \fBend_find\fP (char *new, char *prev, char *to_find)"
+.br
+.ti -1c
+.RI "char * \fBup\fP (char *, \fBt_history\fP **, int *, char **)"
+.br
+.ti -1c
+.RI "char * \fBdown\fP (char *, \fBt_history\fP **, int *, char **)"
+.br
+.ti -1c
+.RI "char * \fBcalc_new_str\fP (char *, int, int)"
+.br
+.ti -1c
+.RI "char * \fBread_cmd\fP ()"
+.br
+.ti -1c
+.RI "char * \fBepure_str\fP (char *)"
+.br
+.ti -1c
+.RI "char ** \fBstr_to_word_tab\fP (char *, char *)"
+.br
+.ti -1c
+.RI "char ** \fBparsing_globing\fP (char **)"
+.br
+.ti -1c
+.RI "char ** \fBreturn_globing\fP (char *)"
+.br
+.ti -1c
+.RI "char ** \fBmake_env\fP (char **)"
+.br
+.ti -1c
+.RI "char ** \fBdefault_path\fP ()"
+.br
+.ti -1c
+.RI "char ** \fBpars_tilde\fP (\fBt_data\fP *, char **)"
+.br
+.ti -1c
+.RI "void \fBclean_line_prev\fP (\fBt_history\fP *, char *, char *)"
+.br
+.ti -1c
+.RI "void \fBclean_line_next\fP (\fBt_history\fP *, char *, char *)"
+.br
+.ti -1c
+.RI "void \fBclean\fP (char *, int)"
+.br
+.ti -1c
+.RI "void \fBclean_line\fP (void)"
+.br
+.ti -1c
+.RI "void \fBprint_cursor_left\fP (int)"
+.br
+.ti -1c
+.RI "void \fBprint_cursor_right\fP (int)"
+.br
+.ti -1c
+.RI "void \fBmy_write_tab\fP (char **)"
+.br
+.ti -1c
+.RI "void \fBgere_tab\fP (\fBt_stock\fP *)"
+.br
+.ti -1c
+.RI "void * \fBgere_history\fP (char *, char *, \fBt_history\fP *, \fBt_stock\fP *)"
+.br
+.ti -1c
+.RI "void * \fBinit_stock\fP (void)"
+.br
+.ti -1c
+.RI "void * \fBgere_char\fP (\fBt_stock\fP *)"
+.br
+.ti -1c
+.RI "void * \fBgere_arrow\fP (\fBt_stock\fP *)"
+.br
+.ti -1c
+.RI "void * \fBadd_char\fP (\fBt_stock\fP *)"
+.br
+.ti -1c
+.RI "void * \fBdelete_char\fP (\fBt_stock\fP *)"
+.br
+.ti -1c
+.RI "void * \fBdelete_backward\fP (\fBt_stock\fP *)"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBt_data\fP * \fBg_data\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define RCNAME   '\&.42rc'"
+
+.PP
+Definition at line 15 of file shell\&.h\&.
+.SS "#define READ_SIZE   512"
+
+.PP
+Definition at line 14 of file shell\&.h\&.
+.SH "Typedef Documentation"
+.PP 
+.SS "typedef struct \fBs_alias\fP			 \fBt_alias\fP"
+
+.SS "typedef struct \fBs_cmd\fP			 \fBt_cmd\fP"
+
+.SS "typedef struct \fBs_cmds\fP			 \fBt_cmds\fP"
+
+.SS "typedef struct \fBs_data\fP			 \fBt_data\fP"
+
+.SS "typedef struct \fBs_history\fP                        \fBt_history\fP"
+
+.SS "typedef struct \fBs_list\fP			 \fBt_list\fP"
+
+.SS "typedef struct \fBs_list_line\fP			 \fBt_list_line\fP"
+
+.SS "typedef struct \fBs_stock\fP			 \fBt_stock\fP"
+
+.SH "Function Documentation"
+.PP 
+.SS "void* add_char (\fBt_stock\fP *)"
+
+.PP
+Definition at line 14 of file modif_cmd\&.c\&.
+.SS "int add_redi (char *, \fBt_cmd\fP *, int *)"
+
+.PP
+Definition at line 46 of file redirection\&.c\&.
+.SS "char* alias_find (\fBt_alias\fP *alias, char *to_find)"
+
+.PP
+Definition at line 74 of file alias\&.c\&.
+.SS "char* alias_finder (\fBt_alias\fP *s, char *alias)"
+
+.PP
+Definition at line 40 of file alias\&.c\&.
+.SS "char* auto_complete (char *)"
+
+.PP
+Definition at line 57 of file auto_complete\&.c\&.
+.SS "int bashset (char *str, \fBt_data\fP *data)"
+
+.PP
+Definition at line 33 of file alias_etc\&.c\&.
+.SS "int builtin (\fBt_data\fP *data, char **cmd)"
+
+.PP
+Definition at line 35 of file top_builtin\&.c\&.
+.SS "char* calc_new_str (char *, int, int)"
+
+.PP
+Definition at line 25 of file parsing_pipe\&.c\&.
+.SS "\fBt_data\fP* check_recur (\fBt_data\fP *data, char *old, char *new)"
+
+.PP
+Definition at line 102 of file alias\&.c\&.
+.SS "void clean (char *, int)"
+
+.PP
+Definition at line 16 of file loop_read\&.c\&.
+.SS "void clean_line (void)"
+
+.PP
+Definition at line 16 of file clear_line\&.c\&.
+.SS "void clean_line_next (\fBt_history\fP *, char *, char *)"
+
+.SS "void clean_line_prev (\fBt_history\fP *, char *, char *)"
+
+.SS "int clean_screen (char *)"
+
+.PP
+Definition at line 18 of file clean_screen\&.c\&.
+.SS "char* concat_alias (char *, \fBt_alias\fP *)"
+
+.PP
+Definition at line 71 of file alias_etc\&.c\&.
+.SS "char** default_path ()"
+
+.PP
+Definition at line 13 of file default_path\&.c\&.
+.SS "void* delete_backward (\fBt_stock\fP *)"
+
+.PP
+Definition at line 69 of file modif_cmd\&.c\&.
+.SS "void* delete_char (\fBt_stock\fP *)"
+
+.PP
+Definition at line 40 of file modif_cmd\&.c\&.
+.SS "char* down (char *, \fBt_history\fP **, int *, char **)"
+
+.PP
+Definition at line 28 of file move\&.c\&.
+.SS "char* end_find (char *new, char *prev, char *to_find)"
+
+.PP
+Definition at line 62 of file alias_etc\&.c\&.
+.SS "char* epur_slash (char *)"
+
+.PP
+Definition at line 29 of file functions_complete\&.c\&.
+.SS "char* epure_str (char *)"
+
+.SS "int error_cmd_not_found (char *cmd, intexit)"
+
+.SS "int error_syntax_error (intexit)"
+
+.SS "int exe_cmd (\fBt_data\fP *, \fBt_cmd\fP *, int)"
+
+.PP
+Definition at line 103 of file exe_cmd\&.c\&.
+.SS "int exe_pipe (\fBt_data\fP *, \fBt_cmds\fP *)"
+
+.PP
+Definition at line 90 of file pipe\&.c\&.
+.SS "void* gere_arrow (\fBt_stock\fP *)"
+
+.PP
+Definition at line 57 of file gere_key\&.c\&.
+.SS "void* gere_char (\fBt_stock\fP *)"
+
+.PP
+Definition at line 38 of file gere_key\&.c\&.
+.SS "void* gere_history (char *, char *, \fBt_history\fP *, \fBt_stock\fP *)"
+
+.PP
+Definition at line 16 of file gere_key\&.c\&.
+.SS "void gere_tab (\fBt_stock\fP *)"
+
+.PP
+Definition at line 88 of file gere_key\&.c\&.
+.SS "\fBt_data\fP* get_all_alias (\fBt_data\fP *data, char **bash, intx)"
+
+.PP
+Definition at line 100 of file pars_alias\&.c\&.
+.SS "char* get_bin_path (\fBt_data\fP *data, char *bin)"
+
+.SS "char* get_cmd (\fBt_history\fP **)"
+
+.PP
+Definition at line 45 of file prompt_dyn\&.c\&.
+.SS "int get_line_file ()"
+
+.PP
+Definition at line 56 of file alias\&.c\&.
+.SS "char* gnl (const intfd)"
+
+.PP
+Definition at line 73 of file gnl\&.c\&.
+.SS "int if_stars (char **, char **, int, int)"
+
+.PP
+Definition at line 29 of file stars\&.c\&.
+.SS "int index_end_word (char *, int *)"
+
+.PP
+Definition at line 23 of file parsing_cmd\&.c\&.
+.SS "void* init_stock (void)"
+
+.PP
+Definition at line 14 of file init\&.c\&.
+.SS "\fBt_history\fP* insert_list_double (\fBt_history\fP *, char *)"
+
+.PP
+Definition at line 14 of file insert_list_double\&.c\&.
+.SS "int is_builtin (char *)"
+
+.PP
+Definition at line 13 of file is_builtin\&.c\&.
+.SS "int is_exe (char *path)"
+
+.SS "int is_redi (char)"
+
+.PP
+Definition at line 16 of file parsing_cmd\&.c\&.
+.SS "int is_slash (char *)"
+
+.PP
+Definition at line 15 of file functions_complete\&.c\&.
+.SS "int is_stars (char *)"
+
+.PP
+Definition at line 14 of file stars\&.c\&.
+.SS "char* last_word (char *, int)"
+
+.PP
+Definition at line 15 of file last_word\&.c\&.
+.SS "char* loop (\fBt_history\fP *)"
+
+.PP
+Definition at line 67 of file loop_read\&.c\&.
+.SS "char** make_env (char **)"
+
+.SS "char* make_path (char *path, char *str)"
+
+.PP
+Definition at line 47 of file exe_cmd\&.c\&.
+.SS "char* malloc_str (int)"
+
+.PP
+Definition at line 13 of file malloc_str\&.c\&.
+.SS "char* my_strconcat (char *s1, char *s2)"
+
+.PP
+Definition at line 14 of file str_cat\&.c\&.
+.SS "void my_write_tab (char **)"
+
+.PP
+Definition at line 48 of file functions_complete\&.c\&.
+.SS "\fBt_alias\fP* new_alias (\fBt_alias\fP *old, char *first, char *sec)"
+
+.PP
+Definition at line 21 of file alias\&.c\&.
+.SS "int pars_alias (\fBt_data\fP *data)"
+
+.PP
+Definition at line 119 of file pars_alias\&.c\&.
+.SS "int pars_ps1 (char **)"
+
+.PP
+Definition at line 92 of file utils\&.c\&.
+.SS "char** pars_tilde (\fBt_data\fP *, char **)"
+
+.PP
+Definition at line 16 of file parsing_tilde\&.c\&.
+.SS "\fBt_cmd\fP* parsing_cmd (char *)"
+
+.PP
+Definition at line 87 of file parsing_cmd\&.c\&.
+.SS "\fBt_cmds\fP* parsing_general (char *)"
+
+.PP
+Definition at line 68 of file parsing_general\&.c\&.
+.SS "char** parsing_globing (char **)"
+
+.PP
+Definition at line 57 of file glob\&.c\&.
+.SS "\fBt_cmd\fP* parsing_pipe (char *)"
+
+.PP
+Definition at line 53 of file parsing_pipe\&.c\&.
+.SS "void print_cursor_left (int)"
+
+.PP
+Definition at line 14 of file print_cursor\&.c\&.
+.SS "void print_cursor_right (int)"
+
+.PP
+Definition at line 31 of file print_cursor\&.c\&.
+.SS "char* read_cmd ()"
+
+.SS "int redirection_left (\fBt_list\fP *)"
+
+.PP
+Definition at line 83 of file redirection_left\&.c\&.
+.SS "int redirection_right (\fBt_list\fP *)"
+
+.PP
+Definition at line 24 of file redirection_right\&.c\&.
+.SS "char** return_globing (char *)"
+
+.PP
+Definition at line 26 of file glob\&.c\&.
+.SS "int segfault (int)"
+
+.SS "int sh (\fBt_data\fP *)"
+
+.SS "char** str_to_word_tab (char *, char *)"
+
+.PP
+Definition at line 46 of file str_to_word_tab\&.c\&.
+.SS "char* up (char *, \fBt_history\fP **, int *, char **)"
+
+.PP
+Definition at line 14 of file move\&.c\&.
+.SH "Variable Documentation"
+.PP 
+.SS "\fBt_data\fP* g_data"
+
+.PP
+Definition at line 78 of file shell\&.h\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

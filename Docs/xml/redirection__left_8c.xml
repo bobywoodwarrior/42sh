@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="redirection__left_8c" kind="file">
+    <compoundname>redirection_left.c</compoundname>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">sys/stat.h</includes>
+    <includes local="no">fcntl.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <incdepgraph>
+      <node id="521">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="525">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="519">
+        <label>exe/redirection_left.c</label>
+        <link refid="redirection_left.c"/>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="526" relation="include">
+        </childnode>
+      </node>
+      <node id="523">
+        <label>stdlib.h</label>
+      </node>
+      <node id="522">
+        <label>fcntl.h</label>
+      </node>
+      <node id="526">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+      <node id="520">
+        <label>sys/types.h</label>
+      </node>
+      <node id="524">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="redirection__left_8c_1a058a86ac024b5d3bbba7a0b6e9914b7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int open_file_rd</definition>
+        <argsstring>(char *name)</argsstring>
+        <name>open_file_rd</name>
+        <param>
+          <type>char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_left.c" line="19" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_left.c" bodystart="19" bodyend="22"/>
+        <referencedby refid="shell_8h_1a453672a5f3546a46dbd0b808a68fd71b" compoundref="redirection__left_8c" startline="83" endline="99">redirection_left</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="redirection__left_8c_1ac59f9fd6667dc7848f769a37da76319b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1ab4590bb20f2c51674483a55293e861eb" kindref="member">t_list_line</ref> *</type>
+        <definition>t_list_line* add_end_list</definition>
+        <argsstring>(t_list_line *list, char *str)</argsstring>
+        <name>add_end_list</name>
+        <param>
+          <type><ref refid="shell_8h_1ab4590bb20f2c51674483a55293e861eb" kindref="member">t_list_line</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_left.c" line="24" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_left.c" bodystart="24" bodyend="40"/>
+        <references refid="structs__list__line_1a8adb30f4f6669f927fd9232f686c637b" compoundref="shell_8h" startline="26">s_list_line::line</references>
+        <references refid="structs__list__line_1a3263d832fe4969fc3f9dbd0e668e0935" compoundref="shell_8h" startline="27">s_list_line::next</references>
+        <referencedby refid="redirection__left_8c_1a7d4285d2d4f2790e8ccad0f0f4a103a3" compoundref="redirection__left_8c" startline="66" endline="81">double_redi_left</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="redirection__left_8c_1a870bc72198c51984b1f8dd97b650a7c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int write_list_redi</definition>
+        <argsstring>(t_list_line *list)</argsstring>
+        <name>write_list_redi</name>
+        <param>
+          <type><ref refid="shell_8h_1ab4590bb20f2c51674483a55293e861eb" kindref="member">t_list_line</ref> *</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_left.c" line="42" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_left.c" bodystart="42" bodyend="64"/>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="structs__list__line_1a8adb30f4f6669f927fd9232f686c637b" compoundref="shell_8h" startline="26">s_list_line::line</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <references refid="structs__list__line_1a3263d832fe4969fc3f9dbd0e668e0935" compoundref="shell_8h" startline="27">s_list_line::next</references>
+        <referencedby refid="redirection__left_8c_1a7d4285d2d4f2790e8ccad0f0f4a103a3" compoundref="redirection__left_8c" startline="66" endline="81">double_redi_left</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="redirection__left_8c_1a7d4285d2d4f2790e8ccad0f0f4a103a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int double_redi_left</definition>
+        <argsstring>(char *stop)</argsstring>
+        <name>double_redi_left</name>
+        <param>
+          <type>char *</type>
+          <declname>stop</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_left.c" line="66" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_left.c" bodystart="66" bodyend="81"/>
+        <references refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" compoundref="my__putstr_8c" startline="14" endline="19">my_putstr</references>
+        <references refid="shell_8h_1a8a65c90ea8fc24f744d1bfc22ab4ccd2">read_cmd</references>
+        <references refid="my__strcmp_8c_1a7656d2f543a26ba1552b06f75667ba3c" compoundref="my__strcmp_8c" startline="13" endline="23">my_strcmp</references>
+        <references refid="redirection__left_8c_1ac59f9fd6667dc7848f769a37da76319b" compoundref="redirection__left_8c" startline="24" endline="40">add_end_list</references>
+        <references refid="redirection__left_8c_1a870bc72198c51984b1f8dd97b650a7c3" compoundref="redirection__left_8c" startline="42" endline="64">write_list_redi</references>
+        <referencedby refid="shell_8h_1a453672a5f3546a46dbd0b808a68fd71b" compoundref="redirection__left_8c" startline="83" endline="99">redirection_left</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="redirection__left_8c_1a4e39d0c23677b4b63663795cfab2b698" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int redirection_left</definition>
+        <argsstring>(t_list *list_r)</argsstring>
+        <name>redirection_left</name>
+        <param>
+          <type><ref refid="shell_8h_1aa073beba29d3550fb1d0d3170f122e91" kindref="member">t_list</ref> *</type>
+          <declname>list_r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_left.c" line="83" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_left.c" bodystart="83" bodyend="99"/>
+        <references refid="structs__list_1a47fd463223ac923d306c984fb143dfa4" compoundref="shell_8h" startline="33">s_list::double_redi</references>
+        <references refid="redirection__left_8c_1a7d4285d2d4f2790e8ccad0f0f4a103a3" compoundref="redirection__left_8c" startline="66" endline="81">double_redi_left</references>
+        <references refid="structs__list_1adf16cd437526a5c5e0e0af87745acbb8" compoundref="shell_8h" startline="32">s_list::file</references>
+        <references refid="redirection__left_8c_1a058a86ac024b5d3bbba7a0b6e9914b7b" compoundref="redirection__left_8c" startline="19" endline="22">open_file_rd</references>
+        <references refid="structs__list_1a4bcaaa089cc834cf70b73bafa9af1e05" compoundref="shell_8h" startline="34">s_list::next</references>
+        <referencedby refid="builtin_8h_1aecb1f227db5bcfc86869d066066f450d" compoundref="top__builtin_8c" startline="16" endline="33">my_redir_builtin</referencedby>
+        <referencedby refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" compoundref="exe__cmd_8c" startline="19" endline="45">exe_function</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>redirection_right.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/bauer_a/rendu/PSU_2014_42sh/exe</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;bauer_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Tue<sp/>Apr<sp/>21<sp/>10:54:25<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Thu<sp/>May<sp/>21<sp/>16:42:12<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="redirection__left_8c_1a058a86ac024b5d3bbba7a0b6e9914b7b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="redirection__left_8c_1a058a86ac024b5d3bbba7a0b6e9914b7b" kindref="member">open_file_rd</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(open(name,<sp/>O_RDONLY));</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="redirection__left_8c_1ac59f9fd6667dc7848f769a37da76319b" refkind="member"><highlight class="normal"><ref refid="structs__list__line" kindref="compound">t_list_line</ref><sp/>*<ref refid="redirection__left_8c_1ac59f9fd6667dc7848f769a37da76319b" kindref="member">add_end_list</ref>(<ref refid="structs__list__line" kindref="compound">t_list_line</ref><sp/>*list,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><ref refid="structs__list__line" kindref="compound">t_list_line</ref><sp/><sp/><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><ref refid="structs__list__line" kindref="compound">t_list_line</ref><sp/><sp/><sp/>*tmp;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structs__list" kindref="compound">t_list</ref>)))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(list);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;<ref refid="structs__list__line_1a8adb30f4f6669f927fd9232f686c637b" kindref="member">line</ref><sp/>=<sp/>str;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">-&gt;next<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(list<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>tmp<sp/>=<sp/>list;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(tmp-&gt;<ref refid="structs__list__line_1a3263d832fe4969fc3f9dbd0e668e0935" kindref="member">next</ref><sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>tmp-&gt;<ref refid="structs__list__line_1a3263d832fe4969fc3f9dbd0e668e0935" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>tmp-&gt;<ref refid="structs__list__line_1a3263d832fe4969fc3f9dbd0e668e0935" kindref="member">next</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(list);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="redirection__left_8c_1a870bc72198c51984b1f8dd97b650a7c3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="redirection__left_8c_1a870bc72198c51984b1f8dd97b650a7c3" kindref="member">write_list_redi</ref>(<ref refid="structs__list__line" kindref="compound">t_list_line</ref><sp/>*list)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>pid_t<sp/><sp/><sp/><sp/><sp/>pid;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pipefd[2];</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pipe(pipefd)<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pid<sp/>=<sp/>fork())<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pid<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>close(pipefd[0]);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(list<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(list-&gt;<ref refid="structs__list__line_1a8adb30f4f6669f927fd9232f686c637b" kindref="member">line</ref>,<sp/>pipefd[1]);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" kindref="member">my_putchar</ref>(</highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">,<sp/>pipefd[1]);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>list<sp/>=<sp/>list-&gt;<ref refid="structs__list__line_1a3263d832fe4969fc3f9dbd0e668e0935" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>close(pipefd[1]);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(pipefd[0]);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="redirection__left_8c_1a7d4285d2d4f2790e8ccad0f0f4a103a3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="redirection__left_8c_1a7d4285d2d4f2790e8ccad0f0f4a103a3" kindref="member">double_redi_left</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*stop)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><ref refid="structs__list__line" kindref="compound">t_list_line</ref><sp/><sp/><sp/>*list;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*str;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>list<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(</highlight><highlight class="stringliteral">&quot;&gt;<sp/>&quot;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((str<sp/>=<sp/><ref refid="shell_8h_1a8a65c90ea8fc24f744d1bfc22ab4ccd2" kindref="member">read_cmd</ref>())<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="my__strcmp_8c_1a7656d2f543a26ba1552b06f75667ba3c" kindref="member">my_strcmp</ref>(str,<sp/>stop))</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>break<sp/>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>list<sp/>=<sp/><ref refid="redirection__left_8c_1ac59f9fd6667dc7848f769a37da76319b" kindref="member">add_end_list</ref>(list,<sp/>str);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(</highlight><highlight class="stringliteral">&quot;&gt;<sp/>&quot;</highlight><highlight class="normal">,<sp/>1);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="redirection__left_8c_1a870bc72198c51984b1f8dd97b650a7c3" kindref="member">write_list_redi</ref>(list));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="shell_8h_1a453672a5f3546a46dbd0b808a68fd71b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="redirection__left_8c_1a4e39d0c23677b4b63663795cfab2b698" kindref="member">redirection_left</ref>(<ref refid="structs__list" kindref="compound">t_list</ref><sp/>*list_r)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><ref refid="structs__list" kindref="compound">t_list</ref><sp/><sp/><sp/><sp/>*tmp;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fd;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>fd<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>tmp<sp/>=<sp/>list_r;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(tmp<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmp-&gt;<ref refid="structs__list_1a47fd463223ac923d306c984fb143dfa4" kindref="member">double_redi</ref>)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="redirection__left_8c_1a7d4285d2d4f2790e8ccad0f0f4a103a3" kindref="member">double_redi_left</ref>(tmp-&gt;<ref refid="structs__list_1adf16cd437526a5c5e0e0af87745acbb8" kindref="member">file</ref>));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((fd<sp/>=<sp/><ref refid="redirection__left_8c_1a058a86ac024b5d3bbba7a0b6e9914b7b" kindref="member">open_file_rd</ref>(tmp-&gt;<ref refid="structs__list_1adf16cd437526a5c5e0e0af87745acbb8" kindref="member">file</ref>))<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>tmp<sp/>=<sp/>tmp-&gt;<ref refid="structs__list_1a4bcaaa089cc834cf70b73bafa9af1e05" kindref="member">next</ref>;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(fd);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/exe/redirection_left.c"/>
+  </compounddef>
+</doxygen>

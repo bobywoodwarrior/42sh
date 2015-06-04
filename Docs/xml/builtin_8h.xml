@@ -1,0 +1,664 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="builtin_8h" kind="file">
+    <compoundname>builtin.h</compoundname>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <includedby refid="alias__etc_8c" local="yes">alias/alias_etc.c</includedby>
+    <includedby refid="pars__alias_8c" local="yes">alias/pars_alias.c</includedby>
+    <includedby refid="builtin_8c" local="yes">builtin/builtin.c</includedby>
+    <includedby refid="cd_8c" local="yes">builtin/cd.c</includedby>
+    <includedby refid="forbuiltin_8c" local="yes">builtin/forbuiltin.c</includedby>
+    <includedby refid="getvar_8c" local="yes">builtin/getvar.c</includedby>
+    <includedby refid="top__builtin_8c" local="yes">builtin/top_builtin.c</includedby>
+    <includedby refid="exe__cmd_8c" local="yes">exe/exe_cmd.c</includedby>
+    <includedby refid="parsing__tilde_8c" local="yes">parsing/parsing_tilde.c</includedby>
+    <includedby refid="tab__fonc_8c" local="yes">ps1/tab_fonc.c</includedby>
+    <includedby refid="ps1_2utils_8c" local="yes">ps1/utils.c</includedby>
+    <incdepgraph>
+      <node id="546">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="545">
+        <label>include/builtin.h</label>
+        <link refid="builtin.h"/>
+        <childnode refid="546" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="555">
+        <label>exe/exe_cmd.c</label>
+        <link refid="exe__cmd_8c"/>
+      </node>
+      <node id="556">
+        <label>parsing/parsing_tilde.c</label>
+        <link refid="parsing__tilde_8c"/>
+      </node>
+      <node id="551">
+        <label>builtin/cd.c</label>
+        <link refid="cd_8c"/>
+      </node>
+      <node id="547">
+        <label>include/builtin.h</label>
+        <link refid="builtin.h"/>
+        <childnode refid="548" relation="include">
+        </childnode>
+        <childnode refid="549" relation="include">
+        </childnode>
+        <childnode refid="550" relation="include">
+        </childnode>
+        <childnode refid="551" relation="include">
+        </childnode>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="557" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+      </node>
+      <node id="558">
+        <label>ps1/utils.c</label>
+        <link refid="ps1_2utils_8c"/>
+      </node>
+      <node id="552">
+        <label>builtin/forbuiltin.c</label>
+        <link refid="forbuiltin_8c"/>
+      </node>
+      <node id="557">
+        <label>ps1/tab_fonc.c</label>
+        <link refid="tab__fonc_8c"/>
+      </node>
+      <node id="548">
+        <label>alias/alias_etc.c</label>
+        <link refid="alias__etc_8c"/>
+      </node>
+      <node id="550">
+        <label>builtin/builtin.c</label>
+        <link refid="builtin_8c"/>
+      </node>
+      <node id="554">
+        <label>builtin/top_builtin.c</label>
+        <link refid="top__builtin_8c"/>
+      </node>
+      <node id="553">
+        <label>builtin/getvar.c</label>
+        <link refid="getvar_8c"/>
+      </node>
+      <node id="549">
+        <label>alias/pars_alias.c</label>
+        <link refid="pars__alias_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structs__bref" prot="public">s_bref</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="builtin_8h_1afe4b0e625372cd38ec60150d6f5594b8" prot="public" static="no">
+        <name>ESCAPE</name>
+        <initializer>27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="16" column="10" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" prot="public" static="no">
+        <name>FAILURE</name>
+        <initializer>-2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="17" column="10" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" bodystart="17" bodyend="-1"/>
+        <referencedby refid="shell_8h_1acd9ad0dfae53c8683ec2597a188e6c1b" compoundref="alias__etc_8c" startline="33" endline="60">bashset</referencedby>
+        <referencedby refid="builtin_8h_1ab15f4c5af8f204fcf26ff0bf30391b77" compoundref="builtin_8c" startline="16" endline="42">my_unsetenv</referencedby>
+        <referencedby refid="builtin_8h_1a0f75b40d45c389d2f019b5ad672f3ed1" compoundref="builtin_8c" startline="44" endline="69">my_setenv</referencedby>
+        <referencedby refid="builtin_8h_1a475eb535199d99dff9033edf1b87a84d" compoundref="builtin_8c" startline="71" endline="90">my_env</referencedby>
+        <referencedby refid="builtin_8h_1a772e7ea72ee3ac31a9da9d3c8423816e" compoundref="builtin_8c" startline="101" endline="127">my_echo</referencedby>
+        <referencedby refid="builtin_8h_1a27ff54b856199cbd22e0983f4b369f6b" compoundref="cd_8c" startline="18" endline="22">my_cd_error</referencedby>
+        <referencedby refid="cd_8c_1adff71582669f5726a87d35e9f9a15057" compoundref="cd_8c" startline="53" endline="71">set_pwd_old_pwd</referencedby>
+        <referencedby refid="builtin_8h_1a2157775684b24545b151e0c2e5f38954" compoundref="cd_8c" startline="73" endline="98">my_cd</referencedby>
+        <referencedby refid="builtin_8h_1a6055c5e4f8247c5a1151cd65e5061574" compoundref="getvar_8c" startline="28" endline="48">my_replace_key</referencedby>
+        <referencedby refid="builtin_8h_1aecb1f227db5bcfc86869d066066f450d" compoundref="top__builtin_8c" startline="16" endline="33">my_redir_builtin</referencedby>
+        <referencedby refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</referencedby>
+        <referencedby refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="builtin_8h_1a82364b047b41d18199c9372ace974305" prot="public" static="no">
+        <name>NO_MATCH</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="18" column="10" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" prot="public" static="no">
+        <name>SUCCESS</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="19" column="10" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="builtin_8h_1ab15f4c5af8f204fcf26ff0bf30391b77" compoundref="builtin_8c" startline="16" endline="42">my_unsetenv</referencedby>
+        <referencedby refid="builtin_8h_1a0f75b40d45c389d2f019b5ad672f3ed1" compoundref="builtin_8c" startline="44" endline="69">my_setenv</referencedby>
+        <referencedby refid="builtin_8h_1a475eb535199d99dff9033edf1b87a84d" compoundref="builtin_8c" startline="71" endline="90">my_env</referencedby>
+        <referencedby refid="builtin_8h_1a772e7ea72ee3ac31a9da9d3c8423816e" compoundref="builtin_8c" startline="101" endline="127">my_echo</referencedby>
+        <referencedby refid="cd_8c_1adff71582669f5726a87d35e9f9a15057" compoundref="cd_8c" startline="53" endline="71">set_pwd_old_pwd</referencedby>
+        <referencedby refid="builtin_8h_1a2157775684b24545b151e0c2e5f38954" compoundref="cd_8c" startline="73" endline="98">my_cd</referencedby>
+        <referencedby refid="builtin_8h_1a6055c5e4f8247c5a1151cd65e5061574" compoundref="getvar_8c" startline="28" endline="48">my_replace_key</referencedby>
+        <referencedby refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="builtin_8h_1ad111e603bbebe5d87f6bc39264ce4733" prot="public" static="no">
+        <name>EXIT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="20" column="10" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="builtin_8h_1adff2ceef5d8ba6f5b94b9c3902b2d5f9" compoundref="builtin_8c" startline="92" endline="99">my_exit</referencedby>
+        <referencedby refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="builtin_8h_1a73c4175ebb4c747bdf44fbf2820385c1" prot="public" static="no">
+        <type>struct <ref refid="structs__bref" kindref="compound">s_bref</ref></type>
+        <definition>typedef struct s_bref		 t_bref</definition>
+        <argsstring></argsstring>
+        <name>t_bref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="26" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="builtin_8h_1aecb1f227db5bcfc86869d066066f450d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_redir_builtin</definition>
+        <argsstring>(t_data *data, t_cmd *cmd)</argsstring>
+        <name>my_redir_builtin</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1a0202eaeb05115facf4c5ee1f633b8a55" kindref="member">t_cmd</ref> *</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="28" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/top_builtin.c" bodystart="16" bodyend="33"/>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="redirection__right_8c_1a8cd483493477b8b727d1773f6ea11ee8" compoundref="redirection__right_8c" startline="24" endline="38">redirection_right</references>
+        <references refid="structs__cmd_1a8629d9a24e605fcc6a82b55b1a870a07" compoundref="shell_8h" startline="40">s_cmd::redi_r</references>
+        <references refid="redirection__left_8c_1a4e39d0c23677b4b63663795cfab2b698" compoundref="redirection__left_8c" startline="83" endline="99">redirection_left</references>
+        <references refid="structs__cmd_1a3eb86f4753299ed84389481f46694140" compoundref="shell_8h" startline="41">s_cmd::redi_l</references>
+        <references refid="top__builtin_8c_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</references>
+        <references refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" compoundref="shell_8h" startline="39">s_cmd::tab</references>
+        <referencedby refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1ac46a37eeaf4141428d46b5605bbd6c51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** cattab_ext</definition>
+        <argsstring>(char *new)</argsstring>
+        <name>cattab_ext</name>
+        <param>
+          <type>char *</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="29" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/utils.c" bodystart="60" bodyend="69"/>
+        <referencedby refid="builtin_8h_1a795c38158cb00f9fcad0dd7db17e7ded" compoundref="forbuiltin_8c" startline="124" endline="151">my_cattab</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1a27ff54b856199cbd22e0983f4b369f6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_cd_error</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>my_cd_error</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="30" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/cd.c" bodystart="18" bodyend="22"/>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <referencedby refid="builtin_8h_1a0f75b40d45c389d2f019b5ad672f3ed1" compoundref="builtin_8c" startline="44" endline="69">my_setenv</referencedby>
+        <referencedby refid="builtin_8h_1a2157775684b24545b151e0c2e5f38954" compoundref="cd_8c" startline="73" endline="98">my_cd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1a6055c5e4f8247c5a1151cd65e5061574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_replace_key</definition>
+        <argsstring>(char **expr, t_data *data)</argsstring>
+        <name>my_replace_key</name>
+        <param>
+          <type>char **</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="31" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/getvar.c" bodystart="28" bodyend="48"/>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+        <references refid="getvar_8c_1a31f8c796cea615093b779b9e32db6d02" compoundref="getvar_8c" startline="15" endline="26">delete_first_word</references>
+        <references refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" compoundref="builtin_8h" startline="19">SUCCESS</references>
+        <referencedby refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1a2883a48551d7c810ebd592fb241efeed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* my_cstrconcat</definition>
+        <argsstring>(char *s1, char *s2)</argsstring>
+        <name>my_cstrconcat</name>
+        <param>
+          <type>char *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="32" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/getvar.c" bodystart="50" bodyend="70"/>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <referencedby refid="builtin_8h_1a0f75b40d45c389d2f019b5ad672f3ed1" compoundref="builtin_8c" startline="44" endline="69">my_setenv</referencedby>
+        <referencedby refid="cd_8c_1af74884482c27a5e006206669ebbd5b8e" compoundref="cd_8c" startline="24" endline="51">get_new_pwd</referencedby>
+        <referencedby refid="cd_8c_1adff71582669f5726a87d35e9f9a15057" compoundref="cd_8c" startline="53" endline="71">set_pwd_old_pwd</referencedby>
+        <referencedby refid="builtin_8h_1a2157775684b24545b151e0c2e5f38954" compoundref="cd_8c" startline="73" endline="98">my_cd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1a0059bf9838c7770b46270fedbc869799" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* get_env_value</definition>
+        <argsstring>(char **env, char *key, int *offset)</argsstring>
+        <name>get_env_value</name>
+        <param>
+          <type>char **</type>
+          <declname>env</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="33" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/utils.c" bodystart="42" bodyend="58"/>
+        <referencedby refid="builtin_8h_1ab15f4c5af8f204fcf26ff0bf30391b77" compoundref="builtin_8c" startline="16" endline="42">my_unsetenv</referencedby>
+        <referencedby refid="builtin_8h_1a0f75b40d45c389d2f019b5ad672f3ed1" compoundref="builtin_8c" startline="44" endline="69">my_setenv</referencedby>
+        <referencedby refid="cd_8c_1adff71582669f5726a87d35e9f9a15057" compoundref="cd_8c" startline="53" endline="71">set_pwd_old_pwd</referencedby>
+        <referencedby refid="builtin_8h_1a2157775684b24545b151e0c2e5f38954" compoundref="cd_8c" startline="73" endline="98">my_cd</referencedby>
+        <referencedby refid="builtin_8h_1a6055c5e4f8247c5a1151cd65e5061574" compoundref="getvar_8c" startline="28" endline="48">my_replace_key</referencedby>
+        <referencedby refid="shell_8h_1a03522e35827e231817075a4d6389c77c" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</referencedby>
+        <referencedby refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" compoundref="exe__cmd_8c" startline="74" endline="101">exe_path</referencedby>
+        <referencedby refid="shell_8h_1a733a7370f33430443ae3914f72d5fdba" compoundref="parsing__tilde_8c" startline="16" endline="39">pars_tilde</referencedby>
+        <referencedby refid="ps1_8h_1a0abbe5bf65b1101a9571444ca5ab37f4" compoundref="tab__fonc_8c" startline="16" endline="19">case_name</referencedby>
+        <referencedby refid="ps1_8h_1a1c2798ccf833589ed359f0f4ea30d98f" compoundref="tab__fonc_8c" startline="21" endline="24">case_host</referencedby>
+        <referencedby refid="ps1_8h_1a691d38547be90f9a41ee0fde06f94f75" compoundref="tab__fonc_8c" startline="26" endline="47">case_pwd</referencedby>
+        <referencedby refid="ps1_8h_1abd2aff6cb058bb6c34d2263255ed0832" compoundref="tab__fonc_8c" startline="49" endline="52">case_last_dir</referencedby>
+        <referencedby refid="ps1_8h_1acff18e5b1fb60631e8970d0aa6df8843" compoundref="tab__fonc_8c" startline="54" endline="57">case_term</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1a3da96f75f1c99d390ce5582d73f7bf18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_print</definition>
+        <argsstring>(char *str, char inter, char noret, char *nextword)</argsstring>
+        <name>my_print</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>inter</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>noret</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>nextword</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="34" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/forbuiltin.c" bodystart="72" bodyend="93"/>
+        <references refid="forbuiltin_8c_1abd901da92b9ba2506b04b5c3a640bba2" compoundref="forbuiltin_8c" startline="43" endline="70">my_interpret</references>
+        <references refid="my__putchar_8c_1a305f90840add16d2d82af412da2260af" compoundref="my__putchar_8c" startline="13" endline="16">my_putchar</references>
+        <referencedby refid="builtin_8h_1a772e7ea72ee3ac31a9da9d3c8423816e" compoundref="builtin_8c" startline="101" endline="127">my_echo</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1a9c81bd03dd1d5eae7cee8720ff4a4f25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** my_epurtab</definition>
+        <argsstring>(char **tab)</argsstring>
+        <name>my_epurtab</name>
+        <param>
+          <type>char **</type>
+          <declname>tab</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="35" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/forbuiltin.c" bodystart="95" bodyend="122"/>
+        <referencedby refid="builtin_8h_1ab15f4c5af8f204fcf26ff0bf30391b77" compoundref="builtin_8c" startline="16" endline="42">my_unsetenv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1a795c38158cb00f9fcad0dd7db17e7ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** my_cattab</definition>
+        <argsstring>(char **tab, char *new)</argsstring>
+        <name>my_cattab</name>
+        <param>
+          <type>char **</type>
+          <declname>tab</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>new</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="36" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/forbuiltin.c" bodystart="124" bodyend="151"/>
+        <references refid="builtin_2utils_8c_1ac46a37eeaf4141428d46b5605bbd6c51" compoundref="builtin_2utils_8c" startline="60" endline="69">cattab_ext</references>
+        <referencedby refid="builtin_8h_1a0f75b40d45c389d2f019b5ad672f3ed1" compoundref="builtin_8c" startline="44" endline="69">my_setenv</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1a0bd2485960de353416dedf1cf03a943e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_getnbr_base</definition>
+        <argsstring>(char *str, char *base, int *offset, int i)</argsstring>
+        <name>my_getnbr_base</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>base</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="37" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/utils.c" bodystart="14" bodyend="40"/>
+        <referencedby refid="forbuiltin_8c_1af3d3a3e1f2acbf9eccc05028b283bbb6" compoundref="forbuiltin_8c" startline="26" endline="41">other_echo_case</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1a2157775684b24545b151e0c2e5f38954" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_cd</definition>
+        <argsstring>(char **, t_data *)</argsstring>
+        <name>my_cd</name>
+        <param>
+          <type>char **</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="38" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/cd.c" bodystart="73" bodyend="98"/>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="cd_8c_1a27ff54b856199cbd22e0983f4b369f6b" compoundref="cd_8c" startline="18" endline="22">my_cd_error</references>
+        <references refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" compoundref="getvar_8c" startline="50" endline="70">my_cstrconcat</references>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="cd_8c_1adff71582669f5726a87d35e9f9a15057" compoundref="cd_8c" startline="53" endline="71">set_pwd_old_pwd</references>
+        <references refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" compoundref="builtin_8h" startline="19">SUCCESS</references>
+        <referencedby refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1adff2ceef5d8ba6f5b94b9c3902b2d5f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_exit</definition>
+        <argsstring>(char **, t_data *)</argsstring>
+        <name>my_exit</name>
+        <param>
+          <type>char **</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="39" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/builtin.c" bodystart="92" bodyend="99"/>
+        <references refid="structs__data_1ac031cf6c1b18f3f224e088dd3a13b680" compoundref="shell_8h" startline="74">s_data::return_exit</references>
+        <references refid="my__getnbr_8c_1a62694fc10e80f5d95a4bc3ab1754f6c3" compoundref="my__getnbr_8c" startline="48" endline="62">my_getnbr</references>
+        <references refid="builtin_8h_1ad111e603bbebe5d87f6bc39264ce4733" compoundref="builtin_8h" startline="20">EXIT</references>
+        <referencedby refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1a475eb535199d99dff9033edf1b87a84d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_env</definition>
+        <argsstring>(char **, t_data *)</argsstring>
+        <name>my_env</name>
+        <param>
+          <type>char **</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="40" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/builtin.c" bodystart="71" bodyend="90"/>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="my__strcmp_8c_1a7656d2f543a26ba1552b06f75667ba3c" compoundref="my__strcmp_8c" startline="13" endline="23">my_strcmp</references>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" compoundref="builtin_8h" startline="19">SUCCESS</references>
+        <referencedby refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1a0f75b40d45c389d2f019b5ad672f3ed1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_setenv</definition>
+        <argsstring>(char **, t_data *)</argsstring>
+        <name>my_setenv</name>
+        <param>
+          <type>char **</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="41" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/builtin.c" bodystart="44" bodyend="69"/>
+        <references refid="cd_8c_1a27ff54b856199cbd22e0983f4b369f6b" compoundref="cd_8c" startline="18" endline="22">my_cd_error</references>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" compoundref="getvar_8c" startline="50" endline="70">my_cstrconcat</references>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="forbuiltin_8c_1a795c38158cb00f9fcad0dd7db17e7ded" compoundref="forbuiltin_8c" startline="124" endline="151">my_cattab</references>
+        <references refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" compoundref="builtin_8h" startline="19">SUCCESS</references>
+        <referencedby refid="shell_8h_1acd9ad0dfae53c8683ec2597a188e6c1b" compoundref="alias__etc_8c" startline="33" endline="60">bashset</referencedby>
+        <referencedby refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1ab15f4c5af8f204fcf26ff0bf30391b77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_unsetenv</definition>
+        <argsstring>(char **, t_data *)</argsstring>
+        <name>my_unsetenv</name>
+        <param>
+          <type>char **</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="42" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/builtin.c" bodystart="16" bodyend="42"/>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" compoundref="builtin_8h" startline="19">SUCCESS</references>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="forbuiltin_8c_1a9c81bd03dd1d5eae7cee8720ff4a4f25" compoundref="forbuiltin_8c" startline="95" endline="122">my_epurtab</references>
+        <referencedby refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="builtin_8h_1a772e7ea72ee3ac31a9da9d3c8423816e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_echo</definition>
+        <argsstring>(char **, t_data *)</argsstring>
+        <name>my_echo</name>
+        <param>
+          <type>char **</type>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h" line="43" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/builtin.c" bodystart="101" bodyend="127"/>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="my__strcmp_8c_1a7656d2f543a26ba1552b06f75667ba3c" compoundref="my__strcmp_8c" startline="13" endline="23">my_strcmp</references>
+        <references refid="forbuiltin_8c_1a3da96f75f1c99d390ce5582d73f7bf18" compoundref="forbuiltin_8c" startline="72" endline="93">my_print</references>
+        <references refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" compoundref="builtin_8h" startline="19">SUCCESS</references>
+        <referencedby refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>builtin.h<sp/>for<sp/>builtin<sp/>in<sp/>/home/rouss_p/rendu/PSU_2014_42sh/builtin</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>pierre<sp/>rousselle</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;rouss_p@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Mon<sp/>May<sp/><sp/>4<sp/>16:05:00<sp/>2015<sp/>pierre<sp/>rousselle</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>15:03:41<sp/>2015<sp/>pierre<sp/>rousselle</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BUILTIN_H_</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>BUILTIN_H_</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="builtin_8h_1afe4b0e625372cd38ec60150d6f5594b8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#<sp/>define<sp/>ESCAPE<sp/>27</highlight></codeline>
+<codeline lineno="17" refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>FAILURE<sp/>-2</highlight></codeline>
+<codeline lineno="18" refid="builtin_8h_1a82364b047b41d18199c9372ace974305" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>NO_MATCH<sp/>-1</highlight></codeline>
+<codeline lineno="19" refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>SUCCESS<sp/>0</highlight></codeline>
+<codeline lineno="20" refid="builtin_8h_1ad111e603bbebe5d87f6bc39264ce4733" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#<sp/>define<sp/>EXIT<sp/>1</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structs__bref" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/><sp/></highlight><highlight class="normal"><ref refid="structs__bref" kindref="compound">s_bref</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24" refid="structs__bref_1a409d98460fccb0c31bf8887117e68f36" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structs__bref_1a409d98460fccb0c31bf8887117e68f36" kindref="member">ref</ref>;</highlight></codeline>
+<codeline lineno="25" refid="structs__bref_1a3cffecc657840bcfdbd40bfaf96be9d5" refkind="member"><highlight class="normal"><sp/><sp/>int<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*<ref refid="structs__bref_1a3cffecc657840bcfdbd40bfaf96be9d5" kindref="member">builtin</ref>)(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/><ref refid="structs__data" kindref="compound">t_data</ref><sp/>*);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="builtin_8h_1a73c4175ebb4c747bdf44fbf2820385c1" kindref="member">t_bref</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="top__builtin_8c_1aecb1f227db5bcfc86869d066066f450d" kindref="member">my_redir_builtin</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/><ref refid="structs__cmd" kindref="compound">t_cmd</ref><sp/>*cmd);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="builtin_2utils_8c_1ac46a37eeaf4141428d46b5605bbd6c51" kindref="member">cattab_ext</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="cd_8c_1a27ff54b856199cbd22e0983f4b369f6b" kindref="member">my_cd_error</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="getvar_8c_1a6055c5e4f8247c5a1151cd65e5061574" kindref="member">my_replace_key</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**expr,<sp/><ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" kindref="member">my_cstrconcat</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s1,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*s2);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kindref="member">get_env_value</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**env,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*key,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*offset);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="forbuiltin_8c_1a3da96f75f1c99d390ce5582d73f7bf18" kindref="member">my_print</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>inter,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>noret,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*nextword);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="forbuiltin_8c_1a9c81bd03dd1d5eae7cee8720ff4a4f25" kindref="member">my_epurtab</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**tab);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>**<ref refid="forbuiltin_8c_1a795c38158cb00f9fcad0dd7db17e7ded" kindref="member">my_cattab</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**tab,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="builtin_2utils_8c_1a0bd2485960de353416dedf1cf03a943e" kindref="member">my_getnbr_base</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*base,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*offset,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="cd_8c_1a04d617582a090298a993bb56e5a66cb9" kindref="member">my_cd</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/><ref refid="structs__data" kindref="compound">t_data</ref><sp/>*);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="builtin_8c_1a3f937a32f761532cf83be2cd3dae0e09" kindref="member">my_exit</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/><ref refid="structs__data" kindref="compound">t_data</ref><sp/>*);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="builtin_8c_1a8608a65d45d2d3d7ec0e83a91d1f51a3" kindref="member">my_env</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/><ref refid="structs__data" kindref="compound">t_data</ref><sp/>*);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="builtin_8c_1aa3ae54ee16af4313f2ccb3c2fff447e9" kindref="member">my_setenv</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/><ref refid="structs__data" kindref="compound">t_data</ref><sp/>*);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="builtin_8c_1a7bd51fb3b758ec7342192213355ec102" kindref="member">my_unsetenv</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/><ref refid="structs__data" kindref="compound">t_data</ref><sp/>*);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><ref refid="builtin_8c_1a95a62fb319cfd787bd672b23b9288c67" kindref="member">my_echo</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**,<sp/><ref refid="structs__data" kindref="compound">t_data</ref><sp/>*);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>!BUILTIN_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/builtin.h"/>
+  </compounddef>
+</doxygen>

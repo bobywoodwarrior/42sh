@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="dir_18dda7dbf49b271626e33a4adee9d618" kind="dir">
+    <compoundname>auto_complete</compoundname>
+    <innerfile refid="auto__complete_8c">auto_complete.c</innerfile>
+    <innerfile refid="functions__complete_8c">functions_complete.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/auto_complete/"/>
+  </compounddef>
+</doxygen>

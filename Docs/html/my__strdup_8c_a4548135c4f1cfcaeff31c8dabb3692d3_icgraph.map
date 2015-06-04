@@ -1,0 +1,21 @@
+<map id="my_strdup" name="my_strdup">
+<area shape="rect" id="node3" href="$shell_8h.html#ac8db3662f7b7cc7ee5b03b6c5591447d" title="alias_find" alt="" coords="162,29,241,56"/>
+<area shape="rect" id="node6" href="$shell_8h.html#aef6f0a2dadbae4099dfa9a0cc9ea1782" title="concat_alias" alt="" coords="315,55,413,81"/>
+<area shape="rect" id="node19" href="$pars__alias_8c.html#a203bc66f586da530ebb9eeee519bd082" title="get_bash" alt="" coords="163,131,240,157"/>
+<area shape="rect" id="node23" href="$cd_8c.html#adff71582669f5726a87d35e9f9a15057" title="set_pwd_old_pwd" alt="" coords="136,181,267,208"/>
+<area shape="rect" id="node43" href="$ps1_8h.html#a691d38547be90f9a41ee0fde06f94f75" title="case_pwd" alt="" coords="159,232,243,259"/>
+<area shape="rect" id="node8" href="$parsing__pipe_8c.html#a1ffdb84b9297c89dcd30e9402f2c3515" title="add_cmd" alt="" coords="462,55,541,81"/>
+<area shape="rect" id="node10" href="$shell_8h.html#ae8d6b38307281c05e1b03ca11f8bbb8c" title="parsing_pipe" alt="" coords="597,55,696,81"/>
+<area shape="rect" id="node12" href="$parsing__general_8c.html#a8a47bb6cfcb5378a27b639793a995814" title="new_cmds" alt="" coords="753,55,839,81"/>
+<area shape="rect" id="node14" href="$parsing__general_8c.html#a2d75753bac50088aa4b9be29314f98fc" title="add_cmds" alt="" coords="889,55,975,81"/>
+<area shape="rect" id="node16" href="$shell_8h.html#ae9c51201cb3ad89b921d2f3576875ca4" title="parsing_general" alt="" coords="1025,55,1143,81"/>
+<area shape="rect" id="node21" href="$shell_8h.html#a8e5633ce3ca1c968f88de68f3ed735c7" title="pars_alias" alt="" coords="322,131,406,157"/>
+<area shape="rect" id="node25" href="$builtin_8h.html#a2157775684b24545b151e0c2e5f38954" title="my_cd" alt="" coords="333,181,395,208"/>
+<area shape="rect" id="node27" href="$shell_8h.html#a4a932a3567484ecc159fb43f41392992" title="builtin" alt="" coords="474,181,529,208"/>
+<area shape="rect" id="node29" href="$builtin_8h.html#aecb1f227db5bcfc86869d066066f450d" title="my_redir_builtin" alt="" coords="589,181,704,208"/>
+<area shape="rect" id="node31" href="$shell_8h.html#aaa570cbabecdb1a23f82ad57ed563378" title="exe_cmd" alt="" coords="757,181,835,208"/>
+<area shape="rect" id="node33" href="$pipe_8c.html#a6c5a209f770a66dc5c2f73e10ff86db3" title="last_pipe" alt="" coords="895,131,969,157"/>
+<area shape="rect" id="node37" href="$pipe_8c.html#a6267c0f1ac0750c77dc4e676bf140b80" title="loop_pipe" alt="" coords="892,181,972,208"/>
+<area shape="rect" id="node40" href="$pipe_8c.html#ac7254c9ab0581563f740b715d805c301" title="first_pipe" alt="" coords="895,232,969,259"/>
+<area shape="rect" id="node35" href="$shell_8h.html#a0b773212abd3f5ea05fa3ef3945efd1d" title="exe_pipe" alt="" coords="1045,181,1123,208"/>
+</map>

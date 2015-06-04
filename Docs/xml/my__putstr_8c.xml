@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="my__putstr_8c" kind="file">
+    <compoundname>my_putstr.c</compoundname>
+    <includes local="no">string.h</includes>
+    <includes local="no">unistd.h</includes>
+    <incdepgraph>
+      <node id="661">
+        <label>lib/my/my_putstr.c</label>
+        <link refid="my_putstr.c"/>
+        <childnode refid="662" relation="include">
+        </childnode>
+        <childnode refid="663" relation="include">
+        </childnode>
+      </node>
+      <node id="662">
+        <label>string.h</label>
+      </node>
+      <node id="663">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void my_putstr</definition>
+        <argsstring>(char *str, int fd)</argsstring>
+        <name>my_putstr</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_putstr.c" line="14" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_putstr.c" bodystart="14" bodyend="19"/>
+        <referencedby refid="shell_8h_1a03522e35827e231817075a4d6389c77c" compoundref="ps1_2utils_8c" startline="92" endline="103">pars_ps1</referencedby>
+        <referencedby refid="redirection__left_8c_1a870bc72198c51984b1f8dd97b650a7c3" compoundref="redirection__left_8c" startline="42" endline="64">write_list_redi</referencedby>
+        <referencedby refid="redirection__left_8c_1a7d4285d2d4f2790e8ccad0f0f4a103a3" compoundref="redirection__left_8c" startline="66" endline="81">double_redi_left</referencedby>
+        <referencedby refid="shell_8h_1a016d082e790265a3ffe8fbff90b2a0b2" compoundref="clean__screen_8c" startline="18" endline="39">clean_screen</referencedby>
+        <referencedby refid="shell_8h_1a355426ca95d2d3e650e274a762d1d99b" compoundref="gere__key_8c" startline="88" endline="105">gere_tab</referencedby>
+        <referencedby refid="shell_8h_1a929bf8ea49ac6f94a2b1ab00c9f16343" compoundref="modif__cmd_8c" startline="14" endline="38">add_char</referencedby>
+        <referencedby refid="shell_8h_1a8a81cc045a4530835ce45b6817e17335" compoundref="modif__cmd_8c" startline="40" endline="67">delete_char</referencedby>
+        <referencedby refid="shell_8h_1a10717a0c53430c97d2ccedbfb1728211" compoundref="modif__cmd_8c" startline="69" endline="87">delete_backward</referencedby>
+        <referencedby refid="shell_8h_1acbb6e8e618f4c43c7eeb93923b92e385" compoundref="move_8c" startline="14" endline="26">up</referencedby>
+        <referencedby refid="shell_8h_1a3a9f901ffe6cc6b5f7d902526c01748e" compoundref="move_8c" startline="28" endline="50">down</referencedby>
+        <referencedby refid="shell_8h_1aa03f017a35da8a430148654234880534" compoundref="print__cursor_8c" startline="14" endline="29">print_cursor_left</referencedby>
+        <referencedby refid="shell_8h_1ae1896fc58ae2d86e1607940e8c4dff66" compoundref="print__cursor_8c" startline="31" endline="46">print_cursor_right</referencedby>
+        <referencedby refid="shell_8h_1a1e8106cf0c11e2bd136b43a9cc608c9a" compoundref="prompt__dyn_8c" startline="45" endline="57">get_cmd</referencedby>
+        <referencedby refid="ps1_8h_1a0abbe5bf65b1101a9571444ca5ab37f4" compoundref="tab__fonc_8c" startline="16" endline="19">case_name</referencedby>
+        <referencedby refid="ps1_8h_1a1c2798ccf833589ed359f0f4ea30d98f" compoundref="tab__fonc_8c" startline="21" endline="24">case_host</referencedby>
+        <referencedby refid="ps1_8h_1a691d38547be90f9a41ee0fde06f94f75" compoundref="tab__fonc_8c" startline="26" endline="47">case_pwd</referencedby>
+        <referencedby refid="ps1_8h_1abd2aff6cb058bb6c34d2263255ed0832" compoundref="tab__fonc_8c" startline="49" endline="52">case_last_dir</referencedby>
+        <referencedby refid="ps1_8h_1acff18e5b1fb60631e8970d0aa6df8843" compoundref="tab__fonc_8c" startline="54" endline="57">case_term</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>my_putstr.c<sp/>for<sp/>42sh<sp/>in<sp/>/home/bauer_a/rendu/PSU_2014_42sh/lib/my</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;bauer_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Mon<sp/>Apr<sp/>20<sp/>15:10:09<sp/>2015<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Wed<sp/>May<sp/>20<sp/>17:58:57<sp/>2015<sp/>anthony<sp/>geiger</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="lib_8h_1a3f0d73dd274474aaf7f5f73ddfde8f12" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="my__putstr_8c_1aa2895eb8fcea370c01f1f3b7795b2743" kindref="member">my_putstr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/>write(fd,<sp/>str,<sp/>strlen(str));</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_putstr.c"/>
+  </compounddef>
+</doxygen>

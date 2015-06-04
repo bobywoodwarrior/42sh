@@ -1,0 +1,214 @@
+\section{exe/exe\-\_\-cmd.c File Reference}
+\label{exe__cmd_8c}\index{exe/exe\-\_\-cmd.\-c@{exe/exe\-\_\-cmd.\-c}}
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include $<$sys/types.\-h$>$}\\*
+{\ttfamily \#include $<$sys/wait.\-h$>$}\\*
+{\ttfamily \#include $<$unistd.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}shell.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}builtin.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}lib.\-h\char`\"{}}\\*
+Include dependency graph for exe\-\_\-cmd.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{exe__cmd_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int {\bf exe\-\_\-function} ({\bf t\-\_\-data} $\ast$data, {\bf t\-\_\-cmd} $\ast$cmd, char $\ast$cmd1, int pipe)
+\item 
+char $\ast$ {\bf make\-\_\-path} (char $\ast$path, char $\ast$str)
+\item 
+int {\bf loop\-\_\-exe\-\_\-path} ({\bf t\-\_\-data} $\ast$data, {\bf t\-\_\-cmd} $\ast$cmd, char $\ast$paths, int pipe)
+\item 
+int {\bf exe\-\_\-path} ({\bf t\-\_\-data} $\ast$data, {\bf t\-\_\-cmd} $\ast$cmd, int pipe)
+\item 
+int {\bf exe\-\_\-cmd} ({\bf t\-\_\-data} $\ast$data, {\bf t\-\_\-cmd} $\ast$cmd, int pipe)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{exe\-\_\-cmd.\-c@{exe\-\_\-cmd.\-c}!exe\-\_\-cmd@{exe\-\_\-cmd}}
+\index{exe\-\_\-cmd@{exe\-\_\-cmd}!exe_cmd.c@{exe\-\_\-cmd.\-c}}
+\subsubsection[{exe\-\_\-cmd}]{\setlength{\rightskip}{0pt plus 5cm}int exe\-\_\-cmd (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{{\bf t\-\_\-cmd} $\ast$}]{cmd, }
+\item[{int}]{pipe}
+\end{DoxyParamCaption}
+)}\label{exe__cmd_8c_a77721335c9203a6b8979c81c001d77e1}
+
+
+Definition at line 103 of file exe\-\_\-cmd.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{exe__cmd_8c_a77721335c9203a6b8979c81c001d77e1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{exe__cmd_8c_a77721335c9203a6b8979c81c001d77e1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{exe\-\_\-cmd.\-c@{exe\-\_\-cmd.\-c}!exe\-\_\-function@{exe\-\_\-function}}
+\index{exe\-\_\-function@{exe\-\_\-function}!exe_cmd.c@{exe\-\_\-cmd.\-c}}
+\subsubsection[{exe\-\_\-function}]{\setlength{\rightskip}{0pt plus 5cm}int exe\-\_\-function (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{{\bf t\-\_\-cmd} $\ast$}]{cmd, }
+\item[{char $\ast$}]{cmd1, }
+\item[{int}]{pipe}
+\end{DoxyParamCaption}
+)}\label{exe__cmd_8c_a59b10d58d0b56a22b64f09d9a8c93c34}
+
+
+Definition at line 19 of file exe\-\_\-cmd.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{exe__cmd_8c_a59b10d58d0b56a22b64f09d9a8c93c34_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{exe__cmd_8c_a59b10d58d0b56a22b64f09d9a8c93c34_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{exe\-\_\-cmd.\-c@{exe\-\_\-cmd.\-c}!exe\-\_\-path@{exe\-\_\-path}}
+\index{exe\-\_\-path@{exe\-\_\-path}!exe_cmd.c@{exe\-\_\-cmd.\-c}}
+\subsubsection[{exe\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}int exe\-\_\-path (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{{\bf t\-\_\-cmd} $\ast$}]{cmd, }
+\item[{int}]{pipe}
+\end{DoxyParamCaption}
+)}\label{exe__cmd_8c_ae9807c4c371475abfdea4695570f741f}
+
+
+Definition at line 74 of file exe\-\_\-cmd.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{exe__cmd_8c_ae9807c4c371475abfdea4695570f741f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{exe__cmd_8c_ae9807c4c371475abfdea4695570f741f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{exe\-\_\-cmd.\-c@{exe\-\_\-cmd.\-c}!loop\-\_\-exe\-\_\-path@{loop\-\_\-exe\-\_\-path}}
+\index{loop\-\_\-exe\-\_\-path@{loop\-\_\-exe\-\_\-path}!exe_cmd.c@{exe\-\_\-cmd.\-c}}
+\subsubsection[{loop\-\_\-exe\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}int loop\-\_\-exe\-\_\-path (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-data} $\ast$}]{data, }
+\item[{{\bf t\-\_\-cmd} $\ast$}]{cmd, }
+\item[{char $\ast$}]{paths, }
+\item[{int}]{pipe}
+\end{DoxyParamCaption}
+)}\label{exe__cmd_8c_a97368bf5fe74e84efa91f0266a404052}
+
+
+Definition at line 59 of file exe\-\_\-cmd.\-c.
+
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{exe__cmd_8c_a97368bf5fe74e84efa91f0266a404052_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{exe__cmd_8c_a97368bf5fe74e84efa91f0266a404052_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{exe\-\_\-cmd.\-c@{exe\-\_\-cmd.\-c}!make\-\_\-path@{make\-\_\-path}}
+\index{make\-\_\-path@{make\-\_\-path}!exe_cmd.c@{exe\-\_\-cmd.\-c}}
+\subsubsection[{make\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ make\-\_\-path (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{path, }
+\item[{char $\ast$}]{str}
+\end{DoxyParamCaption}
+)}\label{exe__cmd_8c_a2b4de1f22e62da77dfedc3b21067194c}
+
+
+Definition at line 47 of file exe\-\_\-cmd.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{exe__cmd_8c_a2b4de1f22e62da77dfedc3b21067194c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{exe__cmd_8c_a2b4de1f22e62da77dfedc3b21067194c_icgraph}
+\end{center}
+\end{figure}
+
+

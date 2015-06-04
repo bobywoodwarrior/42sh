@@ -1,0 +1,37 @@
+<map id="include/lib.h" name="include/lib.h">
+<area shape="rect" id="node3" href="$alias_8c.html" title="alias/alias.c" alt="" coords="5,88,99,115"/>
+<area shape="rect" id="node5" href="$alias__etc_8c.html" title="alias/alias_etc.c" alt="" coords="123,88,241,115"/>
+<area shape="rect" id="node7" href="$pars__alias_8c.html" title="alias/pars_alias.c" alt="" coords="266,88,392,115"/>
+<area shape="rect" id="node9" href="$str__cat_8c.html" title="alias/str_cat.c" alt="" coords="417,88,521,115"/>
+<area shape="rect" id="node11" href="$auto__complete_8c.html" title="auto_complete/auto\l_complete.c" alt="" coords="546,81,685,122"/>
+<area shape="rect" id="node13" href="$functions__complete_8c.html" title="auto_complete/functions\l_complete.c" alt="" coords="710,81,876,122"/>
+<area shape="rect" id="node15" href="$builtin_8c.html" title="builtin/builtin.c" alt="" coords="901,88,1003,115"/>
+<area shape="rect" id="node17" href="$cd_8c.html" title="builtin/cd.c" alt="" coords="1027,88,1111,115"/>
+<area shape="rect" id="node19" href="$forbuiltin_8c.html" title="builtin/forbuiltin.c" alt="" coords="1136,88,1252,115"/>
+<area shape="rect" id="node21" href="$getvar_8c.html" title="builtin/getvar.c" alt="" coords="1277,88,1384,115"/>
+<area shape="rect" id="node23" href="$exe__cmd_8c.html" title="exe/exe_cmd.c" alt="" coords="1408,88,1523,115"/>
+<area shape="rect" id="node25" href="$is__builtin_8c.html" title="exe/is_builtin.c" alt="" coords="1547,88,1656,115"/>
+<area shape="rect" id="node27" href="$pipe_8c.html" title="exe/pipe.c" alt="" coords="1681,88,1764,115"/>
+<area shape="rect" id="node29" href="$redirection__left_8c.html" title="exe/redirection_left.c" alt="" coords="1789,88,1936,115"/>
+<area shape="rect" id="node31" href="$get__next__line_8c.html" title="lib/my/get_next_line.c" alt="" coords="1961,88,2111,115"/>
+<area shape="rect" id="node33" href="$my__put__nbr_8c.html" title="lib/my/my_put_nbr.c" alt="" coords="2136,88,2275,115"/>
+<area shape="rect" id="node35" href="$my__strcat__from_8c.html" title="lib/my/my_strcat_from.c" alt="" coords="2299,88,2460,115"/>
+<area shape="rect" id="node37" href="$my__strcpy__from_8c.html" title="lib/my/my_strcpy_from.c" alt="" coords="2485,88,2648,115"/>
+<area shape="rect" id="node39" href="$my__strdup_8c.html" title="lib/my/my_strdup.c" alt="" coords="2673,88,2804,115"/>
+<area shape="rect" id="node41" href="$my__strncat_8c.html" title="lib/my/my_strncat.c" alt="" coords="2829,88,2963,115"/>
+<area shape="rect" id="node43" href="$my__strndup_8c.html" title="lib/my/my_strndup.c" alt="" coords="2988,88,3127,115"/>
+<area shape="rect" id="node45" href="$str__to__word__tab_8c.html" title="lib/my/str_to_word\l_tab.c" alt="" coords="3151,81,3280,122"/>
+<area shape="rect" id="node47" href="$parsing__cmd_8c.html" title="parsing/parsing_cmd.c" alt="" coords="3305,88,3463,115"/>
+<area shape="rect" id="node49" href="$parsing__tilde_8c.html" title="parsing/parsing_tilde.c" alt="" coords="3487,88,3643,115"/>
+<area shape="rect" id="node51" href="$clean__screen_8c.html" title="prompt_read_termcaps\l/clean_screen.c" alt="" coords="3667,81,3825,122"/>
+<area shape="rect" id="node53" href="$clear__line_8c.html" title="prompt_read_termcaps\l/clear_line.c" alt="" coords="3850,81,4008,122"/>
+<area shape="rect" id="node55" href="$gere__key_8c.html" title="prompt_read_termcaps\l/gere_key.c" alt="" coords="4033,81,4191,122"/>
+<area shape="rect" id="node57" href="$last__word_8c.html" title="prompt_read_termcaps\l/last_word.c" alt="" coords="4215,81,4373,122"/>
+<area shape="rect" id="node59" href="$loop__read_8c.html" title="prompt_read_termcaps\l/loop_read.c" alt="" coords="4398,81,4556,122"/>
+<area shape="rect" id="node61" href="$modif__cmd_8c.html" title="prompt_read_termcaps\l/modif_cmd.c" alt="" coords="4581,81,4739,122"/>
+<area shape="rect" id="node63" href="$move_8c.html" title="prompt_read_termcaps\l/move.c" alt="" coords="4763,81,4921,122"/>
+<area shape="rect" id="node65" href="$print__cursor_8c.html" title="prompt_read_termcaps\l/print_cursor.c" alt="" coords="4946,81,5104,122"/>
+<area shape="rect" id="node67" href="$prompt__dyn_8c.html" title="prompt_read_termcaps\l/prompt_dyn.c" alt="" coords="5129,81,5287,122"/>
+<area shape="rect" id="node69" href="$tab__fonc_8c.html" title="ps1/tab_fonc.c" alt="" coords="5312,88,5419,115"/>
+<area shape="rect" id="node71" href="$ps1_2utils_8c.html" title="ps1/utils.c" alt="" coords="5443,88,5521,115"/>
+</map>

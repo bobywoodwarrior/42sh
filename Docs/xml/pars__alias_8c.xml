@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="pars__alias_8c" kind="file">
+    <compoundname>pars_alias.c</compoundname>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">sys/stat.h</includes>
+    <includes local="no">fcntl.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes refid="builtin_8h" local="yes">builtin.h</includes>
+    <includes refid="shell_8h" local="yes">shell.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <incdepgraph>
+      <node id="425">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="430">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="423">
+        <label>stdlib.h</label>
+      </node>
+      <node id="429">
+        <label>builtin.h</label>
+        <link refid="builtin_8h"/>
+        <childnode refid="430" relation="include">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>fcntl.h</label>
+      </node>
+      <node id="431">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+      <node id="424">
+        <label>sys/types.h</label>
+      </node>
+      <node id="427">
+        <label>unistd.h</label>
+      </node>
+      <node id="422">
+        <label>alias/pars_alias.c</label>
+        <link refid="pars_alias.c"/>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="pars__alias_8c_1a203bc66f586da530ebb9eeee519bd082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char **</type>
+        <definition>char** get_bash</definition>
+        <argsstring>()</argsstring>
+        <name>get_bash</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c" line="21" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c" bodystart="21" bodyend="45"/>
+        <references refid="alias_8c_1adea8df0d450d18361023ed783f462f39" compoundref="alias_8c" startline="56" endline="72">get_line_file</references>
+        <references refid="shell_8h_1a7d28911d2cf3becfbdc3bb2271375405" compoundref="shell_8h" startline="15">RCNAME</references>
+        <references refid="gnl_8c_1a6754f4915186decc3a861cd78d15499e" compoundref="gnl_8c" startline="73" endline="100">gnl</references>
+        <references refid="my__strdup_8c_1a4548135c4f1cfcaeff31c8dabb3692d3" compoundref="my__strdup_8c" startline="14" endline="27">my_strdup</references>
+        <referencedby refid="shell_8h_1a8e5633ce3ca1c968f88de68f3ed735c7" compoundref="pars__alias_8c" startline="119" endline="128">pars_alias</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pars__alias_8c_1a3257a6fcadd0309f1df178525eea9257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* get_old</definition>
+        <argsstring>(char *str, int x, int i)</argsstring>
+        <name>get_old</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c" line="47" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c" bodystart="47" bodyend="74"/>
+        <references refid="my__strndup_8c_1aa470a7e58967778144f7d737bf64c3e8" compoundref="my__strndup_8c" startline="14" endline="27">my_strndup</references>
+        <referencedby refid="pars__alias_8c_1a7d7873e60a328ecd3a34c3370594b040" compoundref="pars__alias_8c" startline="76" endline="98">get_old_new</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pars__alias_8c_1a7d7873e60a328ecd3a34c3370594b040" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        <definition>t_data* get_old_new</definition>
+        <argsstring>(char *str, t_data *data, int x)</argsstring>
+        <name>get_old_new</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c" line="76" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c" bodystart="76" bodyend="98"/>
+        <references refid="my__strndup_8c_1aa470a7e58967778144f7d737bf64c3e8" compoundref="my__strndup_8c" startline="14" endline="27">my_strndup</references>
+        <references refid="pars__alias_8c_1a3257a6fcadd0309f1df178525eea9257" compoundref="pars__alias_8c" startline="47" endline="74">get_old</references>
+        <references refid="alias_8c_1afa6fff44bde50c8a0f4b8868f6b81777" compoundref="alias_8c" startline="102" endline="107">check_recur</references>
+        <referencedby refid="shell_8h_1a94ed7403f0bc582353a563669932efdd" compoundref="pars__alias_8c" startline="100" endline="117">get_all_alias</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pars__alias_8c_1a94ed7403f0bc582353a563669932efdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+        <definition>t_data* get_all_alias</definition>
+        <argsstring>(t_data *data, char **bash, int x)</argsstring>
+        <name>get_all_alias</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>bash</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c" line="100" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c" bodystart="100" bodyend="117"/>
+        <references refid="my__strncmp_8c_1a5c4d2d32920036f1ad38c2bd614abfd9" compoundref="my__strncmp_8c" startline="11" endline="23">my_strncmp</references>
+        <references refid="pars__alias_8c_1a7d7873e60a328ecd3a34c3370594b040" compoundref="pars__alias_8c" startline="76" endline="98">get_old_new</references>
+        <references refid="alias__etc_8c_1acd9ad0dfae53c8683ec2597a188e6c1b" compoundref="alias__etc_8c" startline="33" endline="60">bashset</references>
+        <referencedby refid="shell_8h_1a8e5633ce3ca1c968f88de68f3ed735c7" compoundref="pars__alias_8c" startline="119" endline="128">pars_alias</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="pars__alias_8c_1a8e5633ce3ca1c968f88de68f3ed735c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pars_alias</definition>
+        <argsstring>(t_data *data)</argsstring>
+        <name>pars_alias</name>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c" line="119" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c" bodystart="119" bodyend="128"/>
+        <references refid="pars__alias_8c_1a203bc66f586da530ebb9eeee519bd082" compoundref="pars__alias_8c" startline="21" endline="45">get_bash</references>
+        <references refid="pars__alias_8c_1a94ed7403f0bc582353a563669932efdd" compoundref="pars__alias_8c" startline="100" endline="117">get_all_alias</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>pars_alias.c&lt;2&gt;<sp/>for<sp/>pas<sp/>in<sp/>/home/geiger_a/rendu/PSU_2014_42sh/alias</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>anthony<sp/>geiger</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;geiger_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Sun<sp/>May<sp/>17<sp/>21:23:37<sp/>2015<sp/>anthony<sp/>geiger</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>16:01:44<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="builtin_8h" kindref="compound">builtin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="shell_8h" kindref="compound">shell.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="pars__alias_8c_1a203bc66f586da530ebb9eeee519bd082" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>**<ref refid="pars__alias_8c_1a203bc66f586da530ebb9eeee519bd082" kindref="member">get_bash</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>fd;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*s;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>line;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>**bash;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>x;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>x<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((line<sp/>=<sp/><ref refid="alias_8c_1adea8df0d450d18361023ed783f462f39" kindref="member">get_line_file</ref>())<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((fd<sp/>=<sp/>open(<ref refid="shell_8h_1a7d28911d2cf3becfbdc3bb2271375405" kindref="member">RCNAME</ref>,<sp/>O_RDONLY))<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((bash<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**)<sp/>*<sp/>(line<sp/>+<sp/>1)))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((s<sp/>=<sp/><ref refid="gnl_8c_1a6754f4915186decc3a861cd78d15499e" kindref="member">gnl</ref>(fd)))</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>bash[x]<sp/>=<sp/><ref refid="my__strdup_8c_1a4548135c4f1cfcaeff31c8dabb3692d3" kindref="member">my_strdup</ref>(s);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>free(s);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>++x;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>close(fd);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>bash[x]<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(bash);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="pars__alias_8c_1a3257a6fcadd0309f1df178525eea9257" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="pars__alias_8c_1a3257a6fcadd0309f1df178525eea9257" kindref="member">get_old</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*old;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>start_old;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>++i;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\&apos;&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\033[31m&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Rc<sp/>error<sp/>\033[0m<sp/>at<sp/>line<sp/>:<sp/>%i,<sp/>collumn<sp/>%i<sp/>:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>x,<sp/>i,<sp/>str);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>++i;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>start_old<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\&apos;&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\033[31m&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Rc<sp/>error<sp/>\033[0m<sp/>at<sp/>line<sp/>:<sp/>%i,<sp/>collumn<sp/>%i<sp/>:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>x,<sp/>i,<sp/>str);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>++i;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((old<sp/>=<sp/><ref refid="my__strndup_8c_1aa470a7e58967778144f7d737bf64c3e8" kindref="member">my_strndup</ref>(str<sp/>+<sp/>start_old,<sp/>i<sp/>-<sp/>start_old))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(old);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="pars__alias_8c_1a7d7873e60a328ecd3a34c3370594b040" refkind="member"><highlight class="normal"><ref refid="structs__data" kindref="compound">t_data</ref><sp/><sp/>*<ref refid="pars__alias_8c_1a7d7873e60a328ecd3a34c3370594b040" kindref="member">get_old_new</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/><ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*old;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*</highlight><highlight class="keyword">new</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>6;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(str[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;\033[31m&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>printf(</highlight><highlight class="stringliteral">&quot;Rc<sp/>error<sp/>\033[0m<sp/>at<sp/>line<sp/>:<sp/>%i,<sp/>collumn<sp/>6<sp/>:<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/>x,<sp/>str);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(str[i]<sp/>&amp;&amp;<sp/>(str[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>++i;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>=<sp/><ref refid="my__strndup_8c_1aa470a7e58967778144f7d737bf64c3e8" kindref="member">my_strndup</ref>(str<sp/>+<sp/>6,<sp/>i<sp/>-<sp/>6))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((old<sp/>=<sp/><ref refid="pars__alias_8c_1a3257a6fcadd0309f1df178525eea9257" kindref="member">get_old</ref>(str,<sp/>x,<sp/>i))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((data<sp/>=<sp/><ref refid="alias_8c_1afa6fff44bde50c8a0f4b8868f6b81777" kindref="member">check_recur</ref>(data,<sp/>old,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal">))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(data);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="shell_8h_1a94ed7403f0bc582353a563669932efdd" refkind="member"><highlight class="normal"><ref refid="structs__data" kindref="compound">t_data</ref><sp/><sp/>*<ref refid="pars__alias_8c_1a94ed7403f0bc582353a563669932efdd" kindref="member">get_all_alias</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**bash,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(bash[x])</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="my__strncmp_8c_1a5c4d2d32920036f1ad38c2bd614abfd9" kindref="member">my_strncmp</ref>(</highlight><highlight class="stringliteral">&quot;alias<sp/>&quot;</highlight><highlight class="normal">,<sp/>bash[x],<sp/>6)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((data<sp/>=<sp/><ref refid="pars__alias_8c_1a7d7873e60a328ecd3a34c3370594b040" kindref="member">get_old_new</ref>(bash[x],<sp/>data,<sp/>x))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="my__strncmp_8c_1a5c4d2d32920036f1ad38c2bd614abfd9" kindref="member">my_strncmp</ref>(</highlight><highlight class="stringliteral">&quot;setenv<sp/>&quot;</highlight><highlight class="normal">,<sp/>bash[x],<sp/>7)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="alias__etc_8c_1acd9ad0dfae53c8683ec2597a188e6c1b" kindref="member">bashset</ref>(bash[x],<sp/>data)<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>++x;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(data);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="shell_8h_1a8e5633ce3ca1c968f88de68f3ed735c7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="pars__alias_8c_1a8e5633ce3ca1c968f88de68f3ed735c7" kindref="member">pars_alias</ref>(<ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>**bash;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((bash<sp/>=<sp/><ref refid="pars__alias_8c_1a203bc66f586da530ebb9eeee519bd082" kindref="member">get_bash</ref>())<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="pars__alias_8c_1a94ed7403f0bc582353a563669932efdd" kindref="member">get_all_alias</ref>(data,<sp/>bash,<sp/>0)<sp/>==<sp/>NULL))</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(-1);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/alias/pars_alias.c"/>
+  </compounddef>
+</doxygen>

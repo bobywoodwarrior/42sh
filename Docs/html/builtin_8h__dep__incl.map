@@ -1,0 +1,13 @@
+<map id="include/builtin.h" name="include/builtin.h">
+<area shape="rect" id="node3" href="$alias__etc_8c.html" title="alias/alias_etc.c" alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node5" href="$pars__alias_8c.html" title="alias/pars_alias.c" alt="" coords="147,80,273,107"/>
+<area shape="rect" id="node7" href="$builtin_8c.html" title="builtin/builtin.c" alt="" coords="298,80,400,107"/>
+<area shape="rect" id="node9" href="$cd_8c.html" title="builtin/cd.c" alt="" coords="425,80,508,107"/>
+<area shape="rect" id="node11" href="$forbuiltin_8c.html" title="builtin/forbuiltin.c" alt="" coords="533,80,649,107"/>
+<area shape="rect" id="node13" href="$getvar_8c.html" title="builtin/getvar.c" alt="" coords="675,80,781,107"/>
+<area shape="rect" id="node15" href="$top__builtin_8c.html" title="builtin/top_builtin.c" alt="" coords="806,80,932,107"/>
+<area shape="rect" id="node17" href="$exe__cmd_8c.html" title="exe/exe_cmd.c" alt="" coords="957,80,1072,107"/>
+<area shape="rect" id="node19" href="$parsing__tilde_8c.html" title="parsing/parsing_tilde.c" alt="" coords="1097,80,1252,107"/>
+<area shape="rect" id="node21" href="$tab__fonc_8c.html" title="ps1/tab_fonc.c" alt="" coords="1277,80,1384,107"/>
+<area shape="rect" id="node23" href="$ps1_2utils_8c.html" title="ps1/utils.c" alt="" coords="1408,80,1487,107"/>
+</map>

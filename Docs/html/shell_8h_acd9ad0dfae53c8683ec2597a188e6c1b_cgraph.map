@@ -1,0 +1,13 @@
+<map id="bashset" name="bashset">
+<area shape="rect" id="node3" href="$my__strndup_8c.html#aa470a7e58967778144f7d737bf64c3e8" title="my_strndup" alt="" coords="272,43,363,69"/>
+<area shape="rect" id="node11" href="$alias__etc_8c.html#a2554b2fd4cf3639ec091ec6a5a432675" title="setbashenv" alt="" coords="123,93,213,120"/>
+<area shape="rect" id="node14" href="$builtin_8c.html#aa3ae54ee16af4313f2ccb3c2fff447e9" title="my_setenv" alt="" coords="125,144,211,171"/>
+<area shape="rect" id="node5" href="$get__next__line_8c.html#a43354ef027ff107d540fe9cd7b0aed1b" title="new_str" alt="" coords="433,5,501,32"/>
+<area shape="rect" id="node7" href="$my__strlen_8c.html#ac7e9bd08d068851e31a5b6d408004638" title="my_strlen" alt="" coords="427,132,506,159"/>
+<area shape="rect" id="node9" href="$my__strncpy_8c.html#a488ec5fec2f5d4fda8bf780b1e08ef63" title="my_strncpy" alt="" coords="422,56,511,83"/>
+<area shape="rect" id="node16" href="$cd_8c.html#a27ff54b856199cbd22e0983f4b369f6b" title="my_cd_error" alt="" coords="269,93,366,120"/>
+<area shape="rect" id="node18" href="$getvar_8c.html#a2883a48551d7c810ebd592fb241efeed" title="my_cstrconcat" alt="" coords="263,144,371,171"/>
+<area shape="rect" id="node21" href="$builtin_2utils_8c.html#a0059bf9838c7770b46270fedbc869799" title="get_env_value" alt="" coords="262,195,373,221"/>
+<area shape="rect" id="node23" href="$forbuiltin_8c.html#a795c38158cb00f9fcad0dd7db17e7ded" title="my_cattab" alt="" coords="276,245,359,272"/>
+<area shape="rect" id="node25" href="$builtin_2utils_8c.html#ac46a37eeaf4141428d46b5605bbd6c51" title="cattab_ext" alt="" coords="425,245,508,272"/>
+</map>

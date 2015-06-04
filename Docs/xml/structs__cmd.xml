@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="structs__cmd" kind="struct" prot="public">
+    <compoundname>s_cmd</compoundname>
+    <includes refid="shell_8h" local="no">shell.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" prot="public" static="no" mutable="no">
+        <type>char **</type>
+        <definition>char** tab</definition>
+        <argsstring></argsstring>
+        <name>tab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="39" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="builtin_8h_1aecb1f227db5bcfc86869d066066f450d" compoundref="top__builtin_8c" startline="16" endline="33">my_redir_builtin</referencedby>
+        <referencedby refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" compoundref="exe__cmd_8c" startline="19" endline="45">exe_function</referencedby>
+        <referencedby refid="exe__cmd_8c_1a97368bf5fe74e84efa91f0266a404052" compoundref="exe__cmd_8c" startline="59" endline="72">loop_exe_path</referencedby>
+        <referencedby refid="exe__cmd_8c_1ae9807c4c371475abfdea4695570f741f" compoundref="exe__cmd_8c" startline="74" endline="101">exe_path</referencedby>
+        <referencedby refid="shell_8h_1aaa570cbabecdb1a23f82ad57ed563378" compoundref="exe__cmd_8c" startline="103" endline="127">exe_cmd</referencedby>
+        <referencedby refid="pipe_8c_1adbcab1c6d3083b7c584269817edbe6da" compoundref="pipe_8c" startline="18" endline="29">check_cmd</referencedby>
+        <referencedby refid="parsing__cmd_8c_1a14a8f0c61b979cd9b0413c120dff438a" compoundref="parsing__cmd_8c" startline="46" endline="72">add_word_to_tab</referencedby>
+        <referencedby refid="parsing__cmd_8c_1ae3a29b783909de965bd6285058ad5694" compoundref="parsing__cmd_8c" startline="74" endline="85">init_parsing</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__cmd_1a8629d9a24e605fcc6a82b55b1a870a07" prot="public" static="no" mutable="no">
+        <type><ref refid="shell_8h_1aa073beba29d3550fb1d0d3170f122e91" kindref="member">t_list</ref> *</type>
+        <definition>t_list* redi_r</definition>
+        <argsstring></argsstring>
+        <name>redi_r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="40" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="builtin_8h_1aecb1f227db5bcfc86869d066066f450d" compoundref="top__builtin_8c" startline="16" endline="33">my_redir_builtin</referencedby>
+        <referencedby refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" compoundref="exe__cmd_8c" startline="19" endline="45">exe_function</referencedby>
+        <referencedby refid="parsing__cmd_8c_1ae3a29b783909de965bd6285058ad5694" compoundref="parsing__cmd_8c" startline="74" endline="85">init_parsing</referencedby>
+        <referencedby refid="redirection_8c_1a1cd0120acb08c062e567a2f26e64545a" compoundref="redirection_8c" startline="25" endline="44">set_redi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__cmd_1a3eb86f4753299ed84389481f46694140" prot="public" static="no" mutable="no">
+        <type><ref refid="shell_8h_1aa073beba29d3550fb1d0d3170f122e91" kindref="member">t_list</ref> *</type>
+        <definition>t_list* redi_l</definition>
+        <argsstring></argsstring>
+        <name>redi_l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="41" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="builtin_8h_1aecb1f227db5bcfc86869d066066f450d" compoundref="top__builtin_8c" startline="16" endline="33">my_redir_builtin</referencedby>
+        <referencedby refid="exe__cmd_8c_1a59b10d58d0b56a22b64f09d9a8c93c34" compoundref="exe__cmd_8c" startline="19" endline="45">exe_function</referencedby>
+        <referencedby refid="parsing__cmd_8c_1ae3a29b783909de965bd6285058ad5694" compoundref="parsing__cmd_8c" startline="74" endline="85">init_parsing</referencedby>
+        <referencedby refid="redirection_8c_1a1cd0120acb08c062e567a2f26e64545a" compoundref="redirection_8c" startline="25" endline="44">set_redi</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structs__cmd_1aadb06044d2e679ed4395a2680dc6962a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structs__cmd" kindref="compound">s_cmd</ref> *</type>
+        <definition>struct s_cmd* next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="42" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="pipe_8c_1a6267c0f1ac0750c77dc4e676bf140b80" compoundref="pipe_8c" startline="43" endline="68">loop_pipe</referencedby>
+        <referencedby refid="pipe_8c_1ac7254c9ab0581563f740b715d805c301" compoundref="pipe_8c" startline="70" endline="88">first_pipe</referencedby>
+        <referencedby refid="parsing__cmd_8c_1ae3a29b783909de965bd6285058ad5694" compoundref="parsing__cmd_8c" startline="74" endline="85">init_parsing</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="33">
+        <label>s_cmd</label>
+        <link refid="structs__cmd"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>redi_l</edgelabel>
+          <edgelabel>redi_r</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>s_list</label>
+        <link refid="structs__list"/>
+        <childnode refid="34" relation="usage">
+          <edgelabel>next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" line="38" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/include/shell.h" bodystart="37" bodyend="43"/>
+    <listofallmembers>
+      <member refid="structs__cmd_1aadb06044d2e679ed4395a2680dc6962a" prot="public" virt="non-virtual"><scope>s_cmd</scope><name>next</name></member>
+      <member refid="structs__cmd_1a3eb86f4753299ed84389481f46694140" prot="public" virt="non-virtual"><scope>s_cmd</scope><name>redi_l</name></member>
+      <member refid="structs__cmd_1a8629d9a24e605fcc6a82b55b1a870a07" prot="public" virt="non-virtual"><scope>s_cmd</scope><name>redi_r</name></member>
+      <member refid="structs__cmd_1a095ef5f32e2dd3c36f801fc514372ee3" prot="public" virt="non-virtual"><scope>s_cmd</scope><name>tab</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

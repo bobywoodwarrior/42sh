@@ -1,0 +1,267 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="cd_8c" kind="file">
+    <compoundname>cd.c</compoundname>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">unistd.h</includes>
+    <includes refid="builtin_8h" local="yes">builtin.h</includes>
+    <includes refid="lib_8h" local="yes">lib.h</includes>
+    <incdepgraph>
+      <node id="461">
+        <label>shell.h</label>
+        <link refid="shell_8h"/>
+      </node>
+      <node id="458">
+        <label>stdlib.h</label>
+      </node>
+      <node id="455">
+        <label>builtin/cd.c</label>
+        <link refid="cd.c"/>
+        <childnode refid="456" relation="include">
+        </childnode>
+        <childnode refid="457" relation="include">
+        </childnode>
+        <childnode refid="458" relation="include">
+        </childnode>
+        <childnode refid="459" relation="include">
+        </childnode>
+        <childnode refid="460" relation="include">
+        </childnode>
+        <childnode refid="462" relation="include">
+        </childnode>
+      </node>
+      <node id="460">
+        <label>builtin.h</label>
+        <link refid="builtin_8h"/>
+        <childnode refid="461" relation="include">
+        </childnode>
+      </node>
+      <node id="462">
+        <label>lib.h</label>
+        <link refid="lib_8h"/>
+      </node>
+      <node id="457">
+        <label>string.h</label>
+      </node>
+      <node id="459">
+        <label>unistd.h</label>
+      </node>
+      <node id="456">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="cd_8c_1a27ff54b856199cbd22e0983f4b369f6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_cd_error</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>my_cd_error</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/builtin/cd.c" line="18" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/cd.c" bodystart="18" bodyend="22"/>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <referencedby refid="builtin_8h_1a0f75b40d45c389d2f019b5ad672f3ed1" compoundref="builtin_8c" startline="44" endline="69">my_setenv</referencedby>
+        <referencedby refid="builtin_8h_1a2157775684b24545b151e0c2e5f38954" compoundref="cd_8c" startline="73" endline="98">my_cd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="cd_8c_1af74884482c27a5e006206669ebbd5b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* get_new_pwd</definition>
+        <argsstring>(char *pwd, char *path)</argsstring>
+        <name>get_new_pwd</name>
+        <param>
+          <type>char *</type>
+          <declname>pwd</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/builtin/cd.c" line="24" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/cd.c" bodystart="24" bodyend="51"/>
+        <references refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" compoundref="getvar_8c" startline="50" endline="70">my_cstrconcat</references>
+        <references refid="my__strcmp_8c_1a7656d2f543a26ba1552b06f75667ba3c" compoundref="my__strcmp_8c" startline="13" endline="23">my_strcmp</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <referencedby refid="cd_8c_1adff71582669f5726a87d35e9f9a15057" compoundref="cd_8c" startline="53" endline="71">set_pwd_old_pwd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="cd_8c_1adff71582669f5726a87d35e9f9a15057" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int set_pwd_old_pwd</definition>
+        <argsstring>(char **env, char *path)</argsstring>
+        <name>set_pwd_old_pwd</name>
+        <param>
+          <type>char **</type>
+          <declname>env</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/builtin/cd.c" line="53" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/cd.c" bodystart="53" bodyend="71"/>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+        <references refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" compoundref="my__strlen_8c" startline="13" endline="23">my_strlen</references>
+        <references refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" compoundref="my__strcpy_8c" startline="11" endline="23">my_strcpy</references>
+        <references refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" compoundref="getvar_8c" startline="50" endline="70">my_cstrconcat</references>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="cd_8c_1af74884482c27a5e006206669ebbd5b8e" compoundref="cd_8c" startline="24" endline="51">get_new_pwd</references>
+        <references refid="my__strdup_8c_1a4548135c4f1cfcaeff31c8dabb3692d3" compoundref="my__strdup_8c" startline="14" endline="27">my_strdup</references>
+        <references refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" compoundref="builtin_8h" startline="19">SUCCESS</references>
+        <referencedby refid="builtin_8h_1a2157775684b24545b151e0c2e5f38954" compoundref="cd_8c" startline="73" endline="98">my_cd</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="cd_8c_1a04d617582a090298a993bb56e5a66cb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_cd</definition>
+        <argsstring>(char **expr, t_data *data)</argsstring>
+        <name>my_cd</name>
+        <param>
+          <type>char **</type>
+          <declname>expr</declname>
+        </param>
+        <param>
+          <type><ref refid="shell_8h_1ad97ee37a039f787c83ca3af760399b65" kindref="member">t_data</ref> *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/builtin/cd.c" line="73" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/builtin/cd.c" bodystart="73" bodyend="98"/>
+        <references refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" compoundref="builtin_2utils_8c" startline="42" endline="58">get_env_value</references>
+        <references refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" compoundref="shell_8h" startline="71">s_data::env</references>
+        <references refid="cd_8c_1a27ff54b856199cbd22e0983f4b369f6b" compoundref="cd_8c" startline="18" endline="22">my_cd_error</references>
+        <references refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" compoundref="getvar_8c" startline="50" endline="70">my_cstrconcat</references>
+        <references refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" compoundref="builtin_8h" startline="17">FAILURE</references>
+        <references refid="cd_8c_1adff71582669f5726a87d35e9f9a15057" compoundref="cd_8c" startline="53" endline="71">set_pwd_old_pwd</references>
+        <references refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" compoundref="builtin_8h" startline="19">SUCCESS</references>
+        <referencedby refid="shell_8h_1a4a932a3567484ecc159fb43f41392992" compoundref="top__builtin_8c" startline="35" endline="62">builtin</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>cd.c<sp/>for<sp/>cd<sp/>in<sp/>/home/rouss_p/rendu/42</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>pierre<sp/>rousselle</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;rouss_p@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Fri<sp/>Apr<sp/>24<sp/>11:19:58<sp/>2015<sp/>pierre<sp/>rousselle</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Sat<sp/>May<sp/>23<sp/>16:27:59<sp/>2015<sp/>Adrien<sp/>Blanquer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="builtin_8h" kindref="compound">builtin.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="lib_8h" kindref="compound">lib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="builtin_8h_1a27ff54b856199cbd22e0983f4b369f6b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cd_8c_1a27ff54b856199cbd22e0983f4b369f6b" kindref="member">my_cd_error</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;%s\n&quot;</highlight><highlight class="normal">,<sp/>str);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" kindref="member">FAILURE</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="cd_8c_1af74884482c27a5e006206669ebbd5b8e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>*<ref refid="cd_8c_1af74884482c27a5e006206669ebbd5b8e" kindref="member">get_new_pwd</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*pwd,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*buffer;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*bufpath;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>bufpath<sp/>=<sp/>path;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(path[0]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" kindref="member">my_cstrconcat</ref>(</highlight><highlight class="stringliteral">&quot;PWD=&quot;</highlight><highlight class="normal">,<sp/>path));</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((buffer<sp/>=<sp/>strtok(bufpath,<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">))<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="my__strcmp_8c_1a7656d2f543a26ba1552b06f75667ba3c" kindref="member">my_strcmp</ref>(buffer,<sp/></highlight><highlight class="stringliteral">&quot;..&quot;</highlight><highlight class="normal">)<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/><ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(pwd)<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pwd[i]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>i<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--i;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(pwd[i]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>i<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pwd[i--]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="my__strcmp_8c_1a7656d2f543a26ba1552b06f75667ba3c" kindref="member">my_strcmp</ref>(buffer,<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal">)<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pwd<sp/>=<sp/><ref refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" kindref="member">my_cstrconcat</ref>(pwd,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(pwd[<ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(pwd)<sp/>-<sp/>1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal"><sp/>?<sp/>buffer<sp/>:</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" kindref="member">my_cstrconcat</ref>(</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">,<sp/>buffer))))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(NULL);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>bufpath<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" kindref="member">my_cstrconcat</ref>(</highlight><highlight class="stringliteral">&quot;PWD=&quot;</highlight><highlight class="normal">,<sp/>pwd));</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="cd_8c_1adff71582669f5726a87d35e9f9a15057" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cd_8c_1adff71582669f5726a87d35e9f9a15057" kindref="member">set_pwd_old_pwd</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**env,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*path)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>offsetpwd;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>offsetold;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*pwd;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*oldpwd;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pwd<sp/>=<sp/><ref refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kindref="member">get_env_value</ref>(env,<sp/></highlight><highlight class="stringliteral">&quot;PWD&quot;</highlight><highlight class="normal">,<sp/>&amp;offsetpwd))<sp/>==<sp/>NULL</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/><ref refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kindref="member">get_env_value</ref>(env,<sp/></highlight><highlight class="stringliteral">&quot;OLDPWD&quot;</highlight><highlight class="normal">,<sp/>&amp;offsetold)<sp/>==<sp/>NULL</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>(oldpwd<sp/>=<sp/>malloc(8<sp/>+<sp/><ref refid="my__strlen_8c_1ac7e9bd08d068851e31a5b6d408004638" kindref="member">my_strlen</ref>(pwd)))<sp/>==<sp/>NULL</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/><ref refid="my__strcpy_8c_1a73fd71e5a924f50c46bbdfb8b76fc6f7" kindref="member">my_strcpy</ref>(oldpwd,<sp/></highlight><highlight class="stringliteral">&quot;OLDPWD=&quot;</highlight><highlight class="normal">)<sp/>==<sp/>NULL</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>||<sp/>(oldpwd<sp/>=<sp/><ref refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" kindref="member">my_cstrconcat</ref>(oldpwd,<sp/>pwd))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" kindref="member">FAILURE</ref>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>env[offsetold]<sp/>=<sp/>oldpwd;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pwd<sp/>=<sp/><ref refid="cd_8c_1af74884482c27a5e006206669ebbd5b8e" kindref="member">get_new_pwd</ref>(pwd,<sp/>path))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" kindref="member">FAILURE</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>env[offsetpwd]<sp/>=<sp/><ref refid="my__strdup_8c_1a4548135c4f1cfcaeff31c8dabb3692d3" kindref="member">my_strdup</ref>(pwd);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" kindref="member">SUCCESS</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="builtin_8h_1a2157775684b24545b151e0c2e5f38954" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="cd_8c_1a04d617582a090298a993bb56e5a66cb9" kindref="member">my_cd</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**expr,<sp/><ref refid="structs__data" kindref="compound">t_data</ref><sp/>*data)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*homevalue;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><sp/>*path;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>ret;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!expr[1]<sp/>||<sp/>expr[1][0]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;~&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((homevalue<sp/>=<sp/><ref refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kindref="member">get_env_value</ref>(data-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>,<sp/></highlight><highlight class="stringliteral">&quot;HOME&quot;</highlight><highlight class="normal">,<sp/>NULL))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="cd_8c_1a27ff54b856199cbd22e0983f4b369f6b" kindref="member">my_cd_error</ref>(</highlight><highlight class="stringliteral">&quot;cd:<sp/>No<sp/>home<sp/>directory.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!expr[1])</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>path<sp/>=<sp/>homevalue;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(expr[1][0]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;~&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((path<sp/>=<sp/><ref refid="getvar_8c_1a2883a48551d7c810ebd592fb241efeed" kindref="member">my_cstrconcat</ref>(homevalue,<sp/>expr[1]<sp/>+<sp/>1))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="builtin_8h_1a6d58f9ac447476b4e084d7ca383f5183" kindref="member">FAILURE</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(expr[1][0]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;&amp;<sp/>(path<sp/>=<sp/><ref refid="builtin_2utils_8c_1a0059bf9838c7770b46270fedbc869799" kindref="member">get_env_value</ref>(data-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>,<sp/></highlight><highlight class="stringliteral">&quot;OLDPWD&quot;</highlight><highlight class="normal">,<sp/>NULL))<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="cd_8c_1a27ff54b856199cbd22e0983f4b369f6b" kindref="member">my_cd_error</ref>(</highlight><highlight class="stringliteral">&quot;Env<sp/>var<sp/>$OLDPWD<sp/>is<sp/>not<sp/>set.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(expr[1][0]<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>path<sp/>=<sp/>expr[1];</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((ret<sp/>=<sp/>chdir(path))<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="cd_8c_1a27ff54b856199cbd22e0983f4b369f6b" kindref="member">my_cd_error</ref>(</highlight><highlight class="stringliteral">&quot;No<sp/>such<sp/>file<sp/>or<sp/>directory.&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="cd_8c_1adff71582669f5726a87d35e9f9a15057" kindref="member">set_pwd_old_pwd</ref>(data-&gt;<ref refid="structs__data_1a45c1547b79d23d508a01a427c3171ca4" kindref="member">env</ref>,<sp/>path);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="builtin_8h_1aa90cac659d18e8ef6294c7ae337f6b58" kindref="member">SUCCESS</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/builtin/cd.c"/>
+  </compounddef>
+</doxygen>

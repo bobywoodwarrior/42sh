@@ -1,0 +1,118 @@
+\section{parsing/redirection.c File Reference}
+\label{redirection_8c}\index{parsing/redirection.\-c@{parsing/redirection.\-c}}
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$stdlib.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}shell.\-h\char`\"{}}\\*
+Include dependency graph for redirection.\-c\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{redirection_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bf set\-\_\-last\-\_\-in\-\_\-list} ({\bf t\-\_\-list} $\ast$redi\-\_\-r\-\_\-l, {\bf t\-\_\-list} $\ast$new)
+\item 
+int {\bf set\-\_\-redi} ({\bf t\-\_\-list} $\ast$redi, {\bf t\-\_\-cmd} $\ast$cmd, char c, char c2)
+\item 
+int {\bf add\-\_\-redi} (char $\ast$str\-\_\-cmd, {\bf t\-\_\-cmd} $\ast$cmd, int $\ast$i)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{redirection.\-c@{redirection.\-c}!add\-\_\-redi@{add\-\_\-redi}}
+\index{add\-\_\-redi@{add\-\_\-redi}!redirection.c@{redirection.\-c}}
+\subsubsection[{add\-\_\-redi}]{\setlength{\rightskip}{0pt plus 5cm}int add\-\_\-redi (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{str\-\_\-cmd, }
+\item[{{\bf t\-\_\-cmd} $\ast$}]{cmd, }
+\item[{int $\ast$}]{i}
+\end{DoxyParamCaption}
+)}\label{redirection_8c_ab141cb2c1876246eb1194566beb195c8}
+
+
+Definition at line 46 of file redirection.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{redirection_8c_ab141cb2c1876246eb1194566beb195c8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{redirection_8c_ab141cb2c1876246eb1194566beb195c8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{redirection.\-c@{redirection.\-c}!set\-\_\-last\-\_\-in\-\_\-list@{set\-\_\-last\-\_\-in\-\_\-list}}
+\index{set\-\_\-last\-\_\-in\-\_\-list@{set\-\_\-last\-\_\-in\-\_\-list}!redirection.c@{redirection.\-c}}
+\subsubsection[{set\-\_\-last\-\_\-in\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}void set\-\_\-last\-\_\-in\-\_\-list (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-list} $\ast$}]{redi\-\_\-r\-\_\-l, }
+\item[{{\bf t\-\_\-list} $\ast$}]{new}
+\end{DoxyParamCaption}
+)}\label{redirection_8c_a9d291893b76eeddb11d3b35fb5804747}
+
+
+Definition at line 15 of file redirection.\-c.
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{redirection_8c_a9d291893b76eeddb11d3b35fb5804747_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{redirection.\-c@{redirection.\-c}!set\-\_\-redi@{set\-\_\-redi}}
+\index{set\-\_\-redi@{set\-\_\-redi}!redirection.c@{redirection.\-c}}
+\subsubsection[{set\-\_\-redi}]{\setlength{\rightskip}{0pt plus 5cm}int set\-\_\-redi (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-list} $\ast$}]{redi, }
+\item[{{\bf t\-\_\-cmd} $\ast$}]{cmd, }
+\item[{char}]{c, }
+\item[{char}]{c2}
+\end{DoxyParamCaption}
+)}\label{redirection_8c_a1cd0120acb08c062e567a2f26e64545a}
+
+
+Definition at line 25 of file redirection.\-c.
+
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{redirection_8c_a1cd0120acb08c062e567a2f26e64545a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{redirection_8c_a1cd0120acb08c062e567a2f26e64545a_icgraph}
+\end{center}
+\end{figure}
+
+

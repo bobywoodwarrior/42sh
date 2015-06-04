@@ -1,0 +1,10 @@
+<map id="set_last_in_list" name="set_last_in_list">
+<area shape="rect" id="node3" href="$redirection_8c.html#a1cd0120acb08c062e567a2f26e64545a" title="set_redi" alt="" coords="163,5,234,32"/>
+<area shape="rect" id="node5" href="$shell_8h.html#a88d6a0e4709f3f3521a44ae3bcdf6862" title="add_redi" alt="" coords="283,5,359,32"/>
+<area shape="rect" id="node7" href="$shell_8h.html#a75146577e9b06cc37c090f3c94b2278e" title="parsing_cmd" alt="" coords="408,5,507,32"/>
+<area shape="rect" id="node9" href="$parsing__pipe_8c.html#a1ffdb84b9297c89dcd30e9402f2c3515" title="add_cmd" alt="" coords="555,5,634,32"/>
+<area shape="rect" id="node11" href="$shell_8h.html#ae8d6b38307281c05e1b03ca11f8bbb8c" title="parsing_pipe" alt="" coords="683,5,781,32"/>
+<area shape="rect" id="node13" href="$parsing__general_8c.html#a8a47bb6cfcb5378a27b639793a995814" title="new_cmds" alt="" coords="830,5,917,32"/>
+<area shape="rect" id="node15" href="$parsing__general_8c.html#a2d75753bac50088aa4b9be29314f98fc" title="add_cmds" alt="" coords="966,5,1053,32"/>
+<area shape="rect" id="node17" href="$shell_8h.html#ae9c51201cb3ad89b921d2f3576875ca4" title="parsing_general" alt="" coords="1102,5,1221,32"/>
+</map>

@@ -1,0 +1,45 @@
+.TH "parsing/redirection.c" 3 "Sun May 24 2015" "Version 3.0" "42sh" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+parsing/redirection.c \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <string\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include 'shell\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBset_last_in_list\fP (\fBt_list\fP *redi_r_l, \fBt_list\fP *new)"
+.br
+.ti -1c
+.RI "int \fBset_redi\fP (\fBt_list\fP *redi, \fBt_cmd\fP *cmd, char c, char c2)"
+.br
+.ti -1c
+.RI "int \fBadd_redi\fP (char *str_cmd, \fBt_cmd\fP *cmd, int *i)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "int add_redi (char *str_cmd, \fBt_cmd\fP *cmd, int *i)"
+
+.PP
+Definition at line 46 of file redirection\&.c\&.
+.SS "void set_last_in_list (\fBt_list\fP *redi_r_l, \fBt_list\fP *new)"
+
+.PP
+Definition at line 15 of file redirection\&.c\&.
+.SS "int set_redi (\fBt_list\fP *redi, \fBt_cmd\fP *cmd, charc, charc2)"
+
+.PP
+Definition at line 25 of file redirection\&.c\&.
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for 42sh from the source code\&.

@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.5">
+  <compounddef id="my__getnbr_8c" kind="file">
+    <compoundname>my_getnbr.c</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="my__getnbr_8c_1aad569c9f93b415855a1a9cd23e91b922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int check</definition>
+        <argsstring>(int nbr, int nbr_z)</argsstring>
+        <name>check</name>
+        <param>
+          <type>int</type>
+          <declname>nbr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbr_z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_getnbr.c" line="11" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_getnbr.c" bodystart="11" bodyend="17"/>
+        <referencedby refid="my__getnbr_8c_1ad48badc9f257d977f8021a87c27520d7" compoundref="my__getnbr_8c" startline="19" endline="46">my_getnbr_2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="my__getnbr_8c_1ad48badc9f257d977f8021a87c27520d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_getnbr_2</definition>
+        <argsstring>(char *str, int signe)</argsstring>
+        <name>my_getnbr_2</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>signe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_getnbr.c" line="19" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_getnbr.c" bodystart="19" bodyend="46"/>
+        <references refid="my__getnbr_8c_1aad569c9f93b415855a1a9cd23e91b922" compoundref="my__getnbr_8c" startline="11" endline="17">check</references>
+        <referencedby refid="lib_8h_1ac45cbddfa25de0a352c590381e969240" compoundref="my__getnbr_8c" startline="48" endline="62">my_getnbr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="my__getnbr_8c_1a62694fc10e80f5d95a4bc3ab1754f6c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int my_getnbr</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>my_getnbr</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_getnbr.c" line="48" column="1" bodyfile="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_getnbr.c" bodystart="48" bodyend="62"/>
+        <references refid="my__getnbr_8c_1ad48badc9f257d977f8021a87c27520d7" compoundref="my__getnbr_8c" startline="19" endline="46">my_getnbr_2</references>
+        <referencedby refid="builtin_8h_1adff2ceef5d8ba6f5b94b9c3902b2d5f9" compoundref="builtin_8c" startline="92" endline="99">my_exit</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">**<sp/>my_getnbr.c<sp/>for<sp/>my_get_nbr<sp/>in<sp/>/home/bauer_a/j04</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">**<sp/>Made<sp/>by<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>Login<sp/><sp/><sp/>&lt;bauer_a@epitech.net&gt;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/>Started<sp/>on<sp/><sp/>Thu<sp/>Oct<sp/><sp/>2<sp/>15:33:58<sp/>2014<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Last<sp/>update<sp/>Thu<sp/>Nov<sp/><sp/>6<sp/>09:42:04<sp/>2014<sp/>Hugo<sp/>Bauer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="my__getnbr_8c_1aad569c9f93b415855a1a9cd23e91b922" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__getnbr_8c_1aad569c9f93b415855a1a9cd23e91b922" kindref="member">check</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbr_z)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(nbr<sp/>&lt;<sp/>nbr_z)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(1);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="my__getnbr_8c_1ad48badc9f257d977f8021a87c27520d7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__getnbr_8c_1ad48badc9f257d977f8021a87c27520d7" kindref="member">my_getnbr_2</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>signe)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>p10;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>i;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>nbr;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>nbr_z;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>nbr<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>p10<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/>str<sp/>=<sp/>str<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*str<sp/>&gt;=<sp/>48<sp/>&amp;&amp;<sp/>*str<sp/>&lt;=<sp/>57)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>p10<sp/>=<sp/>p10<sp/>*<sp/>10;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/>=<sp/>str<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>i<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>str<sp/>=<sp/>str<sp/>-<sp/>i;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nbr_z<sp/>=<sp/>nbr;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nbr<sp/>=<sp/>nbr<sp/>+<sp/>((*str<sp/>-<sp/>48)<sp/>*<sp/>p10);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>p10<sp/>=<sp/>p10<sp/>/<sp/>10;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/>=<sp/>str<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>=<sp/>(i<sp/>-<sp/>1)<sp/>*<sp/><ref refid="my__getnbr_8c_1aad569c9f93b415855a1a9cd23e91b922" kindref="member">check</ref>(nbr,<sp/>nbr_z);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(nbr<sp/>*<sp/>signe<sp/>*<sp/><ref refid="my__getnbr_8c_1aad569c9f93b415855a1a9cd23e91b922" kindref="member">check</ref>(nbr,<sp/>nbr_z));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="lib_8h_1ac45cbddfa25de0a352c590381e969240" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="my__getnbr_8c_1a62694fc10e80f5d95a4bc3ab1754f6c3" kindref="member">my_getnbr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*str)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><sp/>signe;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>signe<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*str<sp/>!=<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>(*str<sp/>&lt;<sp/>48<sp/>||<sp/>*str<sp/>&gt;<sp/>57))</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*str<sp/>==<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>signe<sp/>=<sp/>signe<sp/>*<sp/>-1;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>str<sp/>=<sp/>str<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*str<sp/>==<sp/></highlight><highlight class="charliteral">&apos;\0&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="my__getnbr_8c_1ad48badc9f257d977f8021a87c27520d7" kindref="member">my_getnbr_2</ref>(str,<sp/>signe));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/geiger_a/rendu/PSU_2014_42sh/lib/my/my_getnbr.c"/>
+  </compounddef>
+</doxygen>

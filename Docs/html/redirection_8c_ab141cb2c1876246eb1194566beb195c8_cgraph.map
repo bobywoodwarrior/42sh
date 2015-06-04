@@ -1,0 +1,7 @@
+<map id="add_redi" name="add_redi">
+<area shape="rect" id="node3" href="$redirection_8c.html#a1cd0120acb08c062e567a2f26e64545a" title="set_redi" alt="" coords="161,5,231,32"/>
+<area shape="rect" id="node7" href="$parsing__cmd_8c.html#a76889c4c767c0af44a85984cbaf48d62" title="is_redi" alt="" coords="333,107,395,133"/>
+<area shape="rect" id="node9" href="$shell_8h.html#a1a145470918f339fe655f978216c73e2" title="error_syntax_error" alt="" coords="131,107,261,133"/>
+<area shape="rect" id="node11" href="$parsing__cmd_8c.html#a630ad05ab22a793081c5c8f3ab941220" title="index_end_word" alt="" coords="135,157,257,184"/>
+<area shape="rect" id="node5" href="$redirection_8c.html#a9d291893b76eeddb11d3b35fb5804747" title="set_last_in_list" alt="" coords="310,5,418,32"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="my_strncpy" name="my_strncpy">
+<area shape="rect" id="node3" href="$lib_8h.html#aa470a7e58967778144f7d737bf64c3e8" title="my_strndup" alt="" coords="163,119,253,145"/>
+<area shape="rect" id="node32" href="$shell_8h.html#a929bf8ea49ac6f94a2b1ab00c9f16343" title="add_char" alt="" coords="169,195,247,221"/>
+<area shape="rect" id="node38" href="$shell_8h.html#a8a81cc045a4530835ce45b6817e17335" title="delete_char" alt="" coords="161,245,255,272"/>
+<area shape="rect" id="node41" href="$shell_8h.html#a10717a0c53430c97d2ccedbfb1728211" title="delete_backward" alt="" coords="145,296,271,323"/>
+<area shape="rect" id="node5" href="$alias__etc_8c.html#a2554b2fd4cf3639ec091ec6a5a432675" title="setbashenv" alt="" coords="324,5,415,32"/>
+<area shape="rect" id="node7" href="$shell_8h.html#acd9ad0dfae53c8683ec2597a188e6c1b" title="bashset" alt="" coords="481,56,551,83"/>
+<area shape="rect" id="node14" href="$shell_8h.html#aef6f0a2dadbae4099dfa9a0cc9ea1782" title="concat_alias" alt="" coords="320,208,419,235"/>
+<area shape="rect" id="node26" href="$pars__alias_8c.html#a3257a6fcadd0309f1df178525eea9257" title="get_old" alt="" coords="336,157,403,184"/>
+<area shape="rect" id="node28" href="$pars__alias_8c.html#a7d7873e60a328ecd3a34c3370594b040" title="get_old_new" alt="" coords="467,107,565,133"/>
+<area shape="rect" id="node9" href="$shell_8h.html#a94ed7403f0bc582353a563669932efdd" title="get_all_alias" alt="" coords="613,81,712,108"/>
+<area shape="rect" id="node11" href="$shell_8h.html#a8e5633ce3ca1c968f88de68f3ed735c7" title="pars_alias" alt="" coords="762,81,846,108"/>
+<area shape="rect" id="node16" href="$parsing__pipe_8c.html#a1ffdb84b9297c89dcd30e9402f2c3515" title="add_cmd" alt="" coords="477,208,555,235"/>
+<area shape="rect" id="node18" href="$shell_8h.html#ae8d6b38307281c05e1b03ca11f8bbb8c" title="parsing_pipe" alt="" coords="613,208,712,235"/>
+<area shape="rect" id="node20" href="$parsing__general_8c.html#a8a47bb6cfcb5378a27b639793a995814" title="new_cmds" alt="" coords="761,208,847,235"/>
+<area shape="rect" id="node22" href="$parsing__general_8c.html#a2d75753bac50088aa4b9be29314f98fc" title="add_cmds" alt="" coords="897,208,983,235"/>
+<area shape="rect" id="node24" href="$shell_8h.html#ae9c51201cb3ad89b921d2f3576875ca4" title="parsing_general" alt="" coords="1033,208,1151,235"/>
+<area shape="rect" id="node34" href="$shell_8h.html#a089febdbd9db477f99c25841413150a8" title="gere_char" alt="" coords="328,259,411,285"/>
+<area shape="rect" id="node36" href="$shell_8h.html#acbfff6c4ca9e326d10561a54329ddf6c" title="loop" alt="" coords="492,259,540,285"/>
+</map>
